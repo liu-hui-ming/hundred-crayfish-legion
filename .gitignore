@@ -1,0 +1,19 @@
+# Rust
+/target/
+**/target/
+Cargo.lock
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db

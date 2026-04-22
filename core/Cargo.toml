@@ -1,0 +1,13 @@
+[package]
+name = "hcl-core"
+version = "0.1.0"
+edition = "2021"
+description = "Hundred Crayfish Legion – cluster orchestration engine (scaffold)"
+license = "MIT"
+
+[lib]
+name = "hcl_core"
+path = "src/lib.rs"
+
+[dependencies]
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "sync"] }
