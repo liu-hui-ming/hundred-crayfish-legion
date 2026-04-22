@@ -1,7 +1,7 @@
 # Hundred Crayfish Legion
 
 High-concurrency multi-agent cluster orchestration for autonomous task
-execution, by the [Carbon-Silicon Alliance](https://github.com/CarbonSiliconAlliance).
+execution. This repository: [`liu-hui-ming/hundred-crayfish-legion`](https://github.com/liu-hui-ming/hundred-crayfish-legion) (affiliated with the **Carbon–Silicon Alliance** initiative).
 
 ## Project layout
 
