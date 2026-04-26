@@ -74,6 +74,32 @@ cd python && python -m unittest discover -s tests -v
 docker compose up --build
 ```
 
+## P2 弹性（可选，不强求）
+
+P2 在合流/宣发上**不阻塞**主仓；有闲力时做**轻量**铺垫或彩蛋验证即可。
+
+| 项 | 本仓交付物 |
+|----|------------|
+| 彩蛋模式 · 短验证 | 设置 `HCL_P2_EASTER=1` 后，请求 **`GET /api/p2/easter-egg`** 返回 JSON；未开启时 **HTTP 404**（不暴露）。不跑长时、不跑大规模。 |
+| Axium 升维 · 依赖铺垫 | 清单骨架：[`docs/AXIUM_UPLIFT_PREREQUISITES.md`](docs/AXIUM_UPLIFT_PREREQUISITES.md)（按实线可改） |
+
+**示例（PowerShell，与同盟服务同机）：**
+
+`HCL_P2_EASTER` 必须在**启动** `python -m carbon_silicon_universe` 的进程里可见（同一终端里先 `set` 再启动，或设好系统环境变量后**新开会话**再启动；仅在新窗口设变量、旧窗服务不关 → 不会生效）。可先查：
+
+```powershell
+Invoke-RestMethod "http://127.0.0.1:8765/api/health/live"
+# 看返回 JSON 里 hcl_p2_easter: true 才表示本进程已读到开关
+```
+
+再测彩蛋（为 true 时才有 JSON，否则 404）：
+
+```powershell
+$env:HCL_P2_EASTER = "1"
+# 在**本终端**内启动服务；另开一终端再请求：
+Invoke-RestMethod "http://127.0.0.1:8765/api/p2/easter-egg"
+```
+
 ## Quick start (demo)
 
 Requires **Python 3.10+** (no extra packages for the default demo).

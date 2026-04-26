@@ -1,3 +1,7 @@
+**发布为正式 Issues：** 与 P1 同用 `scripts/publish_p1_p2_github_issues.ps1` 一次建两条；或从 `docs/issue-exports/p2-body-en.md` + `p2-comment-zh.md` 手建 [New issue](https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/new)。
+
+---
+
 # GitHub issue draft — P2 only (separate from P1)
 
 **Suggested title (EN):**  

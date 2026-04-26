@@ -1,18 +1,3 @@
-# GitHub issue draft — P1 only (separate from P2)
-
-**发布为正式 Issues：** 见 `scripts/publish_p1_p2_github_issues.ps1`（需 `GH_TOKEN`），或从 `docs/issue-exports/p1-body-en.md` 与 `p1-comment-zh.md` 复制到 [New issue](https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/new)。
-
----
-
-**Suggested title (EN):**  
-`[P1-Roadmap] HCL: P1 foundation baseline — kernel, service, P1 web, health, deploy, CI`
-
-**Labels (suggested):** `P1-Roadmap`, `documentation`, `enhancement` (as your policy allows)
-
----
-
-## Body (EN — first post)
-
 **Hundred Crayfish Legion** documents its **P1 (foundation) baseline** on:  
 [`https://github.com/liu-hui-ming/hundred-crayfish-legion`](https://github.com/liu-hui-ming/hundred-crayfish-legion)
 
@@ -41,20 +26,4 @@ https://github.com/liu-hui-ming/hundred-crayfish-legion.git
 
 `README` → **P1 基座** table. Issue conventions: `[Announcement]`, `[Manifesto]`, `[P1-Roadmap]`.
 
----
-
-## 中文（发 Issue 后作首条或次条评论）
-
-**P1 基座（可验收）** 以仓库 `README` 中 **P1 基座** 表为口径：Rust 核、同盟 Python 服务、P1 管理台 `/p1/`、liveness/ready 与 P1 元信息 API、Docker/Compose、CI 与健康脚本；**生产环境请更换** `CS_UNIVERSE_API_TOKEN` 等默认。  
-P2 弹性、彩蛋、Axium 升维清单**不在本条**，见**单独**发的 **P2 议题**。
-
-**备案：** 发布后把 Issue 链接与日期记入账务/台账即可。
-
----
-
-## After publish (台账)
-
-| Field | |
-|--------|--|
-| Issue URL | *paste* |
-| Scope | P1 only |
+*Draft source: `docs/github-issue-p1-baseline-2026-04-24.md` in repo.*

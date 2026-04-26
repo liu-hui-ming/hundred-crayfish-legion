@@ -51,6 +51,14 @@ def api_token_authentication(f: F) -> F:
     return decorated  # type: ignore[return-value]
 
 
+def _hcl_p2_easter_enabled() -> bool:
+    return (os.environ.get("HCL_P2_EASTER") or "").strip().lower() in (
+        "1",
+        "true",
+        "yes",
+    )
+
+
 @API_APP.route("/api/health/live", methods=["GET"])
 def api_health_live() -> Any:
     return jsonify(
@@ -58,8 +66,35 @@ def api_health_live() -> Any:
             "status": "live",
             "service": "hcl-carbon-silicon",
             "p1": "liveness",
+            "hcl_p2_easter": _hcl_p2_easter_enabled(),
         }
     ), 200
+
+
+@API_APP.route("/api/p2/easter-egg", methods=["GET"])
+def api_p2_easter_egg() -> Any:
+    """
+    P2: 彩蛋模式轻量端点。仅当环境 HCL_P2_EASTER=1|true|yes 时存在；否者 404，避免对公网无差别暴露。
+    不跑长任务、不做重逻辑 —— 供「短验证 + 有开关」的回归。
+    """
+    from flask import abort
+
+    if not _hcl_p2_easter_enabled():
+        abort(404)
+    return (
+        jsonify(
+            {
+                "p2": "easter-egg",
+                "hcl": "Hundred Crayfish Legion",
+                "note": "short validation only; no long-running or large-scale work",
+                "lines": [
+                    "A pinch of bytes, a legion in tow.",
+                    "The crayfish nods: not now, but we grow.",
+                ],
+            }
+        ),
+        200,
+    )
 
 
 @API_APP.route("/api/health/ready", methods=["GET"])
