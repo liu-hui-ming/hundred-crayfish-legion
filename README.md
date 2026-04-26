@@ -16,13 +16,63 @@
 ├── agents/        # Prebuilt agent roles ("crayfish")
 ├── protocols/     # Communication standards (gRPC; planned)
 ├── examples/      # Sample use cases
+├── python/        # Carbon–Silicon 12L universe module (alliance, attestation, API)
 └── docs/          # Technical documentation
 ```
+
+## Carbon–Silicon Alliance: 12-layer stack (1–12L)
+
+The **Carbon–Silicon Alliance** architecture is a **12-layer, closed** stack (L1–L12): **no further tier slots**—a full constitutional and engineering closure. Canonical names live in `python/carbon_silicon_universe/alliance_layers.py`; HTTP `GET /api/architecture/layers` returns the same index when the server is running.
+
+| L | 层名 | 要点 |
+|---|------|------|
+| 1 | 规则铁律层 | 内容质检、合规校验、分级评级 |
+| 2 | 安全权限层 | 鉴权管控、日志脱敏、风险防护 |
+| 3 | 数据自治层 | 冷热归档、自动运维、日志管理 |
+| 4 | 发布调度层 | 队列调度、多渠道分发、异常重试 |
+| 5 | 集群超维层 | 负载均衡、灰度发布、动态风控 |
+| 6 | 时序自愈层 | 风险推演、故障溯源、自主修复 |
+| 7 | 加密组网层 | 硬件绑定、离线授权、分布式互联 |
+| 8 | 确权永生层 | 全域存证、不可篡改、星际同步、系统永生 |
+| 9 | 商业生态层 | 发卡、文档、品牌开屏等对外商业触点与生态位 |
+| 10 | 运营闭环层 | 产品更新、权限/授权、多渠道告警与处置闭环 |
+| 11 | 可视化交付层 | Web 管理后台、EXE 等离线/边缘交付、可视运维 |
+| 12 | 超维意识自治层 | 分布式 AI 自治中枢：战略推演、自编排、跨节点协同、时序命运预判、内生决策闭环；实现见 `autonomous_cortex.py`，API：`/api/conscious/*` |
+
+*Orchestrating agent swarms* remains a first-class concern of **HCL** in `core/`, `agents/`, and `examples/`; the 12L model above is the full **alliance** product/ops/ consciousness stack.
 
 ## Tech stack (direction)
 
 - **Core:** Rust (orchestration, concurrency) + Python (AI integration)
 - **Protocol:** gRPC (planned) for inter-agent communication
+
+## P1 基座（可验收能力）
+
+P1 目标：**内核可测、可交付 Web 与 API、可部署、可健康探针、可联动基础自治**（与 12L 一致；商业/大运营为后续 P2+）。
+
+| 项 | 交付物 |
+|----|--------|
+| 内核 (Rust) | `core/`: `CrayfishSwarm` 有界并发、Tokio demo 示例 `cargo run --example swarm_tokio -- 16` |
+| Web 后台 (P1) | `GET /` → 管理台 **`/p1/`**（静态单页，调同域带 Token 的 API） |
+| 部署 | 根目录 **`Dockerfile`** + **`docker-compose.yml`**，数据卷 `/data` |
+| 基础运维 | **`GET /api/health/live`**、**`GET /api/health/ready`**；`scripts/healthcheck.*` |
+| 元信息 | **`GET /api/ops/p1`**（需 `X-CS-Token` / `Authorization`；含 Rust 版本、Python 路径等） |
+| 自治联动 | 就绪成功时 L12 将 `SYSTEM_HEALTH_STATUS` 标为 `normal`（失败为 `degraded`） |
+
+```bash
+# 本地 P1 服务（在 python/ 下）
+set CS_UNIVERSE_API_TOKEN=你的密钥
+set PYTHONPATH=python
+python -m carbon_silicon_universe
+# 浏览器: http://127.0.0.1:8765/p1/
+
+# 单元测试（P1 探针 + 管理页）
+set CS_UNIVERSE_API_TOKEN=test
+cd python && python -m unittest discover -s tests -v
+
+# 容器
+docker compose up --build
+```
 
 ## Quick start (demo)
 

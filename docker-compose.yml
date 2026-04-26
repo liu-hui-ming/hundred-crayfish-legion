@@ -1,0 +1,23 @@
+# P1: 本地/边缘一键拉起同盟 API + 持久化 data
+services:
+  hcl-carbon:
+    build: .
+    image: hcl-carbon-silicon:p1
+    ports:
+      - "${CS_EXPOSE_PORT:-8765}:8765"
+    environment:
+      - CS_UNIVERSE_API_TOKEN=${CS_UNIVERSE_API_TOKEN:-change-me-p1}
+      - CS_UNIVERSE_HOST=0.0.0.0
+      - CS_UNIVERSE_PORT=8765
+      - CS_UNIVERSE_DB_PATH=/data/universe_confirm.db
+    volumes:
+      - hcl_p1_data:/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; r=urllib.request.urlopen('http://127.0.0.1:8765/api/health/live', timeout=4); assert r.getcode()==200"]
+      interval: 20s
+      timeout: 6s
+      retries: 3
+      start_period: 20s
+
+volumes:
+  hcl_p1_data:

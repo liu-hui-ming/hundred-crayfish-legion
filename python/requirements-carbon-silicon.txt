@@ -1,0 +1,2 @@
+# Tier-8 全域确权与星际同步 HTTP API
+flask>=3.0.0,<4

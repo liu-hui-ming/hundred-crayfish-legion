@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HCL · P1 管理台</title>
+  <style>
+    :root { --bg: #0f1419; --fg: #e7ecf1; --acc: #3d8fd1; --bad: #c45c5c; }
+    * { box-sizing: border-box; }
+    body { font-family: system-ui, sans-serif; margin: 0; background: var(--bg); color: var(--fg); line-height: 1.5; }
+    header { padding: 1rem 1.5rem; border-bottom: 1px solid #2a3642; }
+    h1 { font-size: 1.15rem; font-weight: 600; margin: 0; }
+    main { padding: 1.5rem; max-width: 56rem; margin: 0 auto; }
+    .row { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; margin-bottom: 1rem; }
+    label { font-size: 0.85rem; color: #9ab; }
+    input[type="password"], input[type="text"] { flex: 1; min-width: 12rem; padding: 0.4rem 0.6rem; background: #1a222a; border: 1px solid #3a4a5a; color: var(--fg); border-radius: 4px; }
+    button { background: var(--acc); color: #fff; border: none; padding: 0.45rem 1rem; border-radius: 4px; cursor: pointer; font-weight: 500; }
+    button.secondary { background: #3a4a5a; }
+    pre { background: #1a222a; padding: 1rem; border-radius: 6px; overflow: auto; font-size: 0.8rem; border: 1px solid #2a3642; white-space: pre-wrap; }
+    .pill { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.75rem; }
+    .ok { background: #1e4d2a; }
+    .fail { background: #4d1e1e; }
+    a { color: #7eb8ea; }
+    .box { background: #1a222a; border: 1px solid #2a3642; border-radius: 6px; padding: 0.75rem 1rem; font-size: 0.9rem; margin-bottom: 1rem; }
+    .box code { color: #a8d4a8; font-size: 0.85em; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hundred Crayfish Legion — P1 基座 · Web 管理台</h1>
+  </header>
+  <main>
+    <p style="color:#9ab; font-size:0.9rem; margin-top:0">
+      与进程环境变量 <strong>CS_UNIVERSE_API_TOKEN</strong> 一致，请求头带
+      <code style="color:#7eb8ea">X-CS-Token</code>。本页仅静态说明，不依赖额外发现接口。健康检查：
+      <a href="/api/health/live">/api/health/live</a>、
+      <a href="/api/health/ready">/api/health/ready</a>。
+    </p>
+    <div class="box">
+      若启动时<strong>未</strong>设置 <code>CS_UNIVERSE_API_TOKEN</code>，代码内建开发默认与
+      <code>python/carbon_silicon_universe/confirm_config.py</code> 中 <code>UNIVERSE_API_TOKEN</code> 相同，当前为
+      <code>dev-cs-universe-token-2026</code>。若你已在终端/compose 设置过，请用<strong>你设置的那串</strong>，不要用默认。
+    </div>
+    <div class="row">
+      <label>API Token</label>
+      <input type="password" id="token" placeholder="与启动服务时 CS_UNIVERSE_API_TOKEN 相同" autocomplete="off" />
+      <button type="button" id="useDefault" class="secondary">填入内建开发默认</button>
+      <button type="button" id="save" class="secondary">保存到本页</button>
+    </div>
+    <div class="row">
+      <button type="button" id="load">拉取 12L / 同步 / 超维 / P1 元信息</button>
+    </div>
+    <p id="pills"></p>
+    <pre id="out">(未加载)</pre>
+  </main>
+  <script>
+    /** 与 confirm_config.UNIVERSE_API_TOKEN 默认值保持同步；生产务必改环境变量。 */
+    const DEFAULT_DEV_TOKEN = "dev-cs-universe-token-2026";
+    const tKey = "hcl_p1_token";
+    const tokenEl = document.getElementById("token");
+    const out = document.getElementById("out");
+    const pills = document.getElementById("pills");
+    tokenEl.value = localStorage.getItem(tKey) || "";
+    document.getElementById("useDefault").onclick = () => {
+      tokenEl.value = DEFAULT_DEV_TOKEN;
+      localStorage.setItem(tKey, DEFAULT_DEV_TOKEN);
+      out.textContent = "已填入内建开发默认。若 401，说明进程使用了其它 CS_UNIVERSE_API_TOKEN，请与启动命令里一致。";
+    };
+    document.getElementById("save").onclick = () => {
+      localStorage.setItem(tKey, tokenEl.value.trim());
+      out.textContent = "Token 已保存(仅本浏览器本地)。";
+    };
+    async function load() {
+      out.textContent = "加载中…";
+      const tok = tokenEl.value.trim() || localStorage.getItem(tKey);
+      if (!tok) { out.textContent = "请填写并保存 API Token，或点「填入内建开发默认」。"; return; }
+      const paths = [
+        ["/api/architecture/layers", "12L"],
+        ["/api/sync/status", "sync"],
+        ["/api/conscious/status", "超维(快照)"],
+        ["/api/ops/p1", "P1 元信息"]
+      ];
+      const blocks = [];
+      const origin = (location && location.origin) ? location.origin : "";
+      for (const [p, name] of paths) {
+        const pfix = p.startsWith("/") ? p : ("/" + p);
+        const u = origin + pfix;
+        const r = await fetch(u, { headers: { "X-CS-Token": tok, "Accept": "application/json" } });
+        const ct = (r.headers.get("content-type") || "").toLowerCase();
+        if (ct.indexOf("json") === -1) {
+          const t = await r.text();
+          blocks.push("=== " + name + " " + pfix + " (非 JSON) ===\n" + t.slice(0, 200));
+        } else {
+          const j = await r.json();
+          blocks.push("=== " + name + " " + pfix + " (HTTP " + r.status + ") ===\n" + JSON.stringify(j, null, 2));
+        }
+      }
+      out.textContent = blocks.join("\n\n");
+      const lr = await fetch(origin + "/api/health/ready", { headers: { Accept: "application/json" } });
+      const live = await fetch(origin + "/api/health/live", { headers: { Accept: "application/json" } });
+      pills.innerHTML = '<span class="pill ' + (live.ok ? "ok" : "fail") + '">liveness ' + live.status + "</span> " +
+        '<span class="pill ' + (lr.ok ? "ok" : "fail") + '">readiness ' + lr.status + "</span>";
+    }
+    document.getElementById("load").onclick = load;
+  </script>
+</body>
+</html>

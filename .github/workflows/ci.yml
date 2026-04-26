@@ -1,0 +1,27 @@
+name: CI
+on:
+  push:
+  pull_request:
+jobs:
+  python-p1:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: python
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements-carbon-silicon.txt
+      - run: CS_UNIVERSE_API_TOKEN=ci-test-token CS_UNIVERSE_DB_PATH=$GITHUB_WORKSPACE/python/data/ci_universe.db python -m unittest discover -v -s tests -p "test_*.py"
+  rust-hcl:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: core
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - run: cargo test --all-features
+      - run: cargo run --example swarm_tokio -- 6

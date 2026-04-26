@@ -2,7 +2,7 @@
 name = "hcl-core"
 version = "0.1.0"
 edition = "2021"
-description = "Hundred Crayfish Legion – cluster orchestration engine (scaffold)"
+description = "Hundred Crayfish Legion – P1 cluster kernel (Tokio crayfish swarm + future gRPC)"
 license = "MIT"
 
 [lib]

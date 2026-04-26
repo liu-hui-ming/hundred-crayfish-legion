@@ -9,6 +9,7 @@ __pycache__/
 .venv/
 venv/
 .env
+python/data/
 
 # IDE
 .idea/
