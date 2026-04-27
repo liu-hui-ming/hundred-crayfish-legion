@@ -5,18 +5,18 @@
   Needs a token with Issues: read and write (same as publish script).
   $env:GH_TOKEN or $env:GITHUB_TOKEN or -Token
 
-  If POST comment returns 404, use -SkipClosingComment (still closes), or fix Owner/Repo/token scope.
+  IMPORTANT: When invoking via **powershell -File ...**, use **-IssueNumbers '4,5'** (quoted string).
+  Bare **-IssueNumber 4,5** can bind incorrectly (e.g. as 45) depending on argument parsing.
 
-  Example — remove duplicate older P1/P2 after re-running publish (adjust numbers if yours differ):
+  Examples:
     $env:GH_TOKEN = "ghp_..."
-    powershell -ExecutionPolicy Bypass -File .\scripts\close_github_issues.ps1 -IssueNumber 4,5
+    powershell -ExecutionPolicy Bypass -File .\scripts\close_github_issues.ps1 -IssueNumbers "4,5" -SkipClosingComment
 
-  Close without commenting (if comment API returns Not Found):
-    .\scripts\close_github_issues.ps1 -IssueNumber 4,5 -SkipClosingComment
+    .\scripts\close_github_issues.ps1 -IssueNumber @(4,5) -SkipClosingComment
 #>
 param(
-    [Parameter(Mandatory = $true)]
-    [int[]] $IssueNumber,
+    [int[]] $IssueNumber = @(),
+    [string] $IssueNumbers,
     [string] $Token,
     [string] $Owner = "liu-hui-ming",
     [string] $Repo = "hundred-crayfish-legion",
@@ -30,6 +30,21 @@ if (-not $Token) { $Token = $env:GITHUB_TOKEN }
 if (-not $Token) {
     Write-Host "Set GH_TOKEN (or GITHUB_TOKEN, or -Token) with issues: write." -ForegroundColor Yellow
     exit 1
+}
+
+$issueIds = @()
+if (-not [string]::IsNullOrWhiteSpace($IssueNumbers)) {
+    $issueIds = @(
+        $IssueNumbers -split '[,\s;]+' |
+            ForEach-Object { $_.Trim() } |
+            Where-Object { $_ -match '^\d+$' } |
+            ForEach-Object { [int]$_ }
+    ) | Sort-Object -Unique
+} elseif ($IssueNumber -and $IssueNumber.Count -gt 0) {
+    $issueIds = @($IssueNumber | Sort-Object -Unique)
+} else {
+    Write-Host "Specify -IssueNumbers '4,5' (recommended with powershell -File) or -IssueNumber @(4,5)." -ForegroundColor Yellow
+    exit 2
 }
 
 $api = "https://api.github.com"
@@ -55,12 +70,12 @@ function Close-OneIssue {
 
     $meta = Get-IssueMeta -Number $Number
     if (-not $meta) {
-        Write-Host "Issue #$Number : GET failed (404). Repo https://github.com/$Owner/$Repo/issues/$Number — wrong -Owner/-Repo, issue deleted, or token cannot access this repository." -ForegroundColor Yellow
+        Write-Host "Issue #$Number : GET failed (404). Repo https://github.com/$Owner/$Repo/issues/$Number - wrong -Owner/-Repo, issue deleted, or token cannot access this repository." -ForegroundColor Yellow
         return
     }
     Write-Host "Issue #$Number : found (state=$($meta.state))."
     if ($meta.state -eq "closed") {
-        Write-Host "Issue #$Number : already closed — skipping." -ForegroundColor DarkGray
+        Write-Host "Issue #$Number : already closed - skipping." -ForegroundColor DarkGray
         return
     }
 
@@ -83,11 +98,11 @@ function Close-OneIssue {
         Invoke-RestMethod -Uri $issueUri -Method Patch -Headers $headers -ContentType "application/json; charset=utf-8" -Body $patchBytes | Out-Null
         Write-Host "Issue #$Number : closed." -ForegroundColor Green
     } catch {
-        Write-Host "Issue #$Number : PATCH close failed — $($_.Exception.Message)" -ForegroundColor Red
+        Write-Host "Issue #$Number : PATCH close failed - $($_.Exception.Message)" -ForegroundColor Red
     }
 }
 
-foreach ($n in ($IssueNumber | Sort-Object -Unique)) {
+foreach ($n in $issueIds) {
     Close-OneIssue -Number $n -ClosingComment $Comment -SkipComment ([bool]$SkipClosingComment.IsPresent)
 }
 

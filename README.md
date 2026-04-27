@@ -104,7 +104,7 @@ Invoke-RestMethod "http://127.0.0.1:8765/api/p2/easter-egg"
 # 或（仓库根）.\scripts\verify-p2-easter.ps1
 ```
 
-**Axium 一日一发：** 发帖稿见 `docs/issue-exports/axium-daily-body-en.md`、`axium-daily-comment-zh.md`。可手动新建 Issue（英文正文 + 中文评论），或使用 API 与 P1/P2 一并发布：`powershell -ExecutionPolicy Bypass -File .\scripts\publish_p1_p2_github_issues.ps1 -IncludeAxiumDaily`（需 `$env:GH_TOKEN`，Issues: write）。若发帖脚本跑了两次、出现两套重复的 P1/P2，可在仓库根执行 `.\scripts\close_github_issues.ps1 -IssueNumber 4,5`（按你要关掉的编号修改）关掉旧的一套。若关闭前评论接口返回 Not Found，可加 `-SkipClosingComment` 仅执行关闭。
+**Axium 一日一发：** 发帖稿见 `docs/issue-exports/axium-daily-body-en.md`、`axium-daily-comment-zh.md`。可手动新建 Issue（英文正文 + 中文评论），或使用 API 与 P1/P2 一并发布：`powershell -ExecutionPolicy Bypass -File .\scripts\publish_p1_p2_github_issues.ps1 -IncludeAxiumDaily`（需 `$env:GH_TOKEN`，Issues: write）。若发帖脚本跑了两次、出现两套重复的 P1/P2，可在仓库根执行 `.\scripts\close_github_issues.ps1 -IssueNumbers "4,5"`（编号按实际改）；同机也可 `.\scripts\close_github_issues.ps1 -IssueNumber @(4,5)`。若用外层 `powershell -File` 调用，请**务必**用带引号的 **`-IssueNumbers "4,5"`**，裸写 `-IssueNumber 4,5` 可能被解析成 **45**。若关闭前评论接口返回 Not Found，可加 `-SkipClosingComment`。
 
 ## Quick start (demo)
 
