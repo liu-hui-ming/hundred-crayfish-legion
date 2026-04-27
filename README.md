@@ -72,6 +72,9 @@ cd python && python -m unittest discover -s tests -v
 
 # 容器
 docker compose up --build
+
+# P1：少轮次 + 探活为主（Git Bash / WSL / Linux；可选 OPENCLAW_URL）
+bash scripts/run-genesis-n-rounds.sh 10
 ```
 
 ## P2 弹性（可选，不强求）
@@ -98,7 +101,10 @@ Invoke-RestMethod "http://127.0.0.1:8765/api/health/live"
 $env:HCL_P2_EASTER = "1"
 # 在**本终端**内启动服务；另开一终端再请求：
 Invoke-RestMethod "http://127.0.0.1:8765/api/p2/easter-egg"
+# 或（仓库根）.\scripts\verify-p2-easter.ps1
 ```
+
+**Axium 一日一发（发帖稿）：** `docs/issue-exports/axium-daily-body-en.md` + `axium-daily-comment-zh.md` → 新建 Issue，英文正文 + 中文评论；标签按规范自选。
 
 ## Quick start (demo)
 
