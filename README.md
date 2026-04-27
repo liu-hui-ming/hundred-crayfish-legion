@@ -104,7 +104,7 @@ Invoke-RestMethod "http://127.0.0.1:8765/api/p2/easter-egg"
 # 或（仓库根）.\scripts\verify-p2-easter.ps1
 ```
 
-**Axium 一日一发（发帖稿）：** `docs/issue-exports/axium-daily-body-en.md` + `axium-daily-comment-zh.md` → 新建 Issue，英文正文 + 中文评论；标签按规范自选。
+**Axium 一日一发：** 发帖稿见 `docs/issue-exports/axium-daily-body-en.md`、`axium-daily-comment-zh.md`。可手动新建 Issue（英文正文 + 中文评论），或使用 API 与 P1/P2 一并发布：`powershell -ExecutionPolicy Bypass -File .\scripts\publish_p1_p2_github_issues.ps1 -IncludeAxiumDaily`（需 `$env:GH_TOKEN`，Issues: write）。
 
 ## Quick start (demo)
 

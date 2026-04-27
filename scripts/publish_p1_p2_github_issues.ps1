@@ -1,6 +1,6 @@
 #Requires -Version 5.1
 <#
-  Publishes two GitHub Issues (P1, P2): English body, then a Chinese comment each, then EN cross-links.
+  Publishes GitHub Issues: P1 + P2 (always); optional third Axium daily thread.
 
   Prereq: personal access token with "Issues: read and write" for liu-hui-ming/hundred-crayfish-legion.
   $env:GH_TOKEN = "ghp_..."  or  $env:GITHUB_TOKEN
@@ -10,11 +10,15 @@
     cd E:\hundred-crayfish-legion
     $env:GH_TOKEN = "YOUR_TOKEN"
     powershell -ExecutionPolicy Bypass -File .\scripts\publish_p1_p2_github_issues.ps1
+
+  Also create Axium one-post-per-day issue (docs/issue-exports/axium-daily-*.md):
+    ... -IncludeAxiumDaily
 #>
 param(
     [string] $Token,
     [string] $Owner = "liu-hui-ming",
-    [string] $Repo = "hundred-crayfish-legion"
+    [string] $Repo = "hundred-crayfish-legion",
+    [switch] $IncludeAxiumDaily
 )
 
 $ErrorActionPreference = "Stop"
@@ -83,6 +87,27 @@ Add-Comment-Text -Number $i1.number -Text "Cross-link (EN): P2 post — $($i2.ht
 Add-Comment-Text -Number $i2.number -Text "Cross-link (EN): P1 post — $($i1.html_url)"
 Write-Host "Cross-links added."
 
+$i3 = $null
+if ($IncludeAxiumDaily) {
+    $axBody = Join-Path $exp "axium-daily-body-en.md"
+    $axZh = Join-Path $exp "axium-daily-comment-zh.md"
+    if (-not (Test-Path $axBody)) { throw "Missing $axBody (required with -IncludeAxiumDaily)" }
+    if (-not (Test-Path $axZh)) { throw "Missing $axZh (required with -IncludeAxiumDaily)" }
+    $title3 = "[P1-Roadmap] HCL: Axium daily track — Carbon–Silicon alignment (SSOT hooks)"
+    Write-Host "Creating Axium daily issue..."
+    $i3 = New-Issue -Title $title3 -BodyPath $axBody
+    Write-Host "Axium #$($i3.number): $($i3.html_url)"
+    Add-Comment-FromFile -Number $i3.number -Path $axZh
+    Write-Host "Axium: Chinese comment OK."
+    Add-Comment-Text -Number $i1.number -Text "Cross-link (EN): Axium daily — $($i3.html_url)"
+    Add-Comment-Text -Number $i2.number -Text "Cross-link (EN): Axium daily — $($i3.html_url)"
+    Add-Comment-Text -Number $i3.number -Text "Cross-link (EN): P1 post — $($i1.html_url)`nCross-link (EN): P2 post — $($i2.html_url)"
+    Write-Host "Axium cross-links added."
+}
+
 Write-Host ""
 Write-Host "P1: $($i1.html_url)" -ForegroundColor Green
 Write-Host "P2: $($i2.html_url)" -ForegroundColor Green
+if ($i3) {
+    Write-Host "Axium daily: $($i3.html_url)" -ForegroundColor Green
+}
