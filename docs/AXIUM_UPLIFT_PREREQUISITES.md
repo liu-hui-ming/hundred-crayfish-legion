@@ -12,7 +12,7 @@
 | 4 | 数据与归档 | 归档/日志根路径可写、**磁盘/配额**满足最小一轮升维 + 回滚 | 待运维：填实际 `HERMES_HOME`/盘符。 |
 | 5 | 人协与门控 | 与 Axium/同盟相关 **owner/评审** 在窗口内可用；**发布窗口** 已登记 | 待行政/项目：填姓名/日期。 |
 | 6 | 观测与回退 | 关键指标/报警能覆盖本次变更；**回退命令/镜像 tag** 已记一条 | 待运维：填监控入口与回退 tag。 |
-| 7 | 合规与对外 | 若对外的发帖/Issue/标签（如 `[P1-Roadmap]` / `[Manifesto]`）有联动，**链接已备案** | ✓ **草稿**：`docs/issue-exports/`、`docs/github-issue-*`；正式发布后在此格**粘贴 Issue URL**。 |
+| 7 | 合规与对外 | 若对外的发帖/Issue/标签（如 `[P1-Roadmap]` / `[Manifesto]`）有联动，**链接已备案** | ✓ **台账**：[`docs/issue-registry/2026-04-24-p1-p2-axium.md`](issue-registry/2026-04-24-p1-p2-axium.md)（#6/#7/#8 链接与日期）；稿件见 `docs/issue-exports/`。 |
 
 **说明**
 
