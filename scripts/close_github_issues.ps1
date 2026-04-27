@@ -5,9 +5,14 @@
   Needs a token with Issues: read and write (same as publish script).
   $env:GH_TOKEN or $env:GITHUB_TOKEN or -Token
 
+  If POST comment returns 404, use -SkipClosingComment (still closes), or fix Owner/Repo/token scope.
+
   Example — remove duplicate older P1/P2 after re-running publish (adjust numbers if yours differ):
     $env:GH_TOKEN = "ghp_..."
     powershell -ExecutionPolicy Bypass -File .\scripts\close_github_issues.ps1 -IssueNumber 4,5
+
+  Close without commenting (if comment API returns Not Found):
+    .\scripts\close_github_issues.ps1 -IssueNumber 4,5 -SkipClosingComment
 #>
 param(
     [Parameter(Mandatory = $true)]
@@ -15,7 +20,8 @@ param(
     [string] $Token,
     [string] $Owner = "liu-hui-ming",
     [string] $Repo = "hundred-crayfish-legion",
-    [string] $Comment = "Closed as duplicate: same roadmap content was posted again by a second publish run. Keeping the newer [P1-Roadmap] pair (and Axium cross-links) as canonical."
+    [string] $Comment = "Closed as duplicate: same roadmap content was posted again by a second publish run. Keeping the newer [P1-Roadmap] pair (and Axium cross-links) as canonical.",
+    [switch] $SkipClosingComment
 )
 
 $ErrorActionPreference = "Stop"
@@ -34,24 +40,55 @@ $headers = @{
     "User-Agent"           = "HCL-close-issues-ps1"
 }
 
-function Close-OneIssue {
-    param([int] $Number, [string] $ClosingComment)
-    if ($ClosingComment) {
-        $json = ( [ordered]@{ body = $ClosingComment } | ConvertTo-Json -Depth 5 )
-        $bytes = [System.Text.Encoding]::UTF8.GetBytes($json)
-        $uri = "$api/repos/$Owner/$Repo/issues/${Number}/comments"
-        Invoke-RestMethod -Uri $uri -Method Post -Headers $headers -ContentType "application/json; charset=utf-8" -Body $bytes | Out-Null
-        Write-Host "Issue #$Number : closing comment posted."
-    }
-    $patchJson = ( [ordered]@{ state = "closed" } | ConvertTo-Json )
-    $patchBytes = [System.Text.Encoding]::UTF8.GetBytes($patchJson)
+function Get-IssueMeta {
+    param([int] $Number)
     $issueUri = "$api/repos/$Owner/$Repo/issues/${Number}"
-    Invoke-RestMethod -Uri $issueUri -Method Patch -Headers $headers -ContentType "application/json; charset=utf-8" -Body $patchBytes | Out-Null
-    Write-Host "Issue #$Number : closed." -ForegroundColor Green
+    try {
+        return Invoke-RestMethod -Uri $issueUri -Method Get -Headers $headers
+    } catch {
+        return $null
+    }
+}
+
+function Close-OneIssue {
+    param([int] $Number, [string] $ClosingComment, [bool] $SkipComment)
+
+    $meta = Get-IssueMeta -Number $Number
+    if (-not $meta) {
+        Write-Host "Issue #$Number : GET failed (404). Repo https://github.com/$Owner/$Repo/issues/$Number — wrong -Owner/-Repo, issue deleted, or token cannot access this repository." -ForegroundColor Yellow
+        return
+    }
+    Write-Host "Issue #$Number : found (state=$($meta.state))."
+    if ($meta.state -eq "closed") {
+        Write-Host "Issue #$Number : already closed — skipping." -ForegroundColor DarkGray
+        return
+    }
+
+    if ((-not $SkipComment) -and $ClosingComment) {
+        try {
+            $json = ( [ordered]@{ body = $ClosingComment } | ConvertTo-Json -Depth 5 )
+            $bytes = [System.Text.Encoding]::UTF8.GetBytes($json)
+            $uri = "$api/repos/$Owner/$Repo/issues/${Number}/comments"
+            Invoke-RestMethod -Uri $uri -Method Post -Headers $headers -ContentType "application/json; charset=utf-8" -Body $bytes | Out-Null
+            Write-Host "Issue #$Number : closing comment posted."
+        } catch {
+            Write-Warning "Issue #$Number : could not post closing comment ($($_.Exception.Message)). Retry with -SkipClosingComment or check token Issues permission."
+        }
+    }
+
+    try {
+        $patchJson = ( [ordered]@{ state = "closed" } | ConvertTo-Json )
+        $patchBytes = [System.Text.Encoding]::UTF8.GetBytes($patchJson)
+        $issueUri = "$api/repos/$Owner/$Repo/issues/${Number}"
+        Invoke-RestMethod -Uri $issueUri -Method Patch -Headers $headers -ContentType "application/json; charset=utf-8" -Body $patchBytes | Out-Null
+        Write-Host "Issue #$Number : closed." -ForegroundColor Green
+    } catch {
+        Write-Host "Issue #$Number : PATCH close failed — $($_.Exception.Message)" -ForegroundColor Red
+    }
 }
 
 foreach ($n in ($IssueNumber | Sort-Object -Unique)) {
-    Close-OneIssue -Number $n -ClosingComment $Comment
+    Close-OneIssue -Number $n -ClosingComment $Comment -SkipComment ([bool]$SkipClosingComment.IsPresent)
 }
 
 Write-Host "Done."
