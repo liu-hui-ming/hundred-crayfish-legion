@@ -93,7 +93,8 @@ if ($IncludeAxiumDaily) {
     $axZh = Join-Path $exp "axium-daily-comment-zh.md"
     if (-not (Test-Path $axBody)) { throw "Missing $axBody (required with -IncludeAxiumDaily)" }
     if (-not (Test-Path $axZh)) { throw "Missing $axZh (required with -IncludeAxiumDaily)" }
-    $title3 = "[P1-Roadmap] HCL: Axium daily track — Carbon–Silicon alignment (SSOT hooks)"
+    # ASCII title avoids mojibake in some API/Windows code paths (GitHub accepts UTF-8 body separately).
+    $title3 = "[P1-Roadmap] HCL: Axium daily track - Carbon-Silicon alignment (SSOT hooks)"
     Write-Host "Creating Axium daily issue..."
     $i3 = New-Issue -Title $title3 -BodyPath $axBody
     Write-Host "Axium #$($i3.number): $($i3.html_url)"
