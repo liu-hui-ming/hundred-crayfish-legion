@@ -24,5 +24,5 @@ P2彩蛋模式已通过运行时验证，后续约束如下：
 ## 3. 台账归档
 已记录于：`docs/issue-registry/2026-04-24-p1-p2-axium.md`
 发布日期：2026-04-28
-Issue编号：（发布后由脚本填入实际编号）
+Issue编号：ISSUE_NUM_PLACEHOLDER
 标签： P2-Roadmap + documentation

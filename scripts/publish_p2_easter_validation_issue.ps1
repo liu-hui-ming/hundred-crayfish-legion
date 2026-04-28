@@ -4,7 +4,7 @@
   Body: docs/issue-exports/p2-easter-live-validation-2026-04-28-body.md
   Labels: P2-Roadmap, documentation (-CreateLabels if missing)
 
-  After POST: PATCH body section 3 "Issue编号" with real number; append row to docs/issue-registry/2026-04-24-p1-p2-axium.md
+  Body must contain ASCII placeholder #ISSUE_NUM_PLACEHOLDER (replaced with real #n after POST).
 
   $env:GH_TOKEN = "ghp_..."
   powershell -ExecutionPolicy Bypass -File .\scripts\publish_p2_easter_validation_issue.ps1 -CreateLabels
@@ -79,12 +79,12 @@ $n = [int]$issue.number
 $url = $issue.html_url
 Write-Host "Created #$n : $url"
 
-# Fix body: Issue编号 line
-$bodyFinal = $bodyTemplate -replace "Issue编号：（发布后由脚本填入实际编号）", "Issue编号：#$n"
+# ASCII-only replace (avoids .ps1 encoding breaking Chinese in -replace pattern)
+$bodyFinal = $bodyTemplate.Replace('ISSUE_NUM_PLACEHOLDER', "#$n")
 $patch = [ordered]@{ body = $bodyFinal }
 $pb = [System.Text.Encoding]::UTF8.GetBytes(($patch | ConvertTo-Json -Depth 15))
 Invoke-Gh -Uri "$api/repos/$Owner/$Repo/issues/$n" -Method Patch -Body $pb | Out-Null
-Write-Host "PATCH body with Issue编号 #$n"
+Write-Host "PATCH body with issue number #$n"
 
 # Labels
 $labObj = [ordered]@{ labels = @($labels) }
@@ -96,27 +96,23 @@ try {
     Write-Warning "Labels failed: $($_.Exception.Message). Retry with -CreateLabels."
 }
 
-# Append registry section if not already present
+# Append registry (build with string concat — avoid @" here-string + markdown pipes confusing parser)
+$marker = "## REGISTRY_P2_EASTER_2026_04_28"
 $regFull = [System.IO.File]::ReadAllText($registryPath, [System.Text.UTF8Encoding]::new($false))
-$marker = "## P2 一日一发 · 彩蛋运行时验证（2026-04-28）"
 if ($regFull -notmatch [regex]::Escape($marker)) {
-    $append = @"
-
----
-
-$marker
-
-**发布日期：** 2026-04-28
-
-| Issue | 角色 | 链接 |
-|-------|------|------|
-| #$n | P2 Easter live validation（verify-p2-easter 闭环） | $url |
-
-**稿件路径：** ``docs/issue-exports/p2-easter-live-validation-2026-04-28-body.md``  
-**标签：** ``P2-Roadmap``，``documentation``
-
-**发布脚本：** ``scripts/publish_p2_easter_validation_issue.ps1``
-"@
+    $nl = [Environment]::NewLine
+    $row = '| #' + $n + ' | P2 Easter live validation (verify-p2-easter) | ' + $url + ' |'
+    $append =
+        $nl + $nl + '---' + $nl + $nl +
+        $marker + $nl + $nl +
+        '(Human title: P2 daily / Easter runtime validation, 2026-04-28)' + $nl + $nl +
+        '**Posted:** 2026-04-28' + $nl + $nl +
+        '| Issue | Role | Link |' + $nl +
+        '|-------|------|------|' + $nl +
+        $row + $nl + $nl +
+        'Body template: `docs/issue-exports/p2-easter-live-validation-2026-04-28-body.md`' + $nl +
+        'Labels: `P2-Roadmap`, `documentation`' + $nl +
+        'Script: `scripts/publish_p2_easter_validation_issue.ps1`' + $nl
     Add-Content -Path $registryPath -Value $append -Encoding utf8
     Write-Host "Registry updated: $registryPath"
 } else {
