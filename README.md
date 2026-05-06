@@ -58,7 +58,7 @@ P1 目标：**内核可测、可交付 Web 与 API、可部署、可健康探针
 | 基础运维 | **`GET /api/health/live`**、**`GET /api/health/ready`**；`scripts/healthcheck.*` |
 | 元信息 | **`GET /api/ops/p1`**（需 `X-CS-Token` / `Authorization`；含 Rust 版本、Python 路径等） |
 | 自治联动 | 就绪成功时 L12 将 `SYSTEM_HEALTH_STATUS` 标为 `normal`（失败为 `degraded`） |
-| XIAN 一日一发（模板发帖，可选） | [`scripts/publish_xian_baseline_issue_2026_05_06.ps1`](scripts/publish_xian_baseline_issue_2026_05_06.ps1)；稿 [`docs/issue-exports/xian-mainline-baseline-2026-05-06-title.txt`](docs/issue-exports/xian-mainline-baseline-2026-05-06-title.txt) + [`…-body.md`](docs/issue-exports/xian-mainline-baseline-2026-05-06-body.md)；标签 `P1-Roadmap`、`documentation`；台账同 [`docs/issue-registry/2026-04-24-p1-p2-axium.md`](docs/issue-registry/2026-04-24-p1-p2-axium.md)。 |
+| XIAN 一日一发（模板发帖，可选） | **当前（2026-05-07）：** [`scripts/publish_xian_daily_issue_2026_05_07.ps1`](scripts/publish_xian_daily_issue_2026_05_07.ps1)；稿 [`docs/issue-exports/xian-daily-2026-05-07-title.txt`](docs/issue-exports/xian-daily-2026-05-07-title.txt) + [`…-body.md`](docs/issue-exports/xian-daily-2026-05-07-body.md)。**历史（2026-05-06 / #10）：** [`publish_xian_baseline_issue_2026_05_06.ps1`](scripts/publish_xian_baseline_issue_2026_05_06.ps1)。标签均为 `P1-Roadmap`、`documentation`；台账 [`docs/issue-registry/2026-04-24-p1-p2-axium.md`](docs/issue-registry/2026-04-24-p1-p2-axium.md)。 |
 
 ```bash
 # 本地 P1 服务（在 python/ 下）
