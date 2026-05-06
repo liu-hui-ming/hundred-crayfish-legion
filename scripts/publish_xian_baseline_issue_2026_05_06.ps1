@@ -31,8 +31,17 @@ if (-not $Token) {
     exit 1
 }
 
-$title = [System.IO.File]::ReadAllText($titlePath, $enc).Trim()
-$bodyText = [System.IO.File]::ReadAllText($bodyPath, $enc)
+# HTTP headers must not contain control chars; pasted PATs often include CR/LF.
+$Token = ($Token -replace "[\x00-\x08\x0B\x0C\x0E-\x1F]", "").Trim()
+
+function Remove-LeadingBom([string]$s) {
+    if ([string]::IsNullOrEmpty($s)) { return $s }
+    if ([int][char]$s[0] -eq 0xFEFF) { return $s.Substring(1) }
+    return $s
+}
+
+$title = Remove-LeadingBom([System.IO.File]::ReadAllText($titlePath, $enc)).Trim()
+$bodyText = Remove-LeadingBom([System.IO.File]::ReadAllText($bodyPath, $enc))
 if (-not $title) { throw "Empty title file" }
 
 $api = "https://api.github.com"
@@ -44,11 +53,12 @@ $headers = @{
 }
 
 function Invoke-Gh {
-    param([string]$Uri, [string]$Method, [byte[]]$Body = $null)
+    param([string]$Uri, [string]$Method, [string]$BodyJson = $null)
     $p = @{ Uri = $Uri; Method = $Method; Headers = $headers }
-    if ($null -ne $Body -and $Body.Length -gt 0) {
+    if ($null -ne $BodyJson -and $BodyJson.Length -gt 0) {
         $p["ContentType"] = "application/json; charset=utf-8"
-        $p["Body"] = $Body
+        # String body avoids WinPS 5.1 issues with byte[] + headers validation
+        $p["Body"] = $BodyJson
     }
     Invoke-RestMethod @p
 }
@@ -61,18 +71,17 @@ if ($WhatIf) {
 }
 
 $payload = [ordered]@{ title = $title; body = $bodyText }
-$json = $payload | ConvertTo-Json -Depth 15
-$bytes = [System.Text.Encoding]::UTF8.GetBytes($json)
+$json = $payload | ConvertTo-Json -Depth 20 -Compress
 Write-Host "Creating issue..."
-$issue = Invoke-Gh -Uri "$api/repos/$Owner/$Repo/issues" -Method Post -Body $bytes
+$issue = Invoke-Gh -Uri "$api/repos/$Owner/$Repo/issues" -Method Post -BodyJson $json
 $n = [int]$issue.number
 $url = $issue.html_url
 Write-Host "Created #$n : $url"
 
 $labObj = [ordered]@{ labels = @($labels) }
-$labBytes = [System.Text.Encoding]::UTF8.GetBytes(($labObj | ConvertTo-Json -Depth 5))
+$labJson = $labObj | ConvertTo-Json -Depth 5 -Compress
 try {
-    Invoke-Gh -Uri "$api/repos/$Owner/$Repo/issues/$n/labels" -Method Put -Body $labBytes | Out-Null
+    Invoke-Gh -Uri "$api/repos/$Owner/$Repo/issues/$n/labels" -Method Put -BodyJson $labJson | Out-Null
     Write-Host "Labels applied: $($labels -join ', ')"
 } catch {
     Write-Warning "Labels failed: $($_.Exception.Message)"
