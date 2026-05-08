@@ -86,6 +86,7 @@ try {
 
 $marker = "## REGISTRY_XIAN_DAILY_2026_05_07"
 $regFull = [System.IO.File]::ReadAllText($registryPath, $enc)
+$issueNeedle = "https://github.com/$Owner/$Repo/issues/$n"
 if ($regFull -notmatch [regex]::Escape($marker)) {
     $nl = [Environment]::NewLine
     $row = '| #' + $n + ' | XIAN daily + OpenClaw 5.4 rollout (2026-05-07) | ' + $url + ' |'
@@ -103,7 +104,14 @@ if ($regFull -notmatch [regex]::Escape($marker)) {
     Add-Content -Path $registryPath -Value $append -Encoding utf8
     Write-Host "Registry updated: $registryPath"
 } else {
-    Write-Host "Registry already contains this section; append skipped."
+    if ($regFull -notmatch [regex]::Escape($issueNeedle)) {
+        $nl = [Environment]::NewLine
+        $row = '- Follow-up entry: #' + $n + '  ' + $url + '  (Posted: 2026-05-07)'
+        Add-Content -Path $registryPath -Value ($nl + $row + $nl) -Encoding utf8
+        Write-Host "Registry section exists; follow-up entry appended."
+    } else {
+        Write-Host "Registry already contains this issue link; append skipped."
+    }
 }
 
 Write-Host ""
