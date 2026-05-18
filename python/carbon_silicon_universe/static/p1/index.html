@@ -50,6 +50,13 @@
     <div class="row">
       <button type="button" id="load">拉取 12L / 同步 / 超维 / P1 元信息</button>
     </div>
+    <div class="row">
+      <label>n</label>
+      <input type="number" id="swarmN" min="1" max="64" value="8" style="max-width:6rem" />
+      <label>max_in_flight</label>
+      <input type="number" id="swarmCap" min="1" max="32" value="4" style="max-width:6rem" />
+      <button type="button" id="runSwarm">运行有界并发 swarm (POST)</button>
+    </div>
     <p id="pills"></p>
     <pre id="out">(未加载)</pre>
   </main>
@@ -102,6 +109,25 @@
         '<span class="pill ' + (lr.ok ? "ok" : "fail") + '">readiness ' + lr.status + "</span>";
     }
     document.getElementById("load").onclick = load;
+    document.getElementById("runSwarm").onclick = async () => {
+      const tok = tokenEl.value.trim() || localStorage.getItem(tKey);
+      if (!tok) { out.textContent = "请填写并保存 API Token。"; return; }
+      const n = Math.max(1, Math.min(64, parseInt(String(document.getElementById("swarmN").value || "8"), 10) || 8));
+      const cap = Math.max(1, Math.min(32, parseInt(String(document.getElementById("swarmCap").value || "4"), 10) || 4));
+      const origin = (location && location.origin) ? location.origin : "";
+      out.textContent = "bounded-swarm 运行中…";
+      const r = await fetch(origin + "/api/p1/bounded-swarm", {
+        method: "POST",
+        headers: {
+          "X-CS-Token": tok,
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({ n, max_in_flight: cap }),
+      });
+      const j = await r.json().catch(() => ({}));
+      out.textContent = "=== bounded-swarm (HTTP " + r.status + ") ===\n" + JSON.stringify(j, null, 2);
+    };
   </script>
 </body>
 </html>

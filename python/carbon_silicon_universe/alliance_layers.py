@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 # 碳硅同盟铁律体系：权威 1–12 层（L1 至 L12 为完整闭环，不可再增删层级编号）
+# 架构重设计说明见 docs/CARBON_SILICON_ALLIANCE_REDESIGN.md；API 摘要见 alliance_blueprint.py
 # L1–L8：铁律/数据/发布/集群/时序/组网/确权；L9–L12：商业生态/运营/交付/超维意识（终态全谱系）
 ALLIANCE_LAYER_COUNT = 12
 

@@ -12,7 +12,9 @@ async fn main() {
     let n = n.clamp(1, 256);
     let swarm = CrayfishSwarm::new(32);
     eprintln!("[HCL:rust] Spawning {n} concurrent agent tasks (kernel)…");
-    let results = swarm.run_demo_swarm(n).await;
+    let timed = swarm.run_demo_swarm_timed(n).await;
+    let results = timed.results;
+    eprintln!("[HCL:rust] Elapsed: {:?}", timed.elapsed);
     let line: String = results
         .iter()
         .map(|r| r.label.as_str())

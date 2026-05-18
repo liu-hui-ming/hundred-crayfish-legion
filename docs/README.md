@@ -3,6 +3,8 @@
 Design notes, runbooks, and API references for Hundred Crayfish Legion will
 be added here. See the repository `README.md` for quick start.
 
+- **Carbon–Silicon Alliance (碳硅 / 硅碳) — architecture redesign:** [`CARBON_SILICON_ALLIANCE_REDESIGN.md`](./CARBON_SILICON_ALLIANCE_REDESIGN.md)（`GET /api/architecture/layers` 的 `data.meta` 与之对齐）。
+
 - P1: [GitHub issue draft (baseline only)](./github-issue-p1-baseline-2026-04-24.md)
 - P2: [Axium uplift prerequisite checklist (template)](./AXIUM_UPLIFT_PREREQUISITES.md) — optional, non-blocking.
 - P2: [GitHub issue draft (elastic only — easter + Axium handoff)](./github-issue-p2-elastic-2026-04-24.md)

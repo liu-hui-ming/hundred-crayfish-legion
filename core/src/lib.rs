@@ -5,7 +5,9 @@
 
 pub mod scheduler;
 
-pub use scheduler::{CrayfishResult, CrayfishSwarm, DEFAULT_CRAYFISH_MAX_SLOTS};
+pub use scheduler::{
+    CrayfishResult, CrayfishSwarm, SwarmRunTiming, DEFAULT_CRAYFISH_MAX_SLOTS,
+};
 
 /// Library version (see `Cargo.toml`).
 pub const VERSION: &str = env!("CARGO_PKG_VERSION");

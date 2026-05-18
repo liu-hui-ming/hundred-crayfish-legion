@@ -11,21 +11,28 @@ from typing import Any
 _REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 _CARGO_TOML = _REPO_ROOT / "core" / "Cargo.toml"
 _PROCESS_START: float | None = None
+_RUST_CRATE_VERSION_CACHE: str | None = None
 
 
 def _read_rust_crate_version() -> str:
+    global _RUST_CRATE_VERSION_CACHE
+    if _RUST_CRATE_VERSION_CACHE is not None:
+        return _RUST_CRATE_VERSION_CACHE
     if not _CARGO_TOML.is_file():
-        return "unknown"
+        _RUST_CRATE_VERSION_CACHE = "unknown"
+        return _RUST_CRATE_VERSION_CACHE
     try:
         text = _CARGO_TOML.read_text(encoding="utf-8")
     except OSError:
-        return "unknown"
+        _RUST_CRATE_VERSION_CACHE = "unknown"
+        return _RUST_CRATE_VERSION_CACHE
     m = re.search(
         r'^\s*version\s*=\s*"([^"]+)"\s*$',
         text,
         re.MULTILINE,
     )
-    return m.group(1) if m else "unknown"
+    _RUST_CRATE_VERSION_CACHE = m.group(1) if m else "unknown"
+    return _RUST_CRATE_VERSION_CACHE
 
 
 def mark_p1_process_start() -> None:
@@ -49,6 +56,7 @@ def p1_status_payload() -> dict[str, Any]:
             "path": str(_CARGO_TOML.parent),
         },
         "hcl_rust_pyext": try_import_hcl_rust(),
+        "bounded_swarm": "POST /api/p1/bounded-swarm (auth, JSON: n, max_in_flight)",
         "alliance_12l": "see GET /api/architecture/layers (auth)",
         "uptime_s": (round(time.time() - t0, 1) if t0 is not None else None),
     }

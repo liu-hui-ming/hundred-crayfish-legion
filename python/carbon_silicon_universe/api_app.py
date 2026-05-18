@@ -1,11 +1,13 @@
 from __future__ import annotations
 
+import asyncio
 import os
 from functools import wraps
 from typing import Any, Callable, TypeVar
 
-from flask import Flask, jsonify, redirect, request, send_from_directory
+from flask import Flask, Response, jsonify, redirect, request, send_from_directory
 
+from .alliance_blueprint import architecture_response_meta, public_version_payload
 from .alliance_layers import (
     layers_to_public_dicts,
 )
@@ -18,6 +20,7 @@ from .confirm_config import (
     UNIVERSE_CONFIRM_POOL,
 )
 from .confirm_sync import query_universe_confirm, save_universe_confirm_data
+from .p1_swarm import clamp_swarm_params, run_bounded_crayfish_swarm
 from .runtime_log import get_online_node_list
 from .autonomous_cortex import (
     autonomous_task_arrange,
@@ -35,15 +38,26 @@ API_APP = Flask(__name__, static_folder=None)
 _P1_STATIC = os.path.join(os.path.dirname(__file__), "static", "p1")
 
 
+def _request_api_token() -> str:
+    """Bearer token or ``X-CS-Token`` (trimmed); may be empty."""
+    auth = request.headers.get("Authorization", "") or ""
+    if auth.lower().startswith("bearer "):
+        return auth[7:].strip()
+    return (request.headers.get("X-CS-Token", "") or "").strip()
+
+
+@API_APP.after_request
+def _api_security_headers(response: Response) -> Response:
+    if request.path.startswith("/api/"):
+        response.headers.setdefault("X-Content-Type-Options", "nosniff")
+        response.headers.setdefault("Cache-Control", "no-store, max-age=0")
+    return response
+
+
 def api_token_authentication(f: F) -> F:
     @wraps(f)
     def decorated(*args: Any, **kwargs: Any) -> Any:
-        auth = request.headers.get("Authorization", "") or ""
-        token: str
-        if auth.lower().startswith("bearer "):
-            token = auth[7:].strip()
-        else:
-            token = (request.headers.get("X-CS-Token", "") or "").strip()
+        token = _request_api_token()
         if not token or token != UNIVERSE_API_TOKEN:
             return jsonify({"code": 401, "msg": "未授权"}), 401
         return f(*args, **kwargs)
@@ -57,6 +71,12 @@ def _hcl_p2_easter_enabled() -> bool:
         "true",
         "yes",
     )
+
+
+@API_APP.route("/api/version", methods=["GET"])
+def api_version() -> Any:
+    """Public build slice (no secrets); for probes and orchestration."""
+    return jsonify({"status": "ok", "data": public_version_payload()}), 200
 
 
 @API_APP.route("/api/health/live", methods=["GET"])
@@ -140,6 +160,34 @@ def api_ops_p1() -> Any:
     )
 
 
+@API_APP.route("/api/p1/bounded-swarm", methods=["POST"])
+@api_token_authentication
+def api_p1_bounded_swarm() -> Any:
+    """
+    P1: bounded-parallel asyncio swarm (L4/L5 narrative alignment). JSON: n, max_in_flight.
+    """
+    payload = request.get_json(silent=True) or {}
+    try:
+        n_raw = int(payload.get("n", 8))
+        cap_raw = int(payload.get("max_in_flight", 4))
+    except (TypeError, ValueError):
+        return jsonify({"code": 400, "msg": "n 与 max_in_flight 须为整数"}), 400
+    n, cap = clamp_swarm_params(n_raw, cap_raw)
+    results, elapsed_ms = asyncio.run(run_bounded_crayfish_swarm(n, cap))
+    return jsonify(
+        {
+            "code": 200,
+            "msg": "bounded swarm finished",
+            "data": {
+                "n": n,
+                "max_in_flight": cap,
+                "results": results,
+                "elapsed_ms": elapsed_ms,
+            },
+        }
+    )
+
+
 @API_APP.route("/")
 def root() -> Any:
     return redirect("/p1/", 302)
@@ -147,7 +195,10 @@ def root() -> Any:
 
 @API_APP.route("/p1/", methods=["GET"])
 def p1_admin_index() -> Any:
-    return send_from_directory(_P1_STATIC, "index.html")
+    path = os.path.join(_P1_STATIC, "index.html")
+    with open(path, "rb") as f:
+        data = f.read()
+    return Response(data, mimetype="text/html; charset=utf-8")
 
 
 @API_APP.route("/p1/<path:path>", methods=["GET"])
@@ -261,6 +312,7 @@ def api_alliance_12_layers() -> Any:
                 "tier_count": ALLIANCE_TIER_COUNT,
                 "alliance_12l_architecture_id": ALLIANCE_12L_ARCHITECTURE_ID,
                 "layers": layers_to_public_dicts(),
+                "meta": architecture_response_meta(),
             },
         }
     )

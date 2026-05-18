@@ -30,7 +30,16 @@ def main() -> None:
         default=8,
         help="Number of parallel demo agents (default: 8)",
     )
+    p.add_argument(
+        "--seed",
+        type=int,
+        default=None,
+        metavar="INT",
+        help="Optional RNG seed for reproducible sleep jitter (default: nondeterministic)",
+    )
     args = p.parse_args()
+    if args.seed is not None:
+        random.seed(args.seed)
     n = max(1, min(args.agents, 256))
     asyncio.run(_run(n))
 

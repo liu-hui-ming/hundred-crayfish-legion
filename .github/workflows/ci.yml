@@ -23,5 +23,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: clippy
+      - run: cargo clippy --all-features -- -D warnings
       - run: cargo test --all-features
       - run: cargo run --example swarm_tokio -- 6
