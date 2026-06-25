@@ -1,0 +1,69 @@
+flowchart TB
+    U["用户 / 管理员 / 审批人"]
+
+    subgraph CP["硅碳同盟控制面"]
+        PORTAL["Web 协作工作台"]
+        API["统一 API 网关"]
+        IAM["身份、组织与权限"]
+        PM["项目与目标管理"]
+        WF["工作流编排中心"]
+        APPROVAL["人工审批中心"]
+        AUDIT["审计、成本与报告"]
+    end
+
+    subgraph AI["智能协作层"]
+        PLANNER["目标理解与任务规划"]
+        ROLES["专业智能体角色库"]
+        MEMORY["知识库与上下文记忆"]
+        POLICY["规则、质量与安全治理"]
+    end
+
+    subgraph LEGION["百龙虾军团执行层"]
+        SCHEDULER["任务调度器"]
+        WORKERS["并发 Worker 集群"]
+        RETRY["重试、超时与补偿"]
+        RESOURCE["配额与资源控制"]
+    end
+
+    subgraph INFRA["数据与基础设施层"]
+        PG["PostgreSQL"]
+        REDIS["Redis / 消息队列"]
+        OBJECT["对象与成果存储"]
+        OBS["日志、指标与告警"]
+        SECRET["密钥与配置中心"]
+    end
+
+    subgraph EXT["模型与外部系统"]
+        MODELS["云端 / 本地大模型"]
+        TOOLS["搜索、代码、浏览器等工具"]
+        BIZ["GitHub、企业系统、发布渠道"]
+    end
+
+    U --> PORTAL
+    PORTAL --> API
+    API --> IAM
+    API --> PM
+    API --> WF
+    API --> APPROVAL
+    API --> AUDIT
+
+    WF --> PLANNER
+    PLANNER --> ROLES
+    ROLES --> MEMORY
+    ROLES --> POLICY
+    WF --> SCHEDULER
+
+    SCHEDULER --> WORKERS
+    SCHEDULER --> RETRY
+    SCHEDULER --> RESOURCE
+    WORKERS --> MODELS
+    WORKERS --> TOOLS
+    WORKERS --> BIZ
+
+    CP --> PG
+    LEGION --> PG
+    LEGION --> REDIS
+    WORKERS --> OBJECT
+    CP --> OBS
+    LEGION --> OBS
+    WORKERS --> SECRET

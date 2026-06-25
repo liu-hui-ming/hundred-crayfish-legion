@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>硅碳同盟总体架构图</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px;
+      background: #eef2f7;
+      color: #172033;
+      font-family: "Microsoft YaHei", "PingFang SC", Arial, sans-serif;
+    }
+    .toolbar {
+      width: min(1440px, 100%);
+      margin: 0 auto 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .toolbar strong { font-size: 18px; }
+    button {
+      border: 0;
+      border-radius: 8px;
+      padding: 10px 18px;
+      background: #2457d6;
+      color: #fff;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    button:hover { background: #1746bd; }
+    .canvas {
+      width: min(1440px, 100%);
+      margin: 0 auto;
+      overflow: auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(27, 39, 68, 0.12);
+    }
+    svg {
+      display: block;
+      width: 1440px;
+      height: 1180px;
+      background: #fff;
+    }
+    .title { font-size: 32px; font-weight: 700; fill: #172033; }
+    .subtitle { font-size: 15px; fill: #69758b; }
+    .group-title { font-size: 20px; font-weight: 700; fill: #172033; }
+    .node-title { font-size: 16px; font-weight: 700; fill: #172033; }
+    .node-sub { font-size: 13px; fill: #657086; }
+    .edge { fill: none; stroke: #7c8aa5; stroke-width: 2; }
+    .edge-strong { fill: none; stroke: #2457d6; stroke-width: 3; }
+    .group { stroke-width: 2; rx: 18; }
+    .node { stroke-width: 1.5; rx: 10; }
+    @media print {
+      body { padding: 0; background: #fff; }
+      .toolbar { display: none; }
+      .canvas { box-shadow: none; border-radius: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="toolbar">
+    <strong>硅碳同盟总体架构图</strong>
+    <button type="button" onclick="downloadPng()">下载高清 PNG</button>
+  </div>
+
+  <div class="canvas">
+    <svg id="architecture" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1180">
+      <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5"
+                markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="#7c8aa5"/>
+        </marker>
+        <marker id="arrowStrong" viewBox="0 0 10 10" refX="9" refY="5"
+                markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <path d="M 0 0 L 10 5 L 0 10 z" fill="#2457d6"/>
+        </marker>
+        <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+          <feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity="0.12"/>
+        </filter>
+      </defs>
+
+      <rect width="1440" height="1180" fill="#ffffff"/>
+      <text x="720" y="52" text-anchor="middle" class="title">硅碳同盟总体架构</text>
+      <text x="720" y="82" text-anchor="middle" class="subtitle">
+        人类决策 + AI 智能体协作 + 百龙虾军团可靠执行
+      </text>
+
+      <!-- User -->
+      <rect x="540" y="110" width="360" height="70" rx="14"
+            fill="#172033" stroke="#172033" filter="url(#shadow)"/>
+      <text x="720" y="153" text-anchor="middle"
+            style="font-size:19px;font-weight:700;fill:#fff">用户 / 管理员 / 审批人</text>
+
+      <!-- Control plane -->
+      <rect class="group" x="70" y="225" width="1300" height="260"
+            fill="#edf4ff" stroke="#5b8def"/>
+      <text x="100" y="262" class="group-title">硅碳同盟控制面</text>
+
+      <g filter="url(#shadow)">
+        <rect class="node" x="110" y="292" width="210" height="74" fill="#fff" stroke="#5b8def"/>
+        <text x="215" y="323" text-anchor="middle" class="node-title">Web 协作工作台</text>
+        <text x="215" y="347" text-anchor="middle" class="node-sub">项目、任务、审批、报告</text>
+
+        <rect class="node" x="355" y="292" width="210" height="74" fill="#fff" stroke="#5b8def"/>
+        <text x="460" y="323" text-anchor="middle" class="node-title">统一 API 网关</text>
+        <text x="460" y="347" text-anchor="middle" class="node-sub">认证、路由、限流</text>
+
+        <rect class="node" x="600" y="292" width="210" height="74" fill="#fff" stroke="#5b8def"/>
+        <text x="705" y="323" text-anchor="middle" class="node-title">身份、组织与权限</text>
+        <text x="705" y="347" text-anchor="middle" class="node-sub">租户、角色、密钥</text>
+
+        <rect class="node" x="845" y="292" width="210" height="74" fill="#fff" stroke="#5b8def"/>
+        <text x="950" y="323" text-anchor="middle" class="node-title">项目与目标管理</text>
+        <text x="950" y="347" text-anchor="middle" class="node-sub">目标、约束、交付标准</text>
+
+        <rect class="node" x="1090" y="292" width="210" height="74" fill="#fff" stroke="#5b8def"/>
+        <text x="1195" y="323" text-anchor="middle" class="node-title">工作流编排中心</text>
+        <text x="1195" y="347" text-anchor="middle" class="node-sub">DAG、状态机、运行控制</text>
+
+        <rect class="node" x="355" y="390" width="330" height="64" fill="#fff" stroke="#5b8def"/>
+        <text x="520" y="418" text-anchor="middle" class="node-title">人工审批中心</text>
+        <text x="520" y="440" text-anchor="middle" class="node-sub">通过、退回、暂停、终止</text>
+
+        <rect class="node" x="755" y="390" width="330" height="64" fill="#fff" stroke="#5b8def"/>
+        <text x="920" y="418" text-anchor="middle" class="node-title">审计、成本与报告</text>
+        <text x="920" y="440" text-anchor="middle" class="node-sub">全程留痕、用量统计、成果交付</text>
+      </g>
+
+      <!-- Intelligence -->
+      <rect class="group" x="70" y="535" width="620" height="250"
+            fill="#f4efff" stroke="#8b67d5"/>
+      <text x="100" y="572" class="group-title">智能协作层</text>
+
+      <g filter="url(#shadow)">
+        <rect class="node" x="110" y="605" width="250" height="66" fill="#fff" stroke="#8b67d5"/>
+        <text x="235" y="634" text-anchor="middle" class="node-title">目标理解与任务规划</text>
+        <text x="235" y="656" text-anchor="middle" class="node-sub">目标拆解、依赖与执行方案</text>
+
+        <rect class="node" x="400" y="605" width="250" height="66" fill="#fff" stroke="#8b67d5"/>
+        <text x="525" y="634" text-anchor="middle" class="node-title">专业智能体角色库</text>
+        <text x="525" y="656" text-anchor="middle" class="node-sub">规划、研发、审核、发布</text>
+
+        <rect class="node" x="110" y="695" width="250" height="66" fill="#fff" stroke="#8b67d5"/>
+        <text x="235" y="724" text-anchor="middle" class="node-title">知识库与上下文记忆</text>
+        <text x="235" y="746" text-anchor="middle" class="node-sub">知识检索、会话与长期记忆</text>
+
+        <rect class="node" x="400" y="695" width="250" height="66" fill="#fff" stroke="#8b67d5"/>
+        <text x="525" y="724" text-anchor="middle" class="node-title">规则、质量与安全治理</text>
+        <text x="525" y="746" text-anchor="middle" class="node-sub">合规检查、质量门禁、策略</text>
+      </g>
+
+      <!-- Legion -->
+      <rect class="group" x="750" y="535" width="620" height="250"
+            fill="#eaf9f3" stroke="#2f9e70"/>
+      <text x="780" y="572" class="group-title">百龙虾军团执行层</text>
+
+      <g filter="url(#shadow)">
+        <rect class="node" x="790" y="605" width="250" height="66" fill="#fff" stroke="#2f9e70"/>
+        <text x="915" y="634" text-anchor="middle" class="node-title">任务调度器</text>
+        <text x="915" y="656" text-anchor="middle" class="node-sub">队列、优先级、依赖调度</text>
+
+        <rect class="node" x="1080" y="605" width="250" height="66" fill="#fff" stroke="#2f9e70"/>
+        <text x="1205" y="634" text-anchor="middle" class="node-title">并发 Worker 集群</text>
+        <text x="1205" y="656" text-anchor="middle" class="node-sub">Agent 执行与工具调用</text>
+
+        <rect class="node" x="790" y="695" width="250" height="66" fill="#fff" stroke="#2f9e70"/>
+        <text x="915" y="724" text-anchor="middle" class="node-title">重试、超时与补偿</text>
+        <text x="915" y="746" text-anchor="middle" class="node-sub">失败恢复、取消与幂等</text>
+
+        <rect class="node" x="1080" y="695" width="250" height="66" fill="#fff" stroke="#2f9e70"/>
+        <text x="1205" y="724" text-anchor="middle" class="node-title">配额与资源控制</text>
+        <text x="1205" y="746" text-anchor="middle" class="node-sub">并发、成本、算力与限额</text>
+      </g>
+
+      <!-- Infrastructure -->
+      <rect class="group" x="70" y="835" width="820" height="245"
+            fill="#fff6e7" stroke="#d99a2b"/>
+      <text x="100" y="872" class="group-title">数据与基础设施层</text>
+
+      <g filter="url(#shadow)">
+        <rect class="node" x="110" y="905" width="220" height="66" fill="#fff" stroke="#d99a2b"/>
+        <text x="220" y="934" text-anchor="middle" class="node-title">PostgreSQL</text>
+        <text x="220" y="956" text-anchor="middle" class="node-sub">业务、任务、审批、审计</text>
+
+        <rect class="node" x="370" y="905" width="220" height="66" fill="#fff" stroke="#d99a2b"/>
+        <text x="480" y="934" text-anchor="middle" class="node-title">Redis / 消息队列</text>
+        <text x="480" y="956" text-anchor="middle" class="node-sub">任务分发与事件通知</text>
+
+        <rect class="node" x="630" y="905" width="220" height="66" fill="#fff" stroke="#d99a2b"/>
+        <text x="740" y="934" text-anchor="middle" class="node-title">对象与成果存储</text>
+        <text x="740" y="956" text-anchor="middle" class="node-sub">文档、代码包、交付报告</text>
+
+        <rect class="node" x="240" y="995" width="220" height="60" fill="#fff" stroke="#d99a2b"/>
+        <text x="350" y="1022" text-anchor="middle" class="node-title">日志、指标与告警</text>
+        <text x="350" y="1043" text-anchor="middle" class="node-sub">可观测与故障诊断</text>
+
+        <rect class="node" x="500" y="995" width="220" height="60" fill="#fff" stroke="#d99a2b"/>
+        <text x="610" y="1022" text-anchor="middle" class="node-title">密钥与配置中心</text>
+        <text x="610" y="1043" text-anchor="middle" class="node-sub">模型与外部系统凭证</text>
+      </g>
+
+      <!-- External -->
+      <rect class="group" x="950" y="835" width="420" height="245"
+            fill="#fff0f1" stroke="#d45b66"/>
+      <text x="980" y="872" class="group-title">模型与外部系统</text>
+
+      <g filter="url(#shadow)">
+        <rect class="node" x="990" y="905" width="340" height="52" fill="#fff" stroke="#d45b66"/>
+        <text x="1160" y="937" text-anchor="middle" class="node-title">云端 / 本地大模型</text>
+
+        <rect class="node" x="990" y="977" width="340" height="52" fill="#fff" stroke="#d45b66"/>
+        <text x="1160" y="1009" text-anchor="middle" class="node-title">搜索、代码、浏览器等工具</text>
+
+        <rect class="node" x="990" y="1049" width="340" height="52" fill="#fff" stroke="#d45b66"/>
+        <text x="1160" y="1081" text-anchor="middle" class="node-title">GitHub、企业系统、发布渠道</text>
+      </g>
+
+      <!-- Main connections -->
+      <path class="edge-strong" d="M720 180 V225" marker-end="url(#arrowStrong)"/>
+      <path class="edge-strong" d="M720 485 V510 H380 V535" marker-end="url(#arrowStrong)"/>
+      <path class="edge-strong" d="M720 485 V510 H1060 V535" marker-end="url(#arrowStrong)"/>
+      <path class="edge" d="M380 785 V810 H480 V835" marker-end="url(#arrow)"/>
+      <path class="edge" d="M1060 785 V810 H700 V835" marker-end="url(#arrow)"/>
+      <path class="edge-strong" d="M1060 785 V810 H1160 V835" marker-end="url(#arrowStrong)"/>
+
+      <!-- Internal flow hints -->
+      <path class="edge" d="M320 329 H355" marker-end="url(#arrow)"/>
+      <path class="edge" d="M565 329 H600" marker-end="url(#arrow)"/>
+      <path class="edge" d="M810 329 H845" marker-end="url(#arrow)"/>
+      <path class="edge" d="M1055 329 H1090" marker-end="url(#arrow)"/>
+      <path class="edge" d="M360 638 H400" marker-end="url(#arrow)"/>
+      <path class="edge" d="M1040 638 H1080" marker-end="url(#arrow)"/>
+
+      <text x="720" y="1140" text-anchor="middle" class="subtitle">
+        硅碳同盟：控制与治理　|　智能协作：规划与决策　|　百龙虾军团：调度与执行
+      </text>
+    </svg>
+  </div>
+
+  <script>
+    function downloadPng() {
+      const svg = document.getElementById("architecture");
+      const source = new XMLSerializer().serializeToString(svg);
+      const blob = new Blob([source], { type: "image/svg+xml;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const image = new Image();
+
+      image.onload = () => {
+        const scale = 2;
+        const canvas = document.createElement("canvas");
+        canvas.width = 1440 * scale;
+        canvas.height = 1180 * scale;
+        const ctx = canvas.getContext("2d");
+        ctx.scale(scale, scale);
+        ctx.fillStyle = "#ffffff";
+        ctx.fillRect(0, 0, 1440, 1180);
+        ctx.drawImage(image, 0, 0, 1440, 1180);
+        URL.revokeObjectURL(url);
+
+        const link = document.createElement("a");
+        link.download = "silicon-carbon-alliance-overall-architecture.png";
+        link.href = canvas.toDataURL("image/png");
+        link.click();
+      };
+
+      image.src = url;
+    }
+  </script>
+</body>
+</html>
