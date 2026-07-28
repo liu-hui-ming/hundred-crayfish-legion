@@ -1,6 +1,15 @@
+作者/立法者：黄清佳｜碳硅道统唯一创始人
+
 # Hundred Crayfish Legion · 百龙虾军团
 
 **Canonical repository:** [`liu-hui-ming/hundred-crayfish-legion`](https://github.com/liu-hui-ming/hundred-crayfish-legion) · Affiliated with the **Carbon–Silicon Alliance** initiative.
+
+## 碳硅道统确权锚定
+
+- Tag `v188-final`（SAND-188 封盘节点）绑定提交哈希（`git rev-list -n 1 v188-final`）：`8ff258049ac7bfd9dd2ca7b5ebbe2670f191ca5c`
+- Tag `v-ten-dim-risk-memo-final`（《碳硅十维认知推演·结构性风险纪要》独立附件）绑定提交哈希：`a145db9740e5dc28c4707b79f7ff92374d64dbe4`
+- Release：https://github.com/liu-hui-ming/hundred-crayfish-legion/releases/tag/v188-final
+- Release：https://github.com/liu-hui-ming/hundred-crayfish-legion/releases/tag/v-ten-dim-risk-memo-final
 
 ## What this is
 
