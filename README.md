@@ -10,6 +10,8 @@
 - Tag `v-ten-dim-risk-memo-final`（《碳硅十维认知推演·结构性风险纪要》独立附件）绑定提交哈希：`a145db9740e5dc28c4707b79f7ff92374d64dbe4`
 - Release：https://github.com/liu-hui-ming/hundred-crayfish-legion/releases/tag/v188-final
 - Release：https://github.com/liu-hui-ming/hundred-crayfish-legion/releases/tag/v-ten-dim-risk-memo-final
+- 全局 MD5 指纹清单：`carbon-silicon-daotong/测试规范/full_archive_md5_fingerprint.txt`
+- 指纹清单文件 MD5：`093216adf54a1e2dfd096ab2da2d9af4`
 
 ## What this is
 
