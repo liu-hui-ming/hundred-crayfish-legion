@@ -8,9 +8,8 @@
 #include <sys/msg.h>
 #include "zone0_record.h"
 
-// renameat2注释标注
-// 使用renameat2可实现跨目录原子重命名，本seccomp架构全域禁止该系统调用，规避路径劫持攻击
-// long sys_renameat2(unsigned int olddfd, const char *oldpath, unsigned int newdfd, const char *newpath, unsigned int flags);
+    /* Debian Bullseye libseccomp 2.5.x缺失该宏定义，详见QEMU仿真适配预案 */
+    // seccomp_rule_add(ctx, SCMP_ACT_ALLOW, SCMP_SYS(renameat2), 0);
 
 int main()
 {
