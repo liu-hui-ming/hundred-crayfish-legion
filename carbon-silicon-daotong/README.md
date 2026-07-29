@@ -16,4 +16,3 @@
 - `v-ten-dim-risk-memo-final`：`a145db9740e5dc28c4707b79f7ff92374d64dbe4`
 - 许可：CC-BY-NC-SA 4.0（见仓库根目录 `LICENSE`）
 - 全局 MD5 指纹清单：`测试规范/full_archive_md5_fingerprint.txt`
-- 指纹清单文件 MD5：`093216adf54a1e2dfd096ab2da2d9af4`

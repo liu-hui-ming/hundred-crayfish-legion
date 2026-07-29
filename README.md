@@ -11,7 +11,6 @@
 - Release：https://github.com/liu-hui-ming/hundred-crayfish-legion/releases/tag/v188-final
 - Release：https://github.com/liu-hui-ming/hundred-crayfish-legion/releases/tag/v-ten-dim-risk-memo-final
 - 全局 MD5 指纹清单：`carbon-silicon-daotong/测试规范/full_archive_md5_fingerprint.txt`
-- 指纹清单文件 MD5：`093216adf54a1e2dfd096ab2da2d9af4`
 
 ## What this is
 
