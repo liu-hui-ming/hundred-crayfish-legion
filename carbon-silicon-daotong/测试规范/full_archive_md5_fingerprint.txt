@@ -1,12 +1,10 @@
 770cfcbf00af31fbba58fe62d90c5aaa  carbon-silicon-daotong/CH0-CH5进度台账.md
-f8d734ea05a0e05eed8280aff0657410  carbon-silicon-daotong/README.md
 926ab884bbaa02a6e683febeb4b63519  carbon-silicon-daotong/归档日报/2026-07-28-全部上传补录.md
 a09c5974bc6394d1bfb53192692053dc  carbon-silicon-daotong/归档日报/2026-07-28.md
-eadaca5cf30a44d5b5770f7f6c2dbfa9  carbon-silicon-daotong/归档日报/2026-07-29.md
+f709f8ebfe19539735eafd5fe26e4b4e  carbon-silicon-daotong/归档日报/2026-07-29.md
 b4994cfb0bfc12ad4956ed1aa054c4b2  carbon-silicon-daotong/测试规范/hash_verify_gen.sh
-033ca8dc2702c7b72877c64420440b72  carbon-silicon-daotong/测试规范/README.md
 eacf622181d7109b799dc644965cda6b  carbon-silicon-daotong/源码资产/legitimate_client.c
-294623ffb25daff0509d48523d0fd6eb  carbon-silicon-daotong/源码资产/legitimate_client_with_seccomp.c
+398e247e5bd7c04c4dd832d07940392f  carbon-silicon-daotong/源码资产/legitimate_client_with_seccomp.c
 84d7b5706e5ff8a96bf76cb5a972874e  carbon-silicon-daotong/源码资产/malicious_attack.c
 2f30d3c7f1e4823ea5fd8fca27d8947f  carbon-silicon-daotong/源码资产/README.md
 689a067f63dad6d9dca5da5277eccc66  carbon-silicon-daotong/源码资产/verify_defense.sh
