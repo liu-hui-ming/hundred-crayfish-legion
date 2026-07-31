@@ -14,3 +14,17 @@
 | 测试规范/ | 测试规范/ | 部分（四份MD未定稿） | — | 保持空置，无占位文件；保留 hash 脚本与指纹清单 |
 
 上传顺序已落实：Ch0→Ch2→Ch5→源码资产（既有）→Ch3→Ch4；Ch1 定稿留存补传。
+
+
+## CORE-AXIOM-001 基石锚定（2026-07-31）
+
+| 项目 | 内容 |
+|------|------|
+| 文件 | 理论卷宗/0-1-INF-Axiom-v1.0.0-FINAL.md |
+| document_id | CORE-AXIOM-001 |
+| version | v1.0.0-FINAL |
+| Tag | 1.0.0-FINAL |
+| sha256_canonical | 7faba74ed94c03f94920658c324fd145d0f52f648ce4b282fc671c624f03da2e |
+| 说明 | 哈希为回填前（占位符版）完整 UTF-8 文档 SHA-256；主文本永久封存 |
+| Commit | 8f6e7e0 |
+| 状态 | 基石锚定阶段完成 |
