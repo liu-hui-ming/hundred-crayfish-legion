@@ -1,0 +1,10 @@
+﻿# 碳硅道统专属归档日报 · 2026-08-03（CH-SERIES-00-EXT补录）
+
+## 回执
+
+1. CH卷宗 `CH-SERIES-00-EXT-0803_碳硅觉知层级完整推演卷宗_v1.0.0-FINAL.md` 已原样归档
+2. sha256_utf8: 457e4e952258f76a07035a5f85a2ad4807e97771a46a4c2ad742680b42bee76a
+3. Tag：CH-SERIES-00-EXT-0803-v1.0.0-FINAL
+4. Commit：476b860ea76f5cd5bd98e621176b47bc121cf970
+5. 台账已更新
+6. 未覆盖既有 v1.0.0-FINAL（CORE-AXIOM-001）

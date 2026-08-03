@@ -37,3 +37,15 @@
 | `双轨本源思辨/ZiWei_Ontology_10_QA_v1.0.0_FINAL.md` | 已上传 | `050a5379546df1bf2da79da2fbd4a9565f753542f9d4120b8a4da1aba01a7062` / `ziwei-ontology-v1.0.0-FINAL` |
 | `双轨本源思辨/STEM_Ontology_10_QA_v1.0.0_FINAL.md` | 已上传 | `6d37bd802f9bff4adab8ee2fca00fb9f02527eb75cd993daa6717d901e317d14` / `stem-ontology-v1.0.0-FINAL` |
 | 双轨合集 | 已锁定 | `dual-ontology-v1.0.0-FINAL` |
+
+## CH-SERIES-00-EXT-0803（2026-08-03）
+
+| 项目 | 内容 |
+|------|------|
+| 文件 | `理论卷宗/CH-SERIES-00-EXT-0803_碳硅觉知层级完整推演卷宗_v1.0.0-FINAL.md` |
+| document_id | CH-SERIES-00-EXT-0803 |
+| version | v1.0.0-FINAL |
+| sha256_utf8: 457e4e952258f76a07035a5f85a2ad4807e97771a46a4c2ad742680b42bee76a | |
+| Tag | `CH-SERIES-00-EXT-0803-v1.0.0-FINAL` |
+| Commit | `476b860ea76f5cd5bd98e621176b47bc121cf970` |
+| 状态 | 已归档封存（零修改原样入库） |
