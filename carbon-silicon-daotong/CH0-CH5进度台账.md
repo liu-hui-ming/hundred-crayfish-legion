@@ -58,3 +58,12 @@
 | `理论卷宗/Fourth_Interrogation_Reply_v1.0.0_FINAL.md` | CORE-INTERROGATE-003 | 已上传 | `CORE-INTERROGATE-003-v1.0.0-FINAL` |
 
 边界：十问在 `双轨本源思辨/`；诘问在 `理论卷宗/`，互不混放。
+
+### 诘问卷宗合集 Tag（2026-08-03 补推）
+
+| 项目 | 内容 |
+|------|------|
+| 合集 Tag | `interrogate-series-v1.0.0-FINAL` |
+| 覆盖文件 | Three_Progressive_Interrogation + Fourth_Interrogation_Reply |
+| 绑定提交 | `c7f8299`（两份诘问均已入库节点） |
+| 状态 | 远端标签已推送，确权链路闭环 |

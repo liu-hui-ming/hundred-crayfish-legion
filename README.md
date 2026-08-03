@@ -12,6 +12,14 @@
 - Release：https://github.com/liu-hui-ming/hundred-crayfish-legion/releases/tag/v-ten-dim-risk-memo-final
 - 全局 MD5 指纹清单：`carbon-silicon-daotong/测试规范/full_archive_md5_fingerprint.txt`
 
+## 碳硅道统·诘问卷宗索引
+
+- 合集 Tag：[interrogate-series-v1.0.0-FINAL](https://github.com/liu-hui-ming/hundred-crayfish-legion/releases/tag/interrogate-series-v1.0.0-FINAL)
+- 第一组递进三问：[Three_Progressive_Interrogation_v1.0.0_FINAL.md](carbon-silicon-daotong/理论卷宗/Three_Progressive_Interrogation_v1.0.0_FINAL.md)
+- 第四组诘问完整答复：[Fourth_Interrogation_Reply_v1.0.0_FINAL.md](carbon-silicon-daotong/理论卷宗/Fourth_Interrogation_Reply_v1.0.0_FINAL.md)
+- 存放目录：carbon-silicon-daotong/理论卷宗/（与 双轨本源思辨/ 十问卷宗物理隔离）
+
+
 ## What this is
 
 **Hundred Crayfish Legion** is a **high-concurrency multi-agent cluster orchestration** stack: it coordinates large swarms of specialized agents so they can run complex, long-horizon work together. The project is meant to provide **compute and coordination backbone** for **Carbon–Silicon Alliance**–class, **full-domain collaboration**—not a single chatbot, but the **machinery of swarm intelligence**.

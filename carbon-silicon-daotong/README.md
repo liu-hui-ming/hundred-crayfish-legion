@@ -36,7 +36,7 @@ Tag 锚定：
 
 - Three_Progressive_Interrogation_v1.0.0_FINAL.md（CORE-INTERROGATE-002｜第一组递进三问）
 - Fourth_Interrogation_Reply_v1.0.0_FINAL.md（CORE-INTERROGATE-003｜第四组诘问完整答复）
-- Tag：CORE-INTERROGATE-002-v1.0.0-FINAL / CORE-INTERROGATE-003-v1.0.0-FINAL
+- Tag：interrogate-series-v1.0.0-FINAL（合集） / CORE-INTERROGATE-002-v1.0.0-FINAL / CORE-INTERROGATE-003-v1.0.0-FINAL
 
 ## 定稿全局MD5指纹
 
