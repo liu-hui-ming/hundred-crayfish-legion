@@ -23,6 +23,13 @@ Tag 锚定：
 - v188-final：8ff258049ac7bfd9dd2ca7b5ebbe2670f191ca5c（git rev-list -n 1 v188-final）
 - v-ten-dim-risk-memo-final：a145db9740e5dc28c4707b79f7ff92374d64dbe4
 
+## 双轨本源思辨卷宗合集（2026-08-03）
+
+索引与正本目录：`双轨本源思辨/`
+- A轨：`双轨本源思辨/ZiWei_Ontology_10_QA_v1.0.0_FINAL.md`
+- B轨：`STEM_Ontology_10_QA_v1.0.0_FINAL.md`（正文待下发，未虚构上传）
+- Tag：`ziwei-ontology-v1.0.0-FINAL`（仓库已占用 `v1.0.0-FINAL` 绑定 CORE-AXIOM-001，A轨另设专属 Tag）
+
 ## 定稿全局MD5指纹
 
 清单文件：测试规范/full_archive_md5_fingerprint.txt
