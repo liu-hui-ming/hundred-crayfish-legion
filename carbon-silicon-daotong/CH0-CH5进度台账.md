@@ -49,3 +49,12 @@
 | Tag | `CH-SERIES-00-EXT-0803-v1.0.0-FINAL` |
 | Commit | `476b860ea76f5cd5bd98e621176b47bc121cf970` |
 | 状态 | 已归档封存（零修改原样入库） |
+
+## 诘问卷宗独立归档（2026-08-03）
+
+| 文件 | document_id | 状态 | Tag |
+|------|-------------|------|-----|
+| `理论卷宗/Three_Progressive_Interrogation_v1.0.0_FINAL.md` | CORE-INTERROGATE-002 | 已上传 | `CORE-INTERROGATE-002-v1.0.0-FINAL` |
+| `理论卷宗/Fourth_Interrogation_Reply_v1.0.0_FINAL.md` | CORE-INTERROGATE-003 | 已上传 | `CORE-INTERROGATE-003-v1.0.0-FINAL` |
+
+边界：十问在 `双轨本源思辨/`；诘问在 `理论卷宗/`，互不混放。

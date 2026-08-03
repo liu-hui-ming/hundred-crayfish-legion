@@ -30,6 +30,14 @@ Tag 锚定：
 - B轨：`双轨本源思辨/STEM_Ontology_10_QA_v1.0.0_FINAL.md`
 - Tag：`ziwei-ontology-v1.0.0-FINAL` / `stem-ontology-v1.0.0-FINAL` / `dual-ontology-v1.0.0-FINAL`（仓库原 `v1.0.0-FINAL` 已绑定 CORE-AXIOM-001，双轨另设专属 Tag）
 
+## 诘问卷宗（独立，非十问）
+
+路径：理论卷宗/（禁止混入 双轨本源思辨/）
+
+- Three_Progressive_Interrogation_v1.0.0_FINAL.md（CORE-INTERROGATE-002｜第一组递进三问）
+- Fourth_Interrogation_Reply_v1.0.0_FINAL.md（CORE-INTERROGATE-003｜第四组诘问完整答复）
+- Tag：CORE-INTERROGATE-002-v1.0.0-FINAL / CORE-INTERROGATE-003-v1.0.0-FINAL
+
 ## 定稿全局MD5指纹
 
 清单文件：测试规范/full_archive_md5_fingerprint.txt
