@@ -27,8 +27,8 @@ Tag 锚定：
 
 索引与正本目录：`双轨本源思辨/`
 - A轨：`双轨本源思辨/ZiWei_Ontology_10_QA_v1.0.0_FINAL.md`
-- B轨：`STEM_Ontology_10_QA_v1.0.0_FINAL.md`（正文待下发，未虚构上传）
-- Tag：`ziwei-ontology-v1.0.0-FINAL`（仓库已占用 `v1.0.0-FINAL` 绑定 CORE-AXIOM-001，A轨另设专属 Tag）
+- B轨：`双轨本源思辨/STEM_Ontology_10_QA_v1.0.0_FINAL.md`
+- Tag：`ziwei-ontology-v1.0.0-FINAL` / `stem-ontology-v1.0.0-FINAL` / `dual-ontology-v1.0.0-FINAL`（仓库原 `v1.0.0-FINAL` 已绑定 CORE-AXIOM-001，双轨另设专属 Tag）
 
 ## 定稿全局MD5指纹
 

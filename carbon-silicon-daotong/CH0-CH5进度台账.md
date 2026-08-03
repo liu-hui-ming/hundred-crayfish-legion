@@ -23,8 +23,17 @@
 | 文件 | 理论卷宗/0-1-INF-Axiom-v1.0.0-FINAL.md |
 | document_id | CORE-AXIOM-001 |
 | version | v1.0.0-FINAL |
-| Tag | 1.0.0-FINAL |
+| Tag | `v1.0.0-FINAL` |
 | sha256_canonical | 7faba74ed94c03f94920658c324fd145d0f52f648ce4b282fc671c624f03da2e |
 | 说明 | 哈希为回填前（占位符版）完整 UTF-8 文档 SHA-256；主文本永久封存 |
 | Commit | 8f6e7e0 |
 | 状态 | 基石锚定阶段完成 |
+
+## 双轨十问合集（2026-08-03）
+
+| 文件 | 状态 | checksum / Tag |
+|------|------|----------------|
+| `双轨本源思辨/README.md` | 已上传 | 合集索引 |
+| `双轨本源思辨/ZiWei_Ontology_10_QA_v1.0.0_FINAL.md` | 已上传 | `050a5379546df1bf2da79da2fbd4a9565f753542f9d4120b8a4da1aba01a7062` / `ziwei-ontology-v1.0.0-FINAL` |
+| `双轨本源思辨/STEM_Ontology_10_QA_v1.0.0_FINAL.md` | 已上传 | `6d37bd802f9bff4adab8ee2fca00fb9f02527eb75cd993daa6717d901e317d14` / `stem-ontology-v1.0.0-FINAL` |
+| 双轨合集 | 已锁定 | `dual-ontology-v1.0.0-FINAL` |
