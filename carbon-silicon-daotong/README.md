@@ -38,6 +38,13 @@ Tag 锚定：
 - Fourth_Interrogation_Reply_v1.0.0_FINAL.md（CORE-INTERROGATE-003｜第四组诘问完整答复）
 - Tag：interrogate-series-v1.0.0-FINAL（合集） / CORE-INTERROGATE-002-v1.0.0-FINAL / CORE-INTERROGATE-003-v1.0.0-FINAL
 
+## 径向技术思辨札记（支线｜SPINOFF）
+
+路径：仓库根目录 `SPINOFF-RADIAL-NOTES/`（独立编码 NOTE-RADIAL-001～188，不占用 CH/SAND）
+
+- 规范与进度：`SPINOFF-RADIAL-NOTES/README.md`、`SPINOFF-RADIAL-NOTES/进度台账.md`
+- 正文：待按序下发；收到一篇归档一篇；全套完成后统一系列 Tag
+
 ## 定稿全局MD5指纹
 
 清单文件：测试规范/full_archive_md5_fingerprint.txt

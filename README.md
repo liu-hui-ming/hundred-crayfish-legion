@@ -19,6 +19,11 @@
 - 第四组诘问完整答复：[Fourth_Interrogation_Reply_v1.0.0_FINAL.md](carbon-silicon-daotong/理论卷宗/Fourth_Interrogation_Reply_v1.0.0_FINAL.md)
 - 存放目录：carbon-silicon-daotong/理论卷宗/（与 双轨本源思辨/ 十问卷宗物理隔离）
 
+## 径向技术思辨札记（SPINOFF-RADIAL-NOTES）
+
+- 目录：[SPINOFF-RADIAL-NOTES/](SPINOFF-RADIAL-NOTES/)
+- 编号：NOTE-RADIAL-001～188（支线独立，不占用 CH/SAND）
+- 状态：规范已标记；正文待按序下发归档
 
 ## What this is
 
