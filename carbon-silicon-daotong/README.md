@@ -44,7 +44,14 @@ Tag 锚定：
 
 - 规范与进度：`SPINOFF-RADIAL-NOTES/README.md`、`SPINOFF-RADIAL-NOTES/进度台账.md`
 - 已归档：NOTE-RADIAL-001～188 全套（188 篇）；Tag：`spinoff-radial-notes-v1.0.0-FINAL`
-- 正文：待按序下发；收到一篇归档一篇；全套完成后统一系列 Tag
+
+## 碳硅边界论战文稿（支线｜SPINOFF）
+
+路径：仓库根目录 `SPINOFF-DEBATE-PAPERS/`（独立编码 NOTE-DEBATE-001～120，不占用 CH/SAND/NOTE-RADIAL）
+
+- 规范与进度：`SPINOFF-DEBATE-PAPERS/README.md`、`SPINOFF-DEBATE-PAPERS/进度台账.md`
+- 边界：流派辩驳、理论破妄、AI 争议辨析（与 SAND 本源公理、径向工程专论互不混放）
+- 已归档：NOTE-DEBATE-001～120 全套（120 篇）；Tag：`spinoff-debate-papers-v1.0.0-FINAL`
 
 ## 定稿全局MD5指纹
 

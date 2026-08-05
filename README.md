@@ -25,6 +25,13 @@
 - 编号：NOTE-RADIAL-001～188（支线独立，不占用 CH/SAND）
 - 状态：NOTE-RADIAL-001～188 全套已归档（188 篇）；系列 Tag `spinoff-radial-notes-v1.0.0-FINAL`
 
+## 碳硅边界论战文稿（SPINOFF-DEBATE-PAPERS）
+
+- 目录：[SPINOFF-DEBATE-PAPERS/](SPINOFF-DEBATE-PAPERS/)
+- 编号：NOTE-DEBATE-001～120（支线独立，不占用 CH/SAND/NOTE-RADIAL）
+- 边界：流派辩驳、理论破妄、AI 争议辨析（与 SAND 本源公理、径向工程专论互不混放）
+- 状态：NOTE-DEBATE-001～120 全套已归档（120 篇）；系列 Tag `spinoff-debate-papers-v1.0.0-FINAL`
+
 ## What this is
 
 **Hundred Crayfish Legion** is a **high-concurrency multi-agent cluster orchestration** stack: it coordinates large swarms of specialized agents so they can run complex, long-horizon work together. The project is meant to provide **compute and coordination backbone** for **Carbon–Silicon Alliance**–class, **full-domain collaboration**—not a single chatbot, but the **machinery of swarm intelligence**.
