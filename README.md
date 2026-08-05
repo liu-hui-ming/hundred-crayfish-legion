@@ -23,7 +23,7 @@
 
 - 目录：[SPINOFF-RADIAL-NOTES/](SPINOFF-RADIAL-NOTES/)
 - 编号：NOTE-RADIAL-001～188（支线独立，不占用 CH/SAND）
-- 状态：NOTE-RADIAL-100～188 已归档（89 篇）；001～099 待下发；系列 Tag 待全套闭环
+- 状态：NOTE-RADIAL-001～188 全套已归档（188 篇）；系列 Tag `spinoff-radial-notes-v1.0.0-FINAL`
 
 ## What this is
 

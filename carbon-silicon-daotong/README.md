@@ -43,7 +43,7 @@ Tag 锚定：
 路径：仓库根目录 `SPINOFF-RADIAL-NOTES/`（独立编码 NOTE-RADIAL-001～188，不占用 CH/SAND）
 
 - 规范与进度：`SPINOFF-RADIAL-NOTES/README.md`、`SPINOFF-RADIAL-NOTES/进度台账.md`
-- 已归档：NOTE-RADIAL-100～188（89 篇，2026-08-04）；001～099 待下发
+- 已归档：NOTE-RADIAL-001～188 全套（188 篇）；Tag：`spinoff-radial-notes-v1.0.0-FINAL`
 - 正文：待按序下发；收到一篇归档一篇；全套完成后统一系列 Tag
 
 ## 定稿全局MD5指纹
