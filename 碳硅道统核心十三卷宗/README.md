@@ -152,4 +152,4 @@ This document is the authoritative jurisprudential index of Carbon-Silicon DaoTo
 **Provenance / 来源：** bodies from `13篇.pdf` (2026-08-06); PDF not committed.  
 正文自 `13篇.pdf` 抽取（2026-08-06）；PDF 不入库。
 
-**Repo name check / 仓名核对：** canonical repo is `liu-hui-ming/hundred-crayfish-legion` (single **h** in *hundred*). No `bundred-*` path exists in this tree.
+**Repo name check / 仓名核对：** canonical repo is [`liu-hui-ming/hundred-crayfish-legion`](https://github.com/liu-hui-ming/hundred-crayfish-legion) (spelling: **hundred**, single *h*).
