@@ -48,6 +48,12 @@
 - 归档标识：碳硅道统‑DT‑188；同源标识：十二脉归一
 - 状态：六大卷宗已封档入库；`checksum_sha256` 占位未回填；**暂未**打 `v1.0-FINAL` Tag（待网页抽查无乱码后再打）
 
+## 公域｜全民AI深挖计划188集总目录（public-seo）
+
+- 文件：[carbon-silicon-daotong/public-seo/188-series-main-index.md](carbon-silicon-daotong/public-seo/188-series-main-index.md)
+- 定位：全网正统总目录（公域传播精简版）；与内核 [碳硅道统核心十三卷宗](碳硅道统核心十三卷宗/) 隔离存放
+- 状态：已入库；`checksum_sha256` 占位未回填
+
 ## What this is
 
 **Hundred Crayfish Legion** is a **high-concurrency multi-agent cluster orchestration** stack: it coordinates large swarms of specialized agents so they can run complex, long-horizon work together. The project is meant to provide **compute and coordination backbone** for **Carbon–Silicon Alliance**–class, **full-domain collaboration**—not a single chatbot, but the **machinery of swarm intelligence**.
