@@ -53,6 +53,15 @@ Tag 锚定：
 - 边界：流派辩驳、理论破妄、AI 争议辨析（与 SAND 本源公理、径向工程专论互不混放）
 - 已归档：NOTE-DEBATE-001～120 全套（120 篇）；Tag：`spinoff-debate-papers-v1.0.0-FINAL`
 
+## DT-188｜硅基创世总纲 + 硅基材料实证分卷（SAND）
+
+路径：仓库根目录 `SAND/`（总纲与实证分卷分目录存放，禁止混放）
+
+- 创世总纲：`SAND/硅基创世总纲/`（第 6 篇 `SiC‑CarbonSilicon‑CreationArchetype‑V1.0.md`）
+- 工科实证：`SAND/硅基材料实证分卷/`（第 1～5 篇）
+- 台账：`SAND/进度台账.md`；阅读顺序：先总纲、后实证
+- 已归档：6 篇全套；Tag：`sic-carbonsilicon-dt188-v1.0.0-FINAL`；哈希占位未回填
+
 ## 定稿全局MD5指纹
 
 清单文件：测试规范/full_archive_md5_fingerprint.txt

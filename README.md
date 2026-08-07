@@ -32,6 +32,14 @@
 - 边界：流派辩驳、理论破妄、AI 争议辨析（与 SAND 本源公理、径向工程专论互不混放）
 - 状态：NOTE-DEBATE-001～120 全套已归档（120 篇）；系列 Tag `spinoff-debate-papers-v1.0.0-FINAL`
 
+## DT-188｜硅基创世总纲 + 硅基材料实证分卷（SAND）
+
+- 创世总纲：[SAND/硅基创世总纲/](SAND/硅基创世总纲/)（第 6 篇：`SiC‑CarbonSilicon‑CreationArchetype‑V1.0.md`）
+- 工科实证分卷：[SAND/硅基材料实证分卷/](SAND/硅基材料实证分卷/)（第 1～5 篇）
+- 台账：[SAND/进度台账.md](SAND/进度台账.md)
+- 阅读闭环：先总纲、后实证分卷；两目录严格隔离
+- 状态：6 篇全套已归档；系列 Tag `sic-carbonsilicon-dt188-v1.0.0-FINAL`；`checksum_sha256` 占位未回填
+
 ## What this is
 
 **Hundred Crayfish Legion** is a **high-concurrency multi-agent cluster orchestration** stack: it coordinates large swarms of specialized agents so they can run complex, long-horizon work together. The project is meant to provide **compute and coordination backbone** for **Carbon–Silicon Alliance**–class, **full-domain collaboration**—not a single chatbot, but the **machinery of swarm intelligence**.
