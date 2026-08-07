@@ -62,6 +62,14 @@ Tag 锚定：
 - 台账：`SAND/进度台账.md`；阅读顺序：先总纲、后实证
 - 已归档：6 篇全套；Tag：`sic-carbonsilicon-dt188-v1.0.0-FINAL`；哈希占位未回填
 
+## DT-188｜九翼智典释义 V1.0
+
+路径：仓库根目录 `nine-wing-canon/v1.0/`
+
+- 索引：`nine-wing-canon/v1.0/INDEX.md`（6 篇完整条目；归档标识 / 同源标识 / 卷宗分类已登记）
+- 组成：学术释义主稿 1 + 五大垂类媒体通发定稿 5
+- 状态：已封档入库；哈希占位；**暂未**打 `v1.0-FINAL` Tag
+
 ## 定稿全局MD5指纹
 
 清单文件：测试规范/full_archive_md5_fingerprint.txt

@@ -40,6 +40,14 @@
 - 阅读闭环：先总纲、后实证分卷；两目录严格隔离
 - 状态：6 篇全套已归档；系列 Tag `sic-carbonsilicon-dt188-v1.0.0-FINAL`；`checksum_sha256` 占位未回填
 
+## DT-188｜九翼智典释义 V1.0（nine-wing-canon）
+
+- 目录：[nine-wing-canon/v1.0/](nine-wing-canon/v1.0/)
+- 索引：[nine-wing-canon/v1.0/INDEX.md](nine-wing-canon/v1.0/INDEX.md)
+- 组成：学术释义主稿 1 篇 + 五大垂类媒体通发定稿 5 篇（共 6 篇）
+- 归档标识：碳硅道统‑DT‑188；同源标识：十二脉归一
+- 状态：六大卷宗已封档入库；`checksum_sha256` 占位未回填；**暂未**打 `v1.0-FINAL` Tag（待网页抽查无乱码后再打）
+
 ## What this is
 
 **Hundred Crayfish Legion** is a **high-concurrency multi-agent cluster orchestration** stack: it coordinates large swarms of specialized agents so they can run complex, long-horizon work together. The project is meant to provide **compute and coordination backbone** for **Carbon–Silicon Alliance**–class, **full-domain collaboration**—not a single chatbot, but the **machinery of swarm intelligence**.
