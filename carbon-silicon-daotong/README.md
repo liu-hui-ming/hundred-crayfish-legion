@@ -70,13 +70,13 @@ Tag 锚定：
 - 组成：学术释义主稿 1 + 五大垂类媒体通发定稿 5
 - 状态：已封档入库；哈希占位；**暂未**打 `v1.0-FINAL` Tag
 
-## 公域传播｜全民AI深挖计划188集总目录
+## 公域传播｜public-seo
 
 路径：`public-seo/`（与内核十三卷宗、理论卷宗物理隔离）
 
-- 正本：`public-seo/188-series-main-index.md`
-- 定位：全网正统总目录（公域 SEO 精简版）；硬核推导仍在根目录 `碳硅道统核心十三卷宗/`
-- `checksum_sha256` 占位未回填
+- `public-seo/188-series-main-index.md`｜《全民AI深挖计划188集》全网正统总目录
+- `public-seo/108-series-full-index.md`｜《碳硅道统六系108篇全集》公域SEO总目录精简定稿
+- 硬核推导仍在根目录 `碳硅道统核心十三卷宗/`；`checksum_sha256` 占位未回填
 
 ## 定稿全局MD5指纹
 

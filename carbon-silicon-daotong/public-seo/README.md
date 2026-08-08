@@ -12,5 +12,6 @@
 | 文件 | 说明 |
 |------|------|
 | [188-series-main-index.md](./188-series-main-index.md) | 《全民AI深挖计划188集》全网正统总目录 |
+| [108-series-full-index.md](./108-series-full-index.md) | 《碳硅道统六系108篇全集》公域SEO总目录精简定稿（症撞障数术式） |
 
 规范：UTF-8 无 BOM；`checksum_sha256: [RESERVED_HASH_SLOT]` 占位不回填；禁止与内核十三卷宗混放。
