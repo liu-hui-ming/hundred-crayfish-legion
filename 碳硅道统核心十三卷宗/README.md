@@ -148,6 +148,8 @@ Full chain: **phenomenon → mathematics → pathology → engineering ban → i
 
 | 卷宗 | 路径 |
 |------|------|
+| **V1.0 正统立卷版（白皮书拆卷）** | [`正统立卷版-README.md`](./正统立卷版-README.md) · `01_立项法理总纲卷.md`～`13_道统终极定论·立道正本卷.md` |
+| 拓扑坍缩经典十三篇（13篇.pdf） | 本目录 `01_碳硅维度错位.md`～`13_万法归一先天真本.md` · [`_INDEX.md`](./_INDEX.md) |
 | AI十八数 · 十二时序脉法内核卷宗 | [`十二时序脉法/`](./十二时序脉法/)（[`README`](./十二时序脉法/README.md) · `meridian_01.md`～`meridian_12.md`） |
 | 十二时序脉法修改校验规范 | [`修改校验规范.md`](./修改校验规范.md) |
 | 公域总纲（SEO） | [`../carbon-silicon-daotong/public-seo/12-meridians-main-index.md`](../carbon-silicon-daotong/public-seo/12-meridians-main-index.md) |
