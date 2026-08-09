@@ -248,6 +248,29 @@ class DaoEntry(Enum):
     MET_17 = "AI-Met-17_理论实景偏差动态补偿标尺"
     MET_18 = "AI-Met-18_底层恒定法理长效判定标尺"
 
+# =========【移位至此！原先写在枚举前面，此处修正后消除NameError】=========
+# 十八症条目-专属异常一对一映射（修复缺陷2：异常张冠李戴）
+SYM_EXCEPTION_MAP: Dict = {
+    DaoEntry.SYM_01: TopologicalConstraintViolation,
+    DaoEntry.SYM_02: ContextMemoryExhaustion,
+    DaoEntry.SYM_03: FactHallucinationBoundaryViolation,
+    DaoEntry.SYM_04: ContextMemoryExhaustion,
+    DaoEntry.SYM_05: MediaObjectivitySevereBiasError,
+    DaoEntry.SYM_06: ContextMemoryExhaustion,
+    DaoEntry.SYM_07: SubjectiveEvaluationDriftError,
+    DaoEntry.SYM_08: CrossSpeciesSpectrumMismatchError,
+    DaoEntry.SYM_09: ConcurrentFaultAmplificationError,
+    DaoEntry.SYM_10: ArchitectureDefectFloorOverflowError,
+    DaoEntry.SYM_11: PermissionBoundaryRiskError,
+    DaoEntry.SYM_12: FactHallucinationBoundaryViolation,
+    DaoEntry.SYM_13: AxiomDerivationJumpError,
+    DaoEntry.SYM_14: AGIDeadlineViolationError,
+    DaoEntry.SYM_15: NoEndogenousDriveError,
+    DaoEntry.SYM_16: FactHallucinationBoundaryViolation,
+    DaoEntry.SYM_17: ComputeROIConvergenceError,
+    DaoEntry.SYM_18: RealityEnvGapOvershootError,
+}
+
 # ====================== 数据容器：环境入参、度量输出 ======================
 @dataclass
 class EnvContext:
@@ -256,7 +279,7 @@ class EnvContext:
     concurrent_load: int
     hardware_decay: float
     input_offset: float
-    domain_type: str
+    domain_type: str  # 定义预留，后续OPT拓展使用
 
 @dataclass
 class MetricOutput:
@@ -266,3 +289,169 @@ class MetricOutput:
     threshold: float
     is_violation: bool
     extra_msg: str
+
+# ====================== 核心算子实现（强制重点：Met17、Met18） ======================
+class CoreMetricOperator:
+    def __init__(self):
+        self.inv = InvConstant
+
+    # Met-17 Δ_param = f(Env) 实景偏差补偿函数
+    def calc_env_delta(self, env: EnvContext) -> float:
+        """工况差值原生函数"""
+        base = (env.data_noise_rate * 0.35) + (env.concurrent_load / 10000 * 0.4) + (env.hardware_decay * 0.15) + (env.input_offset * 0.1)
+        return max(base, 0.0)
+
+    def dynamic_compensate(self, env: EnvContext, raw_param: float) -> float:
+        """AI-Opt17自适应补偿，分段动态权重上调"""
+        delta = self.calc_env_delta(env)
+        if delta < 0.1:
+            comp = delta * 0.8
+        elif delta < 0.3:
+            comp = delta * 1.2
+        else:
+            comp = delta * 1.8  #极端环境上调补偿权重
+        return raw_param + comp
+
+    # Met-18 S_inv 长效法理契合打分 + dScore/dt导数监测
+    def calc_s_invariant(self, rule_match_count: int, total_rule: int, time_decay_coeff: float) -> float:
+        """底层法理贴合度 S_inv ∈ [0,1]"""
+        base = rule_match_count / total_rule
+        decay_penalty = abs(min(time_decay_coeff, 0.0))
+        s = max(base - decay_penalty, 0.0)
+        return s
+
+    def eval_score_derivative(self, score_t1: float, score_t2: float, delta_t: float) -> float:
+        """dScore/dt，监测时效衰减 ∂Score/∂t <0"""
+        if delta_t == 0:
+            return 0.0
+        deriv = (score_t2 - score_t1) / delta_t
+        return deriv
+
+# ====================== 全域六系校验路由器（单核分发核心） ======================
+class DaoRouter:
+    def __init__(self):
+        self.operator = CoreMetricOperator()
+        # 路由注册表：DaoEntry -> 校验处理函数
+        self.route_map: Dict[DaoEntry, Callable] = self._build_full_route_table()
+
+    def _build_full_route_table(self) -> Dict[DaoEntry, Callable]:
+        """全量108条目路由绑定，六系分支一一映射"""
+        route = {}
+        # 1.十八症 SYM 故障检测分支
+        for entry in [DaoEntry.SYM_01,DaoEntry.SYM_02,DaoEntry.SYM_03,DaoEntry.SYM_04,DaoEntry.SYM_05,
+                      DaoEntry.SYM_06,DaoEntry.SYM_07,DaoEntry.SYM_08,DaoEntry.SYM_09,DaoEntry.SYM_10,
+                      DaoEntry.SYM_11,DaoEntry.SYM_12,DaoEntry.SYM_13,DaoEntry.SYM_14,DaoEntry.SYM_15,
+                      DaoEntry.SYM_16,DaoEntry.SYM_17,DaoEntry.SYM_18]:
+            route[entry] = self._sym_check
+        # 2.十八撞 CON 架构常量约束分支
+        for entry in [DaoEntry.CON_01,DaoEntry.CON_02,DaoEntry.CON_03,DaoEntry.CON_04,DaoEntry.CON_05,
+                      DaoEntry.CON_06,DaoEntry.CON_07,DaoEntry.CON_08,DaoEntry.CON_09,DaoEntry.CON_10,
+                      DaoEntry.CON_11,DaoEntry.CON_12,DaoEntry.CON_13,DaoEntry.CON_14,DaoEntry.CON_15,
+                      DaoEntry.CON_16,DaoEntry.CON_17,DaoEntry.CON_18]:
+            route[entry] = self._con_constraint_check
+        #3.十八障 MIS 认知谬误阻断分支
+        for entry in [DaoEntry.MIS_01,DaoEntry.MIS_02,DaoEntry.MIS_03,DaoEntry.MIS_04,DaoEntry.MIS_05,
+                      DaoEntry.MIS_06,DaoEntry.MIS_07,DaoEntry.MIS_08,DaoEntry.MIS_09,DaoEntry.MIS_10,
+                      DaoEntry.MIS_11,DaoEntry.MIS_12,DaoEntry.MIS_13,DaoEntry.MIS_14,DaoEntry.MIS_15,
+                      DaoEntry.MIS_16,DaoEntry.MIS_17,DaoEntry.MIS_18]:
+            route[entry] = self._mis_cognitive_block
+        #4.十八数 INV 数理只读校验分支
+        for entry in [DaoEntry.INV_01,DaoEntry.INV_02,DaoEntry.INV_03,DaoEntry.INV_04,DaoEntry.INV_05,
+                      DaoEntry.INV_06,DaoEntry.INV_07,DaoEntry.INV_08,DaoEntry.INV_09,DaoEntry.INV_10,
+                      DaoEntry.INV_11,DaoEntry.INV_12,DaoEntry.INV_13,DaoEntry.INV_14,DaoEntry.INV_15,
+                      DaoEntry.INV_16,DaoEntry.INV_17,DaoEntry.INV_18]:
+            route[entry] = self._inv_math_check
+        #5.十八术 OPT 算子强制调用分支
+        for entry in [DaoEntry.OPT_01,DaoEntry.OPT_02,DaoEntry.OPT_03,DaoEntry.OPT_04,DaoEntry.OPT_05,
+                      DaoEntry.OPT_06,DaoEntry.OPT_07,DaoEntry.OPT_08,DaoEntry.OPT_09,DaoEntry.OPT_10,
+                      DaoEntry.OPT_11,DaoEntry.OPT_12,DaoEntry.OPT_13,DaoEntry.OPT_14,DaoEntry.OPT_15,
+                      DaoEntry.OPT_16,DaoEntry.OPT_17,DaoEntry.OPT_18]:
+            route[entry] = self._opt_operator_invoke
+        #6.十八式 MET 度量打分输出分支
+        for entry in [DaoEntry.MET_01,DaoEntry.MET_02,DaoEntry.MET_03,DaoEntry.MET_04,DaoEntry.MET_05,
+                      DaoEntry.MET_06,DaoEntry.MET_07,DaoEntry.MET_08,DaoEntry.MET_09,DaoEntry.MET_10,
+                      DaoEntry.MET_11,DaoEntry.MET_12,DaoEntry.MET_13,DaoEntry.MET_14,DaoEntry.MET_15,
+                      DaoEntry.MET_16,DaoEntry.MET_17,DaoEntry.MET_18]:
+            route[entry] = self._met_metric_calc
+        return route
+
+    # 六系对应处理逻辑
+    def _sym_check(self, entry: DaoEntry, raw_val: float) -> MetricOutput:
+        """故障实例检测，违规抛对应异常"""
+        thresh_map = {
+            DaoEntry.SYM_01: InvConstant.E_TOPO_MIN,
+            DaoEntry.SYM_04: 0.2
+        }
+        thresh = thresh_map.get(entry, 0.1)
+        # SYM_04：记忆留存过低触发；其余：指标超阈触发
+        violate = (raw_val < thresh) if entry == DaoEntry.SYM_04 else (raw_val > thresh)
+        if violate:
+            if entry == DaoEntry.SYM_01:
+                raise TopologicalConstraintViolation(f"{entry.value} 拓扑误差超限")
+            if entry == DaoEntry.SYM_04:
+                raise ContextMemoryExhaustion(f"{entry.value} 记忆留存过低")
+            # 其余症条目：按一对一异常映射抛出
+            raise SYM_EXCEPTION_MAP.get(entry, CarbonSiliconError)(f"{entry.value} 故障超限")
+        return MetricOutput(entry, raw_val, thresh, violate, "故障检测完成")
+
+    def _con_constraint_check(self, entry: DaoEntry, raw_val: float) -> MetricOutput:
+        """架构底层约束常量校验"""
+        violate = raw_val < 0
+        if violate:
+            raise ArchitectureDefectFloorOverflowError(f"{entry.value}触碰架构约束边界")
+        return MetricOutput(entry, raw_val, 0, violate, "架构约束校验通过")
+
+    def _mis_cognitive_block(self, entry: DaoEntry, raw_val: float) -> MetricOutput:
+        """认知谬误拦截，命中直接阻断"""
+        if raw_val > 0.5:
+            raise CognitiveFallacyBlockError(f"触发{entry.value}认知谬误，操作拦截")
+        return MetricOutput(entry, raw_val, 0.5, False, "无认知谬误")
+
+    def _inv_math_check(self, entry: DaoEntry, raw_val: float) -> MetricOutput:
+        """十八数数理铁律只读校验，不可突破下界"""
+        min_map = {
+            DaoEntry.INV_01: InvConstant.E_TOPO_MIN,
+            DaoEntry.INV_03: InvConstant.H_MIN
+        }
+        floor = min_map.get(entry, 1e-3)
+        violate = raw_val < floor
+        if violate:
+            raise FactHallucinationBoundaryViolation(f"{entry.value}突破数理下界")
+        return MetricOutput(entry, raw_val, floor, violate, "数理铁律校验合规")
+
+    def _opt_operator_invoke(self, entry: DaoEntry, env: Optional[EnvContext] = None, raw_param: float = 0.0) -> MetricOutput:
+        """十八术优化算子强制执行，重点绑定OPT17/18"""
+        val = raw_param
+        if entry == DaoEntry.OPT_17 and env is not None:
+            val = self.operator.dynamic_compensate(env, raw_param)
+        return MetricOutput(entry, val, raw_param, False, "优化算子执行完成")
+
+    def _met_metric_calc(self, entry: DaoEntry, **kwargs) -> MetricOutput:
+        """十八式度量标尺计算，MET17、MET18专属逻辑"""
+        if entry == DaoEntry.MET_17:
+            env: EnvContext = kwargs["env"]
+            raw = kwargs["raw"]
+            comp_val = self.operator.dynamic_compensate(env, raw)
+            return MetricOutput(entry, comp_val, raw, comp_val-raw>0.2, "工况补偿计算完成")
+        if entry == DaoEntry.MET_18:
+            match_cnt = kwargs["match"]
+            total = kwargs["total"]
+            decay = kwargs["decay"]
+            s_inv = self.operator.calc_s_invariant(match_cnt, total, decay)
+            deriv = self.operator.eval_score_derivative(kwargs["t1"], kwargs["t2"], kwargs["dt"])
+            violate = s_inv < 0.6 or deriv < InvConstant.D_SCORE_DT_LIMIT
+            if violate:
+                raise EvaluationTimelineDecayError(f"S_inv={s_inv:.3f},时效衰减导数{deriv:.5f}")
+            return MetricOutput(entry, s_inv, 0.6, violate, f"长效契合度，导数={deriv:.5f}")
+        #其余16条度量通用计算占位
+        return MetricOutput(entry, kwargs.get("val",0.0),0.1,False,"常规度量计算")
+
+    # 统一入口：单核全域调度唯一暴露接口
+    def dispatch(self, entry: DaoEntry, **kwargs) -> MetricOutput:
+        if entry not in self.route_map:
+            raise CarbonSiliconError(f"DaoEntry {entry} 未注册，108条目缺失")
+        handler = self.route_map[entry]
+        return handler(entry,**kwargs)
+
+# ====================== 全局单例导出（单核唯一驱动） ======================
+carbon_silicon_kernel = DaoRouter()

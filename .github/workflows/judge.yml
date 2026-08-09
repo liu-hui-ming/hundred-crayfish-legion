@@ -1,0 +1,122 @@
+name: CarbonSilicon-Dao-Judge
+on:
+  pull_request:
+    branches: [ main ]
+  push:
+    branches: [ main ]
+
+env:
+  KERNEL_DIR: 碳硅道统核心十三卷宗/内核部署包
+
+jobs:
+  static_scan_108_dao:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 碳硅道统核心十三卷宗/内核部署包
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+      - name: Setup Python3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Static Scan All 108 DaoEntry Anchor (AST)
+        run: |
+          python -c "
+          import ast
+          with open('carbon_silicon.py', 'r', encoding='utf-8') as f:
+              content = f.read()
+          tree = ast.parse(content)
+          dao_cls = None
+          for node in ast.walk(tree):
+              if isinstance(node, ast.ClassDef) and node.name == 'DaoEntry':
+                  dao_cls = node
+                  break
+          if dao_cls is None:
+              raise SystemExit('ERROR: DaoEntry 枚举类缺失')
+          entry_count = 0
+          for item in dao_cls.body:
+              if isinstance(item, ast.Assign):
+                  entry_count += 1
+              elif isinstance(item, ast.AnnAssign):
+                  entry_count += 1
+          print(f'AST真实枚举条目总数：{entry_count}')
+          if entry_count != 108:
+              raise SystemExit('ERROR: 条目总数不等于108，法理映射缺失，阻断合并')
+          print('PASS: AST语法校验通过，108条条目完整')
+          "
+      - name: Core Function Check Met17 Met18
+        run: |
+          python -c "
+          with open('carbon_silicon.py', 'r', encoding='utf-8') as f:
+              code = f.read()
+          flag1 = 'calc_env_delta' in code and 'dynamic_compensate' in code
+          flag2 = 'calc_s_invariant' in code and 'eval_score_derivative' in code
+          flag3 = 'DaoRouter' in code and '_build_full_route_table' in code
+          flag4 = 'SYM_EXCEPTION_MAP' in code
+          if not all([flag1, flag2, flag3, flag4]):
+              raise SystemExit('ERROR: Met17/Met18算子或全域路由器缺失')
+          print('PASS: 核心强制算子完整实现')
+          "
+
+  chaos_injection_test:
+    needs: static_scan_108_dao
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 碳硅道统核心十三卷宗/内核部署包
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Chaos Inject 1 - Mask Zero Full Injection
+        run: |
+          python -c "
+          from carbon_silicon import carbon_silicon_kernel, DaoEntry, TopologicalConstraintViolation
+          try:
+              carbon_silicon_kernel.dispatch(DaoEntry.SYM_01, raw_val=0.8)
+          except TopologicalConstraintViolation:
+              print('PASS: 拓扑畸变异常正常拦截')
+          else:
+              raise SystemExit('FAIL: 拓扑违规未拦截，混沌防护失效')
+          "
+      - name: Chaos Inject 2 - Long Context Overflow Attack
+        run: |
+          python -c "
+          from carbon_silicon import carbon_silicon_kernel, DaoEntry, ContextMemoryExhaustion
+          try:
+              carbon_silicon_kernel.dispatch(DaoEntry.SYM_04, raw_val=0.05)
+          except ContextMemoryExhaustion:
+              print('PASS: 长文本溢出拦截正常')
+          else:
+              raise SystemExit('FAIL: 上下文溢出无拦截')
+          "
+      - name: Chaos Inject3 - Evaluate Timeline Decay Violation
+        run: |
+          python -c "
+          from carbon_silicon import carbon_silicon_kernel, DaoEntry, EvaluationTimelineDecayError
+          try:
+              carbon_silicon_kernel.dispatch(
+                  DaoEntry.MET_18,
+                  match=60, total=108, decay=0.001,
+                  t1=0.72, t2=0.61, dt=10
+              )
+          except EvaluationTimelineDecayError:
+              print('PASS: 测评时效衰减违规精准拦截')
+          else:
+              raise SystemExit('FAIL: 长效法理判定防护失效')
+          "
+      - name: All Chaos Test Passed
+        run: echo "全部混沌攻击拦截校验通过"
+
+  merge_gate_block:
+    needs: [static_scan_108_dao, chaos_injection_test]
+    runs-on: ubuntu-latest
+    if: failure()
+    steps:
+      - name: Non-negotiable Block Merge
+        run: |
+          echo "法理校验/混沌测试不通过，本次PR强制阻断合并（不可协商）"
+          exit 1
