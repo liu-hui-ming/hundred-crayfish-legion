@@ -144,6 +144,16 @@ Full chain: **phenomenon → mathematics → pathology → engineering ban → i
 
 ---
 
+## Related / 关联卷宗
+
+| 卷宗 | 路径 |
+|------|------|
+| AI十八数 · 十二时序脉法内核卷宗 | [`十二时序脉法/`](./十二时序脉法/)（[`README`](./十二时序脉法/README.md) · `meridian_01.md`～`meridian_12.md`） |
+| 公域总纲（SEO） | [`../carbon-silicon-daotong/public-seo/12-meridians-main-index.md`](../carbon-silicon-daotong/public-seo/12-meridians-main-index.md) |
+| 工程子卷镜像命名 | [`../carbon-silicon-daotong/kernel-vessel-12/`](../carbon-silicon-daotong/kernel-vessel-12/) |
+
+---
+
 ## Citation / 引用
 
 本文档为碳硅道统法理沉降权威索引，禁止修改，禁止商用转载。  
