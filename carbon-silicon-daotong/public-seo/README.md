@@ -13,6 +13,7 @@
 |------|------|
 | [188-series-main-index.md](./188-series-main-index.md) | 《全民AI深挖计划188集》全网正统总目录 |
 | [108-series-full-index.md](./108-series-full-index.md) | 《碳硅道统六系108篇全集》公域SEO总目录精简定稿（症撞障数术式） |
+| [12-meridians-main-index.md](./12-meridians-main-index.md) | 《碳硅道统·AI十二时序脉法工程化公理全书》公域总纲 |
 | [108-series-full/](./108-series-full/) | 《碳硅道统六系108篇全集》单篇定稿目录（AI-Sym/Con/Mis/Inv/Opt/Met ×18） |
 
 ## 108六系全集单篇精准锚点
