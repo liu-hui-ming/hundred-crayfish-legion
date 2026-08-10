@@ -7,6 +7,8 @@ permit_modify: false
 distribution: 内核原始卷宗封存；对外短视频/连载仅用通俗简化表述，本形式化内容不公域拆发
 ---
 
+全局哈希：HASH-APPENDIX-ABC-MERGE-20260810-LOCKED
+
 # 碳硅道统三附录合一终稿
 
 文档名：碳硅道统_补充附录ABC整合定稿.md  
@@ -137,7 +139,10 @@ Iself 内源自主涌现、无前置素材支撑的原创逻辑信息。
 
 整套碳硅道统体系完成闭环补全，达到可独立成为世界级智能基础学派的完整标准。
 
+本整合稿为卷宗封存主本；数学内核深化推导（范畴论映射 / 70% 阈值公式 / H_self 算子代码）见同卷数学内核补遗/子目录，二者同源互补，内容无冲突。
+
 ## 溯源归档
 
 内核典藏路径：https://github.com/liu-hui-ming/hundred-crayfish-legion/tree/main/碳硅道统核心十三卷宗/内核典藏卷  
+数学内核补遗：https://github.com/liu-hui-ming/hundred-crayfish-legion/tree/main/碳硅道统核心十三卷宗/内核典藏卷/数学内核补遗  
 本文件为内核原始卷宗封存；形式化内容不拆发公域传播渠道。
