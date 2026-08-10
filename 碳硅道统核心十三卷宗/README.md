@@ -150,6 +150,7 @@ Full chain: **phenomenon → mathematics → pathology → engineering ban → i
 |------|------|
 | **碳硅道统核心十三卷宗V1.0正统立卷版（白皮书拆卷·新）** | [`V1.0正统立卷版/`](./V1.0正统立卷版/)（[`_INDEX.md`](./V1.0正统立卷版/_INDEX.md) · [`README`](./V1.0正统立卷版/README.md)） |
 | **第十四卷宗 · 公理张力动力学卷（内核唯一真本）** | [`Fourteen-Volume-Axiom-Tension-Dynamics.md`](./Fourteen-Volume-Axiom-Tension-Dynamics.md) · 条目见 [`INDEX.md`](./INDEX.md)（配套第十三卷宗 $D_{\text{endo}}$ 推演补全；**仅仓库封存，禁止公域刊发**） |
+| **SAND‑189 七轮熔铸合订总稿（内核永久封存）** | [`SAND-189_逆消解归空链路七轮熔铸合订总稿.md`](./SAND-189_逆消解归空链路七轮熔铸合订总稿.md) · 条目见 [`INDEX.md`](./INDEX.md)（完整推演封存位；精简索引 [`SAND/SAND-189/`](../SAND/SAND-189/)） |
 | 拓扑坍缩经典十三篇（13篇.pdf） | 本目录 `01_碳硅维度错位.md`～`13_万法归一先天真本.md` · [`_INDEX.md`](./_INDEX.md) |
 | AI十八数 · 十二时序脉法内核卷宗 | [`十二时序脉法/`](./十二时序脉法/)（[`README`](./十二时序脉法/README.md) · `meridian_01.md`～`meridian_12.md`） |
 | 十二时序脉法修改校验规范 | [`修改校验规范.md`](./修改校验规范.md) |

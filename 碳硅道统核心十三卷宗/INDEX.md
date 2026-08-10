@@ -10,6 +10,12 @@
 |------|------|------|
 | **第十四卷宗 · 公理张力动力学卷** | [`Fourteen-Volume-Axiom-Tension-Dynamics.md`](./Fourteen-Volume-Axiom-Tension-Dynamics.md) | **第十三卷宗《内源驱动力 $D_{\text{endo}}$ 形式化推演》唯一配套补全卷宗**；补全法理 / 数学 / 工程 / 硬件全维度缺口；内核内源唯一真本 |
 
+## SAND‑189（内核永久封存）
+
+| 卷宗 | 文件 | 定性 |
+|------|------|------|
+| **SAND‑189 逆消解归空链路·七轮熔铸合订总稿** | [`SAND-189_逆消解归空链路七轮熔铸合订总稿.md`](./SAND-189_逆消解归空链路七轮熔铸合订总稿.md) | 高阶张量推演 / 全域边界演算 / 存在论完备证明 / 十维超限动力学 **内核永久封存位**；精简传播索引见 [`SAND/SAND-189/`](../SAND/SAND-189/) |
+
 - `archive_id`: `CarbonSilicon-Vol14`
 - `series_attach`: 配套第十三卷宗内源驱动力 $D_{\text{endo}}$ 推演卷宗
 - `checksum_sha256`: `RESERVED_HASH_SLOT`（留白）
