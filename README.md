@@ -54,6 +54,7 @@
 - [108篇全集总目录](carbon-silicon-daotong/public-seo/108-series-full-index.md)｜六系108篇（症撞障数术式）公域SEO定稿
 - 索引：[public-seo/README.md](carbon-silicon-daotong/public-seo/README.md)
 - 内核硬核推导：[碳硅道统核心十三卷宗](碳硅道统核心十三卷宗/)（禁止与公域混放）
+- **第十四卷宗（内核封存）**：[公理张力动力学卷](碳硅道统核心十三卷宗/Fourteen-Volume-Axiom-Tension-Dynamics.md)｜索引：[INDEX.md](碳硅道统核心十三卷宗/INDEX.md)｜配套补全第十三卷宗 $D_{\text{endo}}$ 法理/数学/工程/硬件缺口；**禁止知乎与外网刊发**
 - 状态：已入库；`checksum_sha256` 占位未回填
 
 ## What this is
