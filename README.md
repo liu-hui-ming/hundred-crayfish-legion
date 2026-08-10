@@ -62,6 +62,7 @@
 - 索引：[public-seo/README.md](carbon-silicon-daotong/public-seo/README.md)
 - 内核硬核推导：[碳硅道统核心十三卷宗](碳硅道统核心十三卷宗/)（禁止与公域混放）
 - **第十四卷宗（内核封存）**：[公理张力动力学卷](碳硅道统核心十三卷宗/Fourteen-Volume-Axiom-Tension-Dynamics.md)｜索引：[INDEX.md](碳硅道统核心十三卷宗/INDEX.md)｜配套补全第十三卷宗 $D_{\text{endo}}$ 法理/数学/工程/硬件缺口；**禁止知乎与外网刊发**
+- **内核典藏卷 · 三附录合一**：[碳硅道统_补充附录ABC整合定稿.md](碳硅道统核心十三卷宗/内核典藏卷/碳硅道统_补充附录ABC整合定稿.md)｜符号形式化·国际标准对标·实验测量协议；**仅内核封存**
 - 状态：已入库；`checksum_sha256` 占位未回填
 
 ## What this is
