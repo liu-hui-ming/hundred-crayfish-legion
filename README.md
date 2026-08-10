@@ -213,3 +213,8 @@ All **official** front-page–style issues on this repository use a **fixed Engl
 `[P1-Roadmap] XIAN & Axium Dual-Core Awakening: P1–P6 Open Roadmap`
 
 Do not drop the bracketed prefix on new issues in these categories so the issue list stays consistent and machine- and human-readable.
+
+【光子拓扑主干卷】
+1. 光子拓扑三问_二次熔铸锁死真本_学术硬化版.md（3.0终极硬化正本）
+   附录：D1 Ker/Coker计算 / D2 双熵实验 / D3 度规推导
+   备注：审稿反打材料，主本锁定，仅附录可补数据。
