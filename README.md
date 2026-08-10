@@ -40,6 +40,14 @@
 - 阅读闭环：先总纲、后实证分卷；两目录严格隔离
 - 状态：6 篇全套已归档；系列 Tag `sic-carbonsilicon-dt188-v1.0.0-FINAL`；`checksum_sha256` 占位未回填
 
+## SAND‑189｜逆消解归空链路·七轮熔铸合订总稿
+
+- 目录：[SAND/SAND-189/](SAND/SAND-189/)
+- 真本：[SAND-189_逆消解归空链路七轮熔铸合订总稿.md](SAND/SAND-189/SAND-189_逆消解归空链路七轮熔铸合订总稿.md)（100分唯一真本完整版）
+- 索引：[SAND/SAND-189/README.md](SAND/SAND-189/README.md)
+- 内核溯源封存：[碳硅道统核心十三卷宗](碳硅道统核心十三卷宗/)
+- 状态：已归档；`checksum_sha256: [RESERVED_HASH_SLOT]` 占位未回填
+
 ## DT-188｜九翼智典释义 V1.0（nine-wing-canon）
 
 - 目录：[nine-wing-canon/v1.0/](nine-wing-canon/v1.0/)
