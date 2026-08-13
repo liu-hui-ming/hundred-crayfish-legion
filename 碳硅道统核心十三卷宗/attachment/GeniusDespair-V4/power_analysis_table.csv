@@ -1,0 +1,7 @@
+metric,value,note
+n_min,200,固定最小样本阈值
+power,0.8,统计功效 1-beta
+delta_pct,10,最小可检测转化率差异
+Z_alpha_half,1.96,双侧 alpha=0.05
+Z_beta,0.84,beta=0.2
+per_path_min,50,四类竞争路径均分
