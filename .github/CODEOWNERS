@@ -1,0 +1,3 @@
+# Path protection lock: ci_check
+# Non-authorized modification of the axiom-sandbox CI gate requires owner review.
+interfaces/qwen-revised-axiom-sandbox/ci_check/ @liu-hui-ming
