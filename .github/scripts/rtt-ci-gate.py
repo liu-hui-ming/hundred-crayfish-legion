@@ -29,7 +29,15 @@ MANIFEST = RTT_ROOT / "scene_manifest.json"
 
 
 def md5_bytes(p: Path) -> str:
-    return hashlib.md5(p.read_bytes()).hexdigest()
+    return hashlib.md5(_norm(p.read_bytes())).hexdigest()
+
+
+def _norm(data: bytes) -> bytes:
+    return data.replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+
+
+def sha256_file(p: Path) -> str:
+    return hashlib.sha256(_norm(p.read_bytes())).hexdigest()
 
 
 def check_twins() -> None:
@@ -51,7 +59,7 @@ def check_hashlock() -> None:
     py_files = sorted((RTT_ROOT / "rtt").glob("*.py"))
     for p in py_files:
         rel = p.relative_to(ROOT).as_posix()
-        got = hashlib.sha256(p.read_bytes()).hexdigest()
+        got = sha256_file(p)
         if expected.get(rel) != got:
             raise SystemExit(f"SHA-256 hash lock failed: {rel}")
 

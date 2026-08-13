@@ -1,0 +1,4 @@
+interfaces/observation/reverse-turing-test/**/*.py text eol=lf
+.github/scripts/rtt-ci-gate.py text eol=lf
+.github/workflows/rtt.yml text eol=lf
+tests/test_source_identity.py text eol=lf
