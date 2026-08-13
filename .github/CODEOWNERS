@@ -1,3 +1,7 @@
-# Path protection lock: ci_check
+# Path protection lock: ci_check + RTT observation plugin
 # Non-authorized modification of the axiom-sandbox CI gate requires owner review.
 interfaces/qwen-revised-axiom-sandbox/ci_check/ @liu-hui-ming
+interfaces/observation/reverse-turing-test/ @liu-hui-ming
+.github/scripts/rtt-ci-gate.py @liu-hui-ming
+.github/workflows/rtt.yml @liu-hui-ming
+tests/test_source_identity.py @liu-hui-ming

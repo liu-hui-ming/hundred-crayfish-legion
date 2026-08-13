@@ -1,0 +1,10 @@
+{
+  "rho": 0.72,
+  "weights": {
+    "omega": 0.3,
+    "lam": 0.3,
+    "gamma": 0.2,
+    "delta": 0.2
+  },
+  "note": "sealed calibration snapshot"
+}

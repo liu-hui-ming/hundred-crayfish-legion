@@ -1,0 +1,6 @@
+{
+  "omega_lambda_flap": 0.08,
+  "se_block": 0.15,
+  "gain_elastic": 0.1,
+  "rho_rebuild": 0.6
+}

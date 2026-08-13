@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: rtt-identity-gate
+        name: RTT pre-commit identity gate
+        entry: python interfaces/observation/reverse-turing-test/scripts/pre-commit-gate.py
+        language: python
+        pass_filenames: false
+        always_run: true
