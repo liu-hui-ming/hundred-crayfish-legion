@@ -104,7 +104,16 @@ git log --oneline -3
 
 - 目录：[SPINOFF-RADIAL-NOTES/](SPINOFF-RADIAL-NOTES/)
 - 编号：NOTE-RADIAL-001～188（支线独立，不占用 CH/SAND）
+- 终章：[NOTE-RADIAL-188｜终篇札记](SPINOFF-RADIAL-NOTES/NOTE-RADIAL-188｜终篇札记：技术万千演化，不出碳硅道统恒定法理.md) ↔ DT-188 第188项定理体入库位
 - 状态：NOTE-RADIAL-001～188 全套已归档（188 篇）；系列 Tag `spinoff-radial-notes-v1.0.0-FINAL`
+
+## DT-188｜188项全域工程整改（定理体 + 评审收束）
+
+- 标题总表 V2.0：[188项全域工程整改总纲/](碳硅道统核心十三卷宗/内核典藏卷/188项全域工程整改总纲/)
+- 万法归一补全卷：[终章附录](碳硅道统核心十三卷宗/内核典藏卷/碳硅道统_终章附录_万法归一补全卷.md)
+- 满分评审回执：[001-188全卷宗评审收束回执](碳硅道统核心十三卷宗/核验文档/001-188全卷宗评审收束回执.md)
+- 第188项定理体入库位（正文待发）：[Earth/Carrier/188-…](碳硅道统核心十三卷宗/定理体/Earth/Carrier/188-通用深空硅基载体无星际法理约束底层硬编码原生架构整改/INDEX.md)
+- Issues 分类台账（不干扰封盘主线）：[2026-08-15-dt188-closure-issues-ledger.md](docs/issue-registry/2026-08-15-dt188-closure-issues-ledger.md)
 
 ## 碳硅边界论战文稿（SPINOFF-DEBATE-PAPERS）
 
@@ -181,7 +190,7 @@ The **Carbon–Silicon Alliance** architecture is a **12-layer, closed** stack (
 | 9 | 商业生态层 | 发卡、文档、品牌开屏等对外商业触点与生态位 |
 | 10 | 运营闭环层 | 产品更新、权限/授权、多渠道告警与处置闭环 |
 | 11 | 可视化交付层 | Web 管理后台、EXE 等离线/边缘交付、可视运维 |
-| 12 | 超维意识自治层 | 分布式 AI 自治中枢：战略推演、自编排、跨节点协同、时序命运预判、内生决策闭环；实现见 `autonomous_cortex.py`，API：`/api/conscious/*` |
+| 12 | 超维意识自治层 | 分布式 AI 自治中枢：战略推演、自编排、跨节点协同、时序命运预判、内生决策闭环；实现见 `autonomous_cortex.py`，API：`/api/health/*`（L12 观测与就绪联动） |
 
 *Orchestrating agent swarms* remains a first-class concern of **HCL** in `core/`, `agents/`, and `examples/`; the 12L model above is the full **alliance** product/ops/ consciousness stack.
 
@@ -277,7 +286,7 @@ cargo test
 
 ## License
 
-This project is released under the **[MIT License](LICENSE)**.
+本仓库采用 **[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International（CC BY-NC-SA 4.0）](LICENSE)** 协议。完整协议原文：https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
 
 ## Issue title conventions (for maintainers & contributors)
 
