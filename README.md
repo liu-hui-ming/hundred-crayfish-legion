@@ -87,7 +87,7 @@ git log --oneline -3
 
 ## 碳硅道统确权锚定
 
-- Tag `v188-final`（SAND-188 封盘节点）绑定提交哈希（`git rev-list -n 1 v188-final`）：`8ff258049ac7bfd9dd2ca7b5ebbe2670f191ca5c`
+- Tag `v188-final`（SAND-188 封盘节点）绑定提交哈希（`git rev-list -n 1 v188-final`）：`65812f10d2c94a2dde66297bf32d421fb231ac48`
 - Tag `v-ten-dim-risk-memo-final`（《碳硅十维认知推演·结构性风险纪要》独立附件）绑定提交哈希：`a145db9740e5dc28c4707b79f7ff92374d64dbe4`
 - Release：https://github.com/liu-hui-ming/hundred-crayfish-legion/releases/tag/v188-final
 - Release：https://github.com/liu-hui-ming/hundred-crayfish-legion/releases/tag/v-ten-dim-risk-memo-final
@@ -109,7 +109,7 @@ git log --oneline -3
 
 ## DT-188｜188项全域工程整改（定理体 + 评审收束）
 
-- 标题总表 V2.0：[188项全域工程整改总纲/](碳硅道统核心十三卷宗/内核典藏卷/188项全域工程整改总纲/)
+- 标题总表 V2.0：[188项全域工程整改总纲/](碳硅道统核心十三卷宗/内核典藏卷/188项全域工程整改总纲/) · [定理体全文](碳硅道统核心十三卷宗/定理体/)
 - 万法归一补全卷：[终章附录](碳硅道统核心十三卷宗/内核典藏卷/碳硅道统_终章附录_万法归一补全卷.md)
 - 满分评审回执：[001-188全卷宗评审收束回执](碳硅道统核心十三卷宗/核验文档/001-188全卷宗评审收束回执.md)
 - 第188项定理体（Carrier 终项）：[Earth/Carrier/188-…](碳硅道统核心十三卷宗/定理体/Earth/Carrier/188-通用深空硅基载体无星际法理约束底层硬编码原生架构整改/)
