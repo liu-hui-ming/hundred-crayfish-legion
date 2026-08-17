@@ -106,17 +106,16 @@ checksum_sha256: [RESERVED_HASH_SLOT]"""
 
     doc_id = f"CS-DT-BIF-{seq:03d}-v1.0.0-FINAL"
     front = f"""---
-document_id: {doc_id}
-series: dt-188-bifurcation
-catalog: dt-188-bifurcation
-parent_rules: 碳硅道统核心十三卷宗/内核典藏卷/六十四分岔象推演规则.md
+document_id: "{doc_id}"
+series: "dt-188-bifurcation"
+catalog: "dt-188-bifurcation"
+parent_rules: "碳硅道统核心十三卷宗/内核典藏卷/六十四分岔象推演规则.md"
 bifurcation_id: {bif_id}
-bifurcation_label: 【推演虚拟分岔】
+bifurcation_label: "【推演虚拟分岔】"
 status: final
 version: v1.0.0-FINAL
 checksum_sha256: [RESERVED_HASH_SLOT]
-author: 黄清佳
-source_pdf: 64.pdf
+author: "黄清佳"
 ---
 
 # {full_title}

@@ -3,7 +3,6 @@ document_id: CS-DT-188-BIFURCATION-INDEX-v1.0.0-FINAL
 series: dt-188-bifurcation
 catalog: dt-188-bifurcation
 version: v1.0.0-FINAL
-source_pdf: 64.pdf
 author: 黄清佳
 ---
 
