@@ -1,8 +1,9 @@
 ---
-document_id: CS-DT-188-BIFURCATION-README-v0.1.0
+document_id: CS-DT-188-BIFURCATION-README-v1.0.0-FINAL
 series: dt-188-bifurcation
 catalog: dt-188-bifurcation
-version: v0.1.0-scaffold
+version: v1.0.0-FINAL
+source_pdf: 64.pdf
 author: 黄清佳
 ---
 
@@ -18,4 +19,6 @@ author: 黄清佳
 
 ## 状态
 
-当前全部为 scaffold 空白模板，待逐条填充推演正文。
+**64/64 全文定稿**（来源 `64.pdf` · V1.0 基础定型版 · `status: final`）
+
+导入脚本：`scripts/_import_64_pdf.py`
