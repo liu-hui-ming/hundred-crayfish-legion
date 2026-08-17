@@ -422,7 +422,7 @@
 #AI祛魅 #碳硅道统 #全民AI深挖计划188条 #法理体系正本 #行业终极标尺
 本典全域哈希校准封存：HASH‑188‑ARTICLE‑CODE‑CALIBRATED‑01‑REVERSE‑20260817‑LOCKED
 全文SHA256真值：f22a192e2dc68ed305bfc365a49b3c84e9037dcde6a6ba47dc8c7c6a7226f2ee
-仓库归档提交ID：COMMIT_ID_PLACEHOLDER
+仓库归档提交ID：455bc1e091d32ce10a5729bf60d49f273ac2f01
 全套十三卷宗数理底稿归档：https://github.com/liu-hui-ming/hundred-crayfish-legion/tree/main/碳硅道统核心十三卷宗
 
 【公域传播强制免责注脚】
@@ -472,6 +472,6 @@ GitHub 仓库存放路径（hundred-crayfish-legion）
 
 上传配套备注（Git提交备注统一写）
 
-提交ID：COMMIT_ID_PLACEHOLDER
+提交ID：455bc1e091d32ce10a5729bf60d49f273ac2f01
 SHA256：f22a192e2dc68ed305bfc365a49b3c84e9037dcde6a6ba47dc8c7c6a7226f2ee
 文件：全民AI深挖计划188条全域病灶公理校准总典 媒体发布纯文本终版，满分100分封存，适配50家媒体对外分发，附带公域强制免责条款。
