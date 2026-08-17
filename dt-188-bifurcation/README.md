@@ -1,10 +1,11 @@
-# dt-188-bifurcation · 六十四分岔案例集
+# dt-188-bifurcation
 
-- 检索索引：[INDEX.md](./INDEX.md)
-- 总规则：[六十四分岔象推演规则.md](https://github.com/liu-hui-ming/hundred-crayfish-legion/blob/main/碳硅道统核心十三卷宗/内核典藏卷/六十四分岔象推演规则.md)
+六十四分岔案例集 · 64/64 定稿
 
-## 打开方式
+## 正确打开方式
 
-GitHub 网页请直接点 **INDEX.md** 中的链接，文件名均为 `BIF-001.md` … `BIF-064.md`（ASCII 短名，避免中文长路径导致页面报错）。
+1. [INDEX.md](./INDEX.md) — 全部链接
+2. [BIF-001.md 预览](https://github.com/liu-hui-ming/hundred-crayfish-legion/blob/main/dt-188-bifurcation/BIF-001.md)
+3. [BIF-001.md 原文(raw)](https://raw.githubusercontent.com/liu-hui-ming/hundred-crayfish-legion/main/dt-188-bifurcation/BIF-001.md) ← 预览失败时用此链接
 
-示例：[BIF-001.md](./BIF-001.md)
+**勿再使用** 含 `具象分岔-碳基…` 等中文长文件名的旧 URL，该路径已删除。
