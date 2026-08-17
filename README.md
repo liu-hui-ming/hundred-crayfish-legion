@@ -87,7 +87,7 @@ git log --oneline -3
 
 ## 碳硅道统确权锚定
 
-- Tag `v188-final`（188项定理体全集封盘节点）绑定提交哈希（`git rev-list -n 1 v188-final`）：`d7e008d93758c7023b90b4dc81d4f045ebf33174`
+- Tag `v188-final`（188项定理体全集封盘节点）绑定提交哈希（`git rev-list -n 1 v188-final`）：`c22bcced991a20ab17d8a3d1f0b882abb6abc29e`
 - Tag `v-ten-dim-risk-memo-final`（《碳硅十维认知推演·结构性风险纪要》独立附件）绑定提交哈希：`a145db9740e5dc28c4707b79f7ff92374d64dbe4`
 - Release：https://github.com/liu-hui-ming/hundred-crayfish-legion/releases/tag/v188-final
 - Release：https://github.com/liu-hui-ming/hundred-crayfish-legion/releases/tag/v-ten-dim-risk-memo-final
