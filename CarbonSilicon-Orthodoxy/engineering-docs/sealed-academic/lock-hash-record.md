@@ -22,7 +22,7 @@
 | ??? | ? |
 |--------|-----|
 | SHA256 | `d334b2a2a14c65b02aad1c46a3400cf744afb2c47bf0f03355b1751251b1094f` |
-| Git commit-id | `PENDING_COMMIT` |
+| Git commit-id | `ad39772f8d2ba81d7c34eb1b1def6249fe1a1213` |
 | ??? SHA256?v1.0.0????? | `e535a858cf1a90b3ec48a0928138eb4e079e3ffd957bdfe8bf43475e2c0b2965` |
 
 ---
