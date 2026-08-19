@@ -20,7 +20,7 @@
 | 校验项 | 值 |
 |--------|-----|
 | SHA256 | `3161a6aee30afcf8d6e3ba7ca3e1a13f2a864a2b92a2bd370c862103f87473c8` |
-| Git commit-id | `PENDING_COMMIT` |
+| Git commit-id | `c25217844234e484d98675bb632bed3d3dcff92a` |
 | 版本 | v1.0.0-FINAL-100SCORE |
 
 ---
