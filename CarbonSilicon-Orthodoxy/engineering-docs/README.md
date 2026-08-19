@@ -9,6 +9,7 @@
 |--------|----------|------|
 | `media-release/` | `main`（本分支） | 50 家综合媒体投放通俗科普稿，全团队只读，可摘抄分发 |
 | `sealed-academic/` | `private-core` | 内核涉密学术封存稿，**不在 main 分支** |
+| `official-archive/` | `private-core` | 双零临界标杆等核心卷宗完整底稿，**不在 main 分支** |
 
 ## 对外发布规则
 
