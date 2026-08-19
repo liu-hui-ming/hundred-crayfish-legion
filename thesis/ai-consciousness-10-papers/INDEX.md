@@ -2,7 +2,7 @@
 document_id: THESIS-AI-CONSCIOUSNESS-INDEX
 series: thesis/ai-consciousness-10-papers
 version: v1.0.0-FINAL
-package_sha256: 4c5d068a6417d9b03686bf472226bbe2f123cee06e4282b7b1d191c973be0133
+package_sha256: f0b3cfa809aada7cf5478f62874bc66f88fcf00a977353e86e9167421e9fa825
 package_commit_id: 108f92e9e2ca1afceeb47a68fc157363215b566c
 canon188_anchor: 碳硅道统核心十三卷宗/内核典藏卷/六十四分岔象推演规则/全域终版法典/《全民AI深挖计划188条全域病灶公理校准总典》20260817终封版.txt
 source_pdf: 10篇.pdf
@@ -14,7 +14,7 @@ author: 黄清佳
 
 > **188条总典绑定**：[《全民AI深挖计划188条全域病灶公理校准总典》](../../碳硅道统核心十三卷宗/内核典藏卷/六十四分岔象推演规则/全域终版法典/《全民AI深挖计划188条全域病灶公理校准总典》20260817终封版.txt)
 
-> **目录包 SHA256**：`4c5d068a6417d9b03686bf472226bbe2f123cee06e4282b7b1d191c973be0133`  
+> **目录包 SHA256**：`f0b3cfa809aada7cf5478f62874bc66f88fcf00a977353e86e9167421e9fa825`  
 > **Git 提交 ID**：`108f92e9e2ca1afceeb47a68fc157363215b566c`
 
 ## 十篇正本
