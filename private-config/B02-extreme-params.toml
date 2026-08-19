@@ -1,0 +1,20 @@
+# B02 · S_ext 极端工况参数（私有锁仓，不公域暴露）
+# 路径：private-config/B02-extreme-params.toml
+
+[meta]
+codex = "B02-temporal-computing"
+sha256_anchor = "9e72ac3f782190de56cb41df039a725f68ec01bd9d4765238105cf96e27d4b91"
+git_archive_id = "7f492c68e093157db27ac9f018e42d56970c31ae"
+
+[s_ext]
+# S_ext = { req | token_len > token_len_max, w_i -> 0 }
+token_len_max = 1_000_000
+weight_floor = 1.0e-12
+omega_b_ratio_abort = 0.98
+rule_on_breach = "abort"
+
+[s_ext.engineering]
+beaconstein_limit_symbol = "B"
+local_cell_reflow_enabled = true
+global_self_heal_enabled = false
+
