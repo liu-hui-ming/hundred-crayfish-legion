@@ -1,0 +1,15 @@
+# 系统层：边界条件漂移百分比
+# snapshot-v2.2.0-draft — alert rules template
+groups:
+  - name: carbon_silicon_sim_kp4
+    rules:
+      - alert: KP4ThresholdBreached
+        expr: bc_drift_pct > 5.0
+        for: 5m
+        labels:
+          severity: warning
+          kpi: kp4
+          draft: snapshot-v2.2.0-draft
+        annotations:
+          summary: "系统层：边界条件漂移百分比 超阈"
+          description: "bc_drift_pct 当前值 {{ $value }}，阈值 5.0"

@@ -1,0 +1,15 @@
+# 能效层：流形置信下界
+# snapshot-v2.2.0-draft — alert rules template
+groups:
+  - name: carbon_silicon_sim_kp3
+    rules:
+      - alert: KP3ThresholdBreached
+        expr: manifold_confidence_min < 0.85
+        for: 5m
+        labels:
+          severity: warning
+          kpi: kp3
+          draft: snapshot-v2.2.0-draft
+        annotations:
+          summary: "能效层：流形置信下界 超阈"
+          description: "manifold_confidence_min 当前值 {{ $value }}，阈值 0.85"
