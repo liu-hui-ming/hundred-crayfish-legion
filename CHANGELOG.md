@@ -1,5 +1,11 @@
 # CHANGELOG
 
+[2026-08-28] broadsword-100 快照脚本补推（broadsword-snapshot-scripts · dev-v2.2/main）
+
+• 脚本：_snapshot_36kr_v2.py、_snapshot_36kr.py、_snapshot_media_article.py 及 chinadev/cneo/cbcom 共 9 份抓取脚本就位。
+
+• 范围：仅 scripts/_snapshot_*.py；不含 physics-governance、不含 PDF/噪声。
+
 [2026-08-28] broadsword-100 全套物料归档（dev-v2.2 → main 合规推送）
 
 • 台账：broadsword-media-ledger.md 补全 9 路 v1 快照 + 36kr-v2 + 待发布占位（公众号/知乎【待发布后补链】）。
