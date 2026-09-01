@@ -1,5 +1,13 @@
 # CHANGELOG
 
+[2026-09-01] 林清祥十问·二十问·三十问 + 十答·二十答·三十答 卷宗归档（docs/inquiry · T-02/Y-04）
+
+• 路径：`docs/inquiry/` 新建 6 份 markdown 正本（10/20/30 questions + answers），头部标记「十二脉归一 · 版本T‑02/Y‑04」。
+
+• 来源：`10问答.pdf` 全文原样留存（初稿基线，不覆盖）；导入脚本 `scripts/_import_inquiry_10qa.py`。
+
+• RAG：已同步镜像至 `openclaw-test-v2/workspace/memory/daotong-rag/inquiry/` 与 `.../rag/carbon-silicon-daotong/inquiry/`（本地测试环境）。
+
 [2026-08-28] broadsword-100 快照脚本补推（broadsword-snapshot-scripts · dev-v2.2/main）
 
 • 脚本：_snapshot_36kr_v2.py、_snapshot_36kr.py、_snapshot_media_article.py 及 chinadev/cneo/cbcom 共 9 份抓取脚本就位。
