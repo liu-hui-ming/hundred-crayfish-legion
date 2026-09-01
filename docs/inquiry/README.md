@@ -23,6 +23,7 @@ author_answers: ??AI?????
 | [20-answers.md](./20-answers.md) | ????? | `08f1ba5a7518f9d13bc746349ed7012af86221bcf513237d344165c1b33d124e` |
 | [30-questions.md](./30-questions.md) | ????? | `411787a0051229d13b75cc0a0feef0e6cbbbd01e445187b8e3ce8727c3d89d04` |
 | [30-answers.md](./30-answers.md) | ????? | `c1a38bfafe77b60867a1780e0f6bc7dac193cdf00e60b826f3c58806ec478835` |
+| [100-open-inquiries.md](./100-open-inquiries.md) | ?AI??100????? | `4a9a13fc414470a8040f9fbecbb7b9f1ed3c610545c66fb49ef60881c556f11d` |
 
 ## RAG ??
 

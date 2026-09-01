@@ -1,5 +1,11 @@
 # CHANGELOG
 
+[2026-09-01] 对AI行业100项公开质询归档（docs/inquiry/100-open-inquiries.md · T-02/Y-04）
+
+• 路径：`docs/inquiry/100-open-inquiries.md`；头部标记「十二脉归一 · 版本T‑02/Y‑04」；十大模块合计100问。
+
+• 台账：`docs/inquiry/README.md` 增补条目；RAG 镜像同步。
+
 [2026-09-01] 林清祥十问·二十问·三十问 + 十答·二十答·三十答 卷宗归档（docs/inquiry · T-02/Y-04）
 
 • 路径：`docs/inquiry/` 新建 6 份 markdown 正本（10/20/30 questions + answers），头部标记「十二脉归一 · 版本T‑02/Y‑04」。
