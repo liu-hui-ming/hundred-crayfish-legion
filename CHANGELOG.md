@@ -1,5 +1,11 @@
 # CHANGELOG
 
+[2026-09-02] 《为什么是我们？》V1.0 思辨社论归档（docs/spinoff-debate-papers/Why-Are-We-V1.0.md · T-02/Y-04）
+
+• 路径：`docs/spinoff-debate-papers/Why-Are-We-V1.0.md`；头部标记「十二脉归一 · 版本T‑02/Y‑04」；V1.0 初稿永久封存，不覆盖。
+
+• 台账：`docs/spinoff-debate-papers/README.md`；RAG 镜像同步；归档 ≠ 媒体公开发布。
+
 [2026-09-01] 对AI行业100项公开质询归档（docs/inquiry/100-open-inquiries.md · T-02/Y-04）
 
 • 路径：`docs/inquiry/100-open-inquiries.md`；头部标记「十二脉归一 · 版本T‑02/Y‑04」；十大模块合计100问。
