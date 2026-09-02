@@ -1,5 +1,11 @@
 # CHANGELOG
 
+[2026-09-02] 《0⁰=1：硅基的边界与碳硅拓扑的降临》V1.0 创世公理正本归档（docs/spinoff-debate-papers/00-zero-power-axiom-V1.0.md · T-02/Y-04）
+
+• 路径：`docs/spinoff-debate-papers/00-zero-power-axiom-V1.0.md`；头部标记「十二脉归一 · 版本T‑02/Y‑04」；创世公理正本 V1.0 永久封存，禁止覆盖。
+
+• 台账：`docs/spinoff-debate-papers/README.md` 增补条目；RAG 镜像同步；质询锚点 1/4/7/9/10、14/20/61/63/65、91/93/94/97/98/99/100 可检索。
+
 [2026-09-02] 《为什么是我们？》V1.0 思辨社论归档（docs/spinoff-debate-papers/Why-Are-We-V1.0.md · T-02/Y-04）
 
 • 路径：`docs/spinoff-debate-papers/Why-Are-We-V1.0.md`；头部标记「十二脉归一 · 版本T‑02/Y‑04」；V1.0 初稿永久封存，不覆盖。
