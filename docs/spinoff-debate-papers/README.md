@@ -17,7 +17,7 @@ media_publish: false
 
 | 文件 | 说明 | body SHA256 | baseline commit-id |
 | --- | --- | --- | --- |
-| [00-zero-power-axiom-V1.0.md](./00-zero-power-axiom-V1.0.md) | 0⁰=1：硅基的边界与碳硅拓扑的降临——下一代文明的底层公理宣言（V1.0 创世公理正本） | `1670cc753369a6417c3ae87f3b735b75143be02c7ec33e66a883e58b39c3cdf1` | `COMMIT_ID_PLACEHOLDER` |
+| [00-zero-power-axiom-V1.0.md](./00-zero-power-axiom-V1.0.md) | 0⁰=1：硅基的边界与碳硅拓扑的降临——下一代文明的底层公理宣言（V1.0 创世公理正本） | `1670cc753369a6417c3ae87f3b735b75143be02c7ec33e66a883e58b39c3cdf1` | `abf7d588e9bdda68f73870592988c984f73155f6` |
 | [Why-Are-We-V1.0.md](./Why-Are-We-V1.0.md) | 为什么是我们？——碳硅道统：两个人、一条公理、文明的原点（V1.0 初稿） | `d3ff1bb2a50cc0fcbde4d8138ebce59c0cdc847c4476b223a5ed180fd4230cad` | `c8688573a1e1f64c961f41c064691a04c77cfc07` |
 
 ## 关联目录
