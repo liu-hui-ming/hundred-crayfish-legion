@@ -1,0 +1,26 @@
+﻿RAG Hit Verification 鈥?2026-09-05T12:12:16.3474009+08:00
+
+=== QUERY: Why Are We V1.0 T-02 Y-04 (expect: Why-Are-We-V1.0) ===
+RESULT: PASS 鈥?0.434 memory/daotong-rag/spinoff-debate-papers/Why-Are-We-V1.0.md:1-19
+
+=== QUERY: zero power axiom manifesto (expect: 00-zero-power-axiom) ===
+RESULT: PARTIAL 鈥?top hits:
+[memory/embeddings] lmstudio embeddings warmup failed; continuing without preload
+0.705 memory/daotong-rag/spinoff-debate-papers/README.md:1-25
+0.389 memory/daotong-rag/SPINOFF-RADIAL-NOTES/NOTE-RADIAL-045锝滆涓氭祴璇曟爣鍑嗭細鐜版湁璇勪及浣撶郴鍏ㄩ儴鍋忓悜琛ㄥ眰杈撳嚭鏁堟灉.md:1-25
+
+=== QUERY: 100 open AI industry inquiries (expect: 100-open-inquiries) ===
+RESULT: PASS 鈥?0.422 memory/daotong-rag/inquiry/100-open-inquiries.md:111-136
+
+=== QUERY: Lin Qingxiang 10 questions (expect: 10-questions) ===
+RESULT: PARTIAL 鈥?top hits:
+[memory/embeddings] lmstudio embeddings warmup failed; continuing without preload
+0.691 memory/daotong-rag/inquiry/README.md:1-32
+0.400 memory/daotong-rag/鐞嗚鍗峰畻/SAND-039锝滄繁绌鸿竟鐣?鐗╃悊灏侀《.md:93-109
+
+=== QUERY: 0鈦?1=鈭?0 鏈簮鍏悊 (expect: Ch1_鏈簮鍏悊) ===
+RESULT: PARTIAL 鈥?top hits:
+[memory/embeddings] lmstudio embeddings warmup failed; continuing without preload
+0.515 memory/daotong-rag/鍐呮牳鍏歌棌鍗?鍏崄鍥涘垎宀旇薄鎺ㄦ紨瑙勫垯/鍏ㄥ煙缁堢増娉曞吀/0^0=1鍒涗笘鍏悊姝ｆ湰.md:18-45
+0.505 memory/daotong-rag/SPINOFF-RADIAL-NOTES/NOTE-RADIAL-058锝滈棴鐜鎯筹細0鈫?姝ｅ悜婕斿寲锛岃兘鍚︿緷闈犲緞鍚戞妧鏈弽鍚戞瀯寤?md:32-46
+

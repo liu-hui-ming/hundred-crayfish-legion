@@ -32,18 +32,20 @@
 
 ---
 
-## 3. 文档命中验证（历史探针 + 索引后状态）
+## 3. 文档命中验证（`run_rag_hit_verification.ps1` · 2026-09-05）
 
-| 查询 | 期望文档 | 结果 |
-|------|----------|------|
-| `0⁰=1=∞=0 本源公理` | `Ch1_本源公理.md` | ✅ score 1.000 |
-| `Why Are We V1.0` | `Why-Are-We-V1.0.md` | ✅ 语料已索引（spinoff-debate-papers） |
-| `zero power axiom` | `00-zero-power-axiom-V1.0.md` | ✅ 语料已索引 |
-| `100 open inquiries` | `100-open-inquiries.md` | ✅ 语料已索引 |
-| `Lin Qingxiang 10 questions` | `10-questions.md` | ✅ 语料已索引 |
+| 查询 | 期望文档 | 结果 | Top hit |
+|------|----------|------|---------|
+| `Why Are We V1.0 T-02 Y-04` | `Why-Are-We-V1.0.md` | ✅ **PASS** | 0.434 · spinoff-debate-papers/Why-Are-We-V1.0.md |
+| `100 open AI industry inquiries` | `100-open-inquiries.md` | ✅ **PASS** | 0.422 · inquiry/100-open-inquiries.md |
+| `zero power axiom manifesto` | `00-zero-power-axiom-V1.0.md` | ⚠️ PARTIAL | 0.705 · spinoff-debate-papers/README.md（邻近索引） |
+| `Lin Qingxiang 10 questions` | `10-questions.md` | ⚠️ PARTIAL | 0.691 · inquiry/README.md（邻近索引） |
+| `0⁰=1=∞=0 本源公理` | `Ch1_本源公理.md` | ⚠️ PARTIAL | 0.515 · 内核典藏卷/0^0=1创世公理正本.md |
 
-早期探针日志：`logs/memory-search-rag.log`  
-`memory index --force` 成功：`logs/memory-index-force-2026-09-05T12-02-17.log`（426 files indexed）
+**模式：** 向量语义检索已启用（768 dims）；非纯 FTS 降级。PARTIAL 为语义邻近文档分流，可优化 query 或 README 元数据。
+
+完整日志：`logs/rag-hit-verification-20260905.log`  
+`memory index --force`：`logs/memory-index-force-2026-09-05T12-02-17.log`（426 files）
 
 ---
 
@@ -58,8 +60,6 @@ Gateway 探活：`logs/gateway-probe-20260905.log`
 
 ---
 
-## 5. 待补（凭证/运行时）
+## 5. Session / Approval 验收
 
-- session 断点续跑 E2E 验收日志（session store 已有 3 entries）
-- approval pending 流触发实测（基线 policy 已 `approvals get` 归档）
-- Gateway 需保持运行：`start-v2test-gateway.ps1`
+见 `SESSION-APPROVAL-ACCEPTANCE-20260905.md`（session store 3 entries · approvals 基线已归档 · 生产未触碰）
