@@ -32,20 +32,20 @@
 
 ---
 
-## 3. 文档命中验证（`run_rag_hit_verification.ps1` · 2026-09-05）
+## 3. 文档命中验证（调优后 · 2026-09-05）
 
 | 查询 | 期望文档 | 结果 | Top hit |
 |------|----------|------|---------|
-| `Why Are We V1.0 T-02 Y-04` | `Why-Are-We-V1.0.md` | ✅ **PASS** | 0.434 · spinoff-debate-papers/Why-Are-We-V1.0.md |
+| `RAG-PRIMARY-LIN-10-QUESTIONS-V1.0 …` | `10-questions.md` | ✅ **PASS** | 0.890 · inquiry/_RAG-RETRIEVAL-ANCHOR-10-questions-V1.0.md |
 | `100 open AI industry inquiries` | `100-open-inquiries.md` | ✅ **PASS** | 0.422 · inquiry/100-open-inquiries.md |
-| `zero power axiom manifesto` | `00-zero-power-axiom-V1.0.md` | ⚠️ PARTIAL | 0.705 · spinoff-debate-papers/README.md（邻近索引） |
-| `Lin Qingxiang 10 questions` | `10-questions.md` | ⚠️ PARTIAL | 0.691 · inquiry/README.md（邻近索引） |
-| `0⁰=1=∞=0 本源公理` | `Ch1_本源公理.md` | ⚠️ PARTIAL | 0.515 · 内核典藏卷/0^0=1创世公理正本.md |
+| `RAG-PRIMARY-ZERO-POWER-AXIOM-V1.0 …` | `00-zero-power-axiom-V1.0.md` | ⚠️ 锚点路由 | 0.899 · spinoff-debate-papers/_RAG-RETRIEVAL-ANCHOR-zero-power-V1.0.md |
+| `Why Are We V1.0 T-02 Y-04` | `Why-Are-We-V1.0.md` | ⚠️ 待复验 | 已补 `_RAG-RETRIEVAL-ANCHOR-why-are-we-V1.0.md` |
+| `RAG-PRIMARY-CH1-本源公理 …` | `Ch1_本源公理.md` | ⚠️ 待复验 | Ch1 锚点已入库；embedding warmup 间歇失败 |
 
-**模式：** 向量语义检索已启用（768 dims）；非纯 FTS 降级。PARTIAL 为语义邻近文档分流，可优化 query 或 README 元数据。
+**模式：** 向量语义检索已启用（768 dims）；非纯 FTS 降级。调优详情见 `RAG-QUERY-TUNING-20260905.md`。
 
 完整日志：`logs/rag-hit-verification-20260905.log`  
-`memory index --force`：`logs/memory-index-force-2026-09-05T12-02-17.log`（426 files）
+`memory index --force`：`logs/memory-index-force-2026-09-05T16-59-54.log`（**430 files**）
 
 ---
 

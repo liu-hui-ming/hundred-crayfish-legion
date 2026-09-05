@@ -129,9 +129,9 @@
 | #111 | OPEN | [P1-Roadmap] 2026-08-29 XIAN项目日报 | P2归档闭环 + 四大观测模块 + 三类台账同步 |
 | #112 | OPEN | [P1-Roadmap] 2026-08-30 XIAN项目日报 | P2归档闭环 + 四大观测模块 + 三类台账同步 |
 | #113 | OPEN | [P1-Roadmap] 2026-08-31 XIAN项目日报 | P2归档闭环 + 四大观测模块 + 三类台账同步 |
-| #114 | OPEN | [P1-Roadmap] 2026-09-01 XIAN项目日报 | P2归档闭环 + 四大观测模块 + 三类台账同步 |
-| #115 | OPEN | [P1-Roadmap] 2026-09-02 XIAN项目日报 | P2归档闭环 + 四大观测模块 + 三类台账同步 |
-| #116 | OPEN | [P1-Roadmap] 2026-09-03 XIAN项目日报 | P2归档闭环 + 四大观测模块 + 三类台账同步 |
+| #114 | POSTED | [P1-Roadmap] 2026-09-01 XIAN项目日报 | https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/114 · #79回执已纳入 |
+| #115 | POSTED | [P1-Roadmap] 2026-09-02 XIAN项目日报 | https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/115 · #79回执已纳入 |
+| #116 | POSTED | [P1-Roadmap] 2026-09-03 XIAN项目日报 | https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/116 · #79回执已纳入 |
 
 ## 低优先级（P-Low）
 
