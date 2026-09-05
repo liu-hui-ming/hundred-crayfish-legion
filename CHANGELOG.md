@@ -83,3 +83,8 @@
 • #111 2026-08-29（采样标识 2026-08-29）：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/111；父链基线 dd41661；#79回执对账标记已纳入条目正文。
 • #112 2026-08-30（采样标识 2026-08-30）：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/112；父链基线 dd41661；#79回执对账标记已纳入条目正文。
 • #113 2026-08-31（采样标识 2026-08-31）：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/113；父链基线 dd41661；#79回执对账标记已纳入条目正文。
+
+[2026-09-05] XIAN一日一发补齐（#114–#116，2026-09-01～09-03）
+• #114 2026-09-01：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/114；#79回执对账标记已纳入条目正文。
+• #115 2026-09-02：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/115；#79回执对账标记已纳入条目正文。
+• #116 2026-09-03：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/116；#79回执对账标记已纳入条目正文。
