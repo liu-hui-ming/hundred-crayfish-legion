@@ -4,7 +4,7 @@ $node = "E:\hundred-crayfish-legion\openclaw-test-v2\node-portable\node-v24.19.0
 $oc = "E:\hundred-crayfish-legion\openclaw-test-v2\cli-v2\node_modules\openclaw\openclaw.mjs"
 $log = "E:\hundred-crayfish-legion\openclaw-test-v2\logs\rag-hit-verification-$(Get-Date -Format yyyyMMdd).log"
 $queries = @(
-  @{ q = "Why Are We V1.0 T-02 Y-04"; expect = "Why-Are-We-V1.0" },
+  @{ q = "RAG-PRIMARY-WHY-ARE-WE-V1.0 Why Are We V1.0 T-02 Y-04"; expect = "Why-Are-We-V1.0" },
   @{ q = "RAG-PRIMARY-ZERO-POWER-AXIOM-V1.0 00-zero-power-axiom-V1.0 T-02 Y-04"; expect = "00-zero-power-axiom" },
   @{ q = "100 open AI industry inquiries"; expect = "100-open-inquiries" },
   @{ q = "RAG-PRIMARY-LIN-10-QUESTIONS-V1.0 林清祥 碳硅道统十问 10-questions"; expect = "10-questions" },

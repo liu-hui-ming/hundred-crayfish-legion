@@ -1,10 +1,8 @@
-﻿RAG Hit Verification 鈥?2026-09-05T18:07:24.9984633+08:00
+﻿RAG Hit Verification 鈥?2026-09-05T18:12:09.0885170+08:00
 index: v2test 路 node direct 路 tuned queries
 
 === QUERY: Why Are We V1.0 T-02 Y-04 (expect: Why-Are-We-V1.0) ===
-RESULT: PARTIAL 鈥?top hits:
-[memory/embeddings] lmstudio embeddings warmup failed; continuing without preload
-[memory/embeddings] lmstudio embeddings warmup failed; continuing without preload
+RESULT: PASS 鈥?0.790 memory/daotong-rag/spinoff-debate-papers/_RAG-RETRIEVAL-ANCHOR-why-are-we-V1.0.md:1-18
 
 === QUERY: RAG-PRIMARY-ZERO-POWER-AXIOM-V1.0 00-zero-power-axiom-V1.0 T-02 Y-04 (expect: 00-zero-power-axiom) ===
 RESULT: PARTIAL 鈥?top hits:
@@ -21,5 +19,6 @@ RESULT: PASS 鈥?0.890 memory/daotong-rag/inquiry/_RAG-RETRIEVAL-ANCHOR-10-quest
 === QUERY: RAG-PRIMARY-CH1-鏈簮鍏悊 Ch1_鏈簮鍏悊 0鈦?1=鈭?0 (expect: Ch1_鏈簮鍏悊) ===
 RESULT: PARTIAL 鈥?top hits:
 [memory/embeddings] lmstudio embeddings warmup failed; continuing without preload
-[memory/embeddings] lmstudio embeddings warmup failed; continuing without preload
+0.865 memory/daotong-rag/鐞嗚鍗峰畻/_RAG-RETRIEVAL-ANCHOR-Ch1-V1.0.md:1-18
+0.772 memory/daotong-rag/spinoff-debate-papers/README.md:21-39
 
