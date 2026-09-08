@@ -1,5 +1,11 @@
 # CHANGELOG
 
+[2026-09-08] v2test RAG 复验 + SSOT MD5 指纹同步（dev-v2.2）
+
+• RAG：`memory index --force` 431 files；`Why-Are-We` / `Ch1_本源公理` 命中 PASS（`logs/rag-hit-verification-20260908.log`）。
+
+• SSOT：`carbon-silicon-daotong/README.md` §定稿全局MD5指纹 块同步；phantom diff CLOSED（`PHANTOM-DIFF-RECON-20260905.md`）。
+
 [2026-09-08] 碳硅道统九篇体系主文合集 raw 母本归档（dossier/carbon-silicon-canon-v2/full-release-v2.0/00-nine-essays-core-manifesto · T-02/Y-04 · v2.0-release）
 
 • 路径：`dossier/carbon-silicon-canon-v2/full-release-v2.0/00-nine-essays-core-manifesto/nine-essays-core-manifesto.md`；头部标记「十二脉归一 · 版本T‑02/Y‑04｜v2.0‑release」+ SHA‑256 回填；正文自 `9篇.pdf` 抽取入库（纯正文；已剔除页脚噪声）。
