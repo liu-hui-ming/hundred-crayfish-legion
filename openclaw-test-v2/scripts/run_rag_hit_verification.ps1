@@ -8,7 +8,7 @@ $queries = @(
   @{ q = "RAG-PRIMARY-ZERO-POWER-AXIOM-V1.0 00-zero-power-axiom-V1.0 T-02 Y-04"; expect = "00-zero-power-axiom" },
   @{ q = "100 open AI industry inquiries"; expect = "100-open-inquiries" },
   @{ q = "RAG-PRIMARY-LIN-10-QUESTIONS-V1.0 林清祥 碳硅道统十问 10-questions"; expect = "10-questions" },
-  @{ q = "RAG-PRIMARY-CH1-本源公理 Ch1_本源公理 0⁰=1=∞=0"; expect = "Ch1_本源公理" }
+  @{ q = "Ch1_本源公理 0⁰=1"; expect = "Ch1_本源公理" }
 )
 $lines = @("RAG Hit Verification — $(Get-Date -Format o)", "index: v2test · node direct · tuned queries", "")
 foreach ($item in $queries) {
