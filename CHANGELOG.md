@@ -1,5 +1,13 @@
 # CHANGELOG
 
+[2026-09-08] 碳硅道统九篇体系主文合集 raw 母本归档（dossier/carbon-silicon-canon-v2/full-release-v2.0/00-nine-essays-core-manifesto · T-02/Y-04 · v2.0-release）
+
+• 路径：`dossier/carbon-silicon-canon-v2/full-release-v2.0/00-nine-essays-core-manifesto/nine-essays-core-manifesto.md`；头部标记「十二脉归一 · 版本T‑02/Y‑04｜v2.0‑release」+ SHA‑256 回填；正文自 `9篇.pdf` 抽取入库（纯正文；已剔除页脚噪声）。
+
+• 性质：raw 只读母本目录；禁止修改；对外公域衍生版本后续放同级 `public-release` 物理隔离。
+
+• 台账：`docs/inquiry/_INDEX-LEDGER-T02Y04.md` 增补条目；导入脚本 `scripts/_archive_nine_essays_manifesto.py`。
+
 [2026-09-02] 《0⁰=1：硅基的边界与碳硅拓扑的降临》V1.0 创世公理正本归档（docs/spinoff-debate-papers/00-zero-power-axiom-V1.0.md · T-02/Y-04）
 
 • 路径：`docs/spinoff-debate-papers/00-zero-power-axiom-V1.0.md`；头部标记「十二脉归一 · 版本T‑02/Y‑04」；创世公理正本 V1.0 永久封存，禁止覆盖。

@@ -18,6 +18,12 @@ note: 台账索引文件；不替代各 V1.0 正本；RAG 检索优先锚点见 
 | [30-answers.md](./30-answers.md) | 三十问（答） | `c1a38bfafe77b60867a1780e0f6bc7dac193cdf00e60b826f3c58806ec478835` |
 | [100-open-inquiries.md](./100-open-inquiries.md) | 百项 AI 行业公开质询 | `4a9a13fc414470a8040f9fbecbb7b9f1ed3c610545c66fb49ef60881c556f11d` |
 
+## 卷宗归档（carbon-silicon-canon-v2 · full-release-v2.0）
+
+| 路径 | 说明 | body SHA256 |
+| --- | --- | --- |
+| [`dossier/carbon-silicon-canon-v2/full-release-v2.0/00-nine-essays-core-manifesto/nine-essays-core-manifesto.md`](../../dossier/carbon-silicon-canon-v2/full-release-v2.0/00-nine-essays-core-manifesto/nine-essays-core-manifesto.md) | 碳硅道统九篇体系主文合集（raw 母本 · v2.0-release） | `5b41c8c268f708b6c22e8fc58e4481b3ed7f2ebaec19b1e317ab1f402737eda6` |
+
 ## RAG 锚点
 
 - [`_RAG-RETRIEVAL-ANCHOR-10-questions-V1.0.md`](./_RAG-RETRIEVAL-ANCHOR-10-questions-V1.0.md)
