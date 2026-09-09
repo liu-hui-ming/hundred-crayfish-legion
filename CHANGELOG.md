@@ -1,5 +1,12 @@
 # CHANGELOG
 
+[2026-09-04] XIAN一日一发归档 #117（docs/issue-exports/xian-daily-2026-09-04/ · backlog）
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/117
+• 稿件：`docs/issue-exports/xian-daily-2026-09-04/title.txt` + `body.md`
+• 脚本：`scripts/publish_xian_daily_issue_2026_09_04.ps1`
+• 台账：`docs/issue-registry/` REGISTRY + dt188 ledger
+
 [2026-09-08] v2test RAG 复验 + SSOT MD5 指纹同步（dev-v2.2）
 
 • RAG：`memory index --force` 431 files；`Why-Are-We` / `Ch1_本源公理` 命中 PASS（`logs/rag-hit-verification-20260908.log`）。
