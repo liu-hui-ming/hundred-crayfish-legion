@@ -1,5 +1,12 @@
 # CHANGELOG
 
+[2026-09-06] XIAN一日一发归档 #119（docs/issue-exports/xian-daily-2026-09-06/ · backlog）
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/119
+• 稿件：`docs/issue-exports/xian-daily-2026-09-06/title.txt` + `body.md`
+• 脚本：`scripts/publish_xian_daily_issue_2026_09_06.ps1`
+• 台账：`docs/issue-registry/` REGISTRY + dt188 ledger
+
 [2026-09-05] XIAN一日一发归档 #118（docs/issue-exports/xian-daily-2026-09-05/ · backlog）
 
 • Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/118
