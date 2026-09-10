@@ -1,0 +1,244 @@
+﻿Session + Approval E2E 鈥?2026-09-10T22:15:35.2921823+08:00
+profile: v2test 路 production: NOT TOUCHED
+
+=== gateway status ===
+node.exe : 无法处理来自“E:\hundred-crayfish-legion\openclaw-test-v2\node-portable\node-v24.19.0-win-x64\node.exe”的“Error”流的 X
+ML: 根级别上的数据无效。 第 1 行，位置 361。
+所在位置 E:\hundred-crayfish-legion\openclaw-test-v2\scripts\run_session_approval_e2e_20260909.ps1:19 字符: 30
++ ... lock "gateway status" { & $node $oc --profile v2test gateway status }
++                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : SyntaxError: (E:\hundred-cray...in-x64\node.exe:String) [], XmlException
+    + FullyQualifiedErrorId : ProcessStreamReader_CliXmlError
+ 
+Service: Scheduled Task (missing)
+File logs: ~\AppData\Local\Temp\openclaw\openclaw-v2test-2026-09-10.log
+Host desktop: disabled
+
+Config (cli): ~\.openclaw-v2test\openclaw.json
+Config (service): ~\.openclaw-v2test\openclaw.json
+
+Gateway: bind=loopback (127.0.0.1), port=19001 (env/config)
+Probe target: ws://127.0.0.1:19001
+Dashboard: http://127.0.0.1:19001/
+Probe note: Loopback-only gateway; only local clients can connect.
+
+Runtime: stopped
+Capability: unknown
+
+Troubles: run openclaw --profile v2test status
+Troubleshooting: https://docs.openclaw.ai/troubleshooting
+
+=== health ===
+node.exe : Gateway not reachable at ws://127.0.0.1:19001 (ECONNREFUSED).
+所在位置 E:\hundred-crayfish-legion\openclaw-test-v2\scripts\run_session_approval_e2e_20260909.ps1:20 字符: 22
++ Add-Block "health" { & $node $oc --profile v2test health }
++                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Gateway not rea...(ECONNREFUSED).:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Start it with `openclaw gateway run` or check `openclaw gateway status`.
+Gateway target: ws://127.0.0.1:19001
+Source: local loopback
+Config: C:\Users\user\.openclaw-v2test\openclaw.json
+Bind: loopback
+
+=== approvals get (exec policy) ===
+node.exe : [config] warnings: plugins.entries.openclaw-weixin: plugin openclaw-weixin: duplicate plugin id detected; gl
+obal plugin will be overridden by global plugin (C:\Users\user\.openclaw-v2test\npm\projects\tencent-weixin-openclaw-we
+ixin-7783ac86ba\node_modules\@tencent-weixin\openclaw-weixin\dist\index.js)
+所在位置 E:\hundred-crayfish-legion\openclaw-test-v2\scripts\run_session_approval_e2e_20260909.ps1:21 字符: 43
++ ... als get (exec policy)" { & $node $oc --profile v2test approvals get }
++                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([config] warnin...\dist\index.js):String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Showing local approvals.
+
+Approvals
++-----------+----------------------------------------------------------------------------------------------------------+
+| Field     | Value                                                                                                    |
++-----------+----------------------------------------------------------------------------------------------------------+
+| Target    | local                                                                                                    |
+| Path      | ~\.openclaw-v2test\state\openclaw.sqlite#exec_approvals_config                                           |
+| State     | stored                                                                                                   |
+| Hash      | 7a5eb5a09d0d782343ca06c4c32666a9f3781a2f64b3205d328ef8e84005b52f                                         |
+| Version   | 1                                                                                                        |
+| Socket    | ~\.openclaw-v2test\exec-approvals.sock                                                                   |
+| Defaults  | none                                                                                                     |
+| Agents    | 0                                                                                                        |
+| Allowlist | 0                                                                                                        |
++-----------+----------------------------------------------------------------------------------------------------------+
+
+No allowlist entries.
+
+Effective Policy
++------------+--------------------------+--------------------------+------------------------+--------------------------+
+| Scope      | Requested                | Host                     | Effective              | Notes                    |
++------------+--------------------------+--------------------------+------------------------+--------------------------+
+| tools.exec | security=full (OpenClaw  | security=full (inherits  | security=full\nask=off | requested security       |
+|            | default                  | requested tool           |                        | applies; requested ask   |
+|            | (full))\nask=off         | policy)\nask=off         |                        | applies                  |
+|            | (OpenClaw default (off)) | (inherits requested      |                        |                          |
+|            |                          | tool                     |                        |                          |
+|            |                          | policy)\naskFallback=den |                        |                          |
+|            |                          | y (OpenClaw default      |                        |                          |
+|            |                          | (deny))                  |                        |                          |
++------------+--------------------------+--------------------------+------------------------+--------------------------+
+
+Precedence: Effective exec policy is the host approvals policy intersected with requested tools.exec policy. Per-session /exec overrides are not included; run /exec in the relevant session to inspect its current defaults.
+
+=== approvals pending ===
+node.exe : Gateway not reachable at ws://127.0.0.1:19001 (ECONNREFUSED).
+所在位置 E:\hundred-crayfish-legion\openclaw-test-v2\scripts\run_session_approval_e2e_20260909.ps1:22 字符: 33
++ ... approvals pending" { & $node $oc --profile v2test approvals pending }
++                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Gateway not rea...(ECONNREFUSED).:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Start it with `openclaw gateway run` or check `openclaw gateway status`.
+Gateway target: ws://127.0.0.1:19001
+Source: local loopback
+Config: C:\Users\user\.openclaw-v2test\openclaw.json
+Bind: loopback
+
+=== memory status --deep --json (session sources) ===
+node.exe : [plugins] openclaw-weixin failed during register from C:\Users\user\.openclaw-v2test\npm\projects\tencent-we
+ixin-openclaw-weixin-7783ac86ba\node_modules\@tencent-weixin\openclaw-weixin\dist\index.js: Error: Plugin "openclaw-wei
+xin" runtime is intentionally unavailable during "cli-metadata" registration. Declare root commands in the manifest's c
+liCommands or defer runtime access out of register().
+所在位置 E:\hundred-crayfish-legion\openclaw-test-v2\scripts\run_session_approval_e2e_20260909.ps1:24 字符: 3
++   & $node $oc --profile v2test memory status --deep --json
++   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([plugins] openc... of register().:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[plugins] openclaw-weixin failed during register from C:\Users\user\.openclaw-v2test\npm\projects\tencent-weixin-opencl
+aw-weixin-7783ac86ba\node_modules\@tencent-weixin\openclaw-weixin\dist\index.js: Error: Plugin "openclaw-weixin" runtim
+e is intentionally unavailable during "cli-metadata" registration. Declare root commands in the manifest's cliCommands 
+or defer runtime access out of register().
+Config warnings: plugins.entries.openclaw-weixin: plugin openclaw-weixin: duplicate plugin id detected; global plugin w
+ill be overridden by global plugin (C:\Users\user\.openclaw-v2test\npm\projects\tencent-weixin-openclaw-weixin-7783ac86
+ba\node_modules\@tencent-weixin\openclaw-weixin\dist\index.js)
+[memory/embeddings] lmstudio embeddings warmup failed; continuing without preload
+[
+  {
+    "agentId": "main",
+    "status": {
+      "backend": "builtin",
+      "files": 431,
+      "chunks": 6307,
+      "dirty": false,
+      "workspaceDir": "E:\\hundred-crayfish-legion\\openclaw-test-v2\\workspace",
+      "dbPath": "C:\\Users\\user\\.openclaw-v2test\\agents\\main\\agent\\openclaw-agent.sqlite",
+      "provider": "lmstudio",
+      "model": "nomic-embed-text-v1.5",
+      "requestedProvider": "lmstudio",
+      "sources": [
+        "memory",
+        "sessions"
+      ],
+      "extraPaths": [],
+      "sourceCounts": [
+        {
+          "source": "memory",
+          "files": 430,
+          "chunks": 6306,
+          "dirty": false,
+          "eligible": 430,
+          "issues": []
+        },
+        {
+          "source": "sessions",
+          "files": 1,
+          "chunks": 1,
+          "eligible": 1,
+          "issues": []
+        }
+      ],
+      "cache": {
+        "enabled": true,
+        "entries": 6281,
+        "maxEntries": 50000
+      },
+      "fts": {
+        "enabled": true,
+        "available": true
+      },
+      "vector": {
+        "enabled": true,
+        "index": {
+          "state": "complete"
+        },
+        "storeAvailable": true,
+        "semanticAvailable": true,
+        "available": true,
+        "extensionPath": "E:\\hundred-crayfish-legion\\openclaw-test-v2\\cli-v2\\node_modules\\sqlite-vec-windows-x64\\vec0.dll",
+        "dims": 768
+      },
+      "batch": {
+        "enabled": false,
+        "failures": 0,
+        "limit": 2,
+        "wait": true,
+        "concurrency": 2,
+        "pollIntervalMs": 2000,
+        "timeoutMs": 3600000
+      },
+      "custom": {
+        "searchMode": "hybrid",
+        "providerState": {
+          "mode": "active",
+          "providerId": "lmstudio"
+        },
+        "indexIdentity": {
+          "status": "valid"
+        }
+      }
+    },
+    "embeddingProbe": {
+      "ok": true
+    },
+    "scan": {
+      "sources": [
+        {
+          "source": "memory",
+          "totalFiles": 430,
+          "issues": []
+        },
+        {
+          "source": "sessions",
+          "totalFiles": 1,
+          "issues": []
+        }
+      ],
+      "totalFiles": 431,
+      "issues": []
+    },
+    "audit": {
+      "storePath": "plugin-state:memory-core/short-term-recall/1c8da5d928b397bb107f451415fb4938aaec28c8a2e1585829595d9eb2af6af0",
+      "lockPath": "plugin-state:memory-core/short-term-locks/1c8da5d928b397bb107f451415fb4938aaec28c8a2e1585829595d9eb2af6af0",
+      "exists": false,
+      "entryCount": 0,
+      "promotedCount": 0,
+      "spacedEntryCount": 0,
+      "conceptTaggedEntryCount": 0,
+      "invalidEntryCount": 0,
+      "danglingEntryCount": 0,
+      "issues": []
+    },
+    "dreamingAudit": {
+      "sessionCorpusDir": "E:\\hundred-crayfish-legion\\openclaw-test-v2\\workspace\\memory\\.dreams\\session-corpus",
+      "sessionCorpusFileCount": 0,
+      "suspiciousSessionCorpusFileCount": 0,
+      "suspiciousSessionCorpusLineCount": 0,
+      "sessionIngestionPath": "E:\\hundred-crayfish-legion\\openclaw-test-v2\\workspace\\memory\\.dreams\\session-ingestion.json",
+      "sessionIngestionExists": false,
+      "issues": []
+    }
+  }
+]
+
+=== E2E verdict ===
+RESULT: PASS 鈥?approvals get readable (exec policy surface OK)
+RESULT: PASS 鈥?session source registered in memory status
+

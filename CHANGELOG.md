@@ -1,5 +1,11 @@
 # CHANGELOG
 
+[2026-09-10] v2test Session + Approval E2E 探针 PASS（dev-v2.2 · openclaw-test-v2）
+
+• 脚本：`openclaw-test-v2/scripts/run_session_approval_e2e_20260909.ps1`
+• 日志：`logs/session-approval-e2e-20260910-221535.log`（approvals exec policy 可读 · sessions source 已注册）
+• 环境：profile v2test · 生产未触碰
+
 [2026-09-10] v2test RAG 五路命中全 PASS（dev-v2.2 · openclaw-test-v2）
 
 • 索引：`memory index --force` 431 files（`logs/memory-index-force-20260910-220346.log`）
