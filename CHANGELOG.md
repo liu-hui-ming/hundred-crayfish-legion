@@ -1,5 +1,12 @@
 # CHANGELOG
 
+[2026-09-10] v2test RAG 五路命中全 PASS（dev-v2.2 · openclaw-test-v2）
+
+• 索引：`memory index --force` 431 files（`logs/memory-index-force-20260910-220346.log`）
+• 验证：5/5 PASS（`logs/rag-hit-verification-20260910.log`）；zero-power ASCII 查询 + alt 匹配
+• 脚本：`openclaw-test-v2/scripts/run_rag_hit_verification.ps1`
+• 台账：`P1-RAG-DELIVERY-20260905.md` · `RAG-QUERY-TUNING-20260905.md`
+
 [2026-09-07] XIAN一日一发归档 #120（docs/issue-exports/xian-daily-2026-09-07/ · backlog）
 
 • Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/120

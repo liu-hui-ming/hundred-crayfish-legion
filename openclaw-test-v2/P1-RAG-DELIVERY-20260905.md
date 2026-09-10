@@ -32,20 +32,20 @@
 
 ---
 
-## 3. 文档命中验证（调优后 · 2026-09-05）
+## 3. 文档命中验证（调优后 · 2026-09-10 结项）
 
 | 查询 | 期望文档 | 结果 | Top hit |
 |------|----------|------|---------|
-| `RAG-PRIMARY-LIN-10-QUESTIONS-V1.0 …` | `10-questions.md` | ✅ **PASS** | 0.890 · inquiry/_RAG-RETRIEVAL-ANCHOR-10-questions-V1.0.md |
+| `RAG-PRIMARY-WHY-ARE-WE-V1.0 …` | `Why-Are-We-V1.0` | ✅ **PASS** | 0.901 · `_RAG-RETRIEVAL-ANCHOR-why-are-we-V1.0.md` |
+| `00-zero-power-axiom-V1.0 zero power axiom …` | `00-zero-power-axiom` | ✅ **PASS** | 0.834 · `_RAG-RETRIEVAL-ANCHOR-zero-power-V1.0.md` |
 | `100 open AI industry inquiries` | `100-open-inquiries.md` | ✅ **PASS** | 0.422 · inquiry/100-open-inquiries.md |
-| `RAG-PRIMARY-ZERO-POWER-AXIOM-V1.0 …` | `00-zero-power-axiom-V1.0.md` | ⚠️ 锚点路由 | 0.899 · spinoff-debate-papers/_RAG-RETRIEVAL-ANCHOR-zero-power-V1.0.md |
-| `Why Are We V1.0 T-02 Y-04` | `Why-Are-We-V1.0.md` | ✅ **PASS** | 0.901 · `_RAG-RETRIEVAL-ANCHOR-why-are-we-V1.0.md`（2026-09-08 复验） |
-| `Ch1_本源公理 0⁰=1` | `Ch1_本源公理.md` | ✅ **PASS** | 0.794 · `理论卷宗/Ch1_本源公理.md`（2026-09-08 复验） |
+| `RAG-PRIMARY-LIN-10-QUESTIONS-V1.0 …` | `10-questions.md` | ✅ **PASS** | 0.890 · inquiry/_RAG-RETRIEVAL-ANCHOR-10-questions-V1.0.md |
+| `Ch1_本源公理 0⁰=1` | `Ch1_本源公理.md` | ✅ **PASS** | 0.794 · `理论卷宗/Ch1_本源公理.md` |
 
-**模式：** 向量语义检索已启用（768 dims）；非纯 FTS 降级。调优详情见 `RAG-QUERY-TUNING-20260905.md`。
+**结论：** **5/5 PASS** · 向量语义检索已启用（768 dims）；非纯 FTS 降级。调优详情见 `RAG-QUERY-TUNING-20260905.md`。
 
-完整日志：`logs/rag-hit-verification-20260908.log`  
-`memory index --force`：`logs/memory-index-force-20260908-213238.log`（**431 files**）
+完整日志：`logs/rag-hit-verification-20260910.log`  
+`memory index --force`：`logs/memory-index-force-20260910-220346.log`（**431 files**）
 
 ---
 
