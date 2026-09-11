@@ -1,5 +1,12 @@
 # CHANGELOG
 
+[2026-09-10] XIAN媒体采样归档 #121 · xian-daily-2026-09-10-chinanews-xj
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/121
+• 路径：`docs/issue-exports/xian-daily-2026-09-10-chinanews-xj/`
+• 采样标识：见 body.md 头部
+• 原文：http://www.xj.chinanews.com.cn/kejiao/2026-09-10/detail-ihfizwvu6757040.shtml
+
 [2026-09-10] v2test Session + Approval E2E 探针 PASS（dev-v2.2 · openclaw-test-v2）
 
 • 脚本：`openclaw-test-v2/scripts/run_session_approval_e2e_20260909.ps1`
