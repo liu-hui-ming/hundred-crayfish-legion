@@ -1,5 +1,12 @@
 # CHANGELOG
 
+[2026-09-10] XIAN媒体采样归档 #121 · xian-daily-2026-09-10-leiphone
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/121
+• 路径：`docs/issue-exports/xian-daily-2026-09-10-leiphone/`
+• 采样标识：见 body.md 头部
+• 原文：https://m.leiphone.com/category/industrynews/qSK5aXslh1eHd6A3.html
+
 [2026-09-10] XIAN媒体采样归档 #121 · xian-daily-2026-09-10-chinanews-xj
 
 • Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/121
