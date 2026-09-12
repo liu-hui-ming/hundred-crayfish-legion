@@ -180,37 +180,32 @@ def extract_hubeidaily(page_text: str) -> tuple[str, str]:
 
 def extract_newfj(page_text: str, fallback_title: str | None) -> tuple[str, str]:
     lines = [ln.strip() for ln in page_text.splitlines() if ln.strip()]
-    skip = {
-        "新福建网",
-        "网站首页",
-        "登录",
-        "注册",
-        "手机版",
-        "微信",
-        "微博",
-        "分享",
-    }
     title = fallback_title or ""
+    title_idx = -1
+    for i, ln in enumerate(lines):
+        if fallback_title and ln == fallback_title:
+            title = ln
+            title_idx = i
+            break
+        if "碳硅道统" in ln and len(ln) > 20 and "首发" not in ln:
+            title = ln
+            title_idx = i
+            break
+    if title_idx < 0:
+        return title or fallback_title or "UNKNOWN_TITLE", ""
+
     body_lines: list[str] = []
     started = False
-    for ln in lines:
-        if ln in skip:
+    for ln in lines[title_idx + 1 :]:
+        if ln == title or ln in ("科技", "登录", "注册", "手机版"):
             continue
-        if not title and "碳硅道统" in ln:
-            title = ln
+        if re.match(r"^\d{4}-\d{2}-\d{2}", ln) or ln.startswith("来源"):
             continue
-        if title and re.match(r"^\d{4}-\d{2}-\d{2}", ln):
-            continue
-        if title and ln.startswith("来源"):
-            continue
-        if title:
-            if ln.startswith("责任编辑") or ln in ("相关阅读", "上一篇", "下一篇"):
-                break
-            if len(ln) > 15 or started:
-                started = True
-                body_lines.append(ln)
-    if not title:
-        title = fallback_title or "UNKNOWN_TITLE"
+        if ln.startswith("责任编辑") or "本平台所发布信息" in ln:
+            break
+        if len(ln) > 20 or started:
+            started = True
+            body_lines.append(ln)
     return title, "\n\n".join(body_lines)
 
 
