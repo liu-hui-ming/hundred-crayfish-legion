@@ -136,6 +136,7 @@
 | #118 | POSTED | [P1-Roadmap] 2026-09-05 XIAN项目日报 | https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/118 · #79回执已纳入 |
 | #119 | POSTED | [P1-Roadmap] 2026-09-06 XIAN项目日报 | https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/119 · #79回执已纳入 |
 | #120 | POSTED | [P1-Roadmap] 2026-09-07 XIAN项目日报 | https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/120 · #79回执已纳入 |
+| #122 | POSTED | Batch #124 · 9篇媒体采样归档 2026-09-11 | https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/122 · 九篇见 docs/issue-exports/xian-daily-2026-09-11-* |
 
 ## 低优先级（P-Low）
 
