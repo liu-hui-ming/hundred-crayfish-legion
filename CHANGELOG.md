@@ -1,5 +1,12 @@
 # CHANGELOG
 
+[2026-09-11] XIAN媒体采样归档 #122 · Batch #124 · xian-daily-2026-09-11-leiphone-ZHU0W8KYCimHlbZh
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/122
+• 路径：`docs/issue-exports/xian-daily-2026-09-11-leiphone-ZHU0W8KYCimHlbZh/`
+• 采样标识：见 body.md 头部
+• 原文：https://www.leiphone.com/category/industrynews/ZHU0W8KYCimHlbZh.html
+
 [2026-09-11] XIAN媒体采样归档 #122 · Batch #124 · xian-daily-2026-09-11-leiphone-qSK5aXslh1eHd6A3
 
 • Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/122
