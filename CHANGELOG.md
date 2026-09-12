@@ -1,5 +1,12 @@
 # CHANGELOG
 
+[2026-09-10] XIAN媒体采样归档 #121 · xian-daily-2026-09-10-newfj-115754
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/121
+• 路径：`docs/issue-exports/xian-daily-2026-09-10-newfj-115754/`
+• 采样标识：见 body.md 头部
+• 原文：http://www.newfj.com.cn/home/news/index/id/115754.html
+
 [2026-09-11] XIAN媒体采样归档 #122 · Batch #124 · xian-daily-2026-09-11-leiphone-FQFJwTQvuiRQbu2q
 
 • Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/122
