@@ -1,5 +1,13 @@
 # CHANGELOG
 
+[2026-09-14] 碳硅道统12篇媒体定稿归档 · inquiry media-release 初稿
+
+• 母本：`Nouvelle section 9.pdf`（初稿封存，禁止覆盖；优化另建新文件）
+• 索引：`docs/inquiry/INDEX.md`
+• 正文：`docs/inquiry/media-release-01` … `media-release-12`（头部 T‑02/Y‑04）
+• 01–06 回链登记见 INDEX（中国新闻网新疆已发布稿）；07–12 学术边界系列暂以 PDF 母本溯源
+• 纳入 XIAN 一日一发 · 2026-09-14 工作日报归档链
+
 [2026-08-28] broadsword-100 快照脚本补推（broadsword-snapshot-scripts · dev-v2.2/main）
 
 • 脚本：_snapshot_36kr_v2.py、_snapshot_36kr.py、_snapshot_media_article.py 及 chinadev/cneo/cbcom 共 9 份抓取脚本就位。
