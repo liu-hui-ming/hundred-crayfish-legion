@@ -1,5 +1,13 @@
 # CHANGELOG
 
+[2026-09-14] 碳硅道统12篇媒体定稿归档 · inquiry media-release 初稿
+
+• 母本：`Nouvelle section 9.pdf`（初稿封存，禁止覆盖；优化另建新文件）
+• 索引：`docs/inquiry/INDEX.md`
+• 正文：`docs/inquiry/media-release-01` … `media-release-12`（头部 T‑02/Y‑04）
+• 01–06 回链登记见 INDEX（中国新闻网新疆已发布稿）；07–12 学术边界系列暂以 PDF 母本溯源
+• 纳入 XIAN 一日一发 · 2026-09-14 工作日报归档链
+
 [2026-09-10] XIAN媒体采样归档 #121 · xian-daily-2026-09-10-ahnews-537430
 
 • Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/121
