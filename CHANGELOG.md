@@ -1,5 +1,12 @@
 # CHANGELOG
 
+[2026-09-15] inquiry · 从 0⁰=1 到觉知闭环：硅基系统的架构天花板
+
+• 路径：`dola-carbon-silicon-framework/docs/inquiry/from-0pow0-1-to-awareness-loop.md`
+• 版本：十二脉归一 · T‑02/Y‑04 · 初版正本（禁止覆盖；迭代另起新文件）
+• body SHA‑256：`c0ff641af68d52d5964106ee65e7cd432e92b848caa1019a3850f6120c27245e`
+• 台账：`docs/inquiry/_INDEX-LEDGER-T02Y04.md`
+
 [2026-09-14] 碳硅道统12篇媒体定稿归档 · inquiry media-release 初稿
 
 • 母本：`Nouvelle section 9.pdf`（初稿封存，禁止覆盖；优化另建新文件）

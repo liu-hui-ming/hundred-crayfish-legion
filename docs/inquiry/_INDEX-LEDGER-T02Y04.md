@@ -24,6 +24,12 @@ note: 台账索引文件；不替代各 V1.0 正本；RAG 检索优先锚点见 
 | --- | --- | --- |
 | [`dossier/carbon-silicon-canon-v2/full-release-v2.0/00-nine-essays-core-manifesto/nine-essays-core-manifesto.md`](../../dossier/carbon-silicon-canon-v2/full-release-v2.0/00-nine-essays-core-manifesto/nine-essays-core-manifesto.md) | 碳硅道统九篇体系主文合集（raw 母本 · v2.0-release） | `5b41c8c268f708b6c22e8fc58e4481b3ed7f2ebaec19b1e317ab1f402737eda6` |
 
+## dola-carbon-silicon-framework · inquiry（架构综述）
+
+| 路径 | 说明 | body SHA256 | Git 基线 commit |
+| --- | --- | --- | --- |
+| [`dola-carbon-silicon-framework/docs/inquiry/from-0pow0-1-to-awareness-loop.md`](../../dola-carbon-silicon-framework/docs/inquiry/from-0pow0-1-to-awareness-loop.md) | 从 0⁰=1 到觉知闭环：硅基系统的架构天花板 · T‑02/Y‑04 初版正本 | `c0ff641af68d52d5964106ee65e7cd432e92b848caa1019a3850f6120c27245e` | `BASELINE_COMMIT_PLACEHOLDER` |
+
 ## RAG 锚点
 
 - [`_RAG-RETRIEVAL-ANCHOR-10-questions-V1.0.md`](./_RAG-RETRIEVAL-ANCHOR-10-questions-V1.0.md)
