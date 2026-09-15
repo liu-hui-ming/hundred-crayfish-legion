@@ -1,5 +1,11 @@
 # CHANGELOG
 
+[2026-09-15] XIAN项目日报 #123 · 2026-09-15
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/123
+• 路径：`docs/issue-exports/xian-daily-2026-09-15/`
+• 要点：inquiry 0⁰=1 稿归档闭环；golden-24h 四条 URL 仍阻塞；安徽镜像仓库内复核一致
+
 [2026-09-15] inquiry · 从 0⁰=1 到觉知闭环：硅基系统的架构天花板
 
 • 路径：`dola-carbon-silicon-framework/docs/inquiry/from-0pow0-1-to-awareness-loop.md`
