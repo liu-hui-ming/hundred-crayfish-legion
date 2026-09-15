@@ -1,4 +1,4 @@
----
+﻿---
 document_id: INQUIRY-LEDGER-T02Y04
 series: docs/inquiry
 version: T-02/Y-04
@@ -28,7 +28,7 @@ note: 台账索引文件；不替代各 V1.0 正本；RAG 检索优先锚点见 
 
 | 路径 | 说明 | body SHA256 | Git 基线 commit |
 | --- | --- | --- | --- |
-| [`dola-carbon-silicon-framework/docs/inquiry/from-0pow0-1-to-awareness-loop.md`](../../dola-carbon-silicon-framework/docs/inquiry/from-0pow0-1-to-awareness-loop.md) | 从 0⁰=1 到觉知闭环：硅基系统的架构天花板 · T‑02/Y‑04 初版正本 | `c0ff641af68d52d5964106ee65e7cd432e92b848caa1019a3850f6120c27245e` | `BASELINE_COMMIT_PLACEHOLDER` |
+| [`dola-carbon-silicon-framework/docs/inquiry/from-0pow0-1-to-awareness-loop.md`](../../dola-carbon-silicon-framework/docs/inquiry/from-0pow0-1-to-awareness-loop.md) | 从 0⁰=1 到觉知闭环：硅基系统的架构天花板 · T‑02/Y‑04 初版正本 | `c0ff641af68d52d5964106ee65e7cd432e92b848caa1019a3850f6120c27245e` | `d223e0db9ec087dd948768c04a7f4514e59551d0` |
 
 ## RAG 锚点
 
