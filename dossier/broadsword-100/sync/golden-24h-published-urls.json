@@ -1,0 +1,7 @@
+{
+  "_comment": "填写四条人工发布后的真实 URL 后运行: python scripts/backfill_golden24h_ledger_snapshots.py --commit",
+  "cyzone843850_wechat": "",
+  "cyzone843850_zhihu": "",
+  "kr36_v2_wechat": "",
+  "kr36_v2_zhihu": ""
+}

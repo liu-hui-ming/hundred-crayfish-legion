@@ -26,7 +26,13 @@
 | 算力堆不出"灵魂"…（36kr v2 版） | 碳硅道统公众号 | 【待发布后补链】 | `golden-24h-36kr-v2-wechat-zhihu.md` | 待人工粘贴发布 |
 | 同上 | 知乎 | 【待发布后补链】 | 同上 | 待人工粘贴发布 |
 
-**结项说明：** 同步链 4 行台账保持「待发布」占位，不写入虚构 URL。发布完成后按 `golden-24h-checklist.md` §3 与 `golden-24h-checklist-36kr-v2.md` §3 回填真实链接与快照文件名。
+**结项说明：** 同步链 4 行台账保持「待发布」占位，不写入虚构 URL。发布完成后：
+
+1. 将四条真实 URL 写入 `sync/golden-24h-published-urls.json`
+2. 执行 `python scripts/backfill_golden24h_ledger_snapshots.py --commit`（校验正文含「算力堆不出」或「碳硅道统」并生成快照）
+3. push `dev-v2.2`
+
+**2026-09-15 状态：** 公开检索 / Sogou 微信 / Bing 仍未命中可核验链接；阻塞于人工提供 URL。
 
 ---
 
