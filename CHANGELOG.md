@@ -8,7 +8,7 @@
 • 快照 SHA‑256：`73e40ee14b5d899fc273ad76946da7f08c5a576a7776ed3799d8c5c4dc627bc5`
 • 回链：https://www.rmzxw.com.cn/c/2026-09-16/3976199.shtml
 • 归档前母基线 Git：`fe49dd7b77baf3f8b7d96ef790aa175c98d250a1`
-• 归档 Git commit：`32b6173dbcb0cabecd14869b10d415ce142cf5c4`
+• 归档 Git commit：`7a665e2f8f3735ed8f52b5e7d52fa14bae9b93be`
 • XIAN：`docs/issue-exports/xian-media-clipping-rmzxw-20260916/` · Issue https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/127
 
 [2026-09-16] 【白皮书】碳硅道统：硅基文明公理体系白皮书（媒体权威对外版） T‑02/Y‑04

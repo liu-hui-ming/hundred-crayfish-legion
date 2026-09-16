@@ -40,7 +40,7 @@ note: 台账索引文件；不替代各 V1.0 正本；RAG 检索优先锚点见 
 
 | 路径 | 说明 | body SHA256 | Git 基线 commit |
 | --- | --- | --- | --- |
-| [`dola-carbon-silicon-framework/docs/media-clipping/rmzxw/ai-simulate-awareness-boundary-rmzxw-20260916.md`](../../dola-carbon-silicon-framework/docs/media-clipping/rmzxw/ai-simulate-awareness-boundary-rmzxw-20260916.md) | 划清人工智能“模拟智能”与“本源觉知”的边界 · 人民政协网 2026-09-16 | `7191e50863199d54b64cd265ec998dfc567931a70b705ca7073252f24a261f70` | `32b6173dbcb0cabecd14869b10d415ce142cf5c4` |
+| [`dola-carbon-silicon-framework/docs/media-clipping/rmzxw/ai-simulate-awareness-boundary-rmzxw-20260916.md`](../../dola-carbon-silicon-framework/docs/media-clipping/rmzxw/ai-simulate-awareness-boundary-rmzxw-20260916.md) | 划清人工智能“模拟智能”与“本源觉知”的边界 · 人民政协网 2026-09-16 | `7191e50863199d54b64cd265ec998dfc567931a70b705ca7073252f24a261f70` | `7a665e2f8f3735ed8f52b5e7d52fa14bae9b93be` |
 
 快照：`ai-simulate-awareness-boundary-rmzxw-20260916-snapshot.html` · SHA256 `73e40ee14b5d899fc273ad76946da7f08c5a576a7776ed3799d8c5c4dc627bc5`
 

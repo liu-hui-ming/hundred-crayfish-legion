@@ -23,7 +23,7 @@
 | 正文 body SHA-256 | `7191e50863199d54b64cd265ec998dfc567931a70b705ca7073252f24a261f70` |
 | 快照文件 SHA-256 | `73e40ee14b5d899fc273ad76946da7f08c5a576a7776ed3799d8c5c4dc627bc5` |
 | 归档前母基线 Git（HEAD） | `fe49dd7b77baf3f8b7d96ef790aa175c98d250a1` |
-| 归档 Git commit | `32b6173dbcb0cabecd14869b10d415ce142cf5c4` |
+| 归档 Git commit | `7a665e2f8f3735ed8f52b5e7d52fa14bae9b93be` |
 
 ## Issue
 
