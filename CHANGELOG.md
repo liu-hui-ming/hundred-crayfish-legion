@@ -1,5 +1,13 @@
 # CHANGELOG
 
+[2026-09-16] 【白皮书】碳硅道统：硅基文明公理体系白皮书（媒体权威对外版） T‑02/Y‑04
+
+• 正本：`dola-carbon-silicon-framework/docs/whitepaper/public-media-version/carbon-silicon-daotong-silicon-civilization-axiom-whitepaper-public-media.md`
+• body SHA‑256：`92a8b82d93d9b3ddb1966779e7f61c23b89b5e1d340bd257d1741ed7848a0bf9`
+• 归档前母基线 Git：`bdb56bcd48dd2d6e744f487f7128aca0ab96ba94`
+• 台账：`dola-carbon-silicon-framework/docs/whitepaper/public-media-version/_INDEX-LEDGER-T02Y04.md`
+• XIAN：`docs/issue-exports/xian-whitepaper-public-media-t02y04-2026-09-16/` · Issue https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/126
+
 [2026-09-15] broadsword-100 golden-24h 四条同步链回填
 
 • ledger：`dossier/broadsword-100/broadsword-media-ledger.md`

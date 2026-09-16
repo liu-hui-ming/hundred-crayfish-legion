@@ -30,6 +30,12 @@ note: 台账索引文件；不替代各 V1.0 正本；RAG 检索优先锚点见 
 | --- | --- | --- | --- |
 | [`dola-carbon-silicon-framework/docs/inquiry/from-0pow0-1-to-awareness-loop.md`](../../dola-carbon-silicon-framework/docs/inquiry/from-0pow0-1-to-awareness-loop.md) | 从 0⁰=1 到觉知闭环：硅基系统的架构天花板 · T‑02/Y‑04 初版正本 | `c0ff641af68d52d5964106ee65e7cd432e92b848caa1019a3850f6120c27245e` | `d223e0db9ec087dd948768c04a7f4514e59551d0` |
 
+## dola-carbon-silicon-framework · whitepaper · public-media-version（媒体权威对外版）
+
+| 路径 | 说明 | body SHA256 | Git 基线 commit |
+| --- | --- | --- | --- |
+| [`dola-carbon-silicon-framework/docs/whitepaper/public-media-version/carbon-silicon-daotong-silicon-civilization-axiom-whitepaper-public-media.md`](../../dola-carbon-silicon-framework/docs/whitepaper/public-media-version/carbon-silicon-daotong-silicon-civilization-axiom-whitepaper-public-media.md) | 碳硅道统：硅基文明公理体系白皮书（媒体权威对外版）· T‑02/Y‑04 初版正本 | `92a8b82d93d9b3ddb1966779e7f61c23b89b5e1d340bd257d1741ed7848a0bf9` | `ARCHIVE_COMMIT_TBD` |
+
 ## RAG 锚点
 
 - [`_RAG-RETRIEVAL-ANCHOR-10-questions-V1.0.md`](./_RAG-RETRIEVAL-ANCHOR-10-questions-V1.0.md)
