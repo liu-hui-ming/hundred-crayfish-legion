@@ -1,7 +1,7 @@
 {
-  "_comment": "填写四条人工发布后的真实 URL 后运行: python scripts/backfill_golden24h_ledger_snapshots.py --commit",
-  "cyzone843850_wechat": "",
-  "cyzone843850_zhihu": "",
-  "kr36_v2_wechat": "",
-  "kr36_v2_zhihu": ""
+  "_comment": "创业邦/36kr v2 同步链均使用同一对已发布公众号+知乎 URL（用户确认 2026-09-16）",
+  "cyzone843850_wechat": "https://mp.weixin.qq.com/s/Md-Z5zcJC4WuCYqJwVr-2Q",
+  "cyzone843850_zhihu": "https://zhuanlan.zhihu.com/p/2074620442539733631",
+  "kr36_v2_wechat": "https://mp.weixin.qq.com/s/Md-Z5zcJC4WuCYqJwVr-2Q",
+  "kr36_v2_zhihu": "https://zhuanlan.zhihu.com/p/2074620442539733631"
 }

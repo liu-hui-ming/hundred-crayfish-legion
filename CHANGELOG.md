@@ -1,5 +1,11 @@
 # CHANGELOG
 
+[2026-09-15] broadsword-100 golden-24h 四条同步链回填
+
+• ledger：`dossier/broadsword-100/broadsword-media-ledger.md`
+• 快照：`dossier/broadsword-100/snapshot/snapshot-wechat-cyzone843850-v1.html` 等 4 文件
+• URL 源：`sync/golden-24h-published-urls.json`（真实链接，禁止手工捏造）
+
 [2026-09-14] XIAN媒体采样归档 #124 · Batch #125 · xian-daily-2026-09-14-chinacom-1223196
 
 • Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/124
