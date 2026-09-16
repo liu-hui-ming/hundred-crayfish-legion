@@ -78,12 +78,42 @@ def fetch_html(url: str) -> str:
                 "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
             ),
             "Accept-Language": "zh-CN,zh;q=0.9",
+            "Referer": "https://www.zhihu.com/" if "zhihu.com" in url else "",
         },
     )
-    with urlopen(req, timeout=60) as resp:
-        if resp.status != 200:
-            raise SystemExit(f"HTTP {resp.status} for {url}")
-        return resp.read().decode("utf-8", errors="replace")
+    try:
+        with urlopen(req, timeout=60) as resp:
+            if resp.status != 200:
+                raise SystemExit(f"HTTP {resp.status} for {url}")
+            return resp.read().decode("utf-8", errors="replace")
+    except Exception as exc:
+        if "zhihu.com" not in url:
+            raise
+        print(f"  urllib failed for {url} ({exc}); trying Playwright…")
+        return fetch_html_playwright(url)
+
+
+def fetch_html_playwright(url: str) -> str:
+    try:
+        from playwright.sync_api import sync_playwright
+    except ImportError as exc:
+        raise SystemExit("Zhihu fetch blocked; install playwright: pip install playwright") from exc
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page(
+            user_agent=(
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            ),
+        )
+        page.goto(url, wait_until="domcontentloaded", timeout=90000)
+        page.wait_for_timeout(4000)
+        html = page.content()
+        browser.close()
+    if "40362" in html or "暂时限制本次访问" in html:
+        raise SystemExit(f"Zhihu anti-bot blocked snapshot fetch: {url}")
+    return html
 
 
 def verify_content(html: str, url: str) -> None:
@@ -114,9 +144,9 @@ def patch_ledger(urls: dict[str, str]) -> None:
         snap = SNAPSHOTS[key]
         parts = old_line.split("|")
         # columns: title|platform|type|url|status|time|note|snapshot
-        parts[3] = url
-        parts[4] = "已发布"
-        parts[7] = snap
+        parts[4] = url
+        parts[5] = "已发布"
+        parts[8] = snap
         new_line = "|".join(parts)
         text = text.replace(old_line, new_line, 1)
     # progress table

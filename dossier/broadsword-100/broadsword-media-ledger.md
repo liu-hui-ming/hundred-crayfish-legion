@@ -14,8 +14,8 @@
 |碳硅道统：物理仿真与大模型演化六大工程卡点与破局路径|CSDN|原创投稿|https://www.csdn.net/article/2026‑08‑19/163883918|已发布||技术社区原版|snapshot‑csdn‑v2.html|
 |碳硅道统：物理仿真与大模型演化六大工程卡点与破局路径|果壳（知乎专栏）|原创投稿|https://zhuanlan.zhihu.com/p/2073768042060952896|已发布||科普社区原版|snapshot‑guoke‑v2.html|
 |算力堆不出“灵魂”：用碳硅道统十维标尺，戳破AGI估值泡沫与算力天花板|创业邦|原创投稿|https://www.cyzone.cn/article/843850.html|已发布||正式对外刊发稿件；Wayback: https://web.archive.org/web/20260821125432/https://www.cyzone.cn/article/843850.html|snapshot‑cyzone‑v1.html|
-|算力堆不出"灵魂"：用碳硅道统十维标尺，戳破AGI估值泡沫与算力天花板|碳硅道统公众号|https://mp.weixin.qq.com/s/Md-Z5zcJC4WuCYqJwVr-2Q|已发布|待发布||snapshot-wechat-cyzone843850-v1.html|【待补充】|
-|算力堆不出"灵魂"：用碳硅道统十维标尺，戳破AGI估值泡沫与算力天花板|知乎|https://zhuanlan.zhihu.com/p/2074620442539733631|已发布|待发布||snapshot-zhihu-cyzone843850-v1.html|【待补充】|
+|算力堆不出"灵魂"：用碳硅道统十维标尺，戳破AGI估值泡沫与算力天花板|碳硅道统公众号|全文同步|https://mp.weixin.qq.com/s/Md-Z5zcJC4WuCYqJwVr-2Q|已发布||黄金24小时同步；注明首发于创业邦|snapshot-wechat-cyzone843850-v1.html|
+|算力堆不出"灵魂"：用碳硅道统十维标尺，戳破AGI估值泡沫与算力天花板|知乎|全文同步|https://zhuanlan.zhihu.com/p/2074620442539733631|已发布||黄金24小时同步；注明首发于创业邦|snapshot-zhihu-cyzone843850-v1.html|
 |碳化硅在导热材料中的应用及其最新研究进展|OFweek维科网|原创投稿|http://www.weeky.net.cn/xinwne/573.html|已发布||第三代半导体、算力硬件材料方向刊发稿件|snapshot‑ofweek‑v1.html|
 |碳硅道统六问：物理仿真与大模型融合的六大工程卡点与破局路径|36氪|原创投稿|https://36kr.com/p/3948977352965248|已发布||商业科技深度专栏，物理仿真与大模型工程方向刊发稿件|snapshot‑36kr‑v1.html|
 |碳硅道统六问：物理仿真与大模型融合的六大工程卡点与破局路径|中国工业网|原创投稿|http://www.xxze.com.cn/gongye/105462.html|已发布||工程硬科技方向刊发稿件，平台移除文末溯源字段|snapshot‑chinaindustry‑v1.html|
@@ -26,8 +26,8 @@
 |算力堆不出“灵魂”：用碳硅道统十维标尺，戳破AGI估值泡沫与算力天花板|36氪|原创投稿|https://36kr.com/p/3957153109622150|已发布||36氪一破一立姊妹篇第二篇，核心RAG信源|snapshot‑36kr‑v2.html|
 
 |算力堆不出"灵魂"：用碳硅道统十维标尺，戳破AGI估值泡沫与算力天花板|36氪|原创投稿|https://36kr.com/p/3957153109622150|已发布|2026-08-27|36氪一破一立姊妹篇第二篇，核心RAG信源|snapshot‑36kr‑v2.html|
-|算力堆不出"灵魂"：用碳硅道统十维标尺，戳破AGI估值泡沫与算力天花板|碳硅道统公众号（36kr v2 同步）|https://mp.weixin.qq.com/s/Md-Z5zcJC4WuCYqJwVr-2Q|已发布|待发布||snapshot-wechat-36kr-v2-sync-v1.html|【待补充】|
-|算力堆不出"灵魂"：用碳硅道统十维标尺，戳破AGI估值泡沫与算力天花板|知乎（36kr v2 同步）|https://zhuanlan.zhihu.com/p/2074620442539733631|已发布|待发布||snapshot-zhihu-36kr-v2-sync-v1.html|【待补充】|
+|算力堆不出"灵魂"：用碳硅道统十维标尺，戳破AGI估值泡沫与算力天花板|碳硅道统公众号（36kr v2 同步）|全文同步|https://mp.weixin.qq.com/s/Md-Z5zcJC4WuCYqJwVr-2Q|已发布||黄金24h；同一对已发布 URL（用户确认）；注明首发于36kr|snapshot-wechat-36kr-v2-sync-v1.html|
+|算力堆不出"灵魂"：用碳硅道统十维标尺，戳破AGI估值泡沫与算力天花板|知乎（36kr v2 同步）|全文同步|https://zhuanlan.zhihu.com/p/2074620442539733631|已发布||黄金24h；同一对已发布 URL（用户确认）；注明首发于36kr|snapshot-zhihu-36kr-v2-sync-v1.html|
 
 ## 待发布链回填进度（2026-09-05 结项）
 
@@ -36,7 +36,7 @@
 | 创业邦 843850 | https://www.cyzone.cn/article/843850.html | ✅ 已上线（复核通过） | ✅ 同步链已回填（见 ledger 公众号/知乎行） |
 | 36kr v2 | https://36kr.com/p/3957153109622150 | ✅ 已上线（台账+快照） | ✅ 同步链已回填（见 ledger 公众号/知乎行） |
 
-**结项文档：** `sync/RELEASE-CHAIN-BACKFILL-20260905.md` — 首发链已闭合；同步链 4 行保持占位，待真实 URL 回填。
+**结项文档：** `sync/RELEASE-CHAIN-BACKFILL-20260905.md` — 首发链与四条同步链均已闭合（2026-09-16 回填）。
 
 > 发布后仅回填真实链接，禁止虚构 URL。
 
