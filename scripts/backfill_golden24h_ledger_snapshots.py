@@ -21,6 +21,7 @@ LEDGER = ROOT / "dossier/broadsword-100/broadsword-media-ledger.md"
 SNAP_DIR = ROOT / "dossier/broadsword-100/snapshot"
 RELEASE = ROOT / "dossier/broadsword-100/sync/RELEASE-CHAIN-BACKFILL-20260905.md"
 CHANGELOG = ROOT / "CHANGELOG.md"
+ISSUE_LEDGER = ROOT / "docs/issue-registry/2026-08-15-dt188-closure-issues-ledger.md"
 
 TITLE_NEEDLE = "算力堆不出"
 ALT_NEEDLE = "碳硅道统"
@@ -130,6 +131,24 @@ def patch_ledger(urls: dict[str, str]) -> None:
     LEDGER.write_text(text, encoding="utf-8", newline="\n")
 
 
+def sync_dt188_golden24h_backfill() -> None:
+    needle = "golden-24h 四条同步链已回填"
+    text = ISSUE_LEDGER.read_text(encoding="utf-8")
+    if needle in text:
+        return
+    line = (
+        "| — | POSTED | broadsword-100 golden-24h 四条同步链回填 | "
+        "`dossier/broadsword-100/broadsword-media-ledger.md` · 见 CHANGELOG golden-24h 四条 |"
+    )
+    note = (
+        "\n\n**golden-24h 四条同步链已回填（台账行，非 Issue 编号）：** "
+        "创业邦/36kr v2 公众号+知乎 · `sync/golden-24h-published-urls.json` · snapshot 四文件\n"
+    )
+    anchor = "## 低优先级（P-Low）"
+    head, tail = text.split(anchor, 1)
+    ISSUE_LEDGER.write_text(head.rstrip() + "\n" + line + note + "\n" + anchor + tail, encoding="utf-8")
+
+
 def prepend_changelog() -> None:
     block = (
         "[2026-09-15] broadsword-100 golden-24h 四条同步链回填\n\n"
@@ -164,6 +183,7 @@ def main() -> int:
             print(f"  snapshot {path.name} ({len(html)} bytes)")
 
     patch_ledger(urls)
+    sync_dt188_golden24h_backfill()
     prepend_changelog()
     print("Ledger updated.")
 
@@ -173,6 +193,7 @@ def main() -> int:
             "dossier/broadsword-100/snapshot",
             "dossier/broadsword-100/sync/golden-24h-published-urls.json",
             "CHANGELOG.md",
+            str(ISSUE_LEDGER.relative_to(ROOT)),
         ]
         subprocess.run(["git", "add", *rel], cwd=ROOT, check=True)
         subprocess.run(
