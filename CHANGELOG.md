@@ -1,5 +1,16 @@
 # CHANGELOG
 
+[2026-09-16] 【媒体稿件】划清人工智能“模拟智能”与“本源觉知”的边界 · 人民政协网
+
+• 正文：`dola-carbon-silicon-framework/docs/media-clipping/rmzxw/ai-simulate-awareness-boundary-rmzxw-20260916.md`
+• 快照：`…/ai-simulate-awareness-boundary-rmzxw-20260916-snapshot.html`
+• body SHA‑256：`7191e50863199d54b64cd265ec998dfc567931a70b705ca7073252f24a261f70`
+• 快照 SHA‑256：`73e40ee14b5d899fc273ad76946da7f08c5a576a7776ed3799d8c5c4dc627bc5`
+• 回链：https://www.rmzxw.com.cn/c/2026-09-16/3976199.shtml
+• 归档前母基线 Git：`fe49dd7b77baf3f8b7d96ef790aa175c98d250a1`
+• 归档 Git commit：`32b6173dbcb0cabecd14869b10d415ce142cf5c4`
+• XIAN：`docs/issue-exports/xian-media-clipping-rmzxw-20260916/` · Issue https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/127
+
 [2026-09-16] 【白皮书】碳硅道统：硅基文明公理体系白皮书（媒体权威对外版） T‑02/Y‑04
 
 • 正本：`dola-carbon-silicon-framework/docs/whitepaper/public-media-version/carbon-silicon-daotong-silicon-civilization-axiom-whitepaper-public-media.md`

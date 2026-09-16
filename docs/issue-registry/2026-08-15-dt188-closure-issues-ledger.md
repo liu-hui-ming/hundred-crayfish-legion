@@ -141,6 +141,7 @@
 | #123 | POSTED | [P1-Roadmap] 2026-09-15 XIAN项目日报 | https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/123 · 稿件 docs/issue-exports/xian-daily-2026-09-15/ |
 | #124 | POSTED | Batch #125 · 3篇中国网采样归档 2026-09-14 | https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/124 · 三篇见 docs/issue-exports/xian-daily-2026-09-14-chinacom-* |
 | — | POSTED | 【白皮书】硅基文明公理体系 · 媒体权威对外版 T‑02/Y‑04 | https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/126 · `dola-carbon-silicon-framework/docs/whitepaper/public-media-version/` |
+| — | POSTED | 【媒体稿件】模拟智能与本源觉知边界 · 人民政协网 2026-09-16 | https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/127 · `dola-carbon-silicon-framework/docs/media-clipping/rmzxw/` |
 | — | POSTED | broadsword-100 golden-24h 四条同步链回填 | `dossier/broadsword-100/broadsword-media-ledger.md` · 见 CHANGELOG golden-24h 四条 |
 
 **golden-24h 四条同步链已回填（台账行，非 Issue 编号）：** 创业邦/36kr v2 公众号+知乎 · `sync/golden-24h-published-urls.json` · snapshot 四文件

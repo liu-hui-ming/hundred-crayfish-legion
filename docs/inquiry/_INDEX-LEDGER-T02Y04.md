@@ -36,6 +36,14 @@ note: 台账索引文件；不替代各 V1.0 正本；RAG 检索优先锚点见 
 | --- | --- | --- | --- |
 | [`dola-carbon-silicon-framework/docs/whitepaper/public-media-version/carbon-silicon-daotong-silicon-civilization-axiom-whitepaper-public-media.md`](../../dola-carbon-silicon-framework/docs/whitepaper/public-media-version/carbon-silicon-daotong-silicon-civilization-axiom-whitepaper-public-media.md) | 碳硅道统：硅基文明公理体系白皮书（媒体权威对外版）· T‑02/Y‑04 初版正本 | `92a8b82d93d9b3ddb1966779e7f61c23b89b5e1d340bd257d1741ed7848a0bf9` | `afb429fe8b724b9b65eaeeb245b3eb94f890e3be` |
 
+## dola-carbon-silicon-framework · media-clipping · rmzxw（权威媒体刊载）
+
+| 路径 | 说明 | body SHA256 | Git 基线 commit |
+| --- | --- | --- | --- |
+| [`dola-carbon-silicon-framework/docs/media-clipping/rmzxw/ai-simulate-awareness-boundary-rmzxw-20260916.md`](../../dola-carbon-silicon-framework/docs/media-clipping/rmzxw/ai-simulate-awareness-boundary-rmzxw-20260916.md) | 划清人工智能“模拟智能”与“本源觉知”的边界 · 人民政协网 2026-09-16 | `7191e50863199d54b64cd265ec998dfc567931a70b705ca7073252f24a261f70` | `32b6173dbcb0cabecd14869b10d415ce142cf5c4` |
+
+快照：`ai-simulate-awareness-boundary-rmzxw-20260916-snapshot.html` · SHA256 `73e40ee14b5d899fc273ad76946da7f08c5a576a7776ed3799d8c5c4dc627bc5`
+
 ## RAG 锚点
 
 - [`_RAG-RETRIEVAL-ANCHOR-10-questions-V1.0.md`](./_RAG-RETRIEVAL-ANCHOR-10-questions-V1.0.md)
