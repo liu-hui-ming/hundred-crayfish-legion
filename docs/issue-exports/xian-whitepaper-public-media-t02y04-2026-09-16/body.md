@@ -14,7 +14,7 @@
 | --- | --- |
 | body SHA-256 | `92a8b82d93d9b3ddb1966779e7f61c23b89b5e1d340bd257d1741ed7848a0bf9` |
 | 归档前母基线 Git（HEAD） | `bdb56bcd48dd2d6e744f487f7128aca0ab96ba94` |
-| 归档 Git commit | `ARCHIVE_COMMIT_TBD`（见 `_INDEX-LEDGER-T02Y04.md`） |
+| 归档 Git commit | `afb429fe8b724b9b65eaeeb245b3eb94f890e3be` |
 
 ## Issue
 

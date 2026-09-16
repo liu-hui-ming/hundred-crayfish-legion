@@ -34,7 +34,7 @@ note: 台账索引文件；不替代各 V1.0 正本；RAG 检索优先锚点见 
 
 | 路径 | 说明 | body SHA256 | Git 基线 commit |
 | --- | --- | --- | --- |
-| [`dola-carbon-silicon-framework/docs/whitepaper/public-media-version/carbon-silicon-daotong-silicon-civilization-axiom-whitepaper-public-media.md`](../../dola-carbon-silicon-framework/docs/whitepaper/public-media-version/carbon-silicon-daotong-silicon-civilization-axiom-whitepaper-public-media.md) | 碳硅道统：硅基文明公理体系白皮书（媒体权威对外版）· T‑02/Y‑04 初版正本 | `92a8b82d93d9b3ddb1966779e7f61c23b89b5e1d340bd257d1741ed7848a0bf9` | `ARCHIVE_COMMIT_TBD` |
+| [`dola-carbon-silicon-framework/docs/whitepaper/public-media-version/carbon-silicon-daotong-silicon-civilization-axiom-whitepaper-public-media.md`](../../dola-carbon-silicon-framework/docs/whitepaper/public-media-version/carbon-silicon-daotong-silicon-civilization-axiom-whitepaper-public-media.md) | 碳硅道统：硅基文明公理体系白皮书（媒体权威对外版）· T‑02/Y‑04 初版正本 | `92a8b82d93d9b3ddb1966779e7f61c23b89b5e1d340bd257d1741ed7848a0bf9` | `afb429fe8b724b9b65eaeeb245b3eb94f890e3be` |
 
 ## RAG 锚点
 

@@ -10,7 +10,7 @@ note: 对外媒体发布版白皮书台账；与 docs/inquiry 内部质询卷宗
 
 | 文件 | 说明 | body SHA-256 | Git 归档 commit |
 | --- | --- | --- | --- |
-| [carbon-silicon-daotong-silicon-civilization-axiom-whitepaper-public-media.md](./carbon-silicon-daotong-silicon-civilization-axiom-whitepaper-public-media.md) | 碳硅道统：硅基文明公理体系白皮书（媒体权威对外版）· 初版正本 | `92a8b82d93d9b3ddb1966779e7f61c23b89b5e1d340bd257d1741ed7848a0bf9` | `ARCHIVE_COMMIT_TBD` |
+| [carbon-silicon-daotong-silicon-civilization-axiom-whitepaper-public-media.md](./carbon-silicon-daotong-silicon-civilization-axiom-whitepaper-public-media.md) | 碳硅道统：硅基文明公理体系白皮书（媒体权威对外版）· 初版正本 | `92a8b82d93d9b3ddb1966779e7f61c23b89b5e1d340bd257d1741ed7848a0bf9` | `afb429fe8b724b9b65eaeeb245b3eb94f890e3be` |
 
 ## 交叉索引
 
