@@ -30,7 +30,7 @@
 
 ## XIAN 归档映射（Batch #125 · 2026-09-14）
 
-Issue #125 · Batch #125
+Issue #124 · Batch #125
 
 - `docs/issue-exports/xian-daily-2026-09-14-chinacom-1223194/` · 1223194.htm
 - `docs/issue-exports/xian-daily-2026-09-14-chinacom-1223195/` · 1223195.htm
