@@ -27,3 +27,12 @@
 标题：碳硅道统：100质询的反证力量与觉知链的完整闭环
 资源：中国网新闻
 回链：http://news.china.com.cn/mts/2026-09/14/content_1223196.htm
+
+## XIAN 归档映射（Batch #125 · 2026-09-14）
+
+Issue #125 · Batch #125
+
+- `docs/issue-exports/xian-daily-2026-09-14-chinacom-1223194/` · 1223194.htm
+- `docs/issue-exports/xian-daily-2026-09-14-chinacom-1223195/` · 1223195.htm
+- `docs/issue-exports/xian-daily-2026-09-14-chinacom-1223196/` · 1223196.htm
+
