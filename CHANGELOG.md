@@ -1,5 +1,12 @@
 # CHANGELOG
 
+[2026-09-14] XIAN媒体采样归档 #124 · Batch #125 · xian-daily-2026-09-14-chinacom-1223195
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/124
+• 路径：`docs/issue-exports/xian-daily-2026-09-14-chinacom-1223195/`
+• 采样标识：见 body.md 头部
+• 原文：http://news.china.com.cn/mts/2026-09/14/content_1223195.htm
+
 [2026-09-14] XIAN媒体采样归档 #124 · Batch #125 · xian-daily-2026-09-14-chinacom-1223194
 
 • Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/124
