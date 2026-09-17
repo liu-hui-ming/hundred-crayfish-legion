@@ -1,0 +1,47 @@
+{
+  "schema": "archive/media/xinhuanet/manifest.v1",
+  "captured_at_utc": "2026-09-17T14:02:54Z",
+  "article_title": "【碳硅道统研判】划清人工智能模拟智能与本源觉知边界 构建可量化AI治理新范式",
+  "sampling_id": "20260917-xinhuanet-碳硅道统-AI边界研判",
+  "tags": [
+    "media-official",
+    "xinhuanet",
+    "carbon-silicon-doctrine"
+  ],
+  "markdown": {
+    "path": "20260917-xinhuanet-碳硅道统-AI边界研判.md",
+    "sha256": "1db7a9122f4c9b98518a7a12eceba5189c9fa653e8d284492a139944bca7e096"
+  },
+  "sources": [
+    {
+      "id": "h5-app",
+      "url": "https://my-h5news.app.xinhuanet.com/h5/article.html?articleId=202609173311567ee73c4cf88985cda055a18cac&share_device_token=b36b592e6911459386b2e40462f69164&share_time=1789613891850&share_type=1",
+      "access_status": "ok",
+      "http_status": 200,
+      "error": "",
+      "page_title": "【碳硅道统研判】划清人工智能模拟智能与本源觉知边界 构建可量化AI治理新范式 - 新华网客户端",
+      "png": "20260917-xinhuanet-碳硅道统-AI边界研判-h5-app-snapshot.png",
+      "mhtml": "20260917-xinhuanet-碳硅道统-AI边界研判-h5-app.mhtml",
+      "png_sha256": "6838435189cbf14fcdc04d990224a872ede2fdfdf4c9daa03e0e2f2ba737aad5",
+      "png_bytes": 214631,
+      "mhtml_sha256": "f027ab046b95e2a5aa8f1329a3e1f4b5710ae5cd96cd7671c5e8080274b3ffb9",
+      "mhtml_bytes": 4399335
+    },
+    {
+      "id": "news-cn",
+      "url": "https://www.news.cn/finance/20260917/3311567ee73c4cf88985cda055a18cac/c.html",
+      "access_status": "ok",
+      "http_status": 200,
+      "error": "",
+      "page_title": "【碳硅道统研判】划清人工智能模拟智能与本源觉知边界 构建可量化AI治理新范式-新华网",
+      "png": "20260917-xinhuanet-碳硅道统-AI边界研判-snapshot.png",
+      "mhtml": "20260917-xinhuanet-碳硅道统-AI边界研判.mhtml",
+      "png_sha256": "2ebb90535f0418be6b45658bf2c60f7a67f0097d20de0292cc9d35caf44cf3c5",
+      "png_bytes": 1156155,
+      "mhtml_sha256": "2c635c9b30909b98362b2d427081a05b700e1f7f289399f46f80f7128f684369",
+      "mhtml_bytes": 1726226
+    }
+  ],
+  "git_commit": "TBD",
+  "remote_push": "frozen_until_explicit_instruction"
+}
