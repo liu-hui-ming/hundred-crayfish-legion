@@ -8,7 +8,7 @@ note: XIAN 一日一发 · 独立文件夹台账；正本禁止覆盖
 
 | 日期 | 文件夹 | Issue | body SHA-256 | Git 归档 commit |
 | --- | --- | --- | --- | --- |
-| 2026-09-16 | [xian-daily-2026-09-16/](./xian-daily-2026-09-16/) | [#128](https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/128) | `9568ad28e99f1b86f18ffa819663837a2e90483f45796a34cf3cc02149db3363` | `ARCHIVE_COMMIT_TBD` |
+| 2026-09-16 | [xian-daily-2026-09-16/](./xian-daily-2026-09-16/) | [#128](https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/128) | `9568ad28e99f1b86f18ffa819663837a2e90483f45796a34cf3cc02149db3363` | `cc745901e01c793d075db08108e75d085391a859` |
 
 **采样标识主日报 · 2026-09-16** — 见 `xian-daily-2026-09-16/body.md` 头部 verbatim 块。
 
