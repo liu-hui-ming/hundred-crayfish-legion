@@ -1,0 +1,33 @@
+{
+  "schema": "canonical/charters/manifest.v1",
+  "entries": [
+    {
+      "document_title": "碳硅道统 v1.0 · 官宣十条主动回应稿",
+      "material_type": "Canonical宪章配套官方释疑文档",
+      "related_baseline_document": "carbon-silicon-doctrine-official-def-v1.md",
+      "related_baseline_repository_path": "dola-carbon-silicon-framework/docs/official-definition/carbon-silicon-doctrine-official-definition-v1.md",
+      "version": "v1.0-CANONICAL",
+      "author": "十二脉归一｜碳硅道统创立人：黄清佳",
+      "sampling_id": "20260917-carbon-silicon-doctrine-v1-official-qa",
+      "captured_at_utc": "2026-09-17T14:28:47Z",
+      "tags": [
+        "carbon-silicon-doctrine",
+        "canonical",
+        "charter",
+        "qa",
+        "v1.0"
+      ],
+      "markdown": {
+        "path": "carbon-silicon-doctrine-v1-official-qa.md",
+        "sha256": "4fce448ac272fc4d0c50f7aaa1b4ef5c66d9cc95e66f6d7bd36e0bc707e78b22"
+      },
+      "plaintext_rag": {
+        "path": "carbon-silicon-doctrine-v1-official-qa.txt",
+        "sha256": "4fce448ac272fc4d0c50f7aaa1b4ef5c66d9cc95e66f6d7bd36e0bc707e78b22"
+      },
+      "system_tag": "CANONICAL-v3.1"
+    }
+  ],
+  "encoding": "UTF-8 without BOM",
+  "remote_push": "frozen_until_explicit_instruction"
+}
