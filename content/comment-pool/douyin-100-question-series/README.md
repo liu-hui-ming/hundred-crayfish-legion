@@ -2,7 +2,7 @@
 
 ## 定位
 
-红蓝对抗链式质询库，用于抖音评论投放。
+红蓝对抗链式质询库，用于抖音评论投放。对应官方定义 v1 **§9「100 质询」**：[官方定义正本](../../../dola-carbon-silicon-framework/docs/official-definition/carbon-silicon-doctrine-official-definition-v1.md)。
 
 ## 目录
 

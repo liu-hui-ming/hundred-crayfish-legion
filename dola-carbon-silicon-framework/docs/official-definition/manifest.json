@@ -1,0 +1,22 @@
+{
+  "schema": "dola-carbon-silicon-framework/docs/official-definition/manifest.v1",
+  "document_title": "碳硅道统 · 官方定义（v1）",
+  "version": "v1",
+  "material_type": "官方定义正本",
+  "sampling_id": "20260917-carbon-silicon-doctrine-official-definition-v1",
+  "captured_at_utc": "2026-09-17T14:26:09Z",
+  "tags": [
+    "carbon-silicon-doctrine",
+    "official-definition",
+    "canonical-v1"
+  ],
+  "markdown": {
+    "path": "carbon-silicon-doctrine-official-definition-v1.md",
+    "sha256": "047f7b62b9595109f4164f407537e04e57e2fc9b88101da4b6764738663f5adb"
+  },
+  "related": {
+    "douyin_100_question_series": "content/comment-pool/douyin-100-question-series/"
+  },
+  "encoding": "UTF-8 without BOM",
+  "remote_push": "frozen_until_explicit_instruction"
+}
