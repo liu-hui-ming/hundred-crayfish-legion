@@ -10,6 +10,7 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
 SRC = REPO / "_tmp_100pdf.txt"
+SRC_PDF = REPO / "100.pdf"
 OUT = REPO / "content" / "comment-pool" / "douyin-100-question-series"
 MAIN_MD = OUT / "carbon-silicon-100-questions-douyin.md"
 PREFIX = "【碳硅道统】@抖音求真 @豆包"
@@ -98,10 +99,19 @@ def write_utf8_no_bom(path: Path, content: str) -> None:
     path.write_text(content, encoding="utf-8", newline="\n")
 
 
+def load_source_text() -> str:
+    if SRC.is_file():
+        return SRC.read_text(encoding="utf-8")
+    if SRC_PDF.is_file():
+        import pypdf
+
+        reader = pypdf.PdfReader(str(SRC_PDF))
+        return "\n".join((p.extract_text() or "") for p in reader.pages)
+    raise SystemExit(f"missing source: {SRC} or {SRC_PDF}")
+
+
 def main() -> None:
-    if not SRC.is_file():
-        raise SystemExit(f"missing source: {SRC}")
-    text = SRC.read_text(encoding="utf-8")
+    text = load_source_text()
     entries = parse_entries(text)
     missing = [n for n in range(1, 101) if n not in entries]
     if missing:
@@ -111,12 +121,13 @@ def main() -> None:
         raise SystemExit(f"bad sub counts: {[(n, len(entries[n])) for n in sorted(bad)[:10]]}")
 
     blocks = [format_block(n, entries[n]) for n in range(1, 101)]
-    main_body = "\n".join(blocks) + "\n"
+    # Blank line between comments so line "N" (comment id) is not read as sub-question N.
+    main_body = "\n\n".join(blocks) + "\n"
     write_utf8_no_bom(MAIN_MD, main_body)
 
     items_dir = OUT / "items"
     for n in range(1, 101):
-        item_body = PREFIX + "\n" + "\n".join(entries[n]) + "\n"
+        item_body = format_block(n, entries[n]) + "\n"
         write_utf8_no_bom(items_dir / f"q-{n:03d}.md", item_body)
 
     md_hash = sha256_file(MAIN_MD)
@@ -125,6 +136,12 @@ def main() -> None:
         "document_title": "碳硅道统 抖音100条链式质询评论集",
         "material_type": "抖音舆论质询文案",
         "total_entries": 100,
+        "sentences_per_comment": "0-6 (7 chained lines per comment)",
+        "numbering_schema": {
+            "comment_id": "1-100 line before prefix in PDF and main md",
+            "chain_index": "0.-6. sub-lines inside each comment",
+            "item_files": "q-NNN.md maps to comment id NNN, not chain index",
+        },
         "sampling_id": SAMPLING_ID,
         "source_pdf": "100.pdf",
         "captured_at_utc": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
@@ -152,15 +169,25 @@ def main() -> None:
 
 ## 定位
 
-红蓝对抗链式质询库，用于抖音评论投放。
+红蓝对抗链式质询库，用于抖音评论投放。对应官方定义 v1 **§9「100 质询」**：[官方定义正本](../../../dola-carbon-silicon-framework/docs/official-definition/carbon-silicon-doctrine-official-definition-v1.md)。
+
+## 序号说明（与 `100.pdf` 一致）
+
+| 层级 | 含义 | 示例 |
+|------|------|------|
+| **评论序号** | 共 100 条抖音评论，PDF/主文档行首单独一行数字 | `1` … `100` |
+| **链式子句** | 每条评论内固定 **7 句**，编号 **0.–6.**（不是第 0–6 条评论） | `0. …` 至 `6. …` |
+| **items/** | `q-001.md` = 第 **1** 条评论全文；`q-100.md` = 第 **100** 条 | 非 700 个单句文件 |
+
+主文档在每条评论之间留空行，避免评论序号 `2` 紧接在上一条 `6.` 之后被误读。
 
 ## 目录
 
 | 文件 | 说明 |
 |------|------|
-| [`carbon-silicon-100-questions-douyin.md`](carbon-silicon-100-questions-douyin.md) | 100条完整原文（序号 + 前缀 + 0–6 子问） |
+| [`carbon-silicon-100-questions-douyin.md`](carbon-silicon-100-questions-douyin.md) | 100 条完整原文（评论序号 + 前缀 + 0–6 七句） |
 | [`manifest.json`](manifest.json) | 元数据与主文档 SHA256 |
-| [`items/`](items/) | 单条拆分 `q-001.md` … `q-100.md` |
+| [`items/`](items/) | 单条拆分 `q-001.md` … `q-100.md`（与评论序号一一对应） |
 
 ## 标签
 

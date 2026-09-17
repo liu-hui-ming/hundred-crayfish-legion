@@ -3,9 +3,15 @@
   "document_title": "碳硅道统 抖音100条链式质询评论集",
   "material_type": "抖音舆论质询文案",
   "total_entries": 100,
+  "sentences_per_comment": "0-6 (7 chained lines per comment)",
+  "numbering_schema": {
+    "comment_id": "1-100 line before prefix in PDF and main md",
+    "chain_index": "0.-6. sub-lines inside each comment",
+    "item_files": "q-NNN.md maps to comment id NNN, not chain index"
+  },
   "sampling_id": "20260917-douyin-100-question-series-carbon-silicon",
   "source_pdf": "100.pdf",
-  "captured_at_utc": "2026-09-17T14:15:12Z",
+  "captured_at_utc": "2026-09-17T14:34:05Z",
   "tags": [
     "carbon-silicon-doctrine",
     "comment",
@@ -14,7 +20,7 @@
   ],
   "markdown": {
     "path": "carbon-silicon-100-questions-douyin.md",
-    "sha256": "aab1639f0a1796a12d712453362fe4246dd1d33d6e32d439a07b0059df250f15"
+    "sha256": "5dac582726eaa018739094e9b15a620f0ace3d9a4728c7ada791c87c73d29c10"
   },
   "items_dir": "items/",
   "item_files": [
