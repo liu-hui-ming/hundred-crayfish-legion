@@ -1,5 +1,13 @@
 # CHANGELOG
 
+[2026-09-16] XIAN项目日报 #128 · 2026-09-16（采样标识主日报）
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/128
+• 路径：`docs/issue-exports/xian-daily-2026-09-16/`
+• body SHA‑256：`9568ad28e99f1b86f18ffa819663837a2e90483f45796a34cf3cc02149db3363`
+• 归档前母基线 Git：`e86b6510a4341190df2f2211107fb806f183d825`
+• 台账：`docs/issue-exports/_INDEX-LEDGER-ISSUE-EXPORTS.md` · `REGISTRY_XIAN_DAILY_2026_09_16`
+
 [2026-09-16] 【媒体稿件】划清人工智能“模拟智能”与“本源觉知”的边界 · 人民政协网
 
 • 正文：`dola-carbon-silicon-framework/docs/media-clipping/rmzxw/ai-simulate-awareness-boundary-rmzxw-20260916.md`

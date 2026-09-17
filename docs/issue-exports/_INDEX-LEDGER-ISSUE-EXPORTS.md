@@ -1,0 +1,19 @@
+---
+document_id: ISSUE-EXPORTS-LEDGER
+series: docs/issue-exports
+note: XIAN 一日一发 · 独立文件夹台账；正本禁止覆盖
+---
+
+# docs/issue-exports · 归档台账
+
+| 日期 | 文件夹 | Issue | body SHA-256 | Git 归档 commit |
+| --- | --- | --- | --- | --- |
+| 2026-09-16 | [xian-daily-2026-09-16/](./xian-daily-2026-09-16/) | [#128](https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/128) | `9568ad28e99f1b86f18ffa819663837a2e90483f45796a34cf3cc02149db3363` | `ARCHIVE_COMMIT_TBD` |
+
+**采样标识主日报 · 2026-09-16** — 见 `xian-daily-2026-09-16/body.md` 头部 verbatim 块。
+
+| 日期 | 文件夹 | Issue |
+| --- | --- | --- |
+| 2026-09-15 | [xian-daily-2026-09-15/](./xian-daily-2026-09-15/) | [#123](https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/123) |
+
+规范：[`XIAN-ARCHIVE-HARD-RULES.md`](./XIAN-ARCHIVE-HARD-RULES.md)
