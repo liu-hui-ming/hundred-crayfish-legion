@@ -2,6 +2,8 @@
 
 宪章级发布公告与 **manifest.json 全局清单**（含 CH1/CH2 全部物料 SHA256）。
 
+**→ [v9.2-calibrated 五物料索引（物料一～五）](./v9.2-calibrated-五物料索引.md)** ← 从这里进五份正本
+
 | 文件 | 说明 |
 | --- | --- |
 | [release-announcement/v9.2-calibrated-full-release-notice.md](./release-announcement/v9.2-calibrated-full-release-notice.md) | **GitHub Release 完整公告**（6条核心改动 → 版本哲学 → 永久存证 → 落款） |

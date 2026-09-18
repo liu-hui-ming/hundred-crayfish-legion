@@ -4,7 +4,7 @@
   "version_fingerprint_label": "SHA v9.2",
   "document_title": "v9.2-calibrated 全套物料全局清单",
   "sampling_id": "20260918-v9.2-calibrated-materials",
-  "captured_at_utc": "2026-09-18T14:17:06Z",
+  "captured_at_utc": "2026-09-18T14:21:07Z",
   "isolation": {
     "CH0-Canonical-Charter": "叙事层 · 宪章与发布公告",
     "CH1-Formality-formalization": "操作层 · 形式化 / 预印本 / 红蓝质询",
@@ -32,7 +32,7 @@
       "path": "CH0-Canonical-Charter/release-announcement/v9.2-calibrated-release-notice.md",
       "layer": "narrative-charter",
       "note": "历史摘要片段；完整粘贴请用 full-release-notice",
-      "sha256": "6752e4c710967da8307925671db280db376b5df624c17a084dd759c6df6cd72d",
+      "sha256": "1a83fd48f5f76cb4cd1b5dc8482eb1f241065d20606949c246fdea4566ac83fe",
       "encoding": "UTF-8 without BOM"
     },
     {
@@ -89,5 +89,5 @@
   ],
   "remote_push_main": "frozen_until_explicit_instruction",
   "encoding": "UTF-8 without BOM",
-  "manifest_sha256": "61f6ab7fbd3f4542d1cdfa946cc9fcbfb15a27013e4478a77fa0b4cfef7fcbd8"
+  "manifest_sha256": "5014c6e3d535d06ca08f317af6e67a561322137f7b93e02908373141b4179f9d"
 }
