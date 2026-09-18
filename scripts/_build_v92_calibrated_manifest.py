@@ -9,9 +9,18 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
 MANIFEST = REPO / "CH0-Canonical-Charter" / "manifest.json"
-SAMPLING_ID = "20260918-v9.2-calibrated-five-materials"
+SAMPLING_ID = "20260918-v9.2-calibrated-materials"
 
 FILES = [
+    {
+        "id": "full-release-notice",
+        "ch_volume": "CH0-Canonical-Charter",
+        "document_title": "碳硅道统·十二脉归一 v9.2-calibrated 完整 Release 公告",
+        "material_type": "GitHub Release 完整公告全文",
+        "path": "CH0-Canonical-Charter/release-announcement/v9.2-calibrated-full-release-notice.md",
+        "layer": "narrative-charter",
+        "release_structure": "标题 → 正文开头 → 核心改动6条 → 版本哲学说明5点 → 永久存证 → 落款",
+    },
     {
         "id": "release-announcement",
         "ch_volume": "CH0-Canonical-Charter",
@@ -19,6 +28,7 @@ FILES = [
         "material_type": "GitHub Release 发布公告摘要",
         "path": "CH0-Canonical-Charter/release-announcement/v9.2-calibrated-release-notice.md",
         "layer": "narrative-charter",
+        "note": "历史摘要片段；完整粘贴请用 full-release-notice",
     },
     {
         "id": "version-philosophy",

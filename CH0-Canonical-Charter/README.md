@@ -4,7 +4,8 @@
 
 | 文件 | 说明 |
 | --- | --- |
-| [release-announcement/v9.2-calibrated-release-notice.md](./release-announcement/v9.2-calibrated-release-notice.md) | GitHub Release 发布公告摘要 |
+| [release-announcement/v9.2-calibrated-full-release-notice.md](./release-announcement/v9.2-calibrated-full-release-notice.md) | **GitHub Release 完整公告**（6条核心改动 → 版本哲学 → 永久存证 → 落款） |
+| [release-announcement/v9.2-calibrated-release-notice.md](./release-announcement/v9.2-calibrated-release-notice.md) | 发布公告摘要（历史片段） |
 | [release-announcement/v9.2-calibrated-version-philosophy.md](./release-announcement/v9.2-calibrated-version-philosophy.md) | Release 版本哲学说明（六条核心改动之后、永久存证之前） |
 | [manifest.json](./manifest.json) | 五份物料路径 + SHA256 |
 

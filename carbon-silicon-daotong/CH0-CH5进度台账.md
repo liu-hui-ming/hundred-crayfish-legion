@@ -72,7 +72,8 @@
 
 | document_id | 路径 | manifest |
 |-------------|------|----------|
-| CH-V92-RELEASE-NOTICE | `CH0-Canonical-Charter/release-announcement/v9.2-calibrated-release-notice.md` | `CH0-Canonical-Charter/manifest.json` → entry `release-announcement` |
+| CH-V92-FULL-RELEASE-NOTICE | `CH0-Canonical-Charter/release-announcement/v9.2-calibrated-full-release-notice.md` | `manifest.json` → entry `full-release-notice` |
+| CH-V92-RELEASE-NOTICE | `CH0-Canonical-Charter/release-announcement/v9.2-calibrated-release-notice.md` | 同上 → entry `release-announcement`（摘要片段） |
 | CH-V92-VERSION-PHILOSOPHY | `CH0-Canonical-Charter/release-announcement/v9.2-calibrated-version-philosophy.md` | 同上 → `version-philosophy`（Release：六条核心改动后、永久存证前） |
 | CH-V92-DOUYIN-SCRIPT | `CH2-media-external/media-scripts/douyin-v9.2-calibrated-script.md` | 同上 → `douyin-script` |
 | CH-V92-PUBLIC-COLUMN | `CH2-media-external/media-scripts/public-column-v9.2-calibrated.md` | 同上 → `public-column` |
