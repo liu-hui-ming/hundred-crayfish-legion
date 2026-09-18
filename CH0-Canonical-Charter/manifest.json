@@ -4,13 +4,50 @@
   "version_fingerprint_label": "SHA v9.2",
   "document_title": "v9.2-calibrated 全套物料全局清单",
   "sampling_id": "20260918-v9.2-calibrated-materials",
-  "captured_at_utc": "2026-09-18T14:21:07Z",
+  "captured_at_utc": "2026-09-18T14:22:57Z",
   "isolation": {
     "CH0-Canonical-Charter": "叙事层 · 宪章与发布公告",
     "CH1-Formality-formalization": "操作层 · 形式化 / 预印本 / 红蓝质询",
     "CH2-media-external": "对外媒体脚本（与工程卷宗路径分离）"
   },
   "external_repos_note": "工程真值源：GitHub carbon-silicon/twelve-meridians/omega-topology（本仓为叙事/物料镜像归档）",
+  "p0_five_materials": [
+    {
+      "material_no": "物料一",
+      "path": "CH0-Canonical-Charter/release-announcement/v9.2-calibrated-release-notice.md",
+      "sha256": "2254efff484e9911cd642255899f7f1eb587d0ac9dbbd227ee4a9af73cbd856e",
+      "ch_volume": "CH0-Canonical-Charter",
+      "document_title": "碳硅道统·十二脉归一 v9.2-calibrated 正式封存版发布"
+    },
+    {
+      "material_no": "物料二",
+      "path": "CH2-media-external/media-scripts/douyin-v9.2-calibrated-script.md",
+      "sha256": "c7cd8c4595e6a5fdda109a2dc027d9f628833a70af1cf23196ad732d39b5d35f",
+      "ch_volume": "CH2-media-external",
+      "document_title": "抖音30-60秒口播精简稿 · v9.2-calibrated"
+    },
+    {
+      "material_no": "物料三",
+      "path": "CH2-media-external/media-scripts/public-column-v9.2-calibrated.md",
+      "sha256": "5c7ac33e00529ca61561d47c6772303b80fc60337b0f77d931c51c8fa80df252",
+      "ch_volume": "CH2-media-external",
+      "document_title": "碳硅道统v9.2封存：给AI觉知划定可验证的边界"
+    },
+    {
+      "material_no": "物料四",
+      "path": "CH1-Formality-formalization/preprint-latex/v9.2-calibrated-abstract.tex",
+      "sha256": "072a70dcc8d18e295865f526ed69cec156b8865be02958bcc4879d7374c95b73",
+      "ch_volume": "CH1-Formality-formalization",
+      "document_title": "LaTeX 预印本文摘 · v9.2-calibrated"
+    },
+    {
+      "material_no": "物料五",
+      "path": "CH1-Formality-formalization/qa-redblue-debate/v9.2-calibrated-QAbank.md",
+      "sha256": "42f397ad533073b30fd01fa8882d6d5964a31b83caf43432865c81558b4b4954",
+      "ch_volume": "CH1-Formality-formalization",
+      "document_title": "红蓝对抗质询问答库 · v9.2-calibrated"
+    }
+  ],
   "total_entries": 7,
   "entries": [
     {
@@ -32,7 +69,7 @@
       "path": "CH0-Canonical-Charter/release-announcement/v9.2-calibrated-release-notice.md",
       "layer": "narrative-charter",
       "note": "历史摘要片段；完整粘贴请用 full-release-notice",
-      "sha256": "1a83fd48f5f76cb4cd1b5dc8482eb1f241065d20606949c246fdea4566ac83fe",
+      "sha256": "2254efff484e9911cd642255899f7f1eb587d0ac9dbbd227ee4a9af73cbd856e",
       "encoding": "UTF-8 without BOM"
     },
     {
@@ -53,7 +90,7 @@
       "material_type": "对外口播脚本",
       "path": "CH2-media-external/media-scripts/douyin-v9.2-calibrated-script.md",
       "layer": "media-external",
-      "sha256": "8ef2b60fd0e3beb1fafe2906f2e31a3b27cffda4ad5827b102b70cfd0418aacc",
+      "sha256": "c7cd8c4595e6a5fdda109a2dc027d9f628833a70af1cf23196ad732d39b5d35f",
       "encoding": "UTF-8 without BOM"
     },
     {
@@ -63,7 +100,7 @@
       "material_type": "媒体专栏精简版",
       "path": "CH2-media-external/media-scripts/public-column-v9.2-calibrated.md",
       "layer": "media-external",
-      "sha256": "3efcf680b27f797167b4bd1216b98ec5ba04a8928771a281e2848f18533a27bf",
+      "sha256": "5c7ac33e00529ca61561d47c6772303b80fc60337b0f77d931c51c8fa80df252",
       "encoding": "UTF-8 without BOM"
     },
     {
@@ -83,11 +120,11 @@
       "material_type": "红蓝对抗质询",
       "path": "CH1-Formality-formalization/qa-redblue-debate/v9.2-calibrated-QAbank.md",
       "layer": "formality-operation",
-      "sha256": "64903fc8af0083e5391158d3edf63319c1a1e3dae664072903a37852199eb8ff",
+      "sha256": "42f397ad533073b30fd01fa8882d6d5964a31b83caf43432865c81558b4b4954",
       "encoding": "UTF-8 without BOM"
     }
   ],
   "remote_push_main": "frozen_until_explicit_instruction",
   "encoding": "UTF-8 without BOM",
-  "manifest_sha256": "5014c6e3d535d06ca08f317af6e67a561322137f7b93e02908373141b4179f9d"
+  "manifest_sha256": "f800110869d17ca3592a13e16086c3395d69c7e68872061030387caa7d303aac"
 }

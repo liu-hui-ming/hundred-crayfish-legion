@@ -68,19 +68,19 @@
 
 附件（PNG/MHTML/legacy HTML）仅驻留 `archive/media-external/**/attachments/`，不得与叙事层正文混目录。
 
-## v9.2-calibrated 五物料封存（2026-09-18）
+## v9.2-calibrated 五物料封存（2026-09-18 · P0 路径）
 
-| document_id | 路径 | manifest |
-|-------------|------|----------|
-| CH-V92-FULL-RELEASE-NOTICE | `CH0-Canonical-Charter/release-announcement/v9.2-calibrated-full-release-notice.md` | `manifest.json` → entry `full-release-notice` |
-| CH-V92-RELEASE-NOTICE | `CH0-Canonical-Charter/release-announcement/v9.2-calibrated-release-notice.md` | 同上 → entry `release-announcement`（摘要片段） |
-| CH-V92-VERSION-PHILOSOPHY | `CH0-Canonical-Charter/release-announcement/v9.2-calibrated-version-philosophy.md` | 同上 → `version-philosophy`（Release：六条核心改动后、永久存证前） |
-| CH-V92-DOUYIN-SCRIPT | `CH2-media-external/media-scripts/douyin-v9.2-calibrated-script.md` | 同上 → `douyin-script` |
-| CH-V92-PUBLIC-COLUMN | `CH2-media-external/media-scripts/public-column-v9.2-calibrated.md` | 同上 → `public-column` |
-| CH-V92-PREPRINT-TEX | `CH1-Formality-formalization/preprint-latex/v9.2-calibrated-abstract.tex` | 同上 → `preprint-latex` |
-| CH-V92-QA-REDBLUE | `CH1-Formality-formalization/qa-redblue-debate/v9.2-calibrated-QAbank.md` | 同上 → `qa-redblue` |
+| 物料 | document_id | 路径 | SHA256 |
+| --- | --- | --- | --- |
+| 一 | CH-V92-RELEASE-NOTICE | `CH0-Canonical-Charter/release-announcement/v9.2-calibrated-release-notice.md` | `2254efff484e9911cd642255899f7f1eb587d0ac9dbbd227ee4a9af73cbd856e` |
+| 二 | CH-V92-DOUYIN-SCRIPT | `CH2-media-external/media-scripts/douyin-v9.2-calibrated-script.md` | `c7cd8c4595e6a5fdda109a2dc027d9f628833a70af1cf23196ad732d39b5d35f` |
+| 三 | CH-V92-PUBLIC-COLUMN | `CH2-media-external/media-scripts/public-column-v9.2-calibrated.md` | `5c7ac33e00529ca61561d47c6772303b80fc60337b0f77d931c51c8fa80df252` |
+| 四 | CH-V92-PREPRINT-TEX | `CH1-Formality-formalization/preprint-latex/v9.2-calibrated-abstract.tex` | `072a70dcc8d18e295865f526ed69cec156b8865be02958bcc4879d7374c95b73` |
+| 五 | CH-V92-QA-REDBLUE | `CH1-Formality-formalization/qa-redblue-debate/v9.2-calibrated-QAbank.md` | `42f397ad533073b30fd01fa8882d6d5964a31b83caf43432865c81558b4b4954` |
 
-采样标识：`20260918-v9.2-calibrated-five-materials` · manifest SHA256 见 `manifest.json` 字段 `manifest_sha256`。
+增补（非 P0 五物料编号）：`full-release-notice`、`version-philosophy` 见 `CH0-Canonical-Charter/manifest.json` → `entries`。
+
+采样标识：`20260918-v9.2-calibrated-materials` · 全局清单 `manifest.json` · `p0_five_materials` + `manifest_sha256`：`f800110869d17ca3592a13e16086c3395d69c7e68872061030387caa7d303aac`
 
 ### 诘问卷宗合集 Tag（2026-08-03 补推）
 

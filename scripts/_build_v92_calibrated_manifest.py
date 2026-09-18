@@ -11,6 +11,15 @@ REPO = Path(__file__).resolve().parents[1]
 MANIFEST = REPO / "CH0-Canonical-Charter" / "manifest.json"
 SAMPLING_ID = "20260918-v9.2-calibrated-materials"
 
+# P0 归档五物料（路径固定；LaTeX 无中文落款）
+P0_FIVE = [
+    ("物料一", "release-announcement"),
+    ("物料二", "douyin-script"),
+    ("物料三", "public-column"),
+    ("物料四", "preprint-latex"),
+    ("物料五", "qa-redblue"),
+]
+
 FILES = [
     {
         "id": "full-release-notice",
@@ -82,14 +91,36 @@ def sha256_file(path: Path) -> str:
     return h.hexdigest()
 
 
+def assert_utf8_no_bom(path: Path) -> None:
+    raw = path.read_bytes()
+    if raw.startswith(b"\xef\xbb\xbf"):
+        raise SystemExit(f"BOM detected: {path}")
+
+
 def main() -> None:
     entries = []
+    by_id: dict[str, dict] = {}
     for item in FILES:
         rel = REPO / item["path"]
         if not rel.is_file():
             raise SystemExit(f"missing: {rel}")
+        assert_utf8_no_bom(rel)
         entry = {**item, "sha256": sha256_file(rel), "encoding": "UTF-8 without BOM"}
         entries.append(entry)
+        by_id[item["id"]] = entry
+
+    p0_five_materials = []
+    for label, entry_id in P0_FIVE:
+        e = by_id[entry_id]
+        p0_five_materials.append(
+            {
+                "material_no": label,
+                "path": e["path"],
+                "sha256": e["sha256"],
+                "ch_volume": e["ch_volume"],
+                "document_title": e["document_title"],
+            }
+        )
 
     manifest = {
         "schema": "CH0-Canonical-Charter/manifest.v9.2-calibrated.v1",
@@ -104,6 +135,7 @@ def main() -> None:
             "CH2-media-external": "对外媒体脚本（与工程卷宗路径分离）",
         },
         "external_repos_note": "工程真值源：GitHub carbon-silicon/twelve-meridians/omega-topology（本仓为叙事/物料镜像归档）",
+        "p0_five_materials": p0_five_materials,
         "total_entries": len(entries),
         "entries": entries,
         "remote_push_main": "frozen_until_explicit_instruction",
