@@ -4,7 +4,7 @@
 
 • Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/129
 • 路径：`docs/issue-exports/xian-daily-2026-09-18/`
-• body SHA‑256：`99f893579c039d3f244c9c4f9797192861eb44ca0f85cdf3dc238fe271139982`
+• body SHA‑256：`375711dee43347c4537e1d7e34107396a3559bfd66224cb67a4f19b37a8cbde8`
 • 归档 Git commit：`f4cbf28ee0c7fa0f567bfb1c11acb1126fdd89ef`
 • 台账：`REGISTRY_XIAN_DAILY_2026_09_18`
 

@@ -3,7 +3,7 @@
 ```
 标题：[P1-Roadmap] 2026-09-18 XIAN项目日报 | media-external政协网全页快照 + 白皮书96/100双轨 + 2026-09-17 doctrine闭环补记
 资源：XIAN项目日报 · hundred-crayfish-legion
-回链：（Issue 发布后回填）
+回链：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/129
 归档路径：docs/issue-exports/xian-daily-2026-09-18/
 ```
 
