@@ -68,6 +68,18 @@
 
 附件（PNG/MHTML/legacy HTML）仅驻留 `archive/media-external/**/attachments/`，不得与叙事层正文混目录。
 
+## v9.2-calibrated 五物料封存（2026-09-18）
+
+| document_id | 路径 | manifest |
+|-------------|------|----------|
+| CH-V92-RELEASE-NOTICE | `CH0-Canonical-Charter/release-announcement/v9.2-calibrated-release-notice.md` | `CH0-Canonical-Charter/manifest.json` → entry `release-announcement` |
+| CH-V92-DOUYIN-SCRIPT | `CH2-media-external/media-scripts/douyin-v9.2-calibrated-script.md` | 同上 → `douyin-script` |
+| CH-V92-PUBLIC-COLUMN | `CH2-media-external/media-scripts/public-column-v9.2-calibrated.md` | 同上 → `public-column` |
+| CH-V92-PREPRINT-TEX | `CH1-Formality-formalization/preprint-latex/v9.2-calibrated-abstract.tex` | 同上 → `preprint-latex` |
+| CH-V92-QA-REDBLUE | `CH1-Formality-formalization/qa-redblue-debate/v9.2-calibrated-QAbank.md` | 同上 → `qa-redblue` |
+
+采样标识：`20260918-v9.2-calibrated-five-materials` · manifest SHA256 见 `manifest.json` 字段 `manifest_sha256`。
+
 ### 诘问卷宗合集 Tag（2026-08-03 补推）
 
 | 项目 | 内容 |
