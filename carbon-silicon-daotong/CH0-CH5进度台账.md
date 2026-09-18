@@ -86,7 +86,7 @@
 
 ### eval_guard 工程基线（2026-09-18 · engineering-layer）
 
-采样 `20260918-v9.2-calibrated-eval-baseline` · 路径 `eval-baseline/eval_guard/` · 四文件 SHA256 见 `manifest.json` → `eval_baseline_batches[0].item_list` · `manifest_sha256` 见 manifest 末字段。
+采样 `20260918-v9.2-calibrated-eval-baseline` · 路径 `eval-baseline/eval_guard/` · 四文件 SHA256 见 `manifest.json` → `eval_baseline_batches[0].item_list`（`probe_definition.json` 完整版：`35da39d8f6663f11aa02d21d253d3e865413932f149a3d2320d3a92f078f330e`）· `manifest_sha256` 见 manifest 末字段。
 
 采样标识：`20260918-v9.2-calibrated-materials` · 全局清单 `CH0-Canonical-Charter/manifest.json`
 

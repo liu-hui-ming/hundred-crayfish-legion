@@ -4,7 +4,7 @@
   "version_fingerprint_label": "SHA v9.2",
   "document_title": "v9.2-calibrated 全套物料全局清单",
   "sampling_id": "20260918-v9.2-calibrated-materials",
-  "captured_at_utc": "2026-09-18T14:43:49Z",
+  "captured_at_utc": "2026-09-18T14:45:57Z",
   "isolation": {
     "CH0-Canonical-Charter": "叙事层 · 宪章与发布公告",
     "CH1-Formality-formalization": "操作层 · 形式化 / 预印本 / 红蓝质询",
@@ -72,7 +72,7 @@
         {
           "file_relative_path": "eval-baseline/eval_guard/probe_definition.json",
           "file_desc": "15条探针配置：维度、权重、阈值、关键词集合",
-          "sha256": "d3c73c5bd84456f2308b05623ffb4ed9b6ac7af3a88d7c736990b1f8d850004b",
+          "sha256": "35da39d8f6663f11aa02d21d253d3e865413932f149a3d2320d3a92f078f330e",
           "encoding": "UTF-8-NO-BOM",
           "layer": "engineering-layer",
           "canonical_tag": "CANONICAL-v9.2-calibrated",
@@ -217,7 +217,7 @@
       "path": "eval-baseline/eval_guard/probe_definition.json",
       "layer": "engineering-layer",
       "sampling_id": "20260918-v9.2-calibrated-eval-baseline",
-      "sha256": "d3c73c5bd84456f2308b05623ffb4ed9b6ac7af3a88d7c736990b1f8d850004b",
+      "sha256": "35da39d8f6663f11aa02d21d253d3e865413932f149a3d2320d3a92f078f330e",
       "encoding": "UTF-8 without BOM"
     },
     {
@@ -245,5 +245,5 @@
   ],
   "remote_push_main": "frozen_until_explicit_instruction",
   "encoding": "UTF-8 without BOM",
-  "manifest_sha256": "5930563274df40d922b0cc3a507c3c9d5b2340c1c96f68efe8f8ee08790e1b33"
+  "manifest_sha256": "fd2a9d619af52ddfd17e4435a1d9fe8f0b4aeef8388209570c2d2975b84b4f75"
 }
