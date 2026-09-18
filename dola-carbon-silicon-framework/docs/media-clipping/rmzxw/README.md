@@ -3,7 +3,9 @@
 > **版本标记**：十二脉归一 · 版本T‑02/Y‑04  
 > **台账索引**：[`_INDEX-LEDGER-T02Y04.md`](./_INDEX-LEDGER-T02Y04.md)
 
-权威媒体刊载稿件：正文 Markdown + 网页 HTML 快照成对入库。
+权威媒体刊载稿件：正文 Markdown + 网页 HTML 快照成对入库（叙事层正本）。
+
+**工程层全页快照卷宗**（PNG + MHTML + source-metadata）：[`archive/media-external/rmzxw/`](../../../archive/media-external/rmzxw/) · 全局清单 [`archive/media-external/manifest.json`](../../../archive/media-external/manifest.json)
 
 | 正文 | 快照 | 标题 |
 | --- | --- | --- |
