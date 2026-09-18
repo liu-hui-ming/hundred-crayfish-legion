@@ -59,6 +59,15 @@
 
 边界：十问在 `双轨本源思辨/`；诘问在 `理论卷宗/`，互不混放。
 
+## CH-MEDIA-EXTERNAL 对外媒体卷宗（2026-09-18）
+
+| document_id | 叙事层正文（只读正本） | 工程层卷宗（快照/元数据） | manifest |
+|-------------|------------------------|---------------------------|----------|
+| CH-MEDIA-EXTERNAL-RMZXW-T02Y04 | `dola-carbon-silicon-framework/docs/media-clipping/rmzxw/ai-simulate-awareness-boundary-rmzxw-20260916.md` | `archive/media-external/rmzxw/` | `archive/media-external/manifest.json` → entry `rmzxw-20260916` |
+| CH-MEDIA-EXTERNAL-WHITEPAPER-T02Y04 | `dola-carbon-silicon-framework/docs/whitepaper/public-media-version/carbon-silicon-daotong-silicon-civilization-axiom-whitepaper-public-media.md` | `archive/media-external/whitepaper/`（96/100 双轨镜像） | 同上 → entry `whitepaper-T02Y04-dual-track` |
+
+附件（PNG/MHTML/legacy HTML）仅驻留 `archive/media-external/**/attachments/`，不得与叙事层正文混目录。
+
 ### 诘问卷宗合集 Tag（2026-08-03 补推）
 
 | 项目 | 内容 |

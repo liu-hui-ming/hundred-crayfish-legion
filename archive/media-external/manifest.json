@@ -66,5 +66,6 @@
       }
     }
   ],
-  "remote_push": "dev-v2.2 only; main frozen until explicit merge"
+  "remote_push": "dev-v2.2 only; main frozen until explicit merge",
+  "git_commit": "e96c27463238478d75b5afe2da1b51189a70b1093"
 }
