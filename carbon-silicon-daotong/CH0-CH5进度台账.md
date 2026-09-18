@@ -78,9 +78,11 @@
 | 四 | CH-V92-PREPRINT-TEX | `CH1-Formality-formalization/preprint-latex/v9.2-calibrated-abstract.tex` | `072a70dcc8d18e295865f526ed69cec156b8865be02958bcc4879d7374c95b73` |
 | 五 | CH-V92-QA-REDBLUE | `CH1-Formality-formalization/qa-redblue-debate/v9.2-calibrated-QAbank.md` | `93e893e94771add12031b79cfca857373f7af29f212cfcb0910755b6f93945d5` |
 
-增补（非 P0 五物料编号）：`full-release-notice`、`version-philosophy` 见 `CH0-Canonical-Charter/manifest.json` → `entries`。
+增补（非 P0 五物料编号）：`full-release-notice`、`version-philosophy` 见 `manifest.json` → `entries`。
 
-采样标识：`20260918-v9.2-calibrated-materials` · 全局清单 `manifest.json` · `p0_five_materials` + `manifest_sha256`：`15c0102f55d7e18638baef3ac2253cf54a8f6f5e6a5d7f5ca4dd58a2b937bfe2`
+| CH-V92-PUBLIC-BRIEF | `CH0-Canonical-Charter/release-announcement/v9.2-calibrated-public-brief.md` | 采样 `20260918-v9.2-calibrated-public-brief` · SHA256 `c97202a344d2afd00cc50bb901fd86992de15ee134f8287dff8bbb1f6398c8f0` |
+
+采样标识：`20260918-v9.2-calibrated-materials` · 全局清单 `manifest.json` · `p0_five_materials` + `manifest_sha256`：`de19bd9623cb83eeac3352e0a4fd6c9c4f99decb190396483214c15a3c57e5a1`
 
 ### 诘问卷宗合集 Tag（2026-08-03 补推）
 

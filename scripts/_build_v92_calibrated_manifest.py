@@ -49,6 +49,16 @@ FILES = [
         "release_placement": "核心改动六条之后、永久存证链接之前",
     },
     {
+        "id": "public-brief",
+        "ch_volume": "CH0-Canonical-Charter",
+        "document_title": "v9.2-calibrated 对外公开简报",
+        "material_type": "对外公开简报",
+        "path": "CH0-Canonical-Charter/release-announcement/v9.2-calibrated-public-brief.md",
+        "layer": "narrative-charter",
+        "sampling_id": "20260918-v9.2-calibrated-public-brief",
+        "usage": "面向大众/媒体精简介绍；公众号、专栏、GitHub简介摘要复用",
+    },
+    {
         "id": "douyin-script",
         "ch_volume": "CH2-media-external",
         "document_title": "抖音30-60秒口播精简稿 · v9.2-calibrated",

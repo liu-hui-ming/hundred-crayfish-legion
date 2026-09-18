@@ -4,7 +4,7 @@
   "version_fingerprint_label": "SHA v9.2",
   "document_title": "v9.2-calibrated 全套物料全局清单",
   "sampling_id": "20260918-v9.2-calibrated-materials",
-  "captured_at_utc": "2026-09-18T14:26:01Z",
+  "captured_at_utc": "2026-09-18T14:36:07Z",
   "isolation": {
     "CH0-Canonical-Charter": "叙事层 · 宪章与发布公告",
     "CH1-Formality-formalization": "操作层 · 形式化 / 预印本 / 红蓝质询",
@@ -48,7 +48,7 @@
       "document_title": "红蓝对抗质询问答库 · v9.2-calibrated"
     }
   ],
-  "total_entries": 7,
+  "total_entries": 8,
   "entries": [
     {
       "id": "full-release-notice",
@@ -81,6 +81,18 @@
       "layer": "narrative-charter",
       "release_placement": "核心改动六条之后、永久存证链接之前",
       "sha256": "0c2494ccd4d92b56a07fa5ebf57736cce91d72a728ee96f47160661113b61dac",
+      "encoding": "UTF-8 without BOM"
+    },
+    {
+      "id": "public-brief",
+      "ch_volume": "CH0-Canonical-Charter",
+      "document_title": "v9.2-calibrated 对外公开简报",
+      "material_type": "对外公开简报",
+      "path": "CH0-Canonical-Charter/release-announcement/v9.2-calibrated-public-brief.md",
+      "layer": "narrative-charter",
+      "sampling_id": "20260918-v9.2-calibrated-public-brief",
+      "usage": "面向大众/媒体精简介绍；公众号、专栏、GitHub简介摘要复用",
+      "sha256": "c97202a344d2afd00cc50bb901fd86992de15ee134f8287dff8bbb1f6398c8f0",
       "encoding": "UTF-8 without BOM"
     },
     {
@@ -126,5 +138,5 @@
   ],
   "remote_push_main": "frozen_until_explicit_instruction",
   "encoding": "UTF-8 without BOM",
-  "manifest_sha256": "15c0102f55d7e18638baef3ac2253cf54a8f6f5e6a5d7f5ca4dd58a2b937bfe2"
+  "manifest_sha256": "de19bd9623cb83eeac3352e0a4fd6c9c4f99decb190396483214c15a3c57e5a1"
 }

@@ -6,6 +6,7 @@
 
 | 文件 | 说明 |
 | --- | --- |
+| [release-announcement/v9.2-calibrated-public-brief.md](./release-announcement/v9.2-calibrated-public-brief.md) | **对外公开简报**（标题三选一 + 导语 + 正文 + 铭文 + 落款） |
 | [release-announcement/README-v9.2-calibrated-五物料.md](./release-announcement/README-v9.2-calibrated-五物料.md) | **P0 五物料路径 + GitHub 直链**（物料一在本目录，二～五在 CH2/CH1） |
 | [release-announcement/v9.2-calibrated-full-release-notice.md](./release-announcement/v9.2-calibrated-full-release-notice.md) | **GitHub Release 完整公告**（6条核心改动 → 版本哲学 → 永久存证 → 落款） |
 | [release-announcement/v9.2-calibrated-release-notice.md](./release-announcement/v9.2-calibrated-release-notice.md) | 发布公告摘要（历史片段） |
