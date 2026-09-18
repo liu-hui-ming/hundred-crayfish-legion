@@ -84,7 +84,11 @@
 
 | CH-V92-19-CONSTITUTIONAL | `CH0-Canonical-Charter/qa-canonical/carbon-silicon-v9.2-calibrated-19-constitutional-responses.md` | 采样 `20260918-v9.2-calibrated-19-constitutional-responses` · SHA256 `ab4b3735aea15d095b9463cc826498ebaf52df29aa7ddf9817351661a8272c31` |
 
-采样标识：`20260918-v9.2-calibrated-materials` · 全局清单 `manifest.json` · `manifest_sha256` 见 manifest 文件末字段
+### eval_guard 工程基线（2026-09-18 · engineering-layer）
+
+采样 `20260918-v9.2-calibrated-eval-baseline` · 路径 `eval-baseline/eval_guard/` · 四文件 SHA256 见 `manifest.json` → `eval_baseline_batches[0].item_list` · `manifest_sha256` 见 manifest 末字段。
+
+采样标识：`20260918-v9.2-calibrated-materials` · 全局清单 `CH0-Canonical-Charter/manifest.json`
 
 ### 诘问卷宗合集 Tag（2026-08-03 补推）
 

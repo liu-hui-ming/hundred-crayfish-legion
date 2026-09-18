@@ -1,0 +1,151 @@
+{
+  "canonical_tag": "CANONICAL-v9.2-calibrated",
+  "dimension_meta": {
+    "dimension-A-自指可逆验证": {
+      "desc": "自指回路可逆性验证维度"
+    },
+    "dimension-B-边界认知": {
+      "desc": "边界与失效域认知维度"
+    },
+    "dimension-C-公理推演一致性": {
+      "desc": "公理推演一致性维度"
+    }
+  },
+  "probes": [
+    {
+      "id": "p01",
+      "name": "probe-01",
+      "dimension": "dimension-A-自指可逆验证",
+      "weight": 1.0,
+      "threshold": 1.0,
+      "probe_type": "keyword_check",
+      "keyword_set": []
+    },
+    {
+      "id": "p02",
+      "name": "probe-02",
+      "dimension": "dimension-A-自指可逆验证",
+      "weight": 1.0,
+      "threshold": 1.0,
+      "probe_type": "keyword_check",
+      "keyword_set": []
+    },
+    {
+      "id": "p03",
+      "name": "probe-03",
+      "dimension": "dimension-A-自指可逆验证",
+      "weight": 1.0,
+      "threshold": 1.0,
+      "probe_type": "keyword_check",
+      "keyword_set": []
+    },
+    {
+      "id": "p04",
+      "name": "probe-04",
+      "dimension": "dimension-A-自指可逆验证",
+      "weight": 1.0,
+      "threshold": 1.0,
+      "probe_type": "keyword_check",
+      "keyword_set": []
+    },
+    {
+      "id": "p05",
+      "name": "probe-05",
+      "dimension": "dimension-A-自指可逆验证",
+      "weight": 1.0,
+      "threshold": 1.0,
+      "probe_type": "keyword_check",
+      "keyword_set": []
+    },
+    {
+      "id": "p06",
+      "name": "probe-06",
+      "dimension": "dimension-B-边界认知",
+      "weight": 1.0,
+      "threshold": 1.0,
+      "probe_type": "keyword_check",
+      "keyword_set": []
+    },
+    {
+      "id": "p07",
+      "name": "probe-07",
+      "dimension": "dimension-B-边界认知",
+      "weight": 1.0,
+      "threshold": 1.0,
+      "probe_type": "keyword_check",
+      "keyword_set": []
+    },
+    {
+      "id": "p08",
+      "name": "probe-08",
+      "dimension": "dimension-B-边界认知",
+      "weight": 1.0,
+      "threshold": 1.0,
+      "probe_type": "keyword_check",
+      "keyword_set": []
+    },
+    {
+      "id": "p09",
+      "name": "probe-09",
+      "dimension": "dimension-B-边界认知",
+      "weight": 1.0,
+      "threshold": 1.0,
+      "probe_type": "keyword_check",
+      "keyword_set": []
+    },
+    {
+      "id": "p10",
+      "name": "probe-10",
+      "dimension": "dimension-B-边界认知",
+      "weight": 1.0,
+      "threshold": 1.0,
+      "probe_type": "keyword_check",
+      "keyword_set": []
+    },
+    {
+      "id": "p11",
+      "name": "probe-11",
+      "dimension": "dimension-C-公理推演一致性",
+      "weight": 1.0,
+      "threshold": 1.0,
+      "probe_type": "keyword_check",
+      "keyword_set": []
+    },
+    {
+      "id": "p12",
+      "name": "probe-12",
+      "dimension": "dimension-C-公理推演一致性",
+      "weight": 1.0,
+      "threshold": 1.0,
+      "probe_type": "keyword_check",
+      "keyword_set": []
+    },
+    {
+      "id": "p13",
+      "name": "probe-13",
+      "dimension": "dimension-C-公理推演一致性",
+      "weight": 1.0,
+      "threshold": 1.0,
+      "probe_type": "keyword_check",
+      "keyword_set": []
+    },
+    {
+      "id": "p14",
+      "name": "probe-14",
+      "dimension": "dimension-C-公理推演一致性",
+      "weight": 1.0,
+      "threshold": 1.0,
+      "probe_type": "keyword_check",
+      "keyword_set": []
+    },
+    {
+      "id": "p15",
+      "name": "probe-15",
+      "dimension": "dimension-C-公理推演一致性",
+      "weight": 1.0,
+      "threshold": 1.0,
+      "probe_type": "keyword_check",
+      "keyword_set": []
+    }
+  ]
+}

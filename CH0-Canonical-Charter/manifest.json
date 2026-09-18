@@ -4,11 +4,16 @@
   "version_fingerprint_label": "SHA v9.2",
   "document_title": "v9.2-calibrated 全套物料全局清单",
   "sampling_id": "20260918-v9.2-calibrated-materials",
-  "captured_at_utc": "2026-09-18T14:39:22Z",
+  "captured_at_utc": "2026-09-18T14:43:49Z",
   "isolation": {
     "CH0-Canonical-Charter": "叙事层 · 宪章与发布公告",
     "CH1-Formality-formalization": "操作层 · 形式化 / 预印本 / 红蓝质询",
-    "CH2-media-external": "对外媒体脚本（与工程卷宗路径分离）"
+    "CH2-media-external": "对外媒体脚本（与工程卷宗路径分离）",
+    "eval-baseline/eval_guard": "工程层 · 十维觉知标尺 eval_guard 最小原型（engineering-layer）"
+  },
+  "layer_enum_note": {
+    "narrative-layer": "CH0–CH5 文稿、问答、公告、媒体脚本",
+    "engineering-layer": "eval-baseline 脚本、校验脚本、公理 JSON 库等"
   },
   "external_repos_note": "工程真值源：GitHub carbon-silicon/twelve-meridians/omega-topology（本仓为叙事/物料镜像归档）",
   "p0_five_materials": [
@@ -48,7 +53,53 @@
       "document_title": "红蓝对抗质询问答库 · v9.2-calibrated"
     }
   ],
-  "total_entries": 9,
+  "eval_baseline_batches": [
+    {
+      "batch_tag": "CANONICAL-v9.2-calibrated-eval-baseline",
+      "sampling_id": "20260918-v9.2-calibrated-eval-baseline",
+      "comment": "十维觉知标尺eval_guard最小原型全套工程文件，工程层eval-baseline，与CH叙事卷宗双仓隔离",
+      "upstream_repo_path": "carbon-silicon/twelve-meridians/eval-baseline/eval_guard",
+      "item_list": [
+        {
+          "file_relative_path": "eval-baseline/eval_guard/eval_guard.py",
+          "file_desc": "十维觉知标尺评估主脚本",
+          "sha256": "e8848f1dac515d10ada165a3796a42e7b6cfcf0d522b6690306127c8fdcf4af7",
+          "encoding": "UTF-8-NO-BOM",
+          "layer": "engineering-layer",
+          "canonical_tag": "CANONICAL-v9.2-calibrated",
+          "sample_sig": ""
+        },
+        {
+          "file_relative_path": "eval-baseline/eval_guard/probe_definition.json",
+          "file_desc": "15条探针配置：维度、权重、阈值、关键词集合",
+          "sha256": "d3c73c5bd84456f2308b05623ffb4ed9b6ac7af3a88d7c736990b1f8d850004b",
+          "encoding": "UTF-8-NO-BOM",
+          "layer": "engineering-layer",
+          "canonical_tag": "CANONICAL-v9.2-calibrated",
+          "sample_sig": ""
+        },
+        {
+          "file_relative_path": "eval-baseline/eval_guard/README.md",
+          "file_desc": "原型使用说明、运维约束、运行命令",
+          "sha256": "69f51f5cb8ab85dc7ab1ecc5c71fb7970309acd7b7486a3348e048df66e353ea",
+          "encoding": "UTF-8-NO-BOM",
+          "layer": "engineering-layer",
+          "canonical_tag": "CANONICAL-v9.2-calibrated",
+          "sample_sig": ""
+        },
+        {
+          "file_relative_path": "eval-baseline/eval_guard/sample_report.md",
+          "file_desc": "Markdown评估输出报告空白样例模板",
+          "sha256": "16cc80c0939125294f2793b90f9a4e94d4bb01b4bec8147658c86c138ae044b0",
+          "encoding": "UTF-8-NO-BOM",
+          "layer": "engineering-layer",
+          "canonical_tag": "CANONICAL-v9.2-calibrated",
+          "sample_sig": ""
+        }
+      ]
+    }
+  ],
+  "total_entries": 13,
   "entries": [
     {
       "id": "full-release-notice",
@@ -146,9 +197,53 @@
       "layer": "formality-operation",
       "sha256": "93e893e94771add12031b79cfca857373f7af29f212cfcb0910755b6f93945d5",
       "encoding": "UTF-8 without BOM"
+    },
+    {
+      "id": "eval-guard-py",
+      "ch_volume": "eval-baseline/eval_guard",
+      "document_title": "十维觉知标尺评估主脚本",
+      "material_type": "eval_guard 工程基线",
+      "path": "eval-baseline/eval_guard/eval_guard.py",
+      "layer": "engineering-layer",
+      "sampling_id": "20260918-v9.2-calibrated-eval-baseline",
+      "sha256": "e8848f1dac515d10ada165a3796a42e7b6cfcf0d522b6690306127c8fdcf4af7",
+      "encoding": "UTF-8 without BOM"
+    },
+    {
+      "id": "eval-guard-probe-json",
+      "ch_volume": "eval-baseline/eval_guard",
+      "document_title": "15条探针配置：维度、权重、阈值、关键词集合",
+      "material_type": "eval_guard 工程基线",
+      "path": "eval-baseline/eval_guard/probe_definition.json",
+      "layer": "engineering-layer",
+      "sampling_id": "20260918-v9.2-calibrated-eval-baseline",
+      "sha256": "d3c73c5bd84456f2308b05623ffb4ed9b6ac7af3a88d7c736990b1f8d850004b",
+      "encoding": "UTF-8 without BOM"
+    },
+    {
+      "id": "eval-guard-readme",
+      "ch_volume": "eval-baseline/eval_guard",
+      "document_title": "原型使用说明、运维约束、运行命令",
+      "material_type": "eval_guard 工程基线",
+      "path": "eval-baseline/eval_guard/README.md",
+      "layer": "engineering-layer",
+      "sampling_id": "20260918-v9.2-calibrated-eval-baseline",
+      "sha256": "69f51f5cb8ab85dc7ab1ecc5c71fb7970309acd7b7486a3348e048df66e353ea",
+      "encoding": "UTF-8 without BOM"
+    },
+    {
+      "id": "eval-guard-sample-report",
+      "ch_volume": "eval-baseline/eval_guard",
+      "document_title": "Markdown评估输出报告空白样例模板",
+      "material_type": "eval_guard 工程基线",
+      "path": "eval-baseline/eval_guard/sample_report.md",
+      "layer": "engineering-layer",
+      "sampling_id": "20260918-v9.2-calibrated-eval-baseline",
+      "sha256": "16cc80c0939125294f2793b90f9a4e94d4bb01b4bec8147658c86c138ae044b0",
+      "encoding": "UTF-8 without BOM"
     }
   ],
   "remote_push_main": "frozen_until_explicit_instruction",
   "encoding": "UTF-8 without BOM",
-  "manifest_sha256": "3f7281cff734321e47cdf835a20b23ca6377a13d4b94a04f17b09496be02b64b"
+  "manifest_sha256": "5930563274df40d922b0cc3a507c3c9d5b2340c1c96f68efe8f8ee08790e1b33"
 }

@@ -103,6 +103,78 @@ FILES = [
 ]
 
 
+EVAL_GUARD_REL_PATHS = [
+    (
+        "eval-baseline/eval_guard/eval_guard.py",
+        "十维觉知标尺评估主脚本",
+        "eval-guard-py",
+    ),
+    (
+        "eval-baseline/eval_guard/probe_definition.json",
+        "15条探针配置：维度、权重、阈值、关键词集合",
+        "eval-guard-probe-json",
+    ),
+    (
+        "eval-baseline/eval_guard/README.md",
+        "原型使用说明、运维约束、运行命令",
+        "eval-guard-readme",
+    ),
+    (
+        "eval-baseline/eval_guard/sample_report.md",
+        "Markdown评估输出报告空白样例模板",
+        "eval-guard-sample-report",
+    ),
+]
+
+EVAL_BASELINE_SAMPLING_ID = "20260918-v9.2-calibrated-eval-baseline"
+
+
+def build_eval_guard_batch() -> dict:
+    item_list = []
+    for rel_path, file_desc, _entry_id in EVAL_GUARD_REL_PATHS:
+        full = REPO / rel_path
+        assert_utf8_no_bom(full)
+        item_list.append(
+            {
+                "file_relative_path": rel_path,
+                "file_desc": file_desc,
+                "sha256": sha256_file(full),
+                "encoding": "UTF-8-NO-BOM",
+                "layer": "engineering-layer",
+                "canonical_tag": "CANONICAL-v9.2-calibrated",
+                "sample_sig": "",
+            }
+        )
+    return {
+        "batch_tag": "CANONICAL-v9.2-calibrated-eval-baseline",
+        "sampling_id": EVAL_BASELINE_SAMPLING_ID,
+        "comment": "十维觉知标尺eval_guard最小原型全套工程文件，工程层eval-baseline，与CH叙事卷宗双仓隔离",
+        "upstream_repo_path": "carbon-silicon/twelve-meridians/eval-baseline/eval_guard",
+        "item_list": item_list,
+    }
+
+
+def build_eval_guard_entries() -> list[dict]:
+    entries = []
+    for rel_path, file_desc, entry_id in EVAL_GUARD_REL_PATHS:
+        full = REPO / rel_path
+        assert_utf8_no_bom(full)
+        entries.append(
+            {
+                "id": entry_id,
+                "ch_volume": "eval-baseline/eval_guard",
+                "document_title": file_desc,
+                "material_type": "eval_guard 工程基线",
+                "path": rel_path,
+                "layer": "engineering-layer",
+                "sampling_id": EVAL_BASELINE_SAMPLING_ID,
+                "sha256": sha256_file(full),
+                "encoding": "UTF-8 without BOM",
+            }
+        )
+    return entries
+
+
 def sha256_file(path: Path) -> str:
     h = hashlib.sha256()
     with path.open("rb") as f:
@@ -129,6 +201,10 @@ def main() -> None:
         entries.append(entry)
         by_id[item["id"]] = entry
 
+    eval_batch = build_eval_guard_batch()
+    eval_entries = build_eval_guard_entries()
+    entries.extend(eval_entries)
+
     p0_five_materials = []
     for label, entry_id in P0_FIVE:
         e = by_id[entry_id]
@@ -153,9 +229,15 @@ def main() -> None:
             "CH0-Canonical-Charter": "叙事层 · 宪章与发布公告",
             "CH1-Formality-formalization": "操作层 · 形式化 / 预印本 / 红蓝质询",
             "CH2-media-external": "对外媒体脚本（与工程卷宗路径分离）",
+            "eval-baseline/eval_guard": "工程层 · 十维觉知标尺 eval_guard 最小原型（engineering-layer）",
+        },
+        "layer_enum_note": {
+            "narrative-layer": "CH0–CH5 文稿、问答、公告、媒体脚本",
+            "engineering-layer": "eval-baseline 脚本、校验脚本、公理 JSON 库等",
         },
         "external_repos_note": "工程真值源：GitHub carbon-silicon/twelve-meridians/omega-topology（本仓为叙事/物料镜像归档）",
         "p0_five_materials": p0_five_materials,
+        "eval_baseline_batches": [eval_batch],
         "total_entries": len(entries),
         "entries": entries,
         "remote_push_main": "frozen_until_explicit_instruction",
