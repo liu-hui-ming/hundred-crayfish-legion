@@ -4,7 +4,7 @@
   "version_fingerprint_label": "SHA v9.2",
   "document_title": "v9.2-calibrated 全套物料全局清单",
   "sampling_id": "20260918-v9.2-calibrated-materials",
-  "captured_at_utc": "2026-09-18T14:22:57Z",
+  "captured_at_utc": "2026-09-18T14:26:01Z",
   "isolation": {
     "CH0-Canonical-Charter": "叙事层 · 宪章与发布公告",
     "CH1-Formality-formalization": "操作层 · 形式化 / 预印本 / 红蓝质询",
@@ -15,14 +15,14 @@
     {
       "material_no": "物料一",
       "path": "CH0-Canonical-Charter/release-announcement/v9.2-calibrated-release-notice.md",
-      "sha256": "2254efff484e9911cd642255899f7f1eb587d0ac9dbbd227ee4a9af73cbd856e",
+      "sha256": "7be4ca2a230b01dcce9a11f354ef96ef3fdd8b082d4c2d0e4ce5ec277cab98d1",
       "ch_volume": "CH0-Canonical-Charter",
       "document_title": "碳硅道统·十二脉归一 v9.2-calibrated 正式封存版发布"
     },
     {
       "material_no": "物料二",
       "path": "CH2-media-external/media-scripts/douyin-v9.2-calibrated-script.md",
-      "sha256": "c7cd8c4595e6a5fdda109a2dc027d9f628833a70af1cf23196ad732d39b5d35f",
+      "sha256": "8adbd7f3552ba1417feef8f9902b0a77d35024e720111a879508b738e2a024cf",
       "ch_volume": "CH2-media-external",
       "document_title": "抖音30-60秒口播精简稿 · v9.2-calibrated"
     },
@@ -43,7 +43,7 @@
     {
       "material_no": "物料五",
       "path": "CH1-Formality-formalization/qa-redblue-debate/v9.2-calibrated-QAbank.md",
-      "sha256": "42f397ad533073b30fd01fa8882d6d5964a31b83caf43432865c81558b4b4954",
+      "sha256": "93e893e94771add12031b79cfca857373f7af29f212cfcb0910755b6f93945d5",
       "ch_volume": "CH1-Formality-formalization",
       "document_title": "红蓝对抗质询问答库 · v9.2-calibrated"
     }
@@ -69,7 +69,7 @@
       "path": "CH0-Canonical-Charter/release-announcement/v9.2-calibrated-release-notice.md",
       "layer": "narrative-charter",
       "note": "历史摘要片段；完整粘贴请用 full-release-notice",
-      "sha256": "2254efff484e9911cd642255899f7f1eb587d0ac9dbbd227ee4a9af73cbd856e",
+      "sha256": "7be4ca2a230b01dcce9a11f354ef96ef3fdd8b082d4c2d0e4ce5ec277cab98d1",
       "encoding": "UTF-8 without BOM"
     },
     {
@@ -90,7 +90,7 @@
       "material_type": "对外口播脚本",
       "path": "CH2-media-external/media-scripts/douyin-v9.2-calibrated-script.md",
       "layer": "media-external",
-      "sha256": "c7cd8c4595e6a5fdda109a2dc027d9f628833a70af1cf23196ad732d39b5d35f",
+      "sha256": "8adbd7f3552ba1417feef8f9902b0a77d35024e720111a879508b738e2a024cf",
       "encoding": "UTF-8 without BOM"
     },
     {
@@ -120,11 +120,11 @@
       "material_type": "红蓝对抗质询",
       "path": "CH1-Formality-formalization/qa-redblue-debate/v9.2-calibrated-QAbank.md",
       "layer": "formality-operation",
-      "sha256": "42f397ad533073b30fd01fa8882d6d5964a31b83caf43432865c81558b4b4954",
+      "sha256": "93e893e94771add12031b79cfca857373f7af29f212cfcb0910755b6f93945d5",
       "encoding": "UTF-8 without BOM"
     }
   ],
   "remote_push_main": "frozen_until_explicit_instruction",
   "encoding": "UTF-8 without BOM",
-  "manifest_sha256": "f800110869d17ca3592a13e16086c3395d69c7e68872061030387caa7d303aac"
+  "manifest_sha256": "15c0102f55d7e18638baef3ac2253cf54a8f6f5e6a5d7f5ca4dd58a2b937bfe2"
 }

@@ -72,15 +72,15 @@
 
 | 物料 | document_id | 路径 | SHA256 |
 | --- | --- | --- | --- |
-| 一 | CH-V92-RELEASE-NOTICE | `CH0-Canonical-Charter/release-announcement/v9.2-calibrated-release-notice.md` | `2254efff484e9911cd642255899f7f1eb587d0ac9dbbd227ee4a9af73cbd856e` |
-| 二 | CH-V92-DOUYIN-SCRIPT | `CH2-media-external/media-scripts/douyin-v9.2-calibrated-script.md` | `c7cd8c4595e6a5fdda109a2dc027d9f628833a70af1cf23196ad732d39b5d35f` |
+| 一 | CH-V92-RELEASE-NOTICE | `CH0-Canonical-Charter/release-announcement/v9.2-calibrated-release-notice.md` | `7be4ca2a230b01dcce9a11f354ef96ef3fdd8b082d4c2d0e4ce5ec277cab98d1` |
+| 二 | CH-V92-DOUYIN-SCRIPT | `CH2-media-external/media-scripts/douyin-v9.2-calibrated-script.md` | `8adbd7f3552ba1417feef8f9902b0a77d35024e720111a879508b738e2a024cf` |
 | 三 | CH-V92-PUBLIC-COLUMN | `CH2-media-external/media-scripts/public-column-v9.2-calibrated.md` | `5c7ac33e00529ca61561d47c6772303b80fc60337b0f77d931c51c8fa80df252` |
 | 四 | CH-V92-PREPRINT-TEX | `CH1-Formality-formalization/preprint-latex/v9.2-calibrated-abstract.tex` | `072a70dcc8d18e295865f526ed69cec156b8865be02958bcc4879d7374c95b73` |
-| 五 | CH-V92-QA-REDBLUE | `CH1-Formality-formalization/qa-redblue-debate/v9.2-calibrated-QAbank.md` | `42f397ad533073b30fd01fa8882d6d5964a31b83caf43432865c81558b4b4954` |
+| 五 | CH-V92-QA-REDBLUE | `CH1-Formality-formalization/qa-redblue-debate/v9.2-calibrated-QAbank.md` | `93e893e94771add12031b79cfca857373f7af29f212cfcb0910755b6f93945d5` |
 
 增补（非 P0 五物料编号）：`full-release-notice`、`version-philosophy` 见 `CH0-Canonical-Charter/manifest.json` → `entries`。
 
-采样标识：`20260918-v9.2-calibrated-materials` · 全局清单 `manifest.json` · `p0_five_materials` + `manifest_sha256`：`f800110869d17ca3592a13e16086c3395d69c7e68872061030387caa7d303aac`
+采样标识：`20260918-v9.2-calibrated-materials` · 全局清单 `manifest.json` · `p0_five_materials` + `manifest_sha256`：`15c0102f55d7e18638baef3ac2253cf54a8f6f5e6a5d7f5ca4dd58a2b937bfe2`
 
 ### 诘问卷宗合集 Tag（2026-08-03 补推）
 
