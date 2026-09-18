@@ -1,14 +1,16 @@
 # CHANGELOG
 
-[2026-09-18] XIAN项目日报 #129 · 2026-09-18（采样标识主日报 · 待 Issue 发布后回填链接）
+[2026-09-18] XIAN项目日报 #129 · 2026-09-18（采样标识主日报）
 
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/129
 • 路径：`docs/issue-exports/xian-daily-2026-09-18/`
 • body SHA‑256：`99f893579c039d3f244c9c4f9797192861eb44ca0f85cdf3dc238fe271139982`
+• 归档 Git commit：`f4cbf28ee0c7fa0f567bfb1c11acb1126fdd89ef`
 • 台账：`REGISTRY_XIAN_DAILY_2026_09_18`
 
 [2026-09-18] media-external · 人民政协网全页快照 + 白皮书 96/100 双轨
 
-• 全局 manifest：`archive/media-external/manifest.json`
+• 全局 manifest SHA256：`6aa4c8b21c4769330a0f5ed9b6d93c1f6812938dd72377cc7d65cdf04ffc9e3c`（git `e96c274`）
 • rmzxw：PNG+MHTML+source-metadata · `archive/media-external/rmzxw/`
 • 白皮书双轨：`…-T02Y04-public-domain-96.md` · `…-T02Y04-github-archive-100-full.md`
 • 校验：`scripts/hash_integrity_checker.py` PASS
