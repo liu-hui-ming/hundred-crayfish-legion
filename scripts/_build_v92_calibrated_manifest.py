@@ -21,6 +21,15 @@ FILES = [
         "layer": "narrative-charter",
     },
     {
+        "id": "version-philosophy",
+        "ch_volume": "CH0-Canonical-Charter",
+        "document_title": "版本哲学说明 · v9.2-calibrated",
+        "material_type": "GitHub Release 版本哲学说明",
+        "path": "CH0-Canonical-Charter/release-announcement/v9.2-calibrated-version-philosophy.md",
+        "layer": "narrative-charter",
+        "release_placement": "核心改动六条之后、永久存证链接之前",
+    },
+    {
         "id": "douyin-script",
         "ch_volume": "CH2-media-external",
         "document_title": "抖音30-60秒口播精简稿 · v9.2-calibrated",

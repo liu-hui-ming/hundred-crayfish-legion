@@ -4,14 +4,14 @@
   "version_fingerprint_label": "SHA v9.2",
   "document_title": "v9.2-calibrated 全套物料全局清单",
   "sampling_id": "20260918-v9.2-calibrated-five-materials",
-  "captured_at_utc": "2026-09-18T14:09:42Z",
+  "captured_at_utc": "2026-09-18T14:13:29Z",
   "isolation": {
     "CH0-Canonical-Charter": "叙事层 · 宪章与发布公告",
     "CH1-Formality-formalization": "操作层 · 形式化 / 预印本 / 红蓝质询",
     "CH2-media-external": "对外媒体脚本（与工程卷宗路径分离）"
   },
   "external_repos_note": "工程真值源：GitHub carbon-silicon/twelve-meridians/omega-topology（本仓为叙事/物料镜像归档）",
-  "total_entries": 5,
+  "total_entries": 6,
   "entries": [
     {
       "id": "release-announcement",
@@ -21,6 +21,17 @@
       "path": "CH0-Canonical-Charter/release-announcement/v9.2-calibrated-release-notice.md",
       "layer": "narrative-charter",
       "sha256": "6752e4c710967da8307925671db280db376b5df624c17a084dd759c6df6cd72d",
+      "encoding": "UTF-8 without BOM"
+    },
+    {
+      "id": "version-philosophy",
+      "ch_volume": "CH0-Canonical-Charter",
+      "document_title": "版本哲学说明 · v9.2-calibrated",
+      "material_type": "GitHub Release 版本哲学说明",
+      "path": "CH0-Canonical-Charter/release-announcement/v9.2-calibrated-version-philosophy.md",
+      "layer": "narrative-charter",
+      "release_placement": "核心改动六条之后、永久存证链接之前",
+      "sha256": "0c2494ccd4d92b56a07fa5ebf57736cce91d72a728ee96f47160661113b61dac",
       "encoding": "UTF-8 without BOM"
     },
     {
@@ -66,5 +77,5 @@
   ],
   "remote_push_main": "frozen_until_explicit_instruction",
   "encoding": "UTF-8 without BOM",
-  "manifest_sha256": "68522be19e5166ca7506b72af02b38b85d9c912589f7e138902a4f4074d771b8"
+  "manifest_sha256": "ef0bb5182088ba4475de5d390faaf431d83e15371410a68861f492be638adc78"
 }

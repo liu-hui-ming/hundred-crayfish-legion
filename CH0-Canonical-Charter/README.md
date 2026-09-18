@@ -5,6 +5,7 @@
 | 文件 | 说明 |
 | --- | --- |
 | [release-announcement/v9.2-calibrated-release-notice.md](./release-announcement/v9.2-calibrated-release-notice.md) | GitHub Release 发布公告摘要 |
+| [release-announcement/v9.2-calibrated-version-philosophy.md](./release-announcement/v9.2-calibrated-version-philosophy.md) | Release 版本哲学说明（六条核心改动之后、永久存证之前） |
 | [manifest.json](./manifest.json) | 五份物料路径 + SHA256 |
 
 叙事层与 CH1 操作层、CH2 对外脚本 **目录隔离**；未经指令不得 push `main`。
