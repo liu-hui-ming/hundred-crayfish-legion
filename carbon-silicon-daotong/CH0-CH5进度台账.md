@@ -82,7 +82,9 @@
 
 | CH-V92-PUBLIC-BRIEF | `CH0-Canonical-Charter/release-announcement/v9.2-calibrated-public-brief.md` | 采样 `20260918-v9.2-calibrated-public-brief` · SHA256 `c97202a344d2afd00cc50bb901fd86992de15ee134f8287dff8bbb1f6398c8f0` |
 
-采样标识：`20260918-v9.2-calibrated-materials` · 全局清单 `manifest.json` · `p0_five_materials` + `manifest_sha256`：`de19bd9623cb83eeac3352e0a4fd6c9c4f99decb190396483214c15a3c57e5a1`
+| CH-V92-19-CONSTITUTIONAL | `CH0-Canonical-Charter/qa-canonical/carbon-silicon-v9.2-calibrated-19-constitutional-responses.md` | 采样 `20260918-v9.2-calibrated-19-constitutional-responses` · SHA256 `ab4b3735aea15d095b9463cc826498ebaf52df29aa7ddf9817351661a8272c31` |
+
+采样标识：`20260918-v9.2-calibrated-materials` · 全局清单 `manifest.json` · `manifest_sha256` 见 manifest 文件末字段
 
 ### 诘问卷宗合集 Tag（2026-08-03 补推）
 

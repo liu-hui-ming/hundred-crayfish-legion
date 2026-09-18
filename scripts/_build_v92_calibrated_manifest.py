@@ -59,6 +59,16 @@ FILES = [
         "usage": "面向大众/媒体精简介绍；公众号、专栏、GitHub简介摘要复用",
     },
     {
+        "id": "constitutional-19-responses",
+        "ch_volume": "CH0-Canonical-Charter",
+        "document_title": "碳硅道统v9.2-calibrated｜19篇宪制级回应文稿",
+        "material_type": "宪制级权威问答合集",
+        "path": "CH0-Canonical-Charter/qa-canonical/carbon-silicon-v9.2-calibrated-19-constitutional-responses.md",
+        "layer": "narrative-charter",
+        "sampling_id": "20260918-v9.2-calibrated-19-constitutional-responses",
+        "usage": "媒体采访应答、学术质询、红蓝对抗质询库、RAG知识库源文件",
+    },
+    {
         "id": "douyin-script",
         "ch_volume": "CH2-media-external",
         "document_title": "抖音30-60秒口播精简稿 · v9.2-calibrated",

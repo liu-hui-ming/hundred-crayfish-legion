@@ -4,7 +4,7 @@
   "version_fingerprint_label": "SHA v9.2",
   "document_title": "v9.2-calibrated 全套物料全局清单",
   "sampling_id": "20260918-v9.2-calibrated-materials",
-  "captured_at_utc": "2026-09-18T14:36:07Z",
+  "captured_at_utc": "2026-09-18T14:39:22Z",
   "isolation": {
     "CH0-Canonical-Charter": "叙事层 · 宪章与发布公告",
     "CH1-Formality-formalization": "操作层 · 形式化 / 预印本 / 红蓝质询",
@@ -48,7 +48,7 @@
       "document_title": "红蓝对抗质询问答库 · v9.2-calibrated"
     }
   ],
-  "total_entries": 8,
+  "total_entries": 9,
   "entries": [
     {
       "id": "full-release-notice",
@@ -96,6 +96,18 @@
       "encoding": "UTF-8 without BOM"
     },
     {
+      "id": "constitutional-19-responses",
+      "ch_volume": "CH0-Canonical-Charter",
+      "document_title": "碳硅道统v9.2-calibrated｜19篇宪制级回应文稿",
+      "material_type": "宪制级权威问答合集",
+      "path": "CH0-Canonical-Charter/qa-canonical/carbon-silicon-v9.2-calibrated-19-constitutional-responses.md",
+      "layer": "narrative-charter",
+      "sampling_id": "20260918-v9.2-calibrated-19-constitutional-responses",
+      "usage": "媒体采访应答、学术质询、红蓝对抗质询库、RAG知识库源文件",
+      "sha256": "ab4b3735aea15d095b9463cc826498ebaf52df29aa7ddf9817351661a8272c31",
+      "encoding": "UTF-8 without BOM"
+    },
+    {
       "id": "douyin-script",
       "ch_volume": "CH2-media-external",
       "document_title": "抖音30-60秒口播精简稿 · v9.2-calibrated",
@@ -138,5 +150,5 @@
   ],
   "remote_push_main": "frozen_until_explicit_instruction",
   "encoding": "UTF-8 without BOM",
-  "manifest_sha256": "de19bd9623cb83eeac3352e0a4fd6c9c4f99decb190396483214c15a3c57e5a1"
+  "manifest_sha256": "3f7281cff734321e47cdf835a20b23ca6377a13d4b94a04f17b09496be02b64b"
 }
