@@ -1,6 +1,8 @@
 {
-  "schema": "v10.5-research/yc1-statistics.v1",
-  "canonical_tag": "CANONICAL-v3.1",
-  "status": "PLACEHOLDER — replace with canonical pilot data",
-  "records": []
+    "dataset_id": "YC1-STD-V1-PILOT-20",
+    "n_total": 20,
+    "layer_L1": {"n": 13, "mean": 0.2875, "ci_95pc": [0.2283, 0.3504]},
+    "layer_L2": {"n": 7, "mean": 0.2400, "ci_95pc": [0.1954, 0.2895]},
+    "eps_empirical": 0.3481,
+    "disclaimer": "Results relative to YC-1 Pilot Set. Synthetic reference."
 }

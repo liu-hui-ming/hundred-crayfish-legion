@@ -1,51 +1,38 @@
 {
-  "schema": "v10.5-research/manifest.baseline.v1",
-  "canonical_tag": "CANONICAL-v3.1",
-  "baseline_label": "v10.5-research-CANONICAL-v3.1",
-  "status": "scaffold_only — source and hashes pending",
-  "encoding": "UTF-8-NO-BOM",
-  "layer": "engineering-layer-internal",
-  "public_release": false,
-  "baseline_meta": null,
-  "baseline_hashes": null,
-  "git_commit_at_freeze": null,
-  "frozen_at_utc": null,
-  "item_list": [
-    {
-      "file_relative_path": "v10.5-research/README.md",
-      "sha256": "2e3fd77f8ad350a2df8e73d075a794f9e47600733c9c0355a482c60a4502c048"
+    "version": "v10.5-research",
+    "system_tag": "CANONICAL-v3.1",
+    "baseline_meta": {
+        "baseline_name": "TEE气闸隔离基线",
+        "creator": "黄清佳 (Carbon-Silicon Tradition)",
+        "baseline_stage": "MVP Pre-Beta Prototype",
+        "primary_contract": "dual-mode consistent business logic, quote layer only difference",
+        "three_iron_laws": [
+            "Law1: YC-1 fields cannot leak into KP-1_MAIN production context",
+            "Law2: Absolute-truth semantic tags are blocked in any runtime context",
+            "Law3: YC-1_OUTPUT must carry valid disclaimer with relative/synthetic keyword"
+        ],
+        "easter_egg_note": "Toutiao / Douyin / GitHub",
+        "creation_timestamp": "2026-09-19T14:59:10Z",
+        "git_commit_id": "c7d09be5d6ed4367e27146a5a80aedd38f8f6e76"
     },
-    {
-      "file_relative_path": "v10.5-research/check_isolation.sh",
-      "sha256": "c6f24624762e54e31f2b694b478e811502ad6ed9c93dab72f45a85f4aa8b4f0d"
+    "baseline_hashes": {
+        "yc1_statistics_sha256": "0900ebca7653b40b2ba4a5f5470707ca365a0db7a4a33b5d50729284c4bc0610",
+        "veto_tee_stub_sha256": "192fdc4ec12168cf8dfdfc8e67311e844a9b21c12640dcdf974f6ffe50a16d47",
+        "test_iron_laws_sha256": "b251281bd6c1c0eefe452bfc2970fbc41bea7da2420b1d61ffe7c050135dad8d"
     },
-    {
-      "file_relative_path": "v10.5-research/full_bootstrap.sh",
-      "sha256": "bc4a625940aeabe2aaf7a375d7dabdacc7de056abe79ec546a02a5d01f4e3b03"
+    "tee_info": {
+        "mode": "stub",
+        "enclave_type": "sgx_gramine",
+        "mrenclave_hash": null,
+        "quote_file": null,
+        "dcap_attestation_status": "unavailable",
+        "mode_warning": "stub-mode for development only, no hardware-root-of-trust, cannot be used for external-audit",
+        "compatibility_note": "pre-beta prototype, refer to known_limitations_ref inside manifest and README.md"
     },
-    {
-      "file_relative_path": "v10.5-research/veto_tee_stub.py",
-      "sha256": "d72f87215ae4dc63ce81eb3bef685dfe7b614d849f2678fb6a1b24dd777c4152"
-    },
-    {
-      "file_relative_path": "v10.5-research/enclave_entry.py",
-      "sha256": "b6c56dcbfe0f4457ebe6d44178cea8c25a5b7422b9a6682d1fc67b506330dde7"
-    },
-    {
-      "file_relative_path": "v10.5-research/test_iron_laws.py",
-      "sha256": "66f689c7eda4d559c9a0634be289a3ba13302454318d00da710dad67e562ce7a"
-    },
-    {
-      "file_relative_path": "v10.5-research/v105-enclave.manifest.template",
-      "sha256": "66e87d6275e4c8be85166a81b5ae03bfb34570d67e0e152425e9c3a6fabdd4fb"
-    },
-    {
-      "file_relative_path": "v10.5-research/manifest.json",
-      "sha256": "c81c4c109f9a3ec7684e14f4a4baef80dc313432414df16f3c349cb00a58b554"
-    },
-    {
-      "file_relative_path": "v10.5-research/yc1_statistics.json",
-      "sha256": "798cc44ef0ff627c7063ed5bc91b6de3118b9585323d5cbf40a54ccabd273f87"
+    "archive_reference": {
+        "github_release_url": null,
+        "zenodo_doi": null,
+        "ipfs_cid": null,
+        "note": "internal baseline only — no public GitHub Release for this archive"
     }
-  ]
 }

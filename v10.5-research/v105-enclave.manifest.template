@@ -1,9 +1,15 @@
-{
-  "schema": "v10.5-research/enclave.manifest.template.v1",
-  "canonical_tag": "CANONICAL-v3.1",
-  "status": "PLACEHOLDER — replace with canonical template",
-  "enclave": {
-    "name": "v10.5-research-enclave",
-    "version": "10.5-research"
-  }
-}
+# [System_Tag: CANONICAL-v3.1]
+# v105-enclave.manifest.template — Gramine-SGX minimal manifest template
+
+libos.entrypoint = "python3"
+args = ["enclave_entry.py"]
+
+sgx.enclave_size = "512M"
+sgx.epc_size = "256M"
+
+sgx.trusted_files = [
+    "file:./veto_tee_stub.py",
+    "file:./enclave_entry.py"
+]
+
+sgx.untrusted_files = ["file:/dev/*"]
