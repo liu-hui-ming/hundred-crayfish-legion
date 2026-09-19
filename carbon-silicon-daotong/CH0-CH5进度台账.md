@@ -59,6 +59,37 @@
 
 边界：十问在 `双轨本源思辨/`；诘问在 `理论卷宗/`，互不混放。
 
+## CH-MEDIA-EXTERNAL 对外媒体卷宗（2026-09-18）
+
+| document_id | 叙事层正文（只读正本） | 工程层卷宗（快照/元数据） | manifest |
+|-------------|------------------------|---------------------------|----------|
+| CH-MEDIA-EXTERNAL-RMZXW-T02Y04 | `dola-carbon-silicon-framework/docs/media-clipping/rmzxw/ai-simulate-awareness-boundary-rmzxw-20260916.md` | `archive/media-external/rmzxw/` | `archive/media-external/manifest.json` → entry `rmzxw-20260916` |
+| CH-MEDIA-EXTERNAL-WHITEPAPER-T02Y04 | `dola-carbon-silicon-framework/docs/whitepaper/public-media-version/carbon-silicon-daotong-silicon-civilization-axiom-whitepaper-public-media.md` | `archive/media-external/whitepaper/`（96/100 双轨镜像） | 同上 → entry `whitepaper-T02Y04-dual-track` |
+
+附件（PNG/MHTML/legacy HTML）仅驻留 `archive/media-external/**/attachments/`，不得与叙事层正文混目录。
+
+## v9.2-calibrated 五物料封存（2026-09-18 · P0 路径）
+
+| 物料 | document_id | 路径 | SHA256 |
+| --- | --- | --- | --- |
+| 一 | CH-V92-RELEASE-NOTICE | `CH0-Canonical-Charter/release-announcement/v9.2-calibrated-release-notice.md` | `7be4ca2a230b01dcce9a11f354ef96ef3fdd8b082d4c2d0e4ce5ec277cab98d1` |
+| 二 | CH-V92-DOUYIN-SCRIPT | `CH2-media-external/media-scripts/douyin-v9.2-calibrated-script.md` | `8adbd7f3552ba1417feef8f9902b0a77d35024e720111a879508b738e2a024cf` |
+| 三 | CH-V92-PUBLIC-COLUMN | `CH2-media-external/media-scripts/public-column-v9.2-calibrated.md` | `5c7ac33e00529ca61561d47c6772303b80fc60337b0f77d931c51c8fa80df252` |
+| 四 | CH-V92-PREPRINT-TEX | `CH1-Formality-formalization/preprint-latex/v9.2-calibrated-abstract.tex` | `072a70dcc8d18e295865f526ed69cec156b8865be02958bcc4879d7374c95b73` |
+| 五 | CH-V92-QA-REDBLUE | `CH1-Formality-formalization/qa-redblue-debate/v9.2-calibrated-QAbank.md` | `93e893e94771add12031b79cfca857373f7af29f212cfcb0910755b6f93945d5` |
+
+增补（非 P0 五物料编号）：`full-release-notice`、`version-philosophy` 见 `manifest.json` → `entries`。
+
+| CH-V92-PUBLIC-BRIEF | `CH0-Canonical-Charter/release-announcement/v9.2-calibrated-public-brief.md` | 采样 `20260918-v9.2-calibrated-public-brief` · SHA256 `c97202a344d2afd00cc50bb901fd86992de15ee134f8287dff8bbb1f6398c8f0` |
+
+| CH-V92-19-CONSTITUTIONAL | `CH0-Canonical-Charter/qa-canonical/carbon-silicon-v9.2-calibrated-19-constitutional-responses.md` | 采样 `20260918-v9.2-calibrated-19-constitutional-responses` · SHA256 `ab4b3735aea15d095b9463cc826498ebaf52df29aa7ddf9817351661a8272c31` |
+
+### eval_guard 工程基线（2026-09-18 · engineering-layer）
+
+采样 `20260918-v9.2-calibrated-eval-baseline` · 路径 `eval-baseline/eval_guard/` · 四文件 SHA256 见 `manifest.json` → `eval_baseline_batches[0].item_list`（`probe_definition.json` 完整版：`35da39d8f6663f11aa02d21d253d3e865413932f149a3d2320d3a92f078f330e`）· `manifest_sha256` 见 manifest 末字段。
+
+采样标识：`20260918-v9.2-calibrated-materials` · 全局清单 `CH0-Canonical-Charter/manifest.json`
+
 ### 诘问卷宗合集 Tag（2026-08-03 补推）
 
 | 项目 | 内容 |

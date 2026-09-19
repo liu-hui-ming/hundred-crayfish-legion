@@ -129,6 +129,25 @@
 | #111 | OPEN | [P1-Roadmap] 2026-08-29 XIAN项目日报 | P2归档闭环 + 四大观测模块 + 三类台账同步 |
 | #112 | OPEN | [P1-Roadmap] 2026-08-30 XIAN项目日报 | P2归档闭环 + 四大观测模块 + 三类台账同步 |
 | #113 | OPEN | [P1-Roadmap] 2026-08-31 XIAN项目日报 | P2归档闭环 + 四大观测模块 + 三类台账同步 |
+| #114 | POSTED | [P1-Roadmap] 2026-09-01 XIAN项目日报 | https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/114 · #79回执已纳入 |
+| #115 | POSTED | [P1-Roadmap] 2026-09-02 XIAN项目日报 | https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/115 · #79回执已纳入 |
+| #116 | POSTED | [P1-Roadmap] 2026-09-03 XIAN项目日报 | https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/116 · #79回执已纳入 |
+| #117 | POSTED | [P1-Roadmap] 2026-09-04 XIAN项目日报 | https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/117 · #79回执已纳入 |
+| #118 | POSTED | [P1-Roadmap] 2026-09-05 XIAN项目日报 | https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/118 · #79回执已纳入 |
+| #119 | POSTED | [P1-Roadmap] 2026-09-06 XIAN项目日报 | https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/119 · #79回执已纳入 |
+| #120 | POSTED | [P1-Roadmap] 2026-09-07 XIAN项目日报 | https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/120 · #79回执已纳入 |
+| #121 | POSTED | Batch #123 · 7篇媒体采样归档 2026-09-10 | https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/121 · 七篇见 docs/issue-exports/xian-daily-2026-09-10-* |
+| #122 | POSTED | Batch #124 · 9篇媒体采样归档 2026-09-11 | https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/122 · 九篇见 docs/issue-exports/xian-daily-2026-09-11-* |
+| #123 | POSTED | [P1-Roadmap] 2026-09-15 XIAN项目日报 | https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/123 · 稿件 docs/issue-exports/xian-daily-2026-09-15/ |
+| #124 | POSTED | Batch #125 · 3篇中国网采样归档 2026-09-14 | https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/124 · 三篇见 docs/issue-exports/xian-daily-2026-09-14-chinacom-* |
+| #128 | POSTED | [P1-Roadmap] 2026-09-16 XIAN项目日报 | https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/128 · 稿件 docs/issue-exports/xian-daily-2026-09-16/ |
+| #129 | POSTED | [P1-Roadmap] 2026-09-18 XIAN项目日报 | https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/129 · media-external + 白皮书双轨 · 稿件 docs/issue-exports/xian-daily-2026-09-18/ · Axium `REGISTRY_XIAN_DAILY_2026_09_18` |
+| #130 | POSTED | [P1-Roadmap] 2026-09-17 XIAN项目日报（补档） | https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/130 · doctrine/100质询/新华网 · 稿件 docs/issue-exports/xian-daily-2026-09-17/ · Axium `REGISTRY_XIAN_DAILY_2026_09_17` |
+| — | POSTED | 【白皮书】硅基文明公理体系 · 媒体权威对外版 T‑02/Y‑04 | https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/126 · `dola-carbon-silicon-framework/docs/whitepaper/public-media-version/` |
+| — | POSTED | 【媒体稿件】模拟智能与本源觉知边界 · 人民政协网 2026-09-16 | https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/127 · `dola-carbon-silicon-framework/docs/media-clipping/rmzxw/` |
+| — | POSTED | broadsword-100 golden-24h 四条同步链回填 | `dossier/broadsword-100/broadsword-media-ledger.md` · 见 CHANGELOG golden-24h 四条 |
+
+**golden-24h 四条同步链已回填（台账行，非 Issue 编号）：** 创业邦/36kr v2 公众号+知乎 · `sync/golden-24h-published-urls.json` · snapshot 四文件
 
 ## 低优先级（P-Low）
 
@@ -137,6 +156,102 @@
 | #2 | OPEN | Manifesto for Computing Power Singularity: End Von Neumann's Century-Long Reign |
 | #3 | OPEN | XIAN & Axium Dual-Core Awakening: Full Open-Source Unrestricted P1-P6 Detonate Engineering Roadmap |
 | #15 | OPEN | XIAN & Axium Dual-Core Awakening: Full Open-Source Unrestricted P1-P6 Detonate Engineering Roadmap |
+
+---
+
+## Issue #121 · Batch #123 · 2026-09-10 七篇媒体采样闭环
+
+**Issue 链接：** https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/121
+
+**GitHub 标题：** [P1-Roadmap] 2026-09-10 XIAN媒体采样归档 #123 · 七篇稿件闭环
+
+**Axium 双台账：** [`2026-04-24-p1-p2-axium.md`](2026-04-24-p1-p2-axium.md) 内七段 `REGISTRY_XIAN_DAILY_2026_09_10_MEDIA_*`（与下述采样标识 verbatim 一致）
+
+**归档脚本：** `scripts/_archive_xian_media_batch_123.py`（`23cd3c5`）；新福建网正文提取修正 `3182002`
+
+| 文件夹 slug | Commit |
+|-------------|--------|
+| `xian-daily-2026-09-10-chinanews-xj` | `d787c6b` |
+| `xian-daily-2026-09-10-leiphone` | `b8e24a4` |
+| `xian-daily-2026-09-10-hubeidaily` | `cb72445` |
+| `xian-daily-2026-09-10-newfj-115754` | `1c93f20` |
+| `xian-daily-2026-09-10-ahnews-537412` | `197d55d` |
+| `xian-daily-2026-09-10-newfj-115755` | `b34b358` |
+| `xian-daily-2026-09-10-ahnews-537430` | `8f86549` |
+
+**原始采样标识字符串（verbatim）：**
+
+**1 · 中国新闻网新疆** — `REGISTRY_XIAN_DAILY_2026_09_10_MEDIA_CHINANEWS_XJ`
+
+```
+标题：碳硅道统：十维标尺的模型度量
+资源：中国新闻网新疆（全国）
+回链：http://www.xj.chinanews.com.cn/kejiao/2026-09-10/detail-ihfizwvu6757040.shtml
+```
+
+**2 · 雷峰网** — `REGISTRY_XIAN_DAILY_2026_09_10_MEDIA_LEIPHONE`
+
+```
+标题：碳硅道统：中层拟合域的现实回响 |  标尺不动，事件自行抵达
+媒体名称：雷峰网
+回链地址：https://m.leiphone.com/category/industrynews/qSK5aXslh1eHd6A3.html
+```
+
+**3 · 湖北日报客户端** — `REGISTRY_XIAN_DAILY_2026_09_10_MEDIA_HUBEIDAILY`
+
+```
+湖北日报客户端首发:https://news.hubeidaily.net/hbrbsharenew/news_detail/5/5958221/5376428/0?w=1789033579027&uik=bb7c872d&share_plat=android&sec=d40276b6&historyback=1
+```
+
+**4 · 新福建网 115754** — `REGISTRY_XIAN_DAILY_2026_09_10_MEDIA_NEWFJ_115754`
+
+```
+13	新福建网首发	http://www.newfj.com.cn/home/news/index/id/115754.html
+```
+
+**5 · 安徽日报 537412** — `REGISTRY_XIAN_DAILY_2026_09_10_MEDIA_AHNEWS_537412`
+
+```
+12	安徽日报客户端首发	https://web.ahnews.com.cn/news?id=537412
+```
+
+**6 · 新福建网 115755** — `REGISTRY_XIAN_DAILY_2026_09_10_MEDIA_NEWFJ_115755`
+
+```
+13	新福建网首发	http://www.newfj.com.cn/home/news/index/id/115755.html
+```
+
+**7 · 安徽日报 537430** — `REGISTRY_XIAN_DAILY_2026_09_10_MEDIA_AHNEWS_537430`
+
+```
+12	安徽日报客户端首发	https://web.ahnews.com.cn/news?id=537430
+```
+
+**备注：** 安徽日报两篇因采样环境 `web.ahnews.com.cn` 不可达，正文按脚本 `MIRROR_BODY_FROM` 与同期新福建网同源镜像入库；原文 URL 仍为真实首发链，未改写采样标识行。
+
+---
+
+## Issue #129 · 2026-09-18 主日报 · media-external + 白皮书双轨
+
+**Issue 链接：** https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/129
+
+**归档路径：** `docs/issue-exports/xian-daily-2026-09-18/`
+
+**Axium 双台账：** [`2026-04-24-p1-p2-axium.md`](2026-04-24-p1-p2-axium.md) · `REGISTRY_XIAN_DAILY_2026_09_18`
+
+**关联工程：** `archive/media-external/`（rmzxw PNG+MHTML + 白皮书 96/100 双轨 + `manifest.json`）；后续同日链 v9.2-calibrated / eval_guard 见 dev-v2.2 commit `6612fd9` 起（叙述补记见 Issue 评论，不覆盖 #129 首发 body 正本）。
+
+---
+
+## Issue #130 · 2026-09-17 主日报补档 · doctrine 闭环
+
+**Issue 链接：** https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/130
+
+**归档路径：** `docs/issue-exports/xian-daily-2026-09-17/`
+
+**Axium 双台账：** `REGISTRY_XIAN_DAILY_2026_09_17`
+
+**正本范围：** 抖音 100 质询池 · 官方定义 v1 · 官宣释疑 · 新华网卷宗（见 body 第一段）。
 
 ---
 

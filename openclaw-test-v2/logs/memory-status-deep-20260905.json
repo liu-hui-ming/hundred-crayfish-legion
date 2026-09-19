@@ -1,0 +1,135 @@
+﻿openclaw.cmd : [plugins] openclaw-weixin failed during register from C:\Users\user\.openclaw-v2test\npm\projects\tencen
+t-weixin-openclaw-weixin-7783ac86ba\node_modules\@tencent-weixin\openclaw-weixin\dist\index.js: Error: Plugin "openclaw
+-weixin" runtime is intentionally unavailable during "cli-metadata" registration. Declare root commands in the manifest
+'s cliCommands or defer runtime access out of register().
+所在位置 C:\Users\user\AppData\Local\Temp\ps-script-ab1cff3d-6621-48ba-974f-791bf1933a96.ps1:86 字符: 1
++ & $oc --profile v2test memory status --deep --json 2>&1 | Out-File "E ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([plugins] openc... of register().:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[plugins] openclaw-weixin failed during register from C:\Users\user\.openclaw-v2test\npm\projects\tencent-weixin-opencl
+aw-weixin-7783ac86ba\node_modules\@tencent-weixin\openclaw-weixin\dist\index.js: Error: Plugin "openclaw-weixin" runtim
+e is intentionally unavailable during "cli-metadata" registration. Declare root commands in the manifest's cliCommands 
+or defer runtime access out of register().
+Config warnings: plugins.entries.openclaw-weixin: plugin openclaw-weixin: duplicate plugin id detected; global plugin w
+ill be overridden by global plugin (C:\Users\user\.openclaw-v2test\npm\projects\tencent-weixin-openclaw-weixin-7783ac86
+ba\node_modules\@tencent-weixin\openclaw-weixin\dist\index.js)
+[memory/embeddings] lmstudio embeddings warmup failed; continuing without preload
+[
+  {
+    "agentId": "main",
+    "status": {
+      "backend": "builtin",
+      "files": 426,
+      "chunks": 6299,
+      "dirty": false,
+      "workspaceDir": "E:\\hundred-crayfish-legion\\openclaw-test-v2\\workspace",
+      "dbPath": "C:\\Users\\user\\.openclaw-v2test\\agents\\main\\agent\\openclaw-agent.sqlite",
+      "provider": "lmstudio",
+      "model": "nomic-embed-text-v1.5",
+      "requestedProvider": "lmstudio",
+      "sources": [
+        "memory",
+        "sessions"
+      ],
+      "extraPaths": [],
+      "sourceCounts": [
+        {
+          "source": "memory",
+          "files": 425,
+          "chunks": 6298,
+          "dirty": false,
+          "eligible": 425,
+          "issues": []
+        },
+        {
+          "source": "sessions",
+          "files": 1,
+          "chunks": 1,
+          "eligible": 1,
+          "issues": []
+        }
+      ],
+      "cache": {
+        "enabled": true,
+        "entries": 6265,
+        "maxEntries": 50000
+      },
+      "fts": {
+        "enabled": true,
+        "available": true
+      },
+      "vector": {
+        "enabled": true,
+        "index": {
+          "state": "complete"
+        },
+        "storeAvailable": true,
+        "semanticAvailable": true,
+        "available": true,
+        "extensionPath": "E:\\hundred-crayfish-legion\\openclaw-test-v2\\cli-v2\\node_modules\\sqlite-vec-windows-x64\\vec0.dll",
+        "dims": 768
+      },
+      "batch": {
+        "enabled": false,
+        "failures": 0,
+        "limit": 2,
+        "wait": true,
+        "concurrency": 2,
+        "pollIntervalMs": 2000,
+        "timeoutMs": 3600000
+      },
+      "custom": {
+        "searchMode": "hybrid",
+        "providerState": {
+          "mode": "active",
+          "providerId": "lmstudio"
+        },
+        "indexIdentity": {
+          "status": "valid"
+        }
+      }
+    },
+    "embeddingProbe": {
+      "ok": true
+    },
+    "scan": {
+      "sources": [
+        {
+          "source": "memory",
+          "totalFiles": 425,
+          "issues": []
+        },
+        {
+          "source": "sessions",
+          "totalFiles": 1,
+          "issues": []
+        }
+      ],
+      "totalFiles": 426,
+      "issues": []
+    },
+    "audit": {
+      "storePath": "plugin-state:memory-core/short-term-recall/1c8da5d928b397bb107f451415fb4938aaec28c8a2e1585829595d9eb2af6af0",
+      "lockPath": "plugin-state:memory-core/short-term-locks/1c8da5d928b397bb107f451415fb4938aaec28c8a2e1585829595d9eb2af6af0",
+      "exists": false,
+      "entryCount": 0,
+      "promotedCount": 0,
+      "spacedEntryCount": 0,
+      "conceptTaggedEntryCount": 0,
+      "invalidEntryCount": 0,
+      "danglingEntryCount": 0,
+      "issues": []
+    },
+    "dreamingAudit": {
+      "sessionCorpusDir": "E:\\hundred-crayfish-legion\\openclaw-test-v2\\workspace\\memory\\.dreams\\session-corpus",
+      "sessionCorpusFileCount": 0,
+      "suspiciousSessionCorpusFileCount": 0,
+      "suspiciousSessionCorpusLineCount": 0,
+      "sessionIngestionPath": "E:\\hundred-crayfish-legion\\openclaw-test-v2\\workspace\\memory\\.dreams\\session-ingestion.json",
+      "sessionIngestionExists": false,
+      "issues": []
+    }
+  }
+]

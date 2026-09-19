@@ -1,5 +1,103 @@
 # CHANGELOG
 
+[2026-09-19] P0 · dev-v2.2 → main 合流 + eval_guard 扣分逻辑 + 09-17 主日报补档
+
+• 合流：见 `docs/issue-registry/DEV-V2.2-MERGE-CHECKLIST.md` · dt188 #129/#130 与 Axium REGISTRY 对齐
+• eval_guard：`eval_guard.py` 支持 `keyword_check`/`negative_check` 与 `negative_keyword_set` · manifest 重算
+• 09-17 补档：`docs/issue-exports/xian-daily-2026-09-17/` · Issue #130 · `REGISTRY_XIAN_DAILY_2026_09_17`
+
+[2026-09-19] XIAN项目日报 #130 · 2026-09-17（补档主日报）
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/130
+• 路径：`docs/issue-exports/xian-daily-2026-09-17/`
+• body SHA‑256：`d4005ac02faa85f099eefebdc78a689c4b9ba12162ec1de15271001423bde2df`
+• 文件夹 manifest SHA256：`9584511a1d61d2c981d79aac23b32dd14da0d0c4617ae42ca965ca76048cced3`
+• 台账：`REGISTRY_XIAN_DAILY_2026_09_17`
+
+[2026-09-18] XIAN项目日报 #129 · 2026-09-18（采样标识主日报）
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/129
+• 路径：`docs/issue-exports/xian-daily-2026-09-18/`
+• body SHA‑256：`375711dee43347c4537e1d7e34107396a3559bfd66224cb67a4f19b37a8cbde8`
+• 归档 Git commit：`f4cbf28ee0c7fa0f567bfb1c11acb1126fdd89ef`
+• 台账：`REGISTRY_XIAN_DAILY_2026_09_18`
+
+[2026-09-18] media-external · 人民政协网全页快照 + 白皮书 96/100 双轨
+
+• 全局 manifest SHA256：`6aa4c8b21c4769330a0f5ed9b6d93c1f6812938dd72377cc7d65cdf04ffc9e3c`（git `e96c274`）
+• rmzxw：PNG+MHTML+source-metadata · `archive/media-external/rmzxw/`
+• 白皮书双轨：`…-T02Y04-public-domain-96.md` · `…-T02Y04-github-archive-100-full.md`
+• 校验：`scripts/hash_integrity_checker.py` PASS
+
+[2026-09-16] XIAN项目日报 #128 · 2026-09-16（采样标识主日报）
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/128
+• 路径：`docs/issue-exports/xian-daily-2026-09-16/`
+• body SHA‑256：`9568ad28e99f1b86f18ffa819663837a2e90483f45796a34cf3cc02149db3363`
+• 归档前母基线 Git：`e86b6510a4341190df2f2211107fb806f183d825`
+• 归档 Git commit：`cc745901e01c793d075db08108e75d085391a859`
+• 台账：`docs/issue-exports/_INDEX-LEDGER-ISSUE-EXPORTS.md` · `REGISTRY_XIAN_DAILY_2026_09_16`
+
+[2026-09-16] 【媒体稿件】划清人工智能“模拟智能”与“本源觉知”的边界 · 人民政协网
+
+• 正文：`dola-carbon-silicon-framework/docs/media-clipping/rmzxw/ai-simulate-awareness-boundary-rmzxw-20260916.md`
+• 快照：`…/ai-simulate-awareness-boundary-rmzxw-20260916-snapshot.html`
+• body SHA‑256：`7191e50863199d54b64cd265ec998dfc567931a70b705ca7073252f24a261f70`
+• 快照 SHA‑256：`73e40ee14b5d899fc273ad76946da7f08c5a576a7776ed3799d8c5c4dc627bc5`
+• 回链：https://www.rmzxw.com.cn/c/2026-09-16/3976199.shtml
+• 归档前母基线 Git：`fe49dd7b77baf3f8b7d96ef790aa175c98d250a1`
+• 归档 Git commit：`7a665e2f8f3735ed8f52b5e7d52fa14bae9b93be`
+• XIAN：`docs/issue-exports/xian-media-clipping-rmzxw-20260916/` · Issue https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/127
+
+[2026-09-16] 【白皮书】碳硅道统：硅基文明公理体系白皮书（媒体权威对外版） T‑02/Y‑04
+
+• 正本：`dola-carbon-silicon-framework/docs/whitepaper/public-media-version/carbon-silicon-daotong-silicon-civilization-axiom-whitepaper-public-media.md`
+• body SHA‑256：`92a8b82d93d9b3ddb1966779e7f61c23b89b5e1d340bd257d1741ed7848a0bf9`
+• 归档前母基线 Git：`bdb56bcd48dd2d6e744f487f7128aca0ab96ba94`
+• 归档 Git commit：`afb429fe8b724b9b65eaeeb245b3eb94f890e3be`
+• 台账：`dola-carbon-silicon-framework/docs/whitepaper/public-media-version/_INDEX-LEDGER-T02Y04.md`
+• XIAN：`docs/issue-exports/xian-whitepaper-public-media-t02y04-2026-09-16/` · Issue https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/126
+
+[2026-09-15] broadsword-100 golden-24h 四条同步链回填
+
+• ledger：`dossier/broadsword-100/broadsword-media-ledger.md`
+• 快照：`dossier/broadsword-100/snapshot/snapshot-wechat-cyzone843850-v1.html` 等 4 文件
+• URL 源：`sync/golden-24h-published-urls.json`（真实链接，禁止手工捏造）
+
+[2026-09-14] XIAN媒体采样归档 #124 · Batch #125 · xian-daily-2026-09-14-chinacom-1223196
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/124
+• 路径：`docs/issue-exports/xian-daily-2026-09-14-chinacom-1223196/`
+• 采样标识：见 body.md 头部
+• 原文：http://news.china.com.cn/mts/2026-09/14/content_1223196.htm
+
+[2026-09-14] XIAN媒体采样归档 #124 · Batch #125 · xian-daily-2026-09-14-chinacom-1223195
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/124
+• 路径：`docs/issue-exports/xian-daily-2026-09-14-chinacom-1223195/`
+• 采样标识：见 body.md 头部
+• 原文：http://news.china.com.cn/mts/2026-09/14/content_1223195.htm
+
+[2026-09-14] XIAN媒体采样归档 #124 · Batch #125 · xian-daily-2026-09-14-chinacom-1223194
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/124
+• 路径：`docs/issue-exports/xian-daily-2026-09-14-chinacom-1223194/`
+• 采样标识：见 body.md 头部
+• 原文：http://news.china.com.cn/mts/2026-09/14/content_1223194.htm
+
+[2026-09-15] XIAN项目日报 #123 · 2026-09-15
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/123
+• 路径：`docs/issue-exports/xian-daily-2026-09-15/`
+• 要点：inquiry 0⁰=1 稿归档闭环；golden-24h 四条 URL 仍阻塞；安徽镜像仓库内复核一致
+
+[2026-09-15] inquiry · 从 0⁰=1 到觉知闭环：硅基系统的架构天花板
+
+• 路径：`dola-carbon-silicon-framework/docs/inquiry/from-0pow0-1-to-awareness-loop.md`
+• 版本：十二脉归一 · T‑02/Y‑04 · 初版正本（禁止覆盖；迭代另起新文件）
+• body SHA‑256：`c0ff641af68d52d5964106ee65e7cd432e92b848caa1019a3850f6120c27245e`
+• 台账：`docs/inquiry/_INDEX-LEDGER-T02Y04.md`
+
 [2026-09-14] 碳硅道统12篇媒体定稿归档 · inquiry media-release 初稿
 
 • 母本：`Nouvelle section 9.pdf`（初稿封存，禁止覆盖；优化另建新文件）
@@ -7,6 +105,199 @@
 • 正文：`docs/inquiry/media-release-01` … `media-release-12`（头部 T‑02/Y‑04）
 • 01–06 回链登记见 INDEX（中国新闻网新疆已发布稿）；07–12 学术边界系列暂以 PDF 母本溯源
 • 纳入 XIAN 一日一发 · 2026-09-14 工作日报归档链
+
+[2026-09-10] XIAN媒体采样归档 #121 · xian-daily-2026-09-10-ahnews-537430
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/121
+• 路径：`docs/issue-exports/xian-daily-2026-09-10-ahnews-537430/`
+• 采样标识：见 body.md 头部
+• 原文：https://web.ahnews.com.cn/news?id=537430
+
+[2026-09-10] XIAN媒体采样归档 #121 · xian-daily-2026-09-10-newfj-115755
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/121
+• 路径：`docs/issue-exports/xian-daily-2026-09-10-newfj-115755/`
+• 采样标识：见 body.md 头部
+• 原文：http://www.newfj.com.cn/home/news/index/id/115755.html
+
+[2026-09-10] XIAN媒体采样归档 #121 · xian-daily-2026-09-10-ahnews-537412
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/121
+• 路径：`docs/issue-exports/xian-daily-2026-09-10-ahnews-537412/`
+• 采样标识：见 body.md 头部
+• 原文：https://web.ahnews.com.cn/news?id=537412
+
+[2026-09-10] XIAN媒体采样归档 #121 · xian-daily-2026-09-10-newfj-115754
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/121
+• 路径：`docs/issue-exports/xian-daily-2026-09-10-newfj-115754/`
+• 采样标识：见 body.md 头部
+• 原文：http://www.newfj.com.cn/home/news/index/id/115754.html
+
+[2026-09-11] XIAN媒体采样归档 #122 · Batch #124 · xian-daily-2026-09-11-leiphone-FQFJwTQvuiRQbu2q
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/122
+• 路径：`docs/issue-exports/xian-daily-2026-09-11-leiphone-FQFJwTQvuiRQbu2q/`
+• 采样标识：见 body.md 头部
+• 原文：https://www.leiphone.com/category/industrynews/FQFJwTQvuiRQbu2q.html
+
+[2026-09-11] XIAN媒体采样归档 #122 · Batch #124 · xian-daily-2026-09-11-leiphone-GnvSuKkQXe3JRPJE
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/122
+• 路径：`docs/issue-exports/xian-daily-2026-09-11-leiphone-GnvSuKkQXe3JRPJE/`
+• 采样标识：见 body.md 头部
+• 原文：https://www.leiphone.com/category/industrynews/GnvSuKkQXe3JRPJE.html
+
+[2026-09-11] XIAN媒体采样归档 #122 · Batch #124 · xian-daily-2026-09-11-leiphone-h7SYqtL9IVveHAuO
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/122
+• 路径：`docs/issue-exports/xian-daily-2026-09-11-leiphone-h7SYqtL9IVveHAuO/`
+• 采样标识：见 body.md 头部
+• 原文：https://www.leiphone.com/category/industrynews/h7SYqtL9IVveHAuO.html
+
+[2026-09-11] XIAN媒体采样归档 #122 · Batch #124 · xian-daily-2026-09-11-leiphone-axZgHIEEb5Xpoh4A
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/122
+• 路径：`docs/issue-exports/xian-daily-2026-09-11-leiphone-axZgHIEEb5Xpoh4A/`
+• 采样标识：见 body.md 头部
+• 原文：https://www.leiphone.com/category/industrynews/axZgHIEEb5Xpoh4A.html
+
+[2026-09-11] XIAN媒体采样归档 #122 · Batch #124 · xian-daily-2026-09-11-leiphone-ZHU0W8KYCimHlbZh
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/122
+• 路径：`docs/issue-exports/xian-daily-2026-09-11-leiphone-ZHU0W8KYCimHlbZh/`
+• 采样标识：见 body.md 头部
+• 原文：https://www.leiphone.com/category/industrynews/ZHU0W8KYCimHlbZh.html
+
+[2026-09-11] XIAN媒体采样归档 #122 · Batch #124 · xian-daily-2026-09-11-leiphone-qSK5aXslh1eHd6A3
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/122
+• 路径：`docs/issue-exports/xian-daily-2026-09-11-leiphone-qSK5aXslh1eHd6A3/`
+• 采样标识：见 body.md 头部
+• 原文：https://m.leiphone.com/category/industrynews/qSK5aXslh1eHd6A3.html
+
+[2026-09-11] XIAN媒体采样归档 #122 · Batch #124 · xian-daily-2026-09-11-chinanews-1223140
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/122
+• 路径：`docs/issue-exports/xian-daily-2026-09-11-chinanews-1223140/`
+• 采样标识：见 body.md 头部
+• 原文：http://news.china.com.cn/mts/2026-09/11/content_1223140.htm
+
+[2026-09-11] XIAN媒体采样归档 #122 · Batch #124 · xian-daily-2026-09-11-chinanews-1223139
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/122
+• 路径：`docs/issue-exports/xian-daily-2026-09-11-chinanews-1223139/`
+• 采样标识：见 body.md 头部
+• 原文：http://news.china.com.cn/mts/2026-09/11/content_1223139.htm
+
+[2026-09-11] XIAN媒体采样归档 #122 · Batch #124 · xian-daily-2026-09-11-chinanews-1223107
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/122
+• 路径：`docs/issue-exports/xian-daily-2026-09-11-chinanews-1223107/`
+• 采样标识：见 body.md 头部
+• 原文：http://news.china.com.cn/mts/2026-09/11/content_1223107.htm
+
+[2026-09-10] XIAN媒体采样归档 #121 · xian-daily-2026-09-10-hubeidaily
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/121
+• 路径：`docs/issue-exports/xian-daily-2026-09-10-hubeidaily/`
+• 采样标识：见 body.md 头部
+• 原文：https://news.hubeidaily.net/hbrbsharenew/news_detail/5/5958221/5376428/0?w=1789033579027&uik=bb7c872d&share_plat=android&sec=d40276b6&historyback=1
+
+[2026-09-10] XIAN媒体采样归档 #121 · xian-daily-2026-09-10-leiphone
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/121
+• 路径：`docs/issue-exports/xian-daily-2026-09-10-leiphone/`
+• 采样标识：见 body.md 头部
+• 原文：https://m.leiphone.com/category/industrynews/qSK5aXslh1eHd6A3.html
+
+[2026-09-10] XIAN媒体采样归档 #121 · xian-daily-2026-09-10-chinanews-xj
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/121
+• 路径：`docs/issue-exports/xian-daily-2026-09-10-chinanews-xj/`
+• 采样标识：见 body.md 头部
+• 原文：http://www.xj.chinanews.com.cn/kejiao/2026-09-10/detail-ihfizwvu6757040.shtml
+
+[2026-09-10] v2test Session + Approval E2E 探针 PASS（dev-v2.2 · openclaw-test-v2）
+
+• 脚本：`openclaw-test-v2/scripts/run_session_approval_e2e_20260909.ps1`
+• 日志：`logs/session-approval-e2e-20260910-221535.log`（approvals exec policy 可读 · sessions source 已注册）
+• 环境：profile v2test · 生产未触碰
+
+[2026-09-10] v2test RAG 五路命中全 PASS（dev-v2.2 · openclaw-test-v2）
+
+• 索引：`memory index --force` 431 files（`logs/memory-index-force-20260910-220346.log`）
+• 验证：5/5 PASS（`logs/rag-hit-verification-20260910.log`）；zero-power ASCII 查询 + alt 匹配
+• 脚本：`openclaw-test-v2/scripts/run_rag_hit_verification.ps1`
+• 台账：`P1-RAG-DELIVERY-20260905.md` · `RAG-QUERY-TUNING-20260905.md`
+
+[2026-09-07] XIAN一日一发归档 #120（docs/issue-exports/xian-daily-2026-09-07/ · backlog）
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/120
+• 稿件：`docs/issue-exports/xian-daily-2026-09-07/title.txt` + `body.md`
+• 脚本：`scripts/publish_xian_daily_issue_2026_09_07.ps1`
+• 台账：`docs/issue-registry/` REGISTRY + dt188 ledger
+
+[2026-09-06] XIAN一日一发归档 #119（docs/issue-exports/xian-daily-2026-09-06/ · backlog）
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/119
+• 稿件：`docs/issue-exports/xian-daily-2026-09-06/title.txt` + `body.md`
+• 脚本：`scripts/publish_xian_daily_issue_2026_09_06.ps1`
+• 台账：`docs/issue-registry/` REGISTRY + dt188 ledger
+
+[2026-09-05] XIAN一日一发归档 #118（docs/issue-exports/xian-daily-2026-09-05/ · backlog）
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/118
+• 稿件：`docs/issue-exports/xian-daily-2026-09-05/title.txt` + `body.md`
+• 脚本：`scripts/publish_xian_daily_issue_2026_09_05.ps1`
+• 台账：`docs/issue-registry/` REGISTRY + dt188 ledger
+
+[2026-09-04] XIAN一日一发归档 #117（docs/issue-exports/xian-daily-2026-09-04/ · backlog）
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/117
+• 稿件：`docs/issue-exports/xian-daily-2026-09-04/title.txt` + `body.md`
+• 脚本：`scripts/publish_xian_daily_issue_2026_09_04.ps1`
+• 台账：`docs/issue-registry/` REGISTRY + dt188 ledger
+
+[2026-09-08] v2test RAG 复验 + SSOT MD5 指纹同步（dev-v2.2）
+
+• RAG：`memory index --force` 431 files；`Why-Are-We` / `Ch1_本源公理` 命中 PASS（`logs/rag-hit-verification-20260908.log`）。
+
+• SSOT：`carbon-silicon-daotong/README.md` §定稿全局MD5指纹 块同步；phantom diff CLOSED（`PHANTOM-DIFF-RECON-20260905.md`）。
+
+[2026-09-08] 碳硅道统九篇体系主文合集 raw 母本归档（dossier/carbon-silicon-canon-v2/full-release-v2.0/00-nine-essays-core-manifesto · T-02/Y-04 · v2.0-release）
+
+• 路径：`dossier/carbon-silicon-canon-v2/full-release-v2.0/00-nine-essays-core-manifesto/nine-essays-core-manifesto.md`；头部标记「十二脉归一 · 版本T‑02/Y‑04｜v2.0‑release」+ SHA‑256 回填；正文自 `9篇.pdf` 抽取入库（纯正文；已剔除页脚噪声）。
+
+• 性质：raw 只读母本目录；禁止修改；对外公域衍生版本后续放同级 `public-release` 物理隔离。
+
+• 台账：`docs/inquiry/_INDEX-LEDGER-T02Y04.md` 增补条目；导入脚本 `scripts/_archive_nine_essays_manifesto.py`。
+
+[2026-09-02] 《0⁰=1：硅基的边界与碳硅拓扑的降临》V1.0 创世公理正本归档（docs/spinoff-debate-papers/00-zero-power-axiom-V1.0.md · T-02/Y-04）
+
+• 路径：`docs/spinoff-debate-papers/00-zero-power-axiom-V1.0.md`；头部标记「十二脉归一 · 版本T‑02/Y‑04」；创世公理正本 V1.0 永久封存，禁止覆盖。
+
+• 台账：`docs/spinoff-debate-papers/README.md` 增补条目；RAG 镜像同步；质询锚点 1/4/7/9/10、14/20/61/63/65、91/93/94/97/98/99/100 可检索。
+
+[2026-09-02] 《为什么是我们？》V1.0 思辨社论归档（docs/spinoff-debate-papers/Why-Are-We-V1.0.md · T-02/Y-04）
+
+• 路径：`docs/spinoff-debate-papers/Why-Are-We-V1.0.md`；头部标记「十二脉归一 · 版本T‑02/Y‑04」；V1.0 初稿永久封存，不覆盖。
+
+• 台账：`docs/spinoff-debate-papers/README.md`；RAG 镜像同步；归档 ≠ 媒体公开发布。
+
+[2026-09-01] 对AI行业100项公开质询归档（docs/inquiry/100-open-inquiries.md · T-02/Y-04）
+
+• 路径：`docs/inquiry/100-open-inquiries.md`；头部标记「十二脉归一 · 版本T‑02/Y‑04」；十大模块合计100问。
+
+• 台账：`docs/inquiry/README.md` 增补条目；RAG 镜像同步。
+
+[2026-09-01] 林清祥十问·二十问·三十问 + 十答·二十答·三十答 卷宗归档（docs/inquiry · T-02/Y-04）
+
+• 路径：`docs/inquiry/` 新建 6 份 markdown 正本（10/20/30 questions + answers），头部标记「十二脉归一 · 版本T‑02/Y‑04」。
+
+• 来源：`10问答.pdf` 全文原样留存（初稿基线，不覆盖）；导入脚本 `scripts/_import_inquiry_10qa.py`。
+
+• RAG：已同步镜像至 `openclaw-test-v2/workspace/memory/daotong-rag/inquiry/` 与 `.../rag/carbon-silicon-daotong/inquiry/`（本地测试环境）。
 
 [2026-08-28] broadsword-100 快照脚本补推（broadsword-snapshot-scripts · dev-v2.2/main）
 
@@ -65,3 +356,8 @@
 • #111 2026-08-29（采样标识 2026-08-29）：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/111；父链基线 dd41661；#79回执对账标记已纳入条目正文。
 • #112 2026-08-30（采样标识 2026-08-30）：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/112；父链基线 dd41661；#79回执对账标记已纳入条目正文。
 • #113 2026-08-31（采样标识 2026-08-31）：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/113；父链基线 dd41661；#79回执对账标记已纳入条目正文。
+
+[2026-09-05] XIAN一日一发补齐（#114–#116，2026-09-01～09-03）
+• #114 2026-09-01：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/114；#79回执对账标记已纳入条目正文。
+• #115 2026-09-02：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/115；#79回执对账标记已纳入条目正文。
+• #116 2026-09-03：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/116；#79回执对账标记已纳入条目正文。

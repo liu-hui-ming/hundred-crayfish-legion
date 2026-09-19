@@ -1,0 +1,6 @@
+backups/BACKUP-KEY-README.txt
+backups/*.tar.gz
+node-portable/
+cli-v2/node_modules/
+cli/node_modules/
+*.aes

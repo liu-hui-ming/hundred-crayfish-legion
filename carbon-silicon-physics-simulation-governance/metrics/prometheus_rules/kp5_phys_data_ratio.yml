@@ -1,0 +1,15 @@
+# 协同层：物理约束数据占比
+# snapshot-v2.2.0-draft — alert rules template
+groups:
+  - name: carbon_silicon_sim_kp5
+    rules:
+      - alert: KP5ThresholdBreached
+        expr: phys_data_ratio_min < 0.7
+        for: 5m
+        labels:
+          severity: warning
+          kpi: kp5
+          draft: snapshot-v2.2.0-draft
+        annotations:
+          summary: "协同层：物理约束数据占比 超阈"
+          description: "phys_data_ratio_min 当前值 {{ $value }}，阈值 0.7"

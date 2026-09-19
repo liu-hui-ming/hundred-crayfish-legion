@@ -1,0 +1,15 @@
+# 物理层：连续性方程残差
+# snapshot-v2.2.0-draft — alert rules template
+groups:
+  - name: carbon_silicon_sim_kp1
+    rules:
+      - alert: KP1ThresholdBreached
+        expr: continuity_residual_max > 0.001
+        for: 5m
+        labels:
+          severity: warning
+          kpi: kp1
+          draft: snapshot-v2.2.0-draft
+        annotations:
+          summary: "物理层：连续性方程残差 超阈"
+          description: "continuity_residual_max 当前值 {{ $value }}，阈值 0.001"

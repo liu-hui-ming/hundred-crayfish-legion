@@ -1,0 +1,12 @@
+﻿openclaw.cmd : Gateway not reachable at ws://127.0.0.1:19001 (ECONNREFUSED).
+所在位置 C:\Users\user\AppData\Local\Temp\ps-script-ab1cff3d-6621-48ba-974f-791bf1933a96.ps1:87 字符: 1
++ & $oc --profile v2test health 2>&1 | Out-File "E:\hundred-crayfish-le ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Gateway not rea...(ECONNREFUSED).:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+Start it with `openclaw gateway run` or check `openclaw gateway status`.
+Gateway target: ws://127.0.0.1:19001
+Source: local loopback
+Config: C:\Users\user\.openclaw-v2test\openclaw.json
+Bind: loopback

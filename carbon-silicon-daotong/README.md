@@ -82,28 +82,28 @@ Tag 锚定：
 
 清单文件：测试规范/full_archive_md5_fingerprint.txt
 
-指纹清单文件 MD5：a1b04b49220f29a808350349283593e0
+指纹清单文件 MD5：8701d58d4e26be8ba515e16bb8595e1f
 
 `
-804907ea3e53f2a6b3fb3471fc48dcaa  carbon-silicon-daotong/CH0-CH5进度台账.md
+07f9043585d55e862a947dd1dd88ee18  carbon-silicon-daotong/CH0-CH5进度台账.md
 926ab884bbaa02a6e683febeb4b63519  carbon-silicon-daotong/归档日报/2026-07-28-全部上传补录.md
 a09c5974bc6394d1bfb53192692053dc  carbon-silicon-daotong/归档日报/2026-07-28.md
-c893b46719d7144991e0e938398e29a5  carbon-silicon-daotong/归档日报/2026-07-29.md
+f709f8ebfe19539735eafd5fe26e4b4e  carbon-silicon-daotong/归档日报/2026-07-29.md
 f00cb35b24e03e9547fc9911458ed77a  carbon-silicon-daotong/归档日报/2026-07-30.md
 b4994cfb0bfc12ad4956ed1aa054c4b2  carbon-silicon-daotong/测试规范/hash_verify_gen.sh
 eacf622181d7109b799dc644965cda6b  carbon-silicon-daotong/源码资产/legitimate_client.c
 398e247e5bd7c04c4dd832d07940392f  carbon-silicon-daotong/源码资产/legitimate_client_with_seccomp.c
 84d7b5706e5ff8a96bf76cb5a972874e  carbon-silicon-daotong/源码资产/malicious_attack.c
-2f30d3c7f1e4823ea5fd8fca27d8947f  carbon-silicon-daotong/源码资产/README.md
+da688488ebc7d5045c86f04996417fa4  carbon-silicon-daotong/源码资产/README.md
 689a067f63dad6d9dca5da5277eccc66  carbon-silicon-daotong/源码资产/verify_defense.sh
 d275ff0256c579b7777def5d8910adfd  carbon-silicon-daotong/源码资产/zone0_guardian.c
 da231eb94d90147aa13a85788eeac3a8  carbon-silicon-daotong/源码资产/zone0_record.h
-717e39f84bc3ff51db6d6063dfd14d1c  carbon-silicon-daotong/理论卷宗/Ch0_方法论自白.md
-41d14856ad9367cff9edb8cc6d166cd3  carbon-silicon-daotong/理论卷宗/Ch1_本源公理.md
-656bdea1a40356187ca217d2bbecd612  carbon-silicon-daotong/理论卷宗/Ch2_理论论战.md
-5ba95fc13d972534fc24f122535dc41e  carbon-silicon-daotong/理论卷宗/Ch3_硬件架构.md
-2b82ddb142f1bdef0b48168693cd5fcb  carbon-silicon-daotong/理论卷宗/Ch4_实验设计_终稿.md
-a92ad7bcbbb2cf73e3bbf6f43c1ff5e4  carbon-silicon-daotong/理论卷宗/Ch5_伦理契约.md
+4f730b2f1e7e9db09d4072af61938a40  carbon-silicon-daotong/理论卷宗/Ch0_方法论自白.md
+dd4f6a2c5fe846ccd6b6e6d20acad649  carbon-silicon-daotong/理论卷宗/Ch1_本源公理.md
+849467da5e2e4ea257dab56afdc46492  carbon-silicon-daotong/理论卷宗/Ch2_理论论战.md
+fe88bc40fab84aeeb324875dd5164d50  carbon-silicon-daotong/理论卷宗/Ch3_硬件架构.md
+bc42f7e5c59359f33707d58aaddbecbd  carbon-silicon-daotong/理论卷宗/Ch4_实验设计_终稿.md
+7ce55e83eab23f2210bc56a3a137a984  carbon-silicon-daotong/理论卷宗/Ch5_伦理契约.md
 7b8976982ad0e7bb0bab73b969ecd7fa  carbon-silicon-daotong/理论卷宗/SAND-001｜本源定基 零一肇始.md
 486a81466f68ddc8be6b9cd655895822  carbon-silicon-daotong/理论卷宗/SAND-002｜三元演化 万象归宗.md
 873c8aa2beee70362a27dd62d224f287  carbon-silicon-daotong/理论卷宗/SAND-003｜制衡定则 动静相生.md

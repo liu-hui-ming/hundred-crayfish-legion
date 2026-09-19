@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0",
+  "draft_tag": "snapshot-v2.2.0-draft",
+  "topology_id": "topo-2d-cfd-bench-001",
+  "nodes": [
+    {
+      "id": "ingest",
+      "type": "stage",
+      "next": [
+        "mesh"
+      ]
+    },
+    {
+      "id": "mesh",
+      "type": "stage",
+      "next": [
+        "solve"
+      ]
+    },
+    {
+      "id": "solve",
+      "type": "stage",
+      "next": [
+        "ai_infer"
+      ]
+    },
+    {
+      "id": "ai_infer",
+      "type": "stage",
+      "next": [
+        "merge"
+      ]
+    },
+    {
+      "id": "merge",
+      "type": "stage",
+      "next": [
+        "export"
+      ]
+    },
+    {
+      "id": "export",
+      "type": "stage",
+      "next": []
+    }
+  ],
+  "kpi_bindings": {
+    "ingest": [
+      "kp5"
+    ],
+    "mesh": [
+      "kp2"
+    ],
+    "solve": [
+      "kp1",
+      "kp4"
+    ],
+    "ai_infer": [
+      "kp3"
+    ],
+    "merge": [
+      "kp5",
+      "kp6"
+    ],
+    "export": [
+      "kp6"
+    ]
+  },
+  "example_slice_chain": [
+    {
+      "slice_id": "00000000-0000-4000-8000-000000000001",
+      "run_id": "run-ut-2d-01-demo",
+      "timestamp": "2026-08-25T14:00:00Z",
+      "stage": "ingest",
+      "topology_ref": "ingest",
+      "input_hash": "sha256:placeholder-input",
+      "output_hash": "sha256:placeholder-output",
+      "kpi_snapshot": {
+        "kp5_phys_data_ratio": 0.82
+      },
+      "prev_slice_id": null
+    }
+  ]
+}

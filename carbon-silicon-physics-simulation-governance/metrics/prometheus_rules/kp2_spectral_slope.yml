@@ -1,0 +1,15 @@
+# 架构层：能谱斜率漂移
+# snapshot-v2.2.0-draft — alert rules template
+groups:
+  - name: carbon_silicon_sim_kp2
+    rules:
+      - alert: KP2ThresholdBreached
+        expr: spectral_slope_drift > 0.15
+        for: 5m
+        labels:
+          severity: warning
+          kpi: kp2
+          draft: snapshot-v2.2.0-draft
+        annotations:
+          summary: "架构层：能谱斜率漂移 超阈"
+          description: "spectral_slope_drift 当前值 {{ $value }}，阈值 0.15"

@@ -1,0 +1,24 @@
+{
+  "schema": "docs/issue-exports/manifest.v1",
+  "sampling_id": "xian-daily-2026-09-17",
+  "folder": "docs/issue-exports/xian-daily-2026-09-17",
+  "captured_at_utc": "2026-09-19T14:44:51Z",
+  "entries": [
+    {
+      "file_name": "body.md",
+      "path": "docs/issue-exports/xian-daily-2026-09-17/body.md",
+      "sha256": "d4005ac02faa85f099eefebdc78a689c4b9ba12162ec1de15271001423bde2df",
+      "encoding": "UTF-8 without BOM",
+      "layer": "narrative-layer"
+    },
+    {
+      "file_name": "title.txt",
+      "path": "docs/issue-exports/xian-daily-2026-09-17/title.txt",
+      "sha256": "53b9fed98b64777134560253fb5f6744a2f86c2cd2c8e818d0cca1a5470154c9",
+      "encoding": "UTF-8 without BOM",
+      "layer": "narrative-layer"
+    }
+  ],
+  "encoding": "UTF-8 without BOM",
+  "manifest_sha256": "9584511a1d61d2c981d79aac23b32dd14da0d0c4617ae42ca965ca76048cced3"
+}

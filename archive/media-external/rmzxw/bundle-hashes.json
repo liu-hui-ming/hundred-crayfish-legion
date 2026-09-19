@@ -1,0 +1,23 @@
+{
+  "sampling_id": "20260916-rmzxw-ai-simulate-awareness-boundary",
+  "markdown": {
+    "path": "20260916-rmzxw-ai-simulate-awareness-boundary.md",
+    "sha256": "3fe5bb34017834e215bd55eceec940ab53226e01acd11cdccd04ceb4f394f5ba"
+  },
+  "source_metadata": {
+    "path": "20260916-rmzxw-ai-simulate-awareness-boundary-source-metadata.json",
+    "sha256": "dfe9b58521f5a8e29184eeaeb5f236c9d4dc6cd5ef9276865b63f628077e6fd7"
+  },
+  "snapshot_png": {
+    "path": "20260916-rmzxw-ai-simulate-awareness-boundary-snapshot.png",
+    "sha256": "11df06c806a02c6f1875544348dd1cacd5ae0e15c85bc291515ab4b3f9cdd4b5"
+  },
+  "snapshot_mhtml": {
+    "path": "20260916-rmzxw-ai-simulate-awareness-boundary.mhtml",
+    "sha256": "182c8f23209ae3ee9412e208e4d213ca04515e4ea63a2cf7d120a50f91a73993"
+  },
+  "legacy_html_attachment": {
+    "path": "attachments/ai-simulate-awareness-boundary-rmzxw-20260916-snapshot.html",
+    "sha256": "73e40ee14b5d899fc273ad76946da7f08c5a576a7776ed3799d8c5c4dc627bc5"
+  }
+}

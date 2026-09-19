@@ -1,0 +1,21 @@
+﻿RAG Hit Verification 鈥?2026-09-08T21:47:56.8968388+08:00
+index: v2test 路 node direct 路 tuned queries
+
+=== QUERY: RAG-PRIMARY-WHY-ARE-WE-V1.0 Why Are We V1.0 T-02 Y-04 (expect: Why-Are-We-V1.0) ===
+RESULT: PASS 鈥?0.901 memory/daotong-rag/spinoff-debate-papers/_RAG-RETRIEVAL-ANCHOR-why-are-we-V1.0.md:1-18
+
+=== QUERY: RAG-PRIMARY-ZERO-POWER-AXIOM-V1.0 00-zero-power-axiom-V1.0 T-02 Y-04 (expect: 00-zero-power-axiom) ===
+RESULT: PARTIAL 鈥?top hits:
+[memory/embeddings] lmstudio embeddings warmup failed; continuing without preload
+0.899 memory/daotong-rag/spinoff-debate-papers/_RAG-RETRIEVAL-ANCHOR-zero-power-V1.0.md:1-20
+0.776 memory/daotong-rag/spinoff-debate-papers/README.md:21-39
+
+=== QUERY: 100 open AI industry inquiries (expect: 100-open-inquiries) ===
+RESULT: PASS 鈥?0.422 memory/daotong-rag/inquiry/100-open-inquiries.md:111-136
+
+=== QUERY: RAG-PRIMARY-LIN-10-QUESTIONS-V1.0 鏋楁竻绁?纰崇閬撶粺鍗侀棶 10-questions (expect: 10-questions) ===
+RESULT: PASS 鈥?0.890 memory/daotong-rag/inquiry/_RAG-RETRIEVAL-ANCHOR-10-questions-V1.0.md:1-20
+
+=== QUERY: Ch1_鏈簮鍏悊 0鈦?1 (expect: Ch1_鏈簮鍏悊) ===
+RESULT: PASS 鈥?0.794 memory/daotong-rag/鐞嗚鍗峰畻/Ch1_鏈簮鍏悊.md:1-10
+

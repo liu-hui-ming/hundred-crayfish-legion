@@ -1,0 +1,15 @@
+# 本源/审计：时序 KPI 向量漂移
+# snapshot-v2.2.0-draft — alert rules template
+groups:
+  - name: carbon_silicon_sim_kp6
+    rules:
+      - alert: KP6ThresholdBreached
+        expr: audit_temporal_drift_l2 > 0.25
+        for: 5m
+        labels:
+          severity: warning
+          kpi: kp6
+          draft: snapshot-v2.2.0-draft
+        annotations:
+          summary: "本源/审计：时序 KPI 向量漂移 超阈"
+          description: "audit_temporal_drift_l2 当前值 {{ $value }}，阈值 0.25"

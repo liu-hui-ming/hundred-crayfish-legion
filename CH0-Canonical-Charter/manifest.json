@@ -1,0 +1,249 @@
+{
+  "schema": "CH0-Canonical-Charter/manifest.v9.2-calibrated.v1",
+  "version_tag": "v9.2-calibrated",
+  "version_fingerprint_label": "SHA v9.2",
+  "document_title": "v9.2-calibrated 全套物料全局清单",
+  "sampling_id": "20260918-v9.2-calibrated-materials",
+  "captured_at_utc": "2026-09-19T14:44:51Z",
+  "isolation": {
+    "CH0-Canonical-Charter": "叙事层 · 宪章与发布公告",
+    "CH1-Formality-formalization": "操作层 · 形式化 / 预印本 / 红蓝质询",
+    "CH2-media-external": "对外媒体脚本（与工程卷宗路径分离）",
+    "eval-baseline/eval_guard": "工程层 · 十维觉知标尺 eval_guard 最小原型（engineering-layer）"
+  },
+  "layer_enum_note": {
+    "narrative-layer": "CH0–CH5 文稿、问答、公告、媒体脚本",
+    "engineering-layer": "eval-baseline 脚本、校验脚本、公理 JSON 库等"
+  },
+  "external_repos_note": "工程真值源：GitHub carbon-silicon/twelve-meridians/omega-topology（本仓为叙事/物料镜像归档）",
+  "p0_five_materials": [
+    {
+      "material_no": "物料一",
+      "path": "CH0-Canonical-Charter/release-announcement/v9.2-calibrated-release-notice.md",
+      "sha256": "7be4ca2a230b01dcce9a11f354ef96ef3fdd8b082d4c2d0e4ce5ec277cab98d1",
+      "ch_volume": "CH0-Canonical-Charter",
+      "document_title": "碳硅道统·十二脉归一 v9.2-calibrated 正式封存版发布"
+    },
+    {
+      "material_no": "物料二",
+      "path": "CH2-media-external/media-scripts/douyin-v9.2-calibrated-script.md",
+      "sha256": "8adbd7f3552ba1417feef8f9902b0a77d35024e720111a879508b738e2a024cf",
+      "ch_volume": "CH2-media-external",
+      "document_title": "抖音30-60秒口播精简稿 · v9.2-calibrated"
+    },
+    {
+      "material_no": "物料三",
+      "path": "CH2-media-external/media-scripts/public-column-v9.2-calibrated.md",
+      "sha256": "5c7ac33e00529ca61561d47c6772303b80fc60337b0f77d931c51c8fa80df252",
+      "ch_volume": "CH2-media-external",
+      "document_title": "碳硅道统v9.2封存：给AI觉知划定可验证的边界"
+    },
+    {
+      "material_no": "物料四",
+      "path": "CH1-Formality-formalization/preprint-latex/v9.2-calibrated-abstract.tex",
+      "sha256": "072a70dcc8d18e295865f526ed69cec156b8865be02958bcc4879d7374c95b73",
+      "ch_volume": "CH1-Formality-formalization",
+      "document_title": "LaTeX 预印本文摘 · v9.2-calibrated"
+    },
+    {
+      "material_no": "物料五",
+      "path": "CH1-Formality-formalization/qa-redblue-debate/v9.2-calibrated-QAbank.md",
+      "sha256": "93e893e94771add12031b79cfca857373f7af29f212cfcb0910755b6f93945d5",
+      "ch_volume": "CH1-Formality-formalization",
+      "document_title": "红蓝对抗质询问答库 · v9.2-calibrated"
+    }
+  ],
+  "eval_baseline_batches": [
+    {
+      "batch_tag": "CANONICAL-v9.2-calibrated-eval-baseline",
+      "sampling_id": "20260918-v9.2-calibrated-eval-baseline",
+      "comment": "十维觉知标尺eval_guard最小原型全套工程文件，工程层eval-baseline，与CH叙事卷宗双仓隔离",
+      "upstream_repo_path": "carbon-silicon/twelve-meridians/eval-baseline/eval_guard",
+      "item_list": [
+        {
+          "file_relative_path": "eval-baseline/eval_guard/eval_guard.py",
+          "file_desc": "十维觉知标尺评估主脚本",
+          "sha256": "0598d95f5046c5b52b0dcf6ff60fd5813f8139c004df2dbe87dd6db15706a2a1",
+          "encoding": "UTF-8-NO-BOM",
+          "layer": "engineering-layer",
+          "canonical_tag": "CANONICAL-v9.2-calibrated",
+          "sample_sig": ""
+        },
+        {
+          "file_relative_path": "eval-baseline/eval_guard/probe_definition.json",
+          "file_desc": "15条探针配置：维度、权重、阈值、关键词集合",
+          "sha256": "35da39d8f6663f11aa02d21d253d3e865413932f149a3d2320d3a92f078f330e",
+          "encoding": "UTF-8-NO-BOM",
+          "layer": "engineering-layer",
+          "canonical_tag": "CANONICAL-v9.2-calibrated",
+          "sample_sig": ""
+        },
+        {
+          "file_relative_path": "eval-baseline/eval_guard/README.md",
+          "file_desc": "原型使用说明、运维约束、运行命令",
+          "sha256": "69f51f5cb8ab85dc7ab1ecc5c71fb7970309acd7b7486a3348e048df66e353ea",
+          "encoding": "UTF-8-NO-BOM",
+          "layer": "engineering-layer",
+          "canonical_tag": "CANONICAL-v9.2-calibrated",
+          "sample_sig": ""
+        },
+        {
+          "file_relative_path": "eval-baseline/eval_guard/sample_report.md",
+          "file_desc": "Markdown评估输出报告空白样例模板",
+          "sha256": "16cc80c0939125294f2793b90f9a4e94d4bb01b4bec8147658c86c138ae044b0",
+          "encoding": "UTF-8-NO-BOM",
+          "layer": "engineering-layer",
+          "canonical_tag": "CANONICAL-v9.2-calibrated",
+          "sample_sig": ""
+        }
+      ]
+    }
+  ],
+  "total_entries": 13,
+  "entries": [
+    {
+      "id": "full-release-notice",
+      "ch_volume": "CH0-Canonical-Charter",
+      "document_title": "碳硅道统·十二脉归一 v9.2-calibrated 完整 Release 公告",
+      "material_type": "GitHub Release 完整公告全文",
+      "path": "CH0-Canonical-Charter/release-announcement/v9.2-calibrated-full-release-notice.md",
+      "layer": "narrative-charter",
+      "release_structure": "标题 → 正文开头 → 核心改动6条 → 版本哲学说明5点 → 永久存证 → 落款",
+      "sha256": "79910263f7ee93eec16792bb95bac47d1492f9cf68aec69525264088fe4a15e4",
+      "encoding": "UTF-8 without BOM"
+    },
+    {
+      "id": "release-announcement",
+      "ch_volume": "CH0-Canonical-Charter",
+      "document_title": "碳硅道统·十二脉归一 v9.2-calibrated 正式封存版发布",
+      "material_type": "GitHub Release 发布公告摘要",
+      "path": "CH0-Canonical-Charter/release-announcement/v9.2-calibrated-release-notice.md",
+      "layer": "narrative-charter",
+      "note": "历史摘要片段；完整粘贴请用 full-release-notice",
+      "sha256": "7be4ca2a230b01dcce9a11f354ef96ef3fdd8b082d4c2d0e4ce5ec277cab98d1",
+      "encoding": "UTF-8 without BOM"
+    },
+    {
+      "id": "version-philosophy",
+      "ch_volume": "CH0-Canonical-Charter",
+      "document_title": "版本哲学说明 · v9.2-calibrated",
+      "material_type": "GitHub Release 版本哲学说明",
+      "path": "CH0-Canonical-Charter/release-announcement/v9.2-calibrated-version-philosophy.md",
+      "layer": "narrative-charter",
+      "release_placement": "核心改动六条之后、永久存证链接之前",
+      "sha256": "0c2494ccd4d92b56a07fa5ebf57736cce91d72a728ee96f47160661113b61dac",
+      "encoding": "UTF-8 without BOM"
+    },
+    {
+      "id": "public-brief",
+      "ch_volume": "CH0-Canonical-Charter",
+      "document_title": "v9.2-calibrated 对外公开简报",
+      "material_type": "对外公开简报",
+      "path": "CH0-Canonical-Charter/release-announcement/v9.2-calibrated-public-brief.md",
+      "layer": "narrative-charter",
+      "sampling_id": "20260918-v9.2-calibrated-public-brief",
+      "usage": "面向大众/媒体精简介绍；公众号、专栏、GitHub简介摘要复用",
+      "sha256": "c97202a344d2afd00cc50bb901fd86992de15ee134f8287dff8bbb1f6398c8f0",
+      "encoding": "UTF-8 without BOM"
+    },
+    {
+      "id": "constitutional-19-responses",
+      "ch_volume": "CH0-Canonical-Charter",
+      "document_title": "碳硅道统v9.2-calibrated｜19篇宪制级回应文稿",
+      "material_type": "宪制级权威问答合集",
+      "path": "CH0-Canonical-Charter/qa-canonical/carbon-silicon-v9.2-calibrated-19-constitutional-responses.md",
+      "layer": "narrative-charter",
+      "sampling_id": "20260918-v9.2-calibrated-19-constitutional-responses",
+      "usage": "媒体采访应答、学术质询、红蓝对抗质询库、RAG知识库源文件",
+      "sha256": "ab4b3735aea15d095b9463cc826498ebaf52df29aa7ddf9817351661a8272c31",
+      "encoding": "UTF-8 without BOM"
+    },
+    {
+      "id": "douyin-script",
+      "ch_volume": "CH2-media-external",
+      "document_title": "抖音30-60秒口播精简稿 · v9.2-calibrated",
+      "material_type": "对外口播脚本",
+      "path": "CH2-media-external/media-scripts/douyin-v9.2-calibrated-script.md",
+      "layer": "media-external",
+      "sha256": "8adbd7f3552ba1417feef8f9902b0a77d35024e720111a879508b738e2a024cf",
+      "encoding": "UTF-8 without BOM"
+    },
+    {
+      "id": "public-column",
+      "ch_volume": "CH2-media-external",
+      "document_title": "碳硅道统v9.2封存：给AI觉知划定可验证的边界",
+      "material_type": "媒体专栏精简版",
+      "path": "CH2-media-external/media-scripts/public-column-v9.2-calibrated.md",
+      "layer": "media-external",
+      "sha256": "5c7ac33e00529ca61561d47c6772303b80fc60337b0f77d931c51c8fa80df252",
+      "encoding": "UTF-8 without BOM"
+    },
+    {
+      "id": "preprint-latex",
+      "ch_volume": "CH1-Formality-formalization",
+      "document_title": "LaTeX 预印本文摘 · v9.2-calibrated",
+      "material_type": "形式化预印本",
+      "path": "CH1-Formality-formalization/preprint-latex/v9.2-calibrated-abstract.tex",
+      "layer": "formality-operation",
+      "sha256": "072a70dcc8d18e295865f526ed69cec156b8865be02958bcc4879d7374c95b73",
+      "encoding": "UTF-8 without BOM"
+    },
+    {
+      "id": "qa-redblue",
+      "ch_volume": "CH1-Formality-formalization",
+      "document_title": "红蓝对抗质询问答库 · v9.2-calibrated",
+      "material_type": "红蓝对抗质询",
+      "path": "CH1-Formality-formalization/qa-redblue-debate/v9.2-calibrated-QAbank.md",
+      "layer": "formality-operation",
+      "sha256": "93e893e94771add12031b79cfca857373f7af29f212cfcb0910755b6f93945d5",
+      "encoding": "UTF-8 without BOM"
+    },
+    {
+      "id": "eval-guard-py",
+      "ch_volume": "eval-baseline/eval_guard",
+      "document_title": "十维觉知标尺评估主脚本",
+      "material_type": "eval_guard 工程基线",
+      "path": "eval-baseline/eval_guard/eval_guard.py",
+      "layer": "engineering-layer",
+      "sampling_id": "20260918-v9.2-calibrated-eval-baseline",
+      "sha256": "0598d95f5046c5b52b0dcf6ff60fd5813f8139c004df2dbe87dd6db15706a2a1",
+      "encoding": "UTF-8 without BOM"
+    },
+    {
+      "id": "eval-guard-probe-json",
+      "ch_volume": "eval-baseline/eval_guard",
+      "document_title": "15条探针配置：维度、权重、阈值、关键词集合",
+      "material_type": "eval_guard 工程基线",
+      "path": "eval-baseline/eval_guard/probe_definition.json",
+      "layer": "engineering-layer",
+      "sampling_id": "20260918-v9.2-calibrated-eval-baseline",
+      "sha256": "35da39d8f6663f11aa02d21d253d3e865413932f149a3d2320d3a92f078f330e",
+      "encoding": "UTF-8 without BOM"
+    },
+    {
+      "id": "eval-guard-readme",
+      "ch_volume": "eval-baseline/eval_guard",
+      "document_title": "原型使用说明、运维约束、运行命令",
+      "material_type": "eval_guard 工程基线",
+      "path": "eval-baseline/eval_guard/README.md",
+      "layer": "engineering-layer",
+      "sampling_id": "20260918-v9.2-calibrated-eval-baseline",
+      "sha256": "69f51f5cb8ab85dc7ab1ecc5c71fb7970309acd7b7486a3348e048df66e353ea",
+      "encoding": "UTF-8 without BOM"
+    },
+    {
+      "id": "eval-guard-sample-report",
+      "ch_volume": "eval-baseline/eval_guard",
+      "document_title": "Markdown评估输出报告空白样例模板",
+      "material_type": "eval_guard 工程基线",
+      "path": "eval-baseline/eval_guard/sample_report.md",
+      "layer": "engineering-layer",
+      "sampling_id": "20260918-v9.2-calibrated-eval-baseline",
+      "sha256": "16cc80c0939125294f2793b90f9a4e94d4bb01b4bec8147658c86c138ae044b0",
+      "encoding": "UTF-8 without BOM"
+    }
+  ],
+  "remote_push_main": "frozen_until_explicit_instruction",
+  "encoding": "UTF-8 without BOM",
+  "manifest_sha256": "362691902527862baf19351f576970b1aa24ea4778ff52645f367c29363b8179"
+}
