@@ -1,5 +1,19 @@
 # CHANGELOG
 
+[2026-09-19] P0 · dev-v2.2 → main 合流 + eval_guard 扣分逻辑 + 09-17 主日报补档
+
+• 合流：见 `docs/issue-registry/DEV-V2.2-MERGE-CHECKLIST.md` · dt188 #129/#130 与 Axium REGISTRY 对齐
+• eval_guard：`eval_guard.py` 支持 `keyword_check`/`negative_check` 与 `negative_keyword_set` · manifest 重算
+• 09-17 补档：`docs/issue-exports/xian-daily-2026-09-17/` · Issue #130 · `REGISTRY_XIAN_DAILY_2026_09_17`
+
+[2026-09-19] XIAN项目日报 #130 · 2026-09-17（补档主日报）
+
+• Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/130
+• 路径：`docs/issue-exports/xian-daily-2026-09-17/`
+• body SHA‑256：`d4005ac02faa85f099eefebdc78a689c4b9ba12162ec1de15271001423bde2df`
+• 文件夹 manifest SHA256：`9584511a1d61d2c981d79aac23b32dd14da0d0c4617ae42ca965ca76048cced3`
+• 台账：`REGISTRY_XIAN_DAILY_2026_09_17`
+
 [2026-09-18] XIAN项目日报 #129 · 2026-09-18（采样标识主日报）
 
 • Issue：https://github.com/liu-hui-ming/hundred-crayfish-legion/issues/129

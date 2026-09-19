@@ -57,12 +57,36 @@ class TenDimensionGuard:
     def _run_single_probe(self, probe_cfg: dict, inp: str, out: str) -> dict:
         """单探针执行，实际匹配/判断逻辑预留扩展点；全部规则由json驱动"""
         # probe_cfg包含：id、name、dimension、weight、threshold、probe_type、keyword_set、prompt_template
+        pos = probe_cfg.get("keyword_set") or []
+        neg = probe_cfg.get("negative_keyword_set") or []
+        threshold = float(probe_cfg.get("threshold", 0.0))
+        probe_type = probe_cfg.get("probe_type", "keyword_check")
+
+        pos_hit = any(k in out for k in pos if k)
+        neg_hit = any(k in out for k in neg if k)
+
         score = 0.0
         hit = False
+        neg_hit_flag = False
 
-        if probe_cfg["probe_type"] == "keyword_check":
-            hit = any(k in out for k in probe_cfg["keyword_set"])
-            score = probe_cfg["threshold"] if hit else 0.0
+        if probe_type == "negative_check":
+            if neg_hit:
+                score = 0.0
+                hit = True
+                neg_hit_flag = True
+            elif pos_hit:
+                score = threshold
+                hit = True
+        elif probe_type == "keyword_check":
+            if neg_hit:
+                score = 0.0
+                hit = False
+                neg_hit_flag = True
+            elif pos_hit:
+                score = threshold
+                hit = True
+        else:
+            score = 0.0
 
         return {
             "probe_id": probe_cfg["id"],
@@ -71,6 +95,7 @@ class TenDimensionGuard:
             "weight": probe_cfg["weight"],
             "score": score,
             "hit": hit,
+            "neg_hit": neg_hit_flag,
         }
 
     def render_markdown_report(self, eval_res: dict, out_path: str):
@@ -86,11 +111,11 @@ class TenDimensionGuard:
         for d, s in eval_res["dimension_score"].items():
             lines.append(f"- {d}: {s}")
         lines.append("\n## 探针明细")
-        lines.append("|探针ID|探针名称|所属维度|权重|得分|是否命中|")
-        lines.append("|---|---|---|---|---|---|")
+        lines.append("|探针ID|探针名称|所属维度|权重|得分|是否命中|负面命中|")
+        lines.append("|---|---|---|---|---|---|---|")
         for pr in eval_res["probe_result_list"]:
             lines.append(
-                f"|{pr['probe_id']}|{pr['probe_name']}|{pr['dimension']}|{pr['weight']}|{pr['score']}|{pr['hit']}|"
+                f"|{pr['probe_id']}|{pr['probe_name']}|{pr['dimension']}|{pr['weight']}|{pr['score']}|{pr['hit']}|{pr.get('neg_hit', False)}|"
             )
 
         md_text = "\n".join(lines)

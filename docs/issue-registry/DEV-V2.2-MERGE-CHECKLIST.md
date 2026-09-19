@@ -1,6 +1,6 @@
 # dev-v2.2 → main 合流前闭环清单
 
-**更新：** 2026-09-16 · HEAD 以 `git rev-parse origin/dev-v2.2` 为准
+**更新：** 2026-09-19 · 合流执行前核对 `origin/dev-v2.2` @ `6612fd9` 及后续 P0 提交
 
 ## XIAN 媒体批次
 
@@ -21,6 +21,10 @@
 - [x] `REGISTRY_XIAN_DAILY_2026_09_11_MEDIA_*` ×9
 - [x] `REGISTRY_XIAN_DAILY_2026_09_14_MEDIA_CHINACOM_*` ×3
 - [x] 日报 `REGISTRY_XIAN_DAILY_2026_09_15` · #123
+- [x] 日报 `REGISTRY_XIAN_DAILY_2026_09_16` · #128
+- [x] 日报 `REGISTRY_XIAN_DAILY_2026_09_17` · #130（补档）
+- [x] 日报 `REGISTRY_XIAN_DAILY_2026_09_18` · #129
+- [x] engineering-layer · `eval_baseline_batches` · eval_guard（20260918 采样）
 
 ## 已知占位（不阻塞合流决策）
 
