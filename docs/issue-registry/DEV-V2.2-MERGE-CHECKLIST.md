@@ -33,4 +33,5 @@
 
 ## 合流动作
 
-收到明确指令后：PR/merge `dev-v2.2` → `main`，合流后逐链 HTTP 复核 Batch 外链。
+- [x] **2026-09-19** PR/merge `dev-v2.2` → `main` · merge commit `82592d2` · 冲突文件以 dev-v2.2 为准消解
+- [ ] 合流后逐链 HTTP 复核 Batch 外链（待运维抽测）
